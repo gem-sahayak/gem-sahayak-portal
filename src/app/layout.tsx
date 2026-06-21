@@ -31,14 +31,17 @@ export default function RootLayout({
         {/* Global Navigation Bar */}
         <header className="navbar">
           <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-            <a href="/" className="logo">
-              🎯 GeM Sahayak<span>.co.in</span>
+            <a href="/" className="logo" style={{ display: "inline-flex", alignItems: "center", gap: "10px" }}>
+              <img src="/logo_symbol.png" alt="GeM Sahayak Logo" style={{ width: "32px", height: "32px" }} />
+              GeM Sahayak<span>.co.in</span>
             </a>
             
             <nav className="nav-links">
+              <a href="/" className="nav-link">Home</a>
               <a href="/#features" className="nav-link">Features</a>
               <a href="/#demo" className="nav-link">Live Demo</a>
-              <a href="/blog" className="nav-link">Blogs</a>
+              <a href="/about" className="nav-link">About Us</a>
+              <a href="/blog" className="nav-link">Latest News</a>
               <a href="https://chrome.google.com/webstore" target="_blank" className="btn btn-primary" style={{ padding: "8px 16px", fontSize: "0.85rem" }}>
                 📥 Add to Chrome
               </a>
@@ -67,9 +70,10 @@ export default function RootLayout({
               <div>
                 <h4 style={{ color: "#F1F5F9", marginBottom: "16px", fontSize: "1rem" }}>Quick Links</h4>
                 <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <li><a href="/" className="hover-white" style={{ fontSize: "0.9rem" }}>Home</a></li>
                   <li><a href="/#features" className="hover-white" style={{ fontSize: "0.9rem" }}>Core Features</a></li>
                   <li><a href="/#demo" className="hover-white" style={{ fontSize: "0.9rem" }}>Interactive Demo</a></li>
-                  <li><a href="/blog" className="hover-white" style={{ fontSize: "0.9rem" }}>Knowledge Hub & Blog</a></li>
+                  <li><a href="/blog" className="hover-white" style={{ fontSize: "0.9rem" }}>Latest News</a></li>
                   <li><a href="https://chrome.google.com/webstore" target="_blank" className="hover-white" style={{ fontSize: "0.9rem" }}>Chrome Web Store</a></li>
                 </ul>
               </div>
@@ -97,8 +101,9 @@ export default function RootLayout({
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "24px", fontSize: "0.85rem", color: "#64748B" }}>
               <p>© {new Date().getFullYear()} GeM Sahayak. Made with ❤️ for MSMEs in India.</p>
               <div style={{ display: "flex", gap: "24px" }}>
-                <a href="/terms" className="hover-white">Terms of Service</a>
+                <a href="/terms" className="hover-white">Terms and Conditions</a>
                 <a href="/privacy" className="hover-white">Privacy Policy</a>
+                <a href="/disclaimer" className="hover-white">Disclaimer</a>
               </div>
             </div>
           </div>
