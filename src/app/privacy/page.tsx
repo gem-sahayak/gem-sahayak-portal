@@ -34,7 +34,6 @@ export default function PrivacyPolicyPage() {
             <ul style={{ listStyle: "disc", marginLeft: "20px", marginTop: "8px", color: "#64748B" }}>
               <li>Your name and location (to personalize the greetings and default bid searches).</li>
               <li>Your WhatsApp configuration settings (required to send alert digests to your mobile number).</li>
-              <li>Your own Gemini API Key (if provided by you for localized AI parsing).</li>
             </ul>
           </section>
 
@@ -53,7 +52,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>4. Security of Your Data</h2>
             <p style={{ color: "#64748B" }}>
-              All communications between the GeM Sahayak extension, our backend APIs, and third-party APIs are encrypted in transit using industry-standard SSL (HTTPS) protocols. Since your API keys and profile details remain in your browser's local storage, they are protected by your operating system's local user security.
+              All communications between the GeM Sahayak extension, our backend APIs, and third-party APIs are encrypted in transit using industry-standard SSL (HTTPS) protocols. Since your profile details remain in your browser's local storage, they are protected by your operating system's local user security.
             </p>
           </section>
 
