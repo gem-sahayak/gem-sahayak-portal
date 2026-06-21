@@ -97,8 +97,8 @@ export default function RootLayout({
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "24px", fontSize: "0.85rem", color: "#64748B" }}>
               <p>© {new Date().getFullYear()} GeM Sahayak. Made with ❤️ for MSMEs in India.</p>
               <div style={{ display: "flex", gap: "24px" }}>
-                <a href="#" className="hover-white">Terms of Service</a>
-                <a href="#" className="hover-white">Privacy Policy</a>
+                <a href="/terms" className="hover-white">Terms of Service</a>
+                <a href="/privacy" className="hover-white">Privacy Policy</a>
               </div>
             </div>
           </div>
