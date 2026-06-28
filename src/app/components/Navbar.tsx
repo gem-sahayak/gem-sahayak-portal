@@ -40,9 +40,9 @@ export default function Navbar() {
         <nav className="nav-links">
           <a href="/" className="nav-link">Home</a>
           <a href="/#features" className="nav-link">Features</a>
-          <a href="/#demo" className="nav-link">Live Demo</a>
-          <a href="/about" className="nav-link">About Us</a>
           <a href="/blog" className="nav-link">Latest News</a>
+          <a href="/about" className="nav-link">About Us</a>
+          <a href="/contact" className="nav-link">Contact Us</a>
           <a
             href={CHROME_STORE_URL}
             target="_blank"
@@ -72,14 +72,14 @@ export default function Navbar() {
         <a href="/#features" className="nav-link" onClick={() => setMobileOpen(false)}>
           Features
         </a>
-        <a href="/#demo" className="nav-link" onClick={() => setMobileOpen(false)}>
-          Live Demo
+        <a href="/blog" className="nav-link" onClick={() => setMobileOpen(false)}>
+          Latest News
         </a>
         <a href="/about" className="nav-link" onClick={() => setMobileOpen(false)}>
           About Us
         </a>
-        <a href="/blog" className="nav-link" onClick={() => setMobileOpen(false)}>
-          Latest News
+        <a href="/contact" className="nav-link" onClick={() => setMobileOpen(false)}>
+          Contact Us
         </a>
         <a
           href={CHROME_STORE_URL}

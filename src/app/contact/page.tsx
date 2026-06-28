@@ -26,7 +26,7 @@ export default function ContactUs() {
             <div style={{ display: "flex", alignItems: "flex-start", gap: "16px" }}>
               <div style={{ fontSize: "1.5rem" }}>👤</div>
               <div>
-                <h3 style={{ fontSize: "1.1rem", color: "var(--primary-dark)", marginBottom: "4px" }}>Founder</h3>
+                <h3 style={{ fontSize: "1.1rem", color: "var(--primary-dark)", marginBottom: "4px" }}>Contact Person</h3>
                 <p style={{ color: "var(--text-muted)" }}>Suneel Verma</p>
               </div>
             </div>
