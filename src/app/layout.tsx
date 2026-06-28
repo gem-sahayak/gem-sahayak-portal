@@ -57,6 +57,7 @@ export default function RootLayout({
                   <li><a href="/#features" className="hover-white" style={{ fontSize: "0.9rem" }}>Core Features</a></li>
                   <li><a href="/#demo" className="hover-white" style={{ fontSize: "0.9rem" }}>Interactive Demo</a></li>
                   <li><a href="/blog" className="hover-white" style={{ fontSize: "0.9rem" }}>Latest News</a></li>
+                  <li><a href="/contact" className="hover-white" style={{ fontSize: "0.9rem" }}>Contact Us</a></li>
                   <li><a href="https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf" target="_blank" className="hover-white" style={{ fontSize: "0.9rem" }}>Chrome Web Store</a></li>
                 </ul>
               </div>
