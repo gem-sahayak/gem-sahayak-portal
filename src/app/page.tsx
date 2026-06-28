@@ -74,18 +74,18 @@ export default function Home() {
             
             <div style={{ display: "flex", gap: "32px", marginTop: "48px" }}>
               <div>
-                <h3 style={{ fontSize: "2rem", color: "var(--primary-green)", marginBottom: "4px" }}>500+</h3>
-                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>MSMEs Enrolled</p>
+                <h3 style={{ fontSize: "1.4rem", color: "var(--primary-green)", marginBottom: "4px" }}>Tested ✅</h3>
+                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>City Searches</p>
               </div>
               <div style={{ borderRight: "1px solid var(--border-light)" }}></div>
               <div>
-                <h3 style={{ fontSize: "2rem", color: "var(--primary-green)", marginBottom: "4px" }}>10,000+</h3>
-                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>Alerts Dispatched</p>
+                <h3 style={{ fontSize: "1.4rem", color: "var(--primary-green)", marginBottom: "4px" }}>Tested ✅</h3>
+                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>Ministry Searches</p>
               </div>
               <div style={{ borderRight: "1px solid var(--border-light)" }}></div>
               <div>
-                <h3 style={{ fontSize: "2rem", color: "var(--primary-green)", marginBottom: "4px" }}>100%</h3>
-                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>Compliance Kept</p>
+                <h3 style={{ fontSize: "1.4rem", color: "var(--primary-green)", marginBottom: "4px" }}>Tested ✅</h3>
+                <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>Product Searches</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
                   📅 *End Date:* 26-06-2026{"\n"}
                   🔢 *Bid No:* GEM/2026/B/7481811{"\n\n"}
                   🔗 *Link:* https://bidplus.gem.gov.in/showbidDocument/9282985{"\n\n"}
-                  Radhey Radhey! 🙏
+                  Namaste! 🙏
                 </p>
               </div>
               <div className="pulse-soft" style={{ position: "absolute", top: "-15px", right: "-15px", background: "linear-gradient(135deg, #16a34a 0%, #15803d 100%)", color: "white", width: "48px", height: "48px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", boxShadow: "0 4px 14px rgba(22, 163, 74, 0.4)" }}>
