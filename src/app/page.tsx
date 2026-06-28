@@ -204,15 +204,9 @@ export default function Home() {
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
-             <div style={{ width: "260px", height: "540px", background: "#0d2137", borderRadius: "36px", border: "10px solid #1e293b", position: "relative", overflow: "hidden", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}>
-                {/* Mock Mobile Screen */}
-                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "30px", background: "#0f172a" }}></div>
-                <div style={{ padding: "50px 20px 20px 20px", height: "100%", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div style={{ background: "rgba(255,255,255,0.1)", height: "40px", borderRadius: "8px" }}></div>
-                  <div style={{ background: "rgba(22, 163, 74, 0.2)", height: "120px", borderRadius: "12px", border: "1px solid rgba(22, 163, 74, 0.4)" }}></div>
-                  <div style={{ background: "rgba(255,255,255,0.05)", height: "80px", borderRadius: "8px" }}></div>
-                  <div style={{ background: "rgba(255,255,255,0.05)", height: "80px", borderRadius: "8px" }}></div>
-                </div>
+             <div style={{ width: "260px", height: "540px", borderRadius: "36px", border: "10px solid #1e293b", position: "relative", overflow: "hidden", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)", background: "#ffffff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                {/* Mock Mobile Screen replacing with real screenshot */}
+                <img src="/mobile_mockup.png" alt="GeM Sahayak Mobile App" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
              </div>
           </div>
         </div>
