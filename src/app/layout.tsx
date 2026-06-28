@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "GeM Sahayak — Free WhatsApp GeM Bid Tracker & Helper for MSMEs",
@@ -29,25 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* Global Navigation Bar */}
-        <header className="navbar">
-          <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-            <a href="/" className="logo" style={{ display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              <img src="/logo_symbol.png" alt="GeM Sahayak Logo" style={{ width: "32px", height: "32px" }} />
-              GeM Sahayak<span>.co.in</span>
-            </a>
-            
-            <nav className="nav-links">
-              <a href="/" className="nav-link">Home</a>
-              <a href="/#features" className="nav-link">Features</a>
-              <a href="/#demo" className="nav-link">Live Demo</a>
-              <a href="/about" className="nav-link">About Us</a>
-              <a href="/blog" className="nav-link">Latest News</a>
-              <a href="https://chrome.google.com/webstore" target="_blank" className="btn btn-primary" style={{ padding: "8px 16px", fontSize: "0.85rem" }}>
-                📥 Add to Chrome
-              </a>
-            </nav>
-          </div>
-        </header>
+        <Navbar />
 
         {/* Page Content */}
         <main style={{ minHeight: "calc(100vh - 80px - 280px)" }}>
@@ -74,7 +57,7 @@ export default function RootLayout({
                   <li><a href="/#features" className="hover-white" style={{ fontSize: "0.9rem" }}>Core Features</a></li>
                   <li><a href="/#demo" className="hover-white" style={{ fontSize: "0.9rem" }}>Interactive Demo</a></li>
                   <li><a href="/blog" className="hover-white" style={{ fontSize: "0.9rem" }}>Latest News</a></li>
-                  <li><a href="https://chrome.google.com/webstore" target="_blank" className="hover-white" style={{ fontSize: "0.9rem" }}>Chrome Web Store</a></li>
+                  <li><a href="https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf" target="_blank" className="hover-white" style={{ fontSize: "0.9rem" }}>Chrome Web Store</a></li>
                 </ul>
               </div>
 
