@@ -33,7 +33,7 @@ export default function Navbar() {
             alt="GeM Sahayak Logo"
             style={{ width: "32px", height: "32px" }}
           />
-          GeM Sahayak<span>.co.in</span>
+          GeM Sahayak
         </a>
 
         {/* Desktop nav links */}

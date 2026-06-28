@@ -55,7 +55,7 @@ export default function Home() {
         <div className="container grid grid-2" style={{ alignItems: "center" }}>
           <div>
             <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg, rgba(22, 163, 74, 0.1) 0%, rgba(22, 163, 74, 0.2) 100%)", color: "#15803d", padding: "8px 16px", borderRadius: "100px", fontSize: "0.9rem", fontWeight: "800", marginBottom: "20px", border: "1px solid rgba(22, 163, 74, 0.3)" }}>
-              🚀 NEW: GeM Sahayak Chrome Extension is LIVE!
+              🚀 GeM Sahayak Chrome Extension is LIVE now
             </div>
             <h1 className="animate-fade-in-up" style={{ marginBottom: "20px", color: "var(--primary-dark)" }}>
               GeM Portal Bidding <span className="animate-text-shimmer">Bani Aasaan!</span>
