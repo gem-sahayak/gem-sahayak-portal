@@ -1,0 +1,573 @@
+{
+  "manifest": {
+    "name": "AI Review Engine",
+    "version": "1.5.0",
+    "description": "Semantic intent, EEAT, and topical completeness auditor"
+  },
+  "verdict": "WARNING",
+  "errors": [],
+  "warnings": [
+    {
+      "id": "REV-vdkqs4",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"Top Bidding Mistakes MSMEs Make on GeM Portal Tenders\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"Top Bidding Mistakes MSMEs Make on GeM Portal Tenders\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-tmj7e6",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-xefj7b",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-pxznjn",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-7081rd",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"GeM Portal Bids Par EMD Exemption Kaise Claim Karein\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"GeM Portal Bids Par EMD Exemption Kaise Claim Karein\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-tmim89",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-x2fbvv",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"Ultimate Udyam Registration & GeM Portal Exemptions Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"Ultimate Udyam Registration & GeM Portal Exemptions Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-6v9dmu",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-7k0bzm",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"EMD Exemption Rules on GeM Portal â€” Complete Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"EMD Exemption Rules on GeM Portal â€” Complete Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-rfip8n",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-6god2x",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"EMD Refund Process on GeM â€” Timelines & Tracking Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"EMD Refund Process on GeM â€” Timelines & Tracking Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-lnrwws",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-tfguj8",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"EMD vs Security Deposit vs Performance Security â€” Procurement Slabs\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"EMD vs Security Deposit vs Performance Security â€” Procurement Slabs\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-cjmkkj",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-kthfrj",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"EMD Forfeiture Rules & Blacklisting Risks on GeM Portal\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"EMD Forfeiture Rules & Blacklisting Risks on GeM Portal\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-avt1td",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-m9a7ii",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"GeM EMD Rules: Claiming Exemptions & Resolving Refunds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"GeM EMD Rules: Claiming Exemptions & Resolving Refunds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-653e69",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-981gjl",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"How to Use AI to Summarize Government Tender PDFs in 30 Seconds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"How to Use AI to Summarize Government Tender PDFs in 30 Seconds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-t9rt2o",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    },
+    {
+      "id": "REV-dbuxdv",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.94,
+      "category": "Completeness",
+      "message": "Article title/summary promises \"GeM Bid Participation Fees Guide: EMD & PBG Rules Explained\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "recommendation": "Add section covering Refund Timeline, Estimated Processing Time, Documents Required",
+      "reason": "Article title/summary promises \"GeM Bid Participation Fees Guide: EMD & PBG Rules Explained\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required"
+    },
+    {
+      "id": "REV-q4yzvz",
+      "engine": "review-engine",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "score": 88,
+      "confidence": 0.9,
+      "category": "Intent",
+      "message": "Content depth is thin compared to search intent expectation",
+      "recommendation": "Add section covering more details",
+      "reason": "Content depth is thin compared to search intent expectation"
+    }
+  ],
+  "scores": {
+    "overallScore": 92,
+    "categoryScores": {
+      "intent": 91,
+      "authority": 93,
+      "completeness": 93,
+      "readability": 90,
+      "seo": 92,
+      "entities": 95,
+      "internalLinks": 89,
+      "eeat": 91,
+      "freshness": 94
+    },
+    "articleCount": 103,
+    "evaluatedAt": "2026-07-22T13:21:40.209Z"
+  },
+  "recommendations": [
+    {
+      "articleSlug": "gem-bidding-mistakes-msme-tenders",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"Top Bidding Mistakes MSMEs Make on GeM Portal Tenders\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "gem-bidding-mistakes-msme-tenders",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "what-is-emd-in-gem",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "what-is-emd-in-gem",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"GeM Portal Bids Par EMD Exemption Kaise Claim Karein\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"Ultimate Udyam Registration & GeM Portal Exemptions Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-exemption-rules",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"EMD Exemption Rules on GeM Portal â€” Complete Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-exemption-rules",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-refund-process",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"EMD Refund Process on GeM â€” Timelines & Tracking Guide\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-refund-process",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-vs-security-deposit",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"EMD vs Security Deposit vs Performance Security â€” Procurement Slabs\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-vs-security-deposit",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-forfeiture-rules",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"EMD Forfeiture Rules & Blacklisting Risks on GeM Portal\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "emd-forfeiture-rules",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "earnest-money-deposit",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"GeM EMD Rules: Claiming Exemptions & Resolving Refunds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "earnest-money-deposit",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "use-ai-summarize-government-tender-pdfs",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"How to Use AI to Summarize Government Tender PDFs in 30 Seconds\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "use-ai-summarize-government-tender-pdfs",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "gem-bid-participation-fees-guide",
+      "missingTopics": [
+        "Refund Timeline",
+        "Estimated Processing Time",
+        "Documents Required"
+      ],
+      "suggestedHeading": "Add Section: Refund Timeline",
+      "reason": "Article title/summary promises \"GeM Bid Participation Fees Guide: EMD & PBG Rules Explained\" but lacks detailed explanation of Refund Timeline, Estimated Processing Time, Documents Required",
+      "impact": "HIGH",
+      "confidence": 0.94,
+      "priority": "P2"
+    },
+    {
+      "articleSlug": "gem-bid-participation-fees-guide",
+      "missingTopics": [
+        "In-depth examples",
+        "Step-by-step workflow"
+      ],
+      "suggestedHeading": "Expand Article Completeness & Step-by-Step Flow",
+      "reason": "Content depth is thin compared to search intent expectation",
+      "impact": "MEDIUM",
+      "confidence": 0.9,
+      "priority": "P2"
+    }
+  ],
+  "summary": {
+    "overallScore": 92,
+    "totalArticlesEvaluated": 103,
+    "totalRecommendations": 22
+  }
+}

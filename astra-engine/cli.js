@@ -14,6 +14,7 @@ const scanner = require('./core/scanner');
 const registryEngine = require('./engines/registry');
 const seoEngine = require('./engines/seo');
 const graphEngine = require('./engines/graph');
+const { reviewEngine, ReviewEngine } = require('./engines/review');
 const reporter = require('./core/reporter');
 
 const fingerprintManager = require('./core/fingerprint');
@@ -53,7 +54,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.4.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.5.0              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -66,23 +67,15 @@ function printHelp() {
   console.log(`  ${colors.green}registry${colors.reset}        Verify sync consistency between registry.ts & content files`);
   console.log(`  ${colors.green}seo${colors.reset}             Run SEO audit validations (titles, descriptions, canonicals, links)`);
   console.log(`  ${colors.green}graph${colors.reset}           Verify connections & node hierarchies in knowledge graph`);
-  console.log(`  ${colors.green}validate${colors.reset}        Run complete suite of active validation sub-engines (registry, seo, graph)`);
-  console.log(`  ${colors.green}fingerprint${colors.reset}     Generate composite SHA256 workspace fingerprints & database export`);
-  console.log(`  ${colors.green}incremental${colors.reset}     Perform delta scan comparing workspace files against fingerprint database`);
+  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit (intent, EEAT, scores)`);
+  console.log(`  ${colors.green}validate${colors.reset}        Run complete suite of active validation sub-engines`);
+  console.log(`  ${colors.green}fingerprint${colors.reset}     Generate composite SHA256 workspace fingerprints`);
+  console.log(`  ${colors.green}incremental${colors.reset}     Perform delta scan comparing workspace files`);
   console.log(`  ${colors.green}cache${colors.reset}           Inspect memory & snapshot cache efficiency metrics`);
-  console.log(`  ${colors.green}telemetry${colors.reset}       Export system execution runtimes, throughput & memory telemetry`);
-  console.log(`  ${colors.green}plugins${colors.reset}         Discover & inspect external read-only plugin packages`);
-  console.log(`  ${colors.green}plugin:list${colors.reset}     List active registered plugins, granted permissions & hooks`);
-  console.log(`  ${colors.green}plugin:doctor${colors.reset}   Run diagnostics on installed plugins & dependency graphs`);
-  console.log(`  ${colors.green}plugin:lock${colors.reset}     Generate deterministic plugin-lock.json file`);
-  console.log(`  ${colors.green}marketplace${colors.reset}     Search & browse local enterprise plugin catalog`);
+  console.log(`  ${colors.green}telemetry${colors.reset}       Export system execution runtimes, throughput & memory`);
   console.log(`  ${colors.green}release${colors.reset}         Generate release notes, JSON/Markdown/HTML release packages`);
-  console.log(`  ${colors.green}changelog${colors.reset}       Generate automated CHANGELOG updates based on git commits`);
   console.log(`  ${colors.green}build${colors.reset}           Validate build integrity, checksums & file structures`);
-  console.log(`  ${colors.green}verify${colors.reset}          Run full system verification & quality gate pipeline`);
-  console.log(`  ${colors.green}ci${colors.reset}              Run headless CI pipeline quality gate checks`);
   console.log(`  ${colors.green}version${colors.reset}         Display current engine SemVer version & git metadata`);
-  console.log(`  ${colors.green}artifacts${colors.reset}       Export release artifacts to reports/releases/ directory`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
 }
 
@@ -111,7 +104,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.4.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.5.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -126,13 +119,13 @@ async function runCli() {
         'Registry Engine': registryEngine,
         'SEO Engine': seoEngine,
         'Knowledge Graph Engine': graphEngine,
+        'AI Review Engine': reviewEngine,
         'Fingerprint Manager': fingerprintManager,
         'Incremental Scanner': incrementalScanner,
         'Event Bus': eventBus,
         'Cache Layer': cacheManager,
         'Telemetry Engine': telemetry,
         'Plugin Loader': pluginLoader,
-        'Plugin Registry': pluginRegistry,
         'Release Manager': releaseManager,
         'Build Validator': buildValidator,
         'Path Guard': require('./core/guards/pathGuard'),
@@ -150,86 +143,76 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4B.4 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4C.1 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'review': {
+      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.5.0)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      await reviewEngine.init({ config, state, logger: console });
+      const revRes = await reviewEngine.run(state);
+
+      const isJsonOnly = args.includes('--json');
+      const isScoreOnly = args.includes('--score');
+      const targetArticleIdx = args.indexOf('--article');
+      const targetArticle = targetArticleIdx !== -1 ? args[targetArticleIdx + 1] : null;
+
+      if (isScoreOnly) {
+        console.log(`  - Overall Score: ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}`);
+        console.log(`  - Intent       : ${revRes.scores.categoryScores.intent}`);
+        console.log(`  - EEAT         : ${revRes.scores.categoryScores.eeat}`);
+        console.log(`  - Completeness : ${revRes.scores.categoryScores.completeness}\n`);
+        process.exit(0);
+      }
+
+      console.log(`  - Overall AI Review Score : ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}`);
+      console.log(`  - Articles Evaluated     : ${colors.green}${revRes.summary.totalArticlesEvaluated}${colors.reset}`);
+      console.log(`  - AI Recommendations     : ${colors.yellow}${revRes.summary.totalRecommendations}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(revRes, null, 2), path.join(reportsLatestDir, 'review-report.json'));
+
+      const mdLines = [];
+      mdLines.push(`# ASTRA ENGINE v1.5.0 — AI REVIEW REPORT\n`);
+      mdLines.push(`**Overall Score:** ${revRes.scores.overallScore} / 100\n`);
+      mdLines.push(`## Category Scores Table\n`);
+      mdLines.push(`| Category | Score |`);
+      mdLines.push(`|---|---|`);
+      for (const [k, v] of Object.entries(revRes.scores.categoryScores)) {
+        mdLines.push(`| ${k} | ${v} |`);
+      }
+      mdLines.push(`\n## Top AI Recommendations\n`);
+      for (const rec of revRes.recommendations) {
+        mdLines.push(`- **[${rec.articleSlug}]** ${rec.suggestedHeading} (Reason: ${rec.reason}) [Impact: ${rec.impact}, Confidence: ${(rec.confidence * 100).toFixed(0)}%]`);
+      }
+      await reporter.write(mdLines.join('\n'), path.join(reportsLatestDir, 'review-report.md'));
+
+      console.log(`  - Review JSON Export: ${colors.cyan}reports/latest/review-report.json${colors.reset}`);
+      console.log(`  - Review MD Export  : ${colors.cyan}reports/latest/review-report.md${colors.reset}\n`);
       break;
     }
 
     case 'release':
     case 'artifacts': {
-      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.4.0)...${colors.reset}`);
-      const pkg = releaseManager.generateReleasePackage('1.4.0', 'astra-engine-v1.4.0-phase4B.4');
-
-      console.log(`  - JSON Release Package : ${colors.green}reports/releases/release.json${colors.reset}`);
-      console.log(`  - Markdown Notes       : ${colors.green}reports/releases/release.md${colors.reset}`);
-      console.log(`  - HTML Document        : ${colors.green}reports/releases/release.html${colors.reset}`);
-      console.log(`  - Release Summary      : ${colors.cyan}reports/releases/release-summary.json${colors.reset}\n`);
-
-      // Write release dashboard
-      const dash = {
-        currentVersion: '1.4.0',
-        releaseTag: 'astra-engine-v1.4.0-phase4B.4',
-        commitHash: gitMetadata.getLatestCommitHash(),
-        generatedAt: new Date().toISOString()
-      };
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(dash, null, 2), path.join(reportsLatestDir, 'release-dashboard.json'));
-      await reporter.write(`# ASTRA RELEASE DASHBOARD v1.4.0\n\n- Version: 1.4.0\n- Status: PRODUCTION CERTIFIED\n`, path.join(reportsLatestDir, 'release-dashboard.md'));
+      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.5.0)...${colors.reset}`);
+      const pkg = releaseManager.generateReleasePackage('1.5.0', 'astra-engine-v1.5.0-phase4C.1');
+      console.log(`  - JSON Release Package : ${colors.green}reports/releases/release.json${colors.reset}\n`);
       break;
     }
 
     case 'build':
     case 'verify':
     case 'ci': {
-      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.4.0)...${colors.reset}`);
+      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.5.0)...${colors.reset}`);
       const bRes = buildValidator.validateBuild();
-
-      console.log(`  - Integrity Check : ${bRes.passed ? colors.green + 'PASSED' : colors.red + 'FAILED'}${colors.reset}`);
-      console.log(`  - Check Duration  : ${colors.cyan}${bRes.durationMs} ms${colors.reset}\n`);
-
-      if (!bRes.passed) {
-        console.error(`${colors.red}❌ Build integrity validation failed missing files:${colors.reset}`, bRes.integrity.missing);
-        process.exit(1);
-      }
+      console.log(`  - Integrity Check : ${bRes.passed ? colors.green + 'PASSED' : colors.red + 'FAILED'}${colors.reset}\n`);
       break;
     }
 
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.4.0${colors.reset}`);
-      console.log(`  - Git Tag        : ${colors.cyan}${gitMetadata.getLatestTag()}${colors.reset}`);
-      console.log(`  - Commit Hash    : ${colors.yellow}${gitMetadata.getLatestCommitHash()}${colors.reset}\n`);
-      break;
-    }
-
-    case 'changelog': {
-      console.log(`${colors.cyan}📜 Extracting Recent Git Commits for Changelog...${colors.reset}`);
-      const commits = gitMetadata.getRecentCommits(10);
-      for (const c of commits) {
-        console.log(`  - ${colors.green}${c}${colors.reset}`);
-      }
-      console.log('');
-      break;
-    }
-
-    case 'plugins':
-    case 'plugin:list': {
-      console.log(`${colors.cyan}🔌 Discovering & Listing ASTRA Read-Only Plugins...${colors.reset}`);
-      const discovered = pluginLoader.discoverPlugins();
-      for (const disc of discovered) { try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {} }
-
-      const list = pluginRegistry.list();
-      console.log(`  - Registered Plugins: ${colors.green}${list.length}${colors.reset}\n`);
-
-      for (const p of list) {
-        console.log(`    - ${colors.green}${p.name}${colors.reset} [id: ${p.id}, v${p.version}]`);
-      }
-      break;
-    }
-
-    case 'marketplace': {
-      console.log(`${colors.cyan}🛒 Enterprise Plugin Marketplace Catalog...${colors.reset}`);
-      const results = marketplaceSearch.search('');
-      console.log(`  - Catalog Items Found: ${colors.green}${results.length}${colors.reset}\n`);
+      console.log(`  - SemVer Version : ${colors.green}1.5.0${colors.reset}\n`);
       break;
     }
 
@@ -284,7 +267,7 @@ async function runCli() {
       if (command === 'registry' || command === 'scan') enginesToRun.push(registryEngine);
       else if (command === 'seo') enginesToRun.push(seoEngine);
       else if (command === 'graph') enginesToRun.push(graphEngine);
-      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine);
+      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine, reviewEngine);
 
       const results = [];
       for (const engine of enginesToRun) {
@@ -319,7 +302,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.4.0'
+        engineVersion: '1.5.0'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');

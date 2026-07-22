@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstraAIReviewSchema",
+  "type": "object",
+  "properties": {
+    "engineVersion": { "type": "string" },
+    "evaluatedAt": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "overallScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "totalArticlesEvaluated": { "type": "integer" },
+        "totalRecommendations": { "type": "integer" }
+      },
+      "required": ["overallScore", "totalArticlesEvaluated", "totalRecommendations"]
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "overallScore": { "type": "number" },
+        "categoryScores": {
+          "type": "object",
+          "properties": {
+            "intent": { "type": "number" },
+            "authority": { "type": "number" },
+            "completeness": { "type": "number" },
+            "readability": { "type": "number" },
+            "seo": { "type": "number" },
+            "entities": { "type": "number" },
+            "internalLinks": { "type": "number" },
+            "eeat": { "type": "number" },
+            "freshness": { "type": "number" }
+          }
+        }
+      }
+    }
+  },
+  "required": ["engineVersion", "evaluatedAt", "summary", "scores"]
+}
