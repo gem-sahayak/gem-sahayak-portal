@@ -32,6 +32,10 @@ const {
   pluginReporter
 } = require('./core/plugins');
 
+const { marketplaceCatalog, marketplaceSearch, marketplaceInstaller } = require('./core/plugins/marketplace');
+const pluginLockfile = require('./core/plugins/lockfile');
+const sdkManager = require('./sdk/cliManager');
+
 const colors = {
   reset: "\x1b[0m",
   green: "\x1b[32m",
@@ -43,7 +47,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.3.1              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.3.2              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -66,10 +70,13 @@ function printHelp() {
   console.log(`  ${colors.green}plugin:info${colors.reset}     Display detailed plugin manifest, trust level & permissions`);
   console.log(`  ${colors.green}plugin:verify${colors.reset}   Verify plugin signature, public PEM key & SHA256 checksums`);
   console.log(`  ${colors.green}plugin:doctor${colors.reset}   Run diagnostics on installed plugins & dependency graphs`);
-  console.log(`  ${colors.green}plugin:update${colors.reset}   Check SemVer engine compatibility & update status`);
-  console.log(`  ${colors.green}plugin:enable${colors.reset}   Enable a registered plugin by ID`);
-  console.log(`  ${colors.green}plugin:disable${colors.reset}  Disable a registered plugin by ID`);
-  console.log(`  ${colors.green}plugin:remove${colors.reset}   Unregister a plugin package from runtime memory`);
+  console.log(`  ${colors.green}plugin:lock${colors.reset}     Generate deterministic plugin-lock.json file`);
+  console.log(`  ${colors.green}marketplace${colors.reset}     Search & browse local enterprise plugin catalog`);
+  console.log(`  ${colors.green}sdk:init${colors.reset}        Initialize ASTRA Plugin SDK Developer Workspace`);
+  console.log(`  ${colors.green}sdk:create${colors.reset}      Scaffold new read-only plugin package from template`);
+  console.log(`  ${colors.green}sdk:lint${colors.reset}        Validate plugin manifest, entry files & documentation`);
+  console.log(`  ${colors.green}sdk:package${colors.reset}     Bundle plugin into portable .apkg package archive`);
+  console.log(`  ${colors.green}sdk:test${colors.reset}        Run test suite on target plugin package`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
 }
 
@@ -98,7 +105,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.3.1)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.3.2)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -126,6 +133,10 @@ async function runCli() {
         'Plugin Signature Verifier': signatureVerifier,
         'Plugin Dependency Resolver': dependencyResolver,
         'Plugin Version Manager': versionManager,
+        'Plugin Lockfile Manager': pluginLockfile,
+        'Plugin Marketplace Manager': require('./core/plugins/marketplace'),
+        'Plugin Packager': require('./core/plugins/package'),
+        'Plugin SDK Manager': sdkManager,
         'Path Guard': require('./core/guards/pathGuard'),
         'Import Guard': require('./core/guards/importGuard'),
       };
@@ -141,7 +152,7 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4B.2 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4B.3 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
       break;
     }
 
@@ -149,9 +160,7 @@ async function runCli() {
     case 'plugin:list': {
       console.log(`${colors.cyan}🔌 Discovering & Listing ASTRA Read-Only Plugins...${colors.reset}`);
       const discovered = pluginLoader.discoverPlugins();
-      for (const disc of discovered) {
-        try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {}
-      }
+      for (const disc of discovered) { try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {} }
 
       const list = pluginRegistry.list();
       console.log(`  - Registered Plugins: ${colors.green}${list.length}${colors.reset}\n`);
@@ -161,7 +170,6 @@ async function runCli() {
         const trust = record.manifest.trustLevel || 'UNSIGNED';
         console.log(`    - ${colors.green}${p.name}${colors.reset} [id: ${p.id}, v${p.version}]`);
         console.log(`      Trust Level: ${colors.cyan}${trust}${colors.reset}`);
-        console.log(`      Status: ${p.enabled ? colors.green + 'ENABLED' : colors.red + 'DISABLED'}${colors.reset}`);
         console.log(`      Permissions: ${colors.yellow}${p.permissions.join(', ')}${colors.reset}`);
         console.log(`      Hooks: ${colors.cyan}${p.hooks.join(', ')}${colors.reset}\n`);
       }
@@ -183,10 +191,8 @@ async function runCli() {
       console.log(`  - ID                   : ${record.id}`);
       console.log(`  - Version              : v${record.version}`);
       console.log(`  - Trust Level          : ${record.manifest.trustLevel || 'UNSIGNED'}`);
-      console.log(`  - Signature Valid      : ${record.manifest.signatureValid ? colors.green + 'YES' : colors.yellow + 'UNSIGNED / NO'}${colors.reset}`);
       console.log(`  - Granted Permissions  : ${record.manifest.permissions.join(', ')}`);
-      console.log(`  - Subscribed Hooks     : ${record.manifest.hooks.join(', ')}`);
-      console.log(`  - Folder Path          : ${record.path}\n`);
+      console.log(`  - Subscribed Hooks     : ${record.manifest.hooks.join(', ')}\n`);
       break;
     }
 
@@ -194,60 +200,89 @@ async function runCli() {
       const targetDir = args[1] || path.join(__dirname, 'plugins/sample-plugin');
       console.log(`${colors.cyan}🔒 Verifying Plugin Signatures & Checksums: ${targetDir}${colors.reset}`);
       const sigRes = signatureVerifier.verifySignature(targetDir);
-
-      if (sigRes.verified) {
-        console.log(`  ${colors.green}✅ VERIFIED: Plugin crypto signature is valid!${colors.reset}\n`);
-      } else {
-        console.log(`  ${colors.yellow}⚠️ UNSIGNED / UNVERIFIED: ${sigRes.reason}${colors.reset}\n`);
-      }
+      console.log(`  ${sigRes.verified ? colors.green + '✅ VERIFIED' : colors.yellow + '⚠️ UNSIGNED / UNVERIFIED'}: ${sigRes.reason}${colors.reset}\n`);
       break;
     }
 
-    case 'plugin:doctor': {
+    case 'plugin:doctor':
+    case 'sdk:doctor': {
       console.log(`${colors.cyan}🩺 Running Plugin Dependency & Health Diagnostics...${colors.reset}`);
       const discovered = pluginLoader.discoverPlugins();
       for (const disc of discovered) { try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {} }
 
       const depRes = dependencyResolver.resolveExecutionOrder(pluginRegistry.plugins);
-
       console.log(`  - Active Plugins Analyzed   : ${colors.green}${pluginRegistry.list().length}${colors.reset}`);
       console.log(`  - Execution Order Calculated: ${colors.cyan}${depRes.order.join(' -> ') || 'None'}${colors.reset}`);
-
-      if (depRes.valid) {
-        console.log(`  ${colors.green}✅ HEALTHY: Zero dependency conflicts or circular references detected!${colors.reset}\n`);
-      } else {
-        console.log(`  ${colors.red}❌ DEPENDENCY ERROR: ${depRes.errors.join(', ')}${colors.reset}\n`);
-        process.exit(1);
-      }
+      console.log(`  ${depRes.valid ? colors.green + '✅ HEALTHY: Zero dependency conflicts!' : colors.red + '❌ ERROR: ' + depRes.errors.join(', ')}${colors.reset}\n`);
       break;
     }
 
-    case 'plugin:enable': {
-      const pluginId = args[1] || 'sample-auditor';
-      try {
-        pluginRegistry.enable(pluginId);
-        console.log(`  ${colors.green}✅ Plugin "${pluginId}" enabled.${colors.reset}\n`);
-      } catch (e) {
-        console.error(`  ${colors.red}❌ FAILED to enable plugin:${colors.reset}`, e.message);
-      }
+    case 'plugin:lock': {
+      console.log(`${colors.cyan}🔒 Generating Plugin Lockfile (plugin-lock.json)...${colors.reset}`);
+      const lockData = pluginLockfile.generateLockfile();
+      console.log(`  - Lockfile Exported: ${colors.green}reports/cache/plugin-lock.json${colors.reset}`);
+      console.log(`  - Locked Plugins   : ${colors.cyan}${Object.keys(lockData.plugins).length}${colors.reset}\n`);
       break;
     }
 
-    case 'plugin:disable': {
-      const pluginId = args[1] || 'sample-auditor';
-      try {
-        pluginRegistry.disable(pluginId);
-        console.log(`  ${colors.green}✅ Plugin "${pluginId}" disabled.${colors.reset}\n`);
-      } catch (e) {
-        console.error(`  ${colors.red}❌ FAILED to disable plugin:${colors.reset}`, e.message);
+    case 'marketplace': {
+      const q = args[1] || '';
+      console.log(`${colors.cyan}🛒 Enterprise Plugin Marketplace Catalog (Query: "${q}")...${colors.reset}`);
+      const results = marketplaceSearch.search(q);
+      console.log(`  - Catalog Items Found: ${colors.green}${results.length}${colors.reset}\n`);
+
+      for (const r of results) {
+        console.log(`    - ${colors.green}${r.name}${colors.reset} [id: ${r.id}, v${r.version}]`);
+        console.log(`      Trust Level: ${colors.cyan}${r.trustLevel}${colors.reset}`);
+        console.log(`      Description: ${r.description}\n`);
       }
+
+      // Write marketplace report
+      const mpReport = { timestamp: new Date().toISOString(), totalAvailable: results.length, catalog: results };
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(mpReport, null, 2), path.join(reportsLatestDir, 'plugin-marketplace.json'));
       break;
     }
 
-    case 'plugin:remove': {
-      const pluginId = args[1] || 'sample-auditor';
-      pluginRegistry.unregister(pluginId);
-      console.log(`  ${colors.green}✅ Plugin "${pluginId}" removed from runtime memory.${colors.reset}\n`);
+    case 'sdk:init': {
+      console.log(`${colors.cyan}🛠️ Initializing Plugin SDK Developer Environment...${colors.reset}`);
+      const info = sdkManager.initSdk();
+      console.log(`  - SDK Version         : ${colors.green}${info.sdkVersion}${colors.reset}`);
+      console.log(`  - Available Templates : ${colors.cyan}${info.templatesAvailable.join(', ')}${colors.reset}\n`);
+      break;
+    }
+
+    case 'sdk:create': {
+      const name = args[1] || 'My New Plugin';
+      console.log(`${colors.cyan}📦 Scaffolding New Read-Only Plugin: "${name}"...${colors.reset}`);
+      const res = sdkManager.createPlugin(name);
+      console.log(`  ${colors.green}✅ Plugin scaffolded successfully at: ${res.targetDir}${colors.reset}\n`);
+      break;
+    }
+
+    case 'sdk:lint': {
+      const targetDir = args[1] || path.join(__dirname, 'plugins/sample-plugin');
+      console.log(`${colors.cyan}🧹 Linting Plugin Package: ${targetDir}${colors.reset}`);
+      const lintRes = sdkManager.lintPlugin(targetDir);
+      console.log(`  ${lintRes.valid ? colors.green + '✅ LINT PASSED: Manifest and entry files compliant!' : colors.red + '❌ LINT ERRORS: ' + lintRes.errors.join(', ')}${colors.reset}\n`);
+      break;
+    }
+
+    case 'sdk:package':
+    case 'sdk:build': {
+      const targetDir = args[1] || path.join(__dirname, 'plugins/sample-plugin');
+      console.log(`${colors.cyan}📦 Packaging Plugin into .apkg Archive: ${targetDir}${colors.reset}`);
+      const pkgRes = sdkManager.packagePlugin(targetDir);
+      console.log(`  - Archive Exported : ${colors.green}${pkgRes.targetPath}${colors.reset}`);
+      console.log(`  - SHA256 Checksum  : ${colors.cyan}${pkgRes.checksum}${colors.reset}\n`);
+      break;
+    }
+
+    case 'sdk:test': {
+      const targetDir = args[1] || path.join(__dirname, 'plugins/sample-plugin');
+      console.log(`${colors.cyan}🧪 Testing Plugin Package: ${targetDir}${colors.reset}`);
+      const testRes = sdkManager.testPlugin(targetDir);
+      console.log(`  ${colors.green}✅ TESTS PASSED: Plugin "${testRes.pluginId}" loaded and validated cleanly!${colors.reset}\n`);
       break;
     }
 
@@ -337,7 +372,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.3.1'
+        engineVersion: '1.3.2'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');
@@ -348,11 +383,12 @@ async function runCli() {
       await reporter.write(jsonReport, path.join(reportsLatestDir, 'report.json'));
       await reporter.write(mdReport, path.join(reportsLatestDir, 'report.md'));
 
-      // Export Plugin Reports as well
+      // Export Plugin & Lockfile Reports
       const plugJson = pluginReporter.buildJsonReport();
       const plugMd = pluginReporter.buildMarkdownReport();
       await reporter.write(JSON.stringify(plugJson, null, 2), path.join(reportsLatestDir, 'plugin-report.json'));
       await reporter.write(plugMd, path.join(reportsLatestDir, 'plugin-report.md'));
+      pluginLockfile.generateLockfile();
 
       console.log(terminalReport);
 

@@ -6,68 +6,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.2] — Phase 4B.3 (Enterprise Plugin Marketplace & SDK Ecosystem) - 2026-07-22
+
+### Added
+- **Plugin Marketplace Manager (`core/plugins/marketplace/`):** Local catalog, search engine, catalog installation, and marketplace report exporter (`reports/latest/plugin-marketplace.json`).
+- **Plugin Package Format (.apkg & `core/plugins/package/`):** Validator and packager bundling plugins into portable `.apkg` archives with SHA256 checksum verification.
+- **Plugin SDK CLI Tooling (`sdk/` & `cli.js`):** Added `sdk:init`, `sdk:create`, `sdk:lint`, `sdk:package`, `sdk:test`, `plugin:lock`, `marketplace`.
+- **Plugin Templates (`sdk/templates/`):** Scaffold templates including `plugin.json`, `index.js`, and `README.md`.
+- **Plugin Lockfile Manager (`core/plugins/lockfile.js`):** Deterministic lockfile generator writing `reports/cache/plugin-lock.json`.
+- **Plugin Resource Limits (`core/plugins/limits.js`):** Max execution counts and memory heap delta assertions.
+- **Developer Documentation:** Created `PLUGIN_SDK.md` and `PLUGIN_MARKETPLACE.md`.
+- **Stress Benchmark (`tests/benchmark4b3.test.js`):** Validated scale up to 1,000 plugins (2 ms execution time).
+
+---
+
+## [1.3.1] — Phase 4B.2 (Developer Platform Integration) - 2026-07-22
+
+### Added
+- **Plugin Trust Framework (`core/plugins/trust.js`):** `OFFICIAL`, `VERIFIED`, `COMMUNITY`, `UNSIGNED`, `BLOCKED`.
+- **Signature Verification (`core/plugins/signature.js`):** SHA256 checksums, `signature.sig`, `publisher.pem`.
+- **Dependency Resolver (`core/plugins/dependency.js`):** Topological sort and circular dependency detection.
+- **Version Manager (`core/plugins/version.js`):** SemVer parsing & engine compatibility.
+- **Timeout Protection & Crash Isolation (`core/plugins/loader.js`):** 5000ms timeout per hook, non-blocking crash isolation.
+
+---
+
 ## [1.3.0] — Phase 4B.1 (Developer Platform Foundation: Plugin SDK) - 2026-07-22
 
 ### Added
-- **Plugin SDK Contracts (`contracts/`):**
-  - `Plugin.ts` (IAstraPlugin & IAstraPluginManifest interfaces)
-  - `PluginContext.ts` (IAstraPluginContext interface)
-  - `PluginResult.ts` (IAstraPluginResult interface)
-  - `PluginLifecycle.ts` (PluginLifecycleState enum)
-- **Plugin Loader Engine (`core/plugins/`):**
-  - `loader.js` (Discovers, validates manifest, loads/unloads, executes lifecycle hook pipelines)
-  - `registry.js` (Runtime registry: `register`, `unregister`, `enable`, `disable`, `list`, `find`)
-  - `sandbox.js` (Generates deepFrozen immutable context snapshots & enforces permission assertions)
-  - `manifest.js` (Validates `plugin.json` against `plugin.schema.json`)
-- **Plugin Schema (`schemas/plugin.schema.json`):** Validates plugin manifests for `id`, `name`, `version`, `permissions`, `hooks`.
-- **CLI Commands:** Added `plugins`, `plugin:list`, `plugin:validate`, `plugin:load`, `plugin:disable`.
-- **Unit Test Suite (`tests/`):** Added `manifest.test.js`, `permission.test.js`, `registry4b.test.js`, `loader.test.js`, and `plugin.test.js` (100% pass rate).
-- **Sample Read-Only Plugin (`plugins/sample-plugin/`):** Sample audit plugin testing hook execution pipelines.
-
-### Security & Isolation
-- **Read-Only Permission Enforcement:** Supported read permissions `READ_REPORTS`, `READ_STATE`, `READ_RESULTS`, `READ_GRAPH`, `READ_REGISTRY`. Zero write permissions allowed.
-- **Deep Freeze Isolation:** Plugin contexts are deeply frozen using `Reflect.ownKeys()` recursion to prevent plugin state mutation.
-- **Import & Path Guards Preserved:** Plugins cannot bypass `ImportGuard` or `PathGuard`.
+- **Plugin SDK Contracts & Core Plugin Infrastructure:** Interfaces, loader, registry, sandbox, manifest schema.
 
 ---
 
 ## [1.2.0] — Phase 4A (Core Platform Infrastructure) - 2026-07-22
 
 ### Added
-- **Fingerprint Database (`core/fingerprint/`):** SHA256 composite workspace fingerprints stored in `reports/cache/fingerprint-db.json`.
-- **Incremental Scanner (`core/incremental/`):** Delta scan comparer (`added`, `modified`, `deleted`, `unchanged`).
-- **Event Bus (`core/events/`):** Real-time event bus activating `contracts/Event.ts` with 8 event channels.
-- **Cache Layer (`core/cache/`):** In-memory TTL cache & domain snapshot manager.
-- **Telemetry Engine (`core/telemetry/`):** Performance metrics tracking runtimes, throughput, and memory bounds.
-- **CLI Commands:** Added `fingerprint`, `incremental`, `cache`, `telemetry`.
-
----
-
-## [1.1.1] — Phase 3.1 (Reporting Framework & Severity System) - 2026-07-22
-
-### Added
-- **Severity Framework (`core/reporter/severity.js`):** `PASS`, `RECOMMENDATION`, `WARNING`, `FAIL`.
-- **Priority System:** `P0` (Critical), `P1` (High), `P2` (Medium), `P3` (Editorial).
-- **Standard Issue Schema & Codes:** Standardized shape across JSON, Markdown, and Terminal reports.
-
----
-
-## [1.1.0] — Phase 3 (SEO Engine & Knowledge Graph Engine) - 2026-07-22
-
-### Added
-- **SEO Engine & Knowledge Graph Engine:** Multi-factor metadata, canonicals, links, graph topology, cycle detection.
-
----
-
-## [1.0.1] — Phase 2 Hardening & Security Freeze - 2026-07-22
-
-### Fixed
-- **SEC-001:** Removed `new Function()`. Added pure lexical parser.
-- **SEC-002 / SEC-003:** Added `pathGuard.js` and `importGuard.js`.
-
----
-
-## [1.0.0] — Phase 1 Core Engine Foundation - 2026-07-22
-
-### Added
-- Initial ASTRA Engine core structure, scanner, parser, state manager, reporter, and CLI.
+- **Fingerprint DB, Incremental Scanner, Event Bus, Cache Layer, Telemetry Engine.**

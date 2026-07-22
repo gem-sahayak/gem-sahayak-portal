@@ -1,0 +1,10 @@
+{
+  "id": "my-audit-plugin",
+  "name": "Custom Audit Plugin",
+  "version": "1.0.0",
+  "author": "Plugin Developer",
+  "engineVersion": "1.3.2",
+  "description": "Template plugin inspecting ASTRA repository state snapshots",
+  "permissions": ["READ_STATE"],
+  "hooks": ["afterScan"]
+}

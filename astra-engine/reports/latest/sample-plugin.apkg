@@ -1,0 +1,25 @@
+{
+  "formatVersion": "1.0.0",
+  "packagedAt": "2026-07-22T13:08:29.898Z",
+  "manifest": {
+    "id": "sample-auditor",
+    "name": "Sample Audit Plugin",
+    "version": "1.0.0",
+    "author": "Astra Plugin Team",
+    "engineVersion": "1.3.0",
+    "description": "Sample read-only plugin inspecting ASTRA state snapshots",
+    "permissions": [
+      "READ_STATE",
+      "READ_REPORTS"
+    ],
+    "hooks": [
+      "afterScan",
+      "afterReport"
+    ]
+  },
+  "files": {
+    "index.js": "'use strict';\n\nclass SampleAuditPlugin {\n  async executeHook(hookName, context) {\n    if (hookName === 'afterScan') {\n      return { status: 'OK', inspectedState: !!context.stateSnapshot };\n    }\n    if (hookName === 'afterReport') {\n      return { status: 'OK', inspectedReports: !!context.reportsSnapshot };\n    }\n    return { status: 'SKIPPED' };\n  }\n}\n\nmodule.exports = SampleAuditPlugin;\n",
+    "README.md": "# Sample Audit Plugin\n\nSample read-only audit plugin for ASTRA Engine.\n\n## Usage\nInspects ASTRA state and reports snapshots safely.\n"
+  },
+  "checksum": "84e606f7823882eb4e9388baffc1b1989fd433b248c43294a51d5b4f7eaaf9b1"
+}
