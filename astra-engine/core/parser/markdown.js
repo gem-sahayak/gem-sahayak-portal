@@ -1,4 +1,7 @@
+'use strict';
+
 const fs = require('fs');
+const path = require('path');
 
 class MarkdownParser {
   /**
@@ -7,7 +10,8 @@ class MarkdownParser {
    */
   parse(filePath) {
     try {
-      const content = fs.readFileSync(filePath, 'utf8');
+      let content = fs.readFileSync(filePath, 'utf8');
+      content = content.replace(/^\uFEFF/, '');
       
       const frontmatterRegex = /^---\r?\n([\s\S]*?)\r?\n---/;
       const match = content.match(frontmatterRegex);
@@ -59,7 +63,6 @@ class MarkdownParser {
         }
 
         // Map standard fields from frontmatter
-        const path = require('path');
         result.title = result.frontmatter.title || '';
         result.description = result.frontmatter.summary || result.frontmatter.description || '';
         result.slug = result.frontmatter.slug || path.basename(filePath, '.md');
@@ -85,7 +88,6 @@ class MarkdownParser {
       }
 
       // Ensure slug always falls back to the file base name if empty
-      const path = require('path');
       if (!result.slug) {
         result.slug = path.basename(filePath, '.md');
       }

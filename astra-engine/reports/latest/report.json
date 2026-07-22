@@ -1,11 +1,11 @@
 {
   "summary": {
-    "timestamp": "2026-07-22T09:18:32.703Z",
+    "timestamp": "2026-07-22T10:24:25.593Z",
     "overallVerdict": "WARNING",
     "totalEnginesRun": 1,
     "totalErrors": 0,
     "totalWarnings": 6,
-    "executionTimeMs": 254
+    "executionTimeMs": 1126
   },
   "results": [
     {

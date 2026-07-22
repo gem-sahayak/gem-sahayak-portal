@@ -1,5 +1,8 @@
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
+const { validateReportPath, ReporterPathViolationError } = require('../guards/pathGuard');
 
 class ReportGenerator {
   /**
@@ -102,17 +105,26 @@ class ReportGenerator {
   }
 
   /**
-   * Helper utility to write report logs to target folder.
+   * Write report to a target path.
+   * SEC-002: Path guard enforces writes ONLY inside astra-engine/reports/.
+   * Throws ReporterPathViolationError for any path outside.
    */
   async write(content, outputPath) {
+    // SEC-002: Validate path before any write operation
+    const resolvedPath = validateReportPath(outputPath);
+
     try {
-      const dir = path.dirname(outputPath);
+      const dir = path.dirname(resolvedPath);
       if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
       }
-      fs.writeFileSync(outputPath, content, 'utf8');
+      fs.writeFileSync(resolvedPath, content, 'utf8');
     } catch (e) {
-      console.error(`[Reporter Error] Failed to write report file ${outputPath}: ${e.message}`);
+      // Re-throw path violation errors without wrapping
+      if (e instanceof ReporterPathViolationError) {
+        throw e;
+      }
+      console.error(`[Reporter Error] Failed to write report file ${resolvedPath}: ${e.message}`);
     }
   }
 }

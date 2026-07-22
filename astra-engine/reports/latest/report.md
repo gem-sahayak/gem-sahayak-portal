@@ -1,6 +1,6 @@
 # ASTRA ENGINE Validation Audit Report
 
-**Execution Timestamp:** Wed Jul 22 2026 14:48:32 GMT+0530 (India Standard Time)
+**Execution Timestamp:** Wed Jul 22 2026 15:54:25 GMT+0530 (India Standard Time)
 **Verdict:** ⚠️ WARNING
 
 ### Audit Summary
@@ -9,7 +9,7 @@
 | Engines Executed | 1 |
 | Total Errors | 0 |
 | Total Warnings | 6 |
-| Execution Time | 254 ms |
+| Execution Time | 1126 ms |
 
 ### Detailed Results
 #### Engine: `registry-validation-engine` (WARNING)

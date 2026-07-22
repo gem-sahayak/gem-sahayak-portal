@@ -1,3 +1,5 @@
+'use strict';
+
 /**
   * Helper to recursively deep freeze an object to guarantee immutability.
   */
