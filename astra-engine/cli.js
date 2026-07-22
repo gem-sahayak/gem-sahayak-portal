@@ -2,15 +2,20 @@
 'use strict';
 
 const path = require('path');
+const fs = require('fs');
 
 // SEC-003: Activate production import guard BEFORE any other local requires
-const { activateGuard } = require('./core/guards/importGuard');
+const { activateGuard, isGuardActive } = require('./core/guards/importGuard');
 activateGuard();
 
 const configLoader = require('./core/config');
 const stateManager = require('./core/state');
+const scanner = require('./core/scanner');
+const registryEngine = require('./engines/registry');
+const seoEngine = require('./engines/seo');
+const graphEngine = require('./engines/graph');
+const reporter = require('./core/reporter');
 
-// Colors helper for clean terminal outputs
 const colors = {
   reset: "\x1b[0m",
   green: "\x1b[32m",
@@ -22,7 +27,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.0.1              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.1.0              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -32,11 +37,12 @@ function printHelp() {
   console.log(`${colors.bright}Commands:${colors.reset}`);
   console.log(`  ${colors.green}doctor${colors.reset}        Verify system environment, configurations & workspace schemas`);
   console.log(`  ${colors.green}scan${colors.reset}          Run default integrity & validation check sequences`);
-  console.log(`  ${colors.green}integrity${colors.reset}     Validate base project file structures & imports sanity`);
-  console.log(`  ${colors.green}seo${colors.reset}           Run SEO audit validations (description lengths, canonicals)`);
-  console.log(`  ${colors.green}geo${colors.reset}           Verify target regional mappings consistency`);
   console.log(`  ${colors.green}registry${colors.reset}      Verify sync consistency between registry.ts & content files`);
+  console.log(`  ${colors.green}seo${colors.reset}           Run SEO audit validations (titles, descriptions, canonicals, links)`);
   console.log(`  ${colors.green}graph${colors.reset}         Verify connections & node hierarchies in knowledge graph`);
+  console.log(`  ${colors.green}validate${colors.reset}      Run complete suite of active validation sub-engines (registry, seo, graph)`);
+  console.log(`  ${colors.green}integrity${colors.reset}     Validate base project file structures & imports sanity`);
+  console.log(`  ${colors.green}geo${colors.reset}           Verify target regional mappings consistency`);
   console.log(`  ${colors.green}extension${colors.reset}     Inspect Chrome Extension manifest profiles & APIs integrations`);
   console.log(`  ${colors.green}report${colors.reset}        Export audit summaries in multiple custom formats`);
   console.log(`  ${colors.green}deploy${colors.reset}        Run validation gatekeeper checking workflows`);
@@ -47,29 +53,23 @@ function printHelp() {
   console.log(`${colors.bright}Examples:${colors.reset}`);
   console.log(`  node cli.js doctor          Check system health`);
   console.log(`  node cli.js registry        Validate registry sync`);
-  console.log(`  node cli.js scan            Full validation scan\n`);
+  console.log(`  node cli.js seo             Run SEO engine audit`);
+  console.log(`  node cli.js graph           Validate knowledge graph topology`);
+  console.log(`  node cli.js validate        Run all Phase 3 engines\n`);
 }
-
-const scanner = require('./core/scanner');
-const registryEngine = require('./engines/registry');
-const reporter = require('./core/reporter');
-const fs = require('fs');
-const { isGuardActive } = require('./core/guards/importGuard');
 
 async function runCli() {
   printBanner();
-  
+
   const args = process.argv.slice(2);
 
-  // CLI-001: Support help, --help, and -h consistently
   if (args.length === 0 || args.includes('-h') || args.includes('--help') || args[0] === 'help') {
     printHelp();
     process.exit(0);
   }
 
   const command = args[0].toLowerCase();
-  
-  // Try loading configuration
+
   let config;
   try {
     config = configLoader.load();
@@ -78,7 +78,6 @@ async function runCli() {
     process.exit(1);
   }
 
-  // Decoupled read-only target workspace directory (parent of astra-engine)
   const rootDir = path.resolve(__dirname, '..');
 
   switch (command) {
@@ -90,7 +89,6 @@ async function runCli() {
       console.log(`  - Verbosity: ${colors.green}${config.options.verbosity}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
 
-      // Verify all modules are loadable
       const modules = {
         'Config Loader': configLoader,
         'State Manager': stateManager,
@@ -99,6 +97,16 @@ async function runCli() {
         'TS Parser': require('./core/parser/typescript'),
         'Reporter': reporter,
         'Registry Engine': registryEngine,
+        'SEO Engine': seoEngine,
+        'Knowledge Graph Engine': graphEngine,
+        'Knowledge Graph Builder': require('./core/graph'),
+        'Title Validator': require('./core/validators/title.validator'),
+        'Description Validator': require('./core/validators/description.validator'),
+        'Canonical Validator': require('./core/validators/canonical.validator'),
+        'Links Validator': require('./core/validators/links.validator'),
+        'Registry Validator': require('./core/validators/registry.validator'),
+        'Entity Validator': require('./core/validators/entity.validator'),
+        'Graph Validator': require('./core/validators/graph.validator'),
         'Path Guard': require('./core/guards/pathGuard'),
         'Import Guard': require('./core/guards/importGuard'),
       };
@@ -114,7 +122,6 @@ async function runCli() {
         }
       }
 
-      // Verify contracts exist
       const contractFiles = ['Engine.ts', 'Scanner.ts', 'Validator.ts', 'Reporter.ts', 'State.ts', 'Event.ts'];
       const contractsDir = path.join(__dirname, 'contracts');
       console.log(`\n  ${colors.bright}Contracts:${colors.reset}`);
@@ -124,7 +131,6 @@ async function runCli() {
         if (!exists) allModulesOk = false;
       }
 
-      // State manager health
       console.log(`\n  ${colors.bright}State Manager:${colors.reset}`);
       try {
         const snap = stateManager.getStateSnapshot();
@@ -147,10 +153,13 @@ async function runCli() {
     }
 
     case 'scan':
-    case 'registry': {
+    case 'registry':
+    case 'seo':
+    case 'graph':
+    case 'validate': {
       console.log(`${colors.cyan}🔍 Scanning repository structural tree...${colors.reset}`);
       const startTime = Date.now();
-      
+
       let state;
       try {
         state = await scanner.runScanner(rootDir, config);
@@ -162,79 +171,86 @@ async function runCli() {
       console.log(`  - Total Inventory Files Indexed: ${colors.green}${state.filesystem.files.size}${colors.reset}`);
       console.log(`  - Markdown Content Files Found: ${colors.green}${state.metadataMap.size}${colors.reset}`);
       console.log(`  - Registry Articles Configured: ${colors.green}${state.parsedRegistry.articles.length}${colors.reset}`);
-      
-      console.log(`\n${colors.cyan}⚡ Running Registry Validation sub-engine...${colors.reset}`);
-      
-      let result;
-      try {
-        await registryEngine.init({ config, state, logger: console });
-        result = await registryEngine.run(state);
-      } catch (err) {
-        console.error(`${colors.red}❌ Registry validation execution crash:${colors.reset}`, err.message);
-        process.exit(1);
+
+      const enginesToRun = [];
+      if (command === 'registry' || command === 'scan') {
+        enginesToRun.push(registryEngine);
+      } else if (command === 'seo') {
+        enginesToRun.push(seoEngine);
+      } else if (command === 'graph') {
+        enginesToRun.push(graphEngine);
+      } else if (command === 'validate') {
+        enginesToRun.push(registryEngine, seoEngine, graphEngine);
       }
 
-      // Compile data summaries
-      const totalErrors = result.errors.length;
-      const totalWarnings = result.warnings.length;
+      const results = [];
+      for (const engine of enginesToRun) {
+        console.log(`\n${colors.cyan}⚡ Running ${engine.manifest.name}...${colors.reset}`);
+        try {
+          await engine.init({ config, state, logger: console });
+          const res = await engine.run(state);
+          results.push(res);
+        } catch (err) {
+          console.error(`${colors.red}❌ Engine execution crash [${engine.manifest.name}]:${colors.reset}`, err.message);
+          process.exit(1);
+        }
+      }
+
+      let totalErrors = 0;
+      let totalWarnings = 0;
+      for (const r of results) {
+        totalErrors += r.errors.length;
+        totalWarnings += r.warnings.length;
+      }
+
       const totalTime = Date.now() - startTime;
-      
       const overallVerdict = totalErrors > 0 ? 'FAIL' : (totalWarnings > 0 ? 'WARNING' : 'PASS');
 
       const reportData = {
         summary: {
           timestamp: new Date(),
           overallVerdict,
-          totalEnginesRun: 1,
+          totalEnginesRun: results.length,
           totalErrors,
           totalWarnings,
           executionTimeMs: totalTime
         },
-        results: [result],
+        results,
         schemaVersion: config.schemaVersion,
-        engineVersion: config.engineVersion
+        engineVersion: '1.1.0'
       };
 
-      // Generate reports content
       const jsonReport = await reporter.build(reportData, 'json');
       const mdReport = await reporter.build(reportData, 'markdown');
       const terminalReport = await reporter.build(reportData, 'terminal');
 
-      // Write files in reports/latest
       const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
       await reporter.write(jsonReport, path.join(reportsLatestDir, 'report.json'));
       await reporter.write(mdReport, path.join(reportsLatestDir, 'report.md'));
 
-      // Print output logs
       console.log(terminalReport);
 
-      // Print success criteria status
-      console.log(`\n${colors.bright}=== SUCCESS CRITERIA CHECK ===${colors.reset}`);
-      console.log(`Posts : ${colors.green}${state.metadataMap.size}${colors.reset}`);
-      console.log(`Registry : ${colors.green}${state.parsedRegistry.articles.length}${colors.reset}`);
-      
-      const diffCount = Math.abs(state.metadataMap.size - state.parsedRegistry.articles.length);
-      console.log(`Difference : ${colors.yellow}${diffCount}${colors.reset}`);
+      console.log(`\n${colors.bright}=== SUMMARY VERDICT ===${colors.reset}`);
+      console.log(`Engines Executed : ${colors.green}${results.length}${colors.reset}`);
+      console.log(`Total Errors     : ${totalErrors > 0 ? colors.red + totalErrors : colors.green + 0}${colors.reset}`);
+      console.log(`Total Warnings   : ${totalWarnings > 0 ? colors.yellow + totalWarnings : colors.green + 0}${colors.reset}`);
+      console.log(`Overall Verdict  : ${overallVerdict === 'FAIL' ? colors.red + 'FAIL' : (overallVerdict === 'WARNING' ? colors.yellow + 'WARNING' : colors.green + 'PASS')}${colors.reset}`);
 
       if (overallVerdict === 'FAIL') {
-        console.log(`\n${colors.red}${colors.bright}Result Status: FAIL${colors.reset}`);
         process.exit(1);
       } else {
-        console.log(`\n${colors.green}${colors.bright}Result Status: PASS${colors.reset}`);
         process.exit(0);
       }
       break;
     }
 
-    case 'seo':
+    case 'integrity':
     case 'geo':
-    case 'graph':
     case 'extension':
     case 'report':
     case 'deploy':
     case 'history':
-    case 'integrity':
-      console.log(`${colors.yellow}🚧 Command "${command}" belongs to later implementation phases...${colors.reset}`);
+      console.log(`${colors.yellow}🚧 Command "${command}" is reserved for Phase X...${colors.reset}`);
       break;
 
     default:

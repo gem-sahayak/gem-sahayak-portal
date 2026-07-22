@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstraEntitySchema",
+  "type": "object",
+  "properties": {
+    "Entity": { "type": "string", "minLength": 1 },
+    "Parent": { "type": "string" },
+    "Children": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "Aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "Category": { "type": "string" },
+    "Relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" },
+          "type": { "type": "string" }
+        },
+        "required": ["target", "type"]
+      }
+    }
+  },
+  "required": ["Entity", "Category"]
+}

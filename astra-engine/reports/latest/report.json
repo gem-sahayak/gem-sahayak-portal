@@ -1,11 +1,11 @@
 {
   "summary": {
-    "timestamp": "2026-07-22T10:24:25.593Z",
+    "timestamp": "2026-07-22T12:05:55.491Z",
     "overallVerdict": "WARNING",
-    "totalEnginesRun": 1,
+    "totalEnginesRun": 3,
     "totalErrors": 0,
-    "totalWarnings": 6,
-    "executionTimeMs": 1126
+    "totalWarnings": 124,
+    "executionTimeMs": 431
   },
   "results": [
     {
@@ -68,9 +68,1127 @@
           }
         }
       ],
-      "executionTimeMs": 2
+      "executionTimeMs": 1
+    },
+    {
+      "engineName": "seo-validation-engine",
+      "verdict": "WARNING",
+      "errors": [],
+      "warnings": [
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"cppp-portal-registration-tender-search\" title exceeds recommended search length (76 chars, recommended <= 70)",
+          "file": "posts/cppp-portal-registration-tender-search.md",
+          "evidence": {
+            "slug": "cppp-portal-registration-tender-search",
+            "titleLength": 76,
+            "title": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-boq-excel-sheet-upload-errors\" title exceeds recommended search length (84 chars, recommended <= 70)",
+          "file": "posts/gem-boq-excel-sheet-upload-errors.md",
+          "evidence": {
+            "slug": "gem-boq-excel-sheet-upload-errors",
+            "titleLength": 84,
+            "title": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-catalog-rejected-reasons\" title exceeds recommended search length (72 chars, recommended <= 70)",
+          "file": "posts/gem-catalog-rejected-reasons.md",
+          "evidence": {
+            "slug": "gem-catalog-rejected-reasons",
+            "titleLength": 72,
+            "title": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-catalogue-upload-kaise-kare\" title exceeds recommended search length (94 chars, recommended <= 70)",
+          "file": "posts/gem-catalogue-upload-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-catalogue-upload-kaise-kare",
+            "titleLength": 94,
+            "title": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-company-profile-edit-kaise-kare\" title exceeds recommended search length (88 chars, recommended <= 70)",
+          "file": "posts/gem-company-profile-edit-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-company-profile-edit-kaise-kare",
+            "titleLength": 88,
+            "title": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-consignee-receipt-process\" title exceeds recommended search length (71 chars, recommended <= 70)",
+          "file": "posts/gem-consignee-receipt-process.md",
+          "evidence": {
+            "slug": "gem-consignee-receipt-process",
+            "titleLength": 71,
+            "title": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-custom-bid-specifications-rules\" title exceeds recommended search length (87 chars, recommended <= 70)",
+          "file": "posts/gem-custom-bid-specifications-rules.md",
+          "evidence": {
+            "slug": "gem-custom-bid-specifications-rules",
+            "titleLength": 87,
+            "title": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-email-mobile-number-change\" title exceeds recommended search length (85 chars, recommended <= 70)",
+          "file": "posts/gem-email-mobile-number-change.md",
+          "evidence": {
+            "slug": "gem-email-mobile-number-change",
+            "titleLength": 85,
+            "title": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-epbg-bank-guarantee-rules-refund\" title exceeds recommended search length (73 chars, recommended <= 70)",
+          "file": "posts/gem-epbg-bank-guarantee-rules-refund.md",
+          "evidence": {
+            "slug": "gem-epbg-bank-guarantee-rules-refund",
+            "titleLength": 73,
+            "title": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-invoice-generate-kaise-kare\" title exceeds recommended search length (79 chars, recommended <= 70)",
+          "file": "posts/gem-invoice-generate-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-invoice-generate-kaise-kare",
+            "titleLength": 79,
+            "title": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-joint-venture-consortium-bidding\" title exceeds recommended search length (72 chars, recommended <= 70)",
+          "file": "posts/gem-joint-venture-consortium-bidding.md",
+          "evidence": {
+            "slug": "gem-joint-venture-consortium-bidding",
+            "titleLength": 72,
+            "title": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-l1-price-matching-counter-offer\" title exceeds recommended search length (80 chars, recommended <= 70)",
+          "file": "posts/gem-l1-price-matching-counter-offer.md",
+          "evidence": {
+            "slug": "gem-l1-price-matching-counter-offer",
+            "titleLength": 80,
+            "title": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-order-cancel-rules\" title exceeds recommended search length (76 chars, recommended <= 70)",
+          "file": "posts/gem-order-cancel-rules.md",
+          "evidence": {
+            "slug": "gem-order-cancel-rules",
+            "titleLength": 76,
+            "title": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-payment-status-kaise-check-kare\" title exceeds recommended search length (74 chars, recommended <= 70)",
+          "file": "posts/gem-payment-status-kaise-check-kare.md",
+          "evidence": {
+            "slug": "gem-payment-status-kaise-check-kare",
+            "titleLength": 74,
+            "title": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-product-approval-time\" title exceeds recommended search length (84 chars, recommended <= 70)",
+          "file": "posts/gem-product-approval-time.md",
+          "evidence": {
+            "slug": "gem-product-approval-time",
+            "titleLength": 84,
+            "title": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-profile-update-kaise-kare\" title exceeds recommended search length (114 chars, recommended <= 70)",
+          "file": "posts/gem-profile-update-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-profile-update-kaise-kare",
+            "titleLength": 114,
+            "title": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-return-replacement-rules\" title exceeds recommended search length (75 chars, recommended <= 70)",
+          "file": "posts/gem-return-replacement-rules.md",
+          "evidence": {
+            "slug": "gem-return-replacement-rules",
+            "titleLength": 75,
+            "title": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-reverse-auction-complete-guide\" title exceeds recommended search length (77 chars, recommended <= 70)",
+          "file": "posts/gem-reverse-auction-complete-guide.md",
+          "evidence": {
+            "slug": "gem-reverse-auction-complete-guide",
+            "titleLength": 77,
+            "title": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-seller-rating-improve-kaise-kare\" title exceeds recommended search length (75 chars, recommended <= 70)",
+          "file": "posts/gem-seller-rating-improve-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-seller-rating-improve-kaise-kare",
+            "titleLength": 75,
+            "title": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-service-contract-bidding-rules\" title exceeds recommended search length (87 chars, recommended <= 70)",
+          "file": "posts/gem-service-contract-bidding-rules.md",
+          "evidence": {
+            "slug": "gem-service-contract-bidding-rules",
+            "titleLength": 87,
+            "title": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-tender-search-guide\" title exceeds recommended search length (80 chars, recommended <= 70)",
+          "file": "posts/gem-tender-search-guide.md",
+          "evidence": {
+            "slug": "gem-tender-search-guide",
+            "titleLength": 80,
+            "title": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"gem-warranty-claim-process\" title exceeds recommended search length (82 chars, recommended <= 70)",
+          "file": "posts/gem-warranty-claim-process.md",
+          "evidence": {
+            "slug": "gem-warranty-claim-process",
+            "titleLength": 82,
+            "title": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"ireps-railway-tender-bidding-guide\" title exceeds recommended search length (79 chars, recommended <= 70)",
+          "file": "posts/ireps-railway-tender-bidding-guide.md",
+          "evidence": {
+            "slug": "ireps-railway-tender-bidding-guide",
+            "titleLength": 79,
+            "title": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)"
+          }
+        },
+        {
+          "code": "LONG_TITLE",
+          "message": "Article \"what-is-emd-in-gem\" title exceeds recommended search length (74 chars, recommended <= 70)",
+          "file": "posts/what-is-emd-in-gem.md",
+          "evidence": {
+            "slug": "what-is-emd-in-gem",
+            "titleLength": 74,
+            "title": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish"
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"bid-participation-rules\" has a short description (42 chars, recommended >= 50)",
+          "file": "posts/bid-participation-rules.md",
+          "evidence": {
+            "slug": "bid-participation-rules",
+            "descLength": 42
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"bid-splitting-rules\" has a short description (38 chars, recommended >= 50)",
+          "file": "posts/bid-splitting-rules.md",
+          "evidence": {
+            "slug": "bid-splitting-rules",
+            "descLength": 38
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"common-errors\" has a short description (32 chars, recommended >= 50)",
+          "file": "posts/common-errors.md",
+          "evidence": {
+            "slug": "common-errors",
+            "descLength": 32
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"cpv-code-guide\" has a short description (33 chars, recommended >= 50)",
+          "file": "posts/cpv-code-guide.md",
+          "evidence": {
+            "slug": "cpv-code-guide",
+            "descLength": 33
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"daily-tender-monitoring\" has a short description (42 chars, recommended >= 50)",
+          "file": "posts/daily-tender-monitoring.md",
+          "evidence": {
+            "slug": "daily-tender-monitoring",
+            "descLength": 42
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"documents-required\" has a short description (37 chars, recommended >= 50)",
+          "file": "posts/documents-required.md",
+          "evidence": {
+            "slug": "documents-required",
+            "descLength": 37
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"earnest-money-deposit\" has a short description (40 chars, recommended >= 50)",
+          "file": "posts/earnest-money-deposit.md",
+          "evidence": {
+            "slug": "earnest-money-deposit",
+            "descLength": 40
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"faqs\" has a short description (23 chars, recommended >= 50)",
+          "file": "posts/faqs.md",
+          "evidence": {
+            "slug": "faqs",
+            "descLength": 23
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"fees-explained\" has a short description (33 chars, recommended >= 50)",
+          "file": "posts/fees-explained.md",
+          "evidence": {
+            "slug": "fees-explained",
+            "descLength": 33
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-bank-account-change-kaise-kare\" description exceeds recommended search length (171 chars, recommended <= 160)",
+          "file": "posts/gem-bank-account-change-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-bank-account-change-kaise-kare",
+            "descLength": 171
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-bidding-fees\" has a short description (35 chars, recommended >= 50)",
+          "file": "posts/gem-bidding-fees.md",
+          "evidence": {
+            "slug": "gem-bidding-fees",
+            "descLength": 35
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-bidding-rules-handbook\" has a short description (45 chars, recommended >= 50)",
+          "file": "posts/gem-bidding-rules-handbook.md",
+          "evidence": {
+            "slug": "gem-bidding-rules-handbook",
+            "descLength": 45
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-boq-excel-sheet-upload-errors\" description exceeds recommended search length (226 chars, recommended <= 160)",
+          "file": "posts/gem-boq-excel-sheet-upload-errors.md",
+          "evidence": {
+            "slug": "gem-boq-excel-sheet-upload-errors",
+            "descLength": 226
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-catalog-rejected-reasons\" description exceeds recommended search length (182 chars, recommended <= 160)",
+          "file": "posts/gem-catalog-rejected-reasons.md",
+          "evidence": {
+            "slug": "gem-catalog-rejected-reasons",
+            "descLength": 182
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-catalogue-upload-kaise-kare\" description exceeds recommended search length (233 chars, recommended <= 160)",
+          "file": "posts/gem-catalogue-upload-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-catalogue-upload-kaise-kare",
+            "descLength": 233
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-category-search\" has a short description (38 chars, recommended >= 50)",
+          "file": "posts/gem-category-search.md",
+          "evidence": {
+            "slug": "gem-category-search",
+            "descLength": 38
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-company-profile-edit-kaise-kare\" description exceeds recommended search length (173 chars, recommended <= 160)",
+          "file": "posts/gem-company-profile-edit-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-company-profile-edit-kaise-kare",
+            "descLength": 173
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-consignee-receipt-process\" description exceeds recommended search length (232 chars, recommended <= 160)",
+          "file": "posts/gem-consignee-receipt-process.md",
+          "evidence": {
+            "slug": "gem-consignee-receipt-process",
+            "descLength": 232
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-crac-kaise-generate-hota-hai\" description exceeds recommended search length (171 chars, recommended <= 160)",
+          "file": "posts/gem-crac-kaise-generate-hota-hai.md",
+          "evidence": {
+            "slug": "gem-crac-kaise-generate-hota-hai",
+            "descLength": 171
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-custom-bid-specifications-rules\" description exceeds recommended search length (217 chars, recommended <= 160)",
+          "file": "posts/gem-custom-bid-specifications-rules.md",
+          "evidence": {
+            "slug": "gem-custom-bid-specifications-rules",
+            "descLength": 217
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-email-mobile-number-change\" description exceeds recommended search length (219 chars, recommended <= 160)",
+          "file": "posts/gem-email-mobile-number-change.md",
+          "evidence": {
+            "slug": "gem-email-mobile-number-change",
+            "descLength": 219
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-incident-management-show-cause-reply\" description exceeds recommended search length (164 chars, recommended <= 160)",
+          "file": "posts/gem-incident-management-show-cause-reply.md",
+          "evidence": {
+            "slug": "gem-incident-management-show-cause-reply",
+            "descLength": 164
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-l1-price-matching-counter-offer\" description exceeds recommended search length (178 chars, recommended <= 160)",
+          "file": "posts/gem-l1-price-matching-counter-offer.md",
+          "evidence": {
+            "slug": "gem-l1-price-matching-counter-offer",
+            "descLength": 178
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-login-kaise-kare\" has a short description (25 chars, recommended >= 50)",
+          "file": "posts/gem-login-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-login-kaise-kare",
+            "descLength": 25
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-order-accept-kaise-kare\" description exceeds recommended search length (188 chars, recommended <= 160)",
+          "file": "posts/gem-order-accept-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-order-accept-kaise-kare",
+            "descLength": 188
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-order-cancel-rules\" description exceeds recommended search length (189 chars, recommended <= 160)",
+          "file": "posts/gem-order-cancel-rules.md",
+          "evidence": {
+            "slug": "gem-order-cancel-rules",
+            "descLength": 189
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-payment-kab-milta-hai\" description exceeds recommended search length (200 chars, recommended <= 160)",
+          "file": "posts/gem-payment-kab-milta-hai.md",
+          "evidence": {
+            "slug": "gem-payment-kab-milta-hai",
+            "descLength": 200
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-payment-status-kaise-check-kare\" description exceeds recommended search length (183 chars, recommended <= 160)",
+          "file": "posts/gem-payment-status-kaise-check-kare.md",
+          "evidence": {
+            "slug": "gem-payment-status-kaise-check-kare",
+            "descLength": 183
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-product-approval-time\" description exceeds recommended search length (183 chars, recommended <= 160)",
+          "file": "posts/gem-product-approval-time.md",
+          "evidence": {
+            "slug": "gem-product-approval-time",
+            "descLength": 183
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-registration-kaise-kare\" has a short description (46 chars, recommended >= 50)",
+          "file": "posts/gem-registration-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-registration-kaise-kare",
+            "descLength": 46
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-return-replacement-rules\" description exceeds recommended search length (170 chars, recommended <= 160)",
+          "file": "posts/gem-return-replacement-rules.md",
+          "evidence": {
+            "slug": "gem-return-replacement-rules",
+            "descLength": 170
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-search-filters-explained\" has a short description (47 chars, recommended >= 50)",
+          "file": "posts/gem-search-filters-explained.md",
+          "evidence": {
+            "slug": "gem-search-filters-explained",
+            "descLength": 47
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-seller-dashboard-kaise-use-kare\" description exceeds recommended search length (164 chars, recommended <= 160)",
+          "file": "posts/gem-seller-dashboard-kaise-use-kare.md",
+          "evidence": {
+            "slug": "gem-seller-dashboard-kaise-use-kare",
+            "descLength": 164
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-seller-performance-dashboard\" description exceeds recommended search length (171 chars, recommended <= 160)",
+          "file": "posts/gem-seller-performance-dashboard.md",
+          "evidence": {
+            "slug": "gem-seller-performance-dashboard",
+            "descLength": 171
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-seller-rating-improve-kaise-kare\" description exceeds recommended search length (184 chars, recommended <= 160)",
+          "file": "posts/gem-seller-rating-improve-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-seller-rating-improve-kaise-kare",
+            "descLength": 184
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-seller-registration-kaise-kare\" has a short description (29 chars, recommended >= 50)",
+          "file": "posts/gem-seller-registration-kaise-kare.md",
+          "evidence": {
+            "slug": "gem-seller-registration-kaise-kare",
+            "descLength": 29
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"gem-tender-search-guide\" has a short description (42 chars, recommended >= 50)",
+          "file": "posts/gem-tender-search-guide.md",
+          "evidence": {
+            "slug": "gem-tender-search-guide",
+            "descLength": 42
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"gem-warranty-claim-process\" description exceeds recommended search length (178 chars, recommended <= 160)",
+          "file": "posts/gem-warranty-claim-process.md",
+          "evidence": {
+            "slug": "gem-warranty-claim-process",
+            "descLength": 178
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"ireps-railway-tender-bidding-guide\" description exceeds recommended search length (172 chars, recommended <= 160)",
+          "file": "posts/ireps-railway-tender-bidding-guide.md",
+          "evidence": {
+            "slug": "ireps-railway-tender-bidding-guide",
+            "descLength": 172
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"keyword-search-tips\" has a short description (38 chars, recommended >= 50)",
+          "file": "posts/keyword-search-tips.md",
+          "evidence": {
+            "slug": "keyword-search-tips",
+            "descLength": 38
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"manufacturers-registration\" has a short description (45 chars, recommended >= 50)",
+          "file": "posts/manufacturers-registration.md",
+          "evidence": {
+            "slug": "manufacturers-registration",
+            "descLength": 45
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"ministry-department-search\" has a short description (45 chars, recommended >= 50)",
+          "file": "posts/ministry-department-search.md",
+          "evidence": {
+            "slug": "ministry-department-search",
+            "descLength": 45
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"msme-registration\" has a short description (36 chars, recommended >= 50)",
+          "file": "posts/msme-registration.md",
+          "evidence": {
+            "slug": "msme-registration",
+            "descLength": 36
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"profile-completion\" has a short description (37 chars, recommended >= 50)",
+          "file": "posts/profile-completion.md",
+          "evidence": {
+            "slug": "profile-completion",
+            "descLength": 37
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"representation-writing\" has a short description (41 chars, recommended >= 50)",
+          "file": "posts/representation-writing.md",
+          "evidence": {
+            "slug": "representation-writing",
+            "descLength": 41
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"restrictive-specifications\" has a short description (45 chars, recommended >= 50)",
+          "file": "posts/restrictive-specifications.md",
+          "evidence": {
+            "slug": "restrictive-specifications",
+            "descLength": 45
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"reverse-auction-rules\" has a short description (40 chars, recommended >= 50)",
+          "file": "posts/reverse-auction-rules.md",
+          "evidence": {
+            "slug": "reverse-auction-rules",
+            "descLength": 40
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"saved-search-and-alerts\" has a short description (42 chars, recommended >= 50)",
+          "file": "posts/saved-search-and-alerts.md",
+          "evidence": {
+            "slug": "saved-search-and-alerts",
+            "descLength": 42
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"single-bid-compliance\" has a short description (40 chars, recommended >= 50)",
+          "file": "posts/single-bid-compliance.md",
+          "evidence": {
+            "slug": "single-bid-compliance",
+            "descLength": 40
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"state-procurement-up-tenders-gem-comparison\" description exceeds recommended search length (184 chars, recommended <= 160)",
+          "file": "posts/state-procurement-up-tenders-gem-comparison.md",
+          "evidence": {
+            "slug": "state-procurement-up-tenders-gem-comparison",
+            "descLength": 184
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"state-wise-tender-search\" has a short description (43 chars, recommended >= 50)",
+          "file": "posts/state-wise-tender-search.md",
+          "evidence": {
+            "slug": "state-wise-tender-search",
+            "descLength": 43
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"tender-evaluation-stages\" has a short description (43 chars, recommended >= 50)",
+          "file": "posts/tender-evaluation-stages.md",
+          "evidence": {
+            "slug": "tender-evaluation-stages",
+            "descLength": 43
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"timeframe\" has a short description (28 chars, recommended >= 50)",
+          "file": "posts/timeframe.md",
+          "evidence": {
+            "slug": "timeframe",
+            "descLength": 28
+          }
+        },
+        {
+          "code": "SHORT_DESCRIPTION",
+          "message": "Article \"traders-registration\" has a short description (39 chars, recommended >= 50)",
+          "file": "posts/traders-registration.md",
+          "evidence": {
+            "slug": "traders-registration",
+            "descLength": 39
+          }
+        },
+        {
+          "code": "LONG_DESCRIPTION",
+          "message": "Article \"what-is-emd-in-gem\" description exceeds recommended search length (174 chars, recommended <= 160)",
+          "file": "posts/what-is-emd-in-gem.md",
+          "evidence": {
+            "slug": "what-is-emd-in-gem",
+            "descLength": 174
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-bid-participation-fees-guide\" references unregistered tool \"emd-calculator\"",
+          "file": "posts/gem-bid-participation-fees-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-bid-participation-fees-guide",
+            "targetTool": "emd-calculator"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-buyer-seller-dispute-resolution-guide\" references unregistered tool \"dispute-drafter\"",
+          "file": "posts/gem-buyer-seller-dispute-resolution-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-buyer-seller-dispute-resolution-guide",
+            "targetTool": "dispute-drafter"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-contract-performance-security-guide\" references unregistered tool \"epbg-checker\"",
+          "file": "posts/gem-contract-performance-security-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-contract-performance-security-guide",
+            "targetTool": "epbg-checker"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-contract-termination-rules\" references unregistered tool \"incident-tracker\"",
+          "file": "posts/gem-contract-termination-rules.md",
+          "evidence": {
+            "sourceSlug": "gem-contract-termination-rules",
+            "targetTool": "incident-tracker"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-inspection-acceptance-guide\" references unregistered tool \"quality-checklist\"",
+          "file": "posts/gem-inspection-acceptance-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-inspection-acceptance-guide",
+            "targetTool": "quality-checklist"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-liquidated-damages-rules\" references unregistered tool \"ld-calculator\"",
+          "file": "posts/gem-liquidated-damages-rules.md",
+          "evidence": {
+            "sourceSlug": "gem-liquidated-damages-rules",
+            "targetTool": "ld-calculator"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-order-fulfillment-guide\" references unregistered tool \"delivery-timeline-calculator\"",
+          "file": "posts/gem-order-fulfillment-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-order-fulfillment-guide",
+            "targetTool": "delivery-timeline-calculator"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-payment-cycle-complete-guide\" references unregistered tool \"payment-tracker\"",
+          "file": "posts/gem-payment-cycle-complete-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-payment-cycle-complete-guide",
+            "targetTool": "payment-tracker"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-reverse-auction-complete-guide\" references unregistered tool \"auction-calculator\"",
+          "file": "posts/gem-reverse-auction-complete-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-reverse-auction-complete-guide",
+            "targetTool": "auction-calculator"
+          }
+        },
+        {
+          "code": "BROKEN_INTERNAL_TOOL_LINK",
+          "message": "Article \"gem-seller-rating-performance-guide\" references unregistered tool \"rating-simulator\"",
+          "file": "posts/gem-seller-rating-performance-guide.md",
+          "evidence": {
+            "sourceSlug": "gem-seller-rating-performance-guide",
+            "targetTool": "rating-simulator"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"cppp-portal-registration-tender-search\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "cppp-portal-registration-tender-search",
+            "category": "Government Procurement Hub"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"gem-login-kaise-kare\" uses category \"GeM Account Management\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-login-kaise-kare",
+            "category": "GeM Account Management"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"gem-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-registration-kaise-kare",
+            "category": "GeM Seller Onboarding"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"gem-seller-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-seller-registration-kaise-kare",
+            "category": "GeM Seller Onboarding"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"ireps-railway-tender-bidding-guide\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "ireps-railway-tender-bidding-guide",
+            "category": "Government Procurement Hub"
+          }
+        },
+        {
+          "code": "UNAPPROVED_CATEGORY",
+          "message": "Article \"use-ai-summarize-government-tender-pdfs\" uses category \"Automation\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "use-ai-summarize-government-tender-pdfs",
+            "category": "Automation"
+          }
+        }
+      ],
+      "executionTimeMs": 5
+    },
+    {
+      "engineName": "knowledge-graph-engine",
+      "verdict": "WARNING",
+      "errors": [],
+      "warnings": [
+        {
+          "code": "ORPHAN_TOOL_NODE",
+          "message": "Tool \"clarification-generator\" has 0 inbound article links in the Knowledge Graph",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "toolSlug": "clarification-generator",
+            "type": "tool",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"cppp-portal-registration-tender-search\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "cppp-portal-registration-tender-search",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"gem-login-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-login-kaise-kare",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"gem-registration-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-registration-kaise-kare",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"gem-seller-registration-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-seller-registration-kaise-kare",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"ireps-railway-tender-bidding-guide\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "ireps-railway-tender-bidding-guide",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "ORPHAN_ARTICLE_NODE",
+          "message": "Article \"use-ai-summarize-government-tender-pdfs\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "use-ai-summarize-government-tender-pdfs",
+            "type": "article",
+            "inboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-reverse-auction-complete-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-reverse-auction-complete-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-bid-participation-fees-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-bid-participation-fees-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-contract-performance-security-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-contract-performance-security-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-payment-cycle-complete-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-payment-cycle-complete-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-order-fulfillment-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-order-fulfillment-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-inspection-acceptance-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-inspection-acceptance-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-liquidated-damages-rules\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-liquidated-damages-rules",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-contract-termination-rules\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-contract-termination-rules",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-seller-rating-performance-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-seller-rating-performance-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "DEAD_END_NODE",
+          "message": "Article \"gem-buyer-seller-dispute-resolution-guide\" has 0 outbound internal links",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-buyer-seller-dispute-resolution-guide",
+            "outboundLinks": 0
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"cppp-portal-registration-tender-search\" references unknown parent entity \"government-procurement-hub\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "cppp-portal-registration-tender-search",
+            "parent": "government-procurement-hub"
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"gem-login-kaise-kare\" references unknown parent entity \"gem-account-management\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "gem-login-kaise-kare",
+            "parent": "gem-account-management"
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"gem-registration-kaise-kare\" references unknown parent entity \"gem-seller-onboarding\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "gem-registration-kaise-kare",
+            "parent": "gem-seller-onboarding"
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"gem-seller-registration-kaise-kare\" references unknown parent entity \"gem-seller-onboarding\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "gem-seller-registration-kaise-kare",
+            "parent": "gem-seller-onboarding"
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"ireps-railway-tender-bidding-guide\" references unknown parent entity \"government-procurement-hub\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "ireps-railway-tender-bidding-guide",
+            "parent": "government-procurement-hub"
+          }
+        },
+        {
+          "code": "UNRESOLVED_PARENT_ENTITY",
+          "message": "Entity \"use-ai-summarize-government-tender-pdfs\" references unknown parent entity \"automation\"",
+          "file": "knowledge_graph_engine.md",
+          "evidence": {
+            "entity": "use-ai-summarize-government-tender-pdfs",
+            "parent": "automation"
+          }
+        }
+      ],
+      "executionTimeMs": 3,
+      "graphMetrics": {
+        "totalNodes": 119,
+        "totalEdges": 247,
+        "articleNodes": 103,
+        "categoryNodes": 5,
+        "toolNodes": 8,
+        "faqNodes": 3,
+        "maxDepth": 8
+      }
     }
   ],
   "schemaVersion": "1.0.0",
-  "engineVersion": "1.0.0"
+  "engineVersion": "1.1.0"
 }
