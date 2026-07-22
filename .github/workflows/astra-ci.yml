@@ -1,0 +1,55 @@
+name: ASTRA Engine CI Pipeline
+
+on:
+  push:
+    branches: [ main, master, phase* ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  astra-quality-gate:
+    name: ASTRA Integrity & Quality Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Run Engine Doctor Diagnostics
+        run: node astra-engine/cli.js doctor
+
+      - name: Run Engine Unit & Integration Tests
+        run: |
+          node astra-engine/tests/fingerprint.test.js
+          node astra-engine/tests/incremental.test.js
+          node astra-engine/tests/eventbus.test.js
+          node astra-engine/tests/cache.test.js
+          node astra-engine/tests/telemetry.test.js
+          node astra-engine/tests/severity.test.js
+          node astra-engine/tests/priority.test.js
+          node astra-engine/tests/reporter.test.js
+          node astra-engine/tests/seo.test.js
+          node astra-engine/tests/graph.test.js
+          node astra-engine/tests/loader.test.js
+          node astra-engine/tests/plugin.test.js
+          node astra-engine/tests/marketplace.test.js
+          node astra-engine/tests/package.test.js
+          node astra-engine/tests/sdk.test.js
+
+      - name: Run Full Engine Validation Gatekeeper
+        run: node astra-engine/cli.js validate
+
+      - name: Upload Audit Reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: astra-audit-reports
+          path: astra-engine/reports/latest/

@@ -1,0 +1,19 @@
+{
+  "releaseVersion": "1.4.0",
+  "releaseTag": "astra-engine-v1.4.0-phase4B.4",
+  "commitHash": "3d0feb3",
+  "generatedAt": "2026-07-22T13:12:07.275Z",
+  "commits": [
+    "3d0feb3 - ASTRA Engine v1.3.2 - Phase 4B.3 Enterprise Plugin Marketplace, SDK CLI, Package Manager & Enterprise Developer Experience (Sunil)",
+    "208073b - ASTRA Engine v1.3.1 - Phase 4B.2 Developer Platform Integration: Trust Framework, Signature Verifier, Dependency Resolver, Version Manager, Timeout Protection & Telemetry Reporter (Sunil)",
+    "99b920e - ASTRA Engine v1.3.0 - Phase 4B.1 Developer Platform Foundation: Plugin SDK, Plugin Loader, Manifest Schema & Permission Sandbox (Sunil)",
+    "676a9d4 - ASTRA Engine v1.2.0 - Phase 4A Release Candidate Final Certification Complete (Sunil)",
+    "a54c8c8 - ASTRA Engine v1.2.0 - Phase 4A Core Platform Infrastructure: Fingerprint DB, Incremental Scanner, Event Bus, Cache Layer & Telemetry Engine (Sunil)",
+    "6c51a6e - ASTRA Engine v1.1.1 - Phase 3.1: Reporting Framework, Severity System (PASS/RECOMMENDATION/WARNING/FAIL), Priority System (P0/P1/P2/P3) & Standardized Issue Schema (Sunil)",
+    "bd1769c - docs(astra-engine): add formal CHANGELOG.md tracking v1.0.0, v1.0.1, and v1.1.0 releases (Sunil)",
+    "5247591 - ASTRA Engine v1.1.0 - Phase 3 Final Release Certification Complete (Sunil)",
+    "cc2472b - ASTRA Engine v1.1.0 - Phase 3 Complete: SEO Engine, Knowledge Graph Engine, Validators, Schemas & Tests (Sunil)",
+    "8caec16 - ASTRA Engine v1.0.1 - Phase 2 Hardening and Final Freeze (Sunil)"
+  ],
+  "notes": "# ASTRA ENGINE RELEASE NOTES — v1.4.0\n**Release Tag:** `astra-engine-v1.4.0-phase4B.4`\n**Release Date:** 2026-07-22\n**Engine Version:** `1.4.0`\n\n## 🚀 Key Highlights & New Capabilities\n- **Enterprise DevOps Platform (Phase 4B.4):** Automated GitHub Actions CI/CD pipelines, release note automation, changelog generation, build verification, and artifact package exporter.\n- **100% Backward Compatibility:** Zero breaking changes to Phase 1-4B primitives.\n\n## 📜 Categorized Changes\n### Added\n- GitHub Actions CI Quality Gate (`.github/workflows/astra-ci.yml`).\n- GitHub Actions Automated Release Pipeline (`.github/workflows/astra-release.yml`).\n- Release Automation Engine (`core/release/`).\n- Build Verification Engine (`core/build/`).\n- DevOps CLI commands: `release`, `changelog`, `build`, `verify`, `ci`, `version`, `artifacts`.\n\n### Security\n- Preserved strict Observer-Only read-only boundaries.\n- PathGuard and ImportGuard active across all DevOps pipelines.\n\n## 📝 Commit Logs\n- `3d0feb3 - ASTRA Engine v1.3.2 - Phase 4B.3 Enterprise Plugin Marketplace, SDK CLI, Package Manager & Enterprise Developer Experience (Sunil)`\n- `208073b - ASTRA Engine v1.3.1 - Phase 4B.2 Developer Platform Integration: Trust Framework, Signature Verifier, Dependency Resolver, Version Manager, Timeout Protection & Telemetry Reporter (Sunil)`\n- `99b920e - ASTRA Engine v1.3.0 - Phase 4B.1 Developer Platform Foundation: Plugin SDK, Plugin Loader, Manifest Schema & Permission Sandbox (Sunil)`\n- `676a9d4 - ASTRA Engine v1.2.0 - Phase 4A Release Candidate Final Certification Complete (Sunil)`\n- `a54c8c8 - ASTRA Engine v1.2.0 - Phase 4A Core Platform Infrastructure: Fingerprint DB, Incremental Scanner, Event Bus, Cache Layer & Telemetry Engine (Sunil)`\n- `6c51a6e - ASTRA Engine v1.1.1 - Phase 3.1: Reporting Framework, Severity System (PASS/RECOMMENDATION/WARNING/FAIL), Priority System (P0/P1/P2/P3) & Standardized Issue Schema (Sunil)`\n- `bd1769c - docs(astra-engine): add formal CHANGELOG.md tracking v1.0.0, v1.0.1, and v1.1.0 releases (Sunil)`\n- `5247591 - ASTRA Engine v1.1.0 - Phase 3 Final Release Certification Complete (Sunil)`\n- `cc2472b - ASTRA Engine v1.1.0 - Phase 3 Complete: SEO Engine, Knowledge Graph Engine, Validators, Schemas & Tests (Sunil)`\n- `8caec16 - ASTRA Engine v1.0.1 - Phase 2 Hardening and Final Freeze (Sunil)`"
+}

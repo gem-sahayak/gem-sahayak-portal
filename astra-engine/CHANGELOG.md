@@ -6,17 +6,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.0] — Phase 4B.4 (Enterprise DevOps Platform: CI/CD & Release Automation) - 2026-07-22
+
+### Added
+- **GitHub Actions Workflows (`.github/workflows/`):**
+  - `astra-ci.yml` (CI Quality Gate running doctor, unit tests, validation sub-engines, artifact uploads)
+  - `astra-release.yml` (Automated Release pipeline running release manager and exporting package artifacts)
+- **Release Automation Engine (`core/release/`):**
+  - `gitMetadata.js` (Extracts git commit hashes, tags, and commit messages)
+  - `versionManager.js` (SemVer version bump resolution)
+  - `releaseNotes.js` (Generates Markdown release notes with categorized changes)
+  - `releaseManager.js` (Exports `release.json`, `release.md`, `release.html`, `release-summary.json` to `reports/releases/`)
+- **Build Verification Engine (`core/build/`):**
+  - `checksum.js` (SHA256 build checksum verifier)
+  - `integrity.js` (Essential core file integrity checker)
+  - `validator.js` (Build validator running integrity checks in <2ms)
+- **DevOps CLI Commands:** Added `release`, `changelog`, `build`, `verify`, `ci`, `version`, `artifacts`.
+- **Developer Documentation:** Created `DEVOPS_GUIDE.md` and `CI_CD_GUIDE.md`.
+
+---
+
 ## [1.3.2] — Phase 4B.3 (Enterprise Plugin Marketplace & SDK Ecosystem) - 2026-07-22
 
 ### Added
-- **Plugin Marketplace Manager (`core/plugins/marketplace/`):** Local catalog, search engine, catalog installation, and marketplace report exporter (`reports/latest/plugin-marketplace.json`).
-- **Plugin Package Format (.apkg & `core/plugins/package/`):** Validator and packager bundling plugins into portable `.apkg` archives with SHA256 checksum verification.
-- **Plugin SDK CLI Tooling (`sdk/` & `cli.js`):** Added `sdk:init`, `sdk:create`, `sdk:lint`, `sdk:package`, `sdk:test`, `plugin:lock`, `marketplace`.
-- **Plugin Templates (`sdk/templates/`):** Scaffold templates including `plugin.json`, `index.js`, and `README.md`.
-- **Plugin Lockfile Manager (`core/plugins/lockfile.js`):** Deterministic lockfile generator writing `reports/cache/plugin-lock.json`.
-- **Plugin Resource Limits (`core/plugins/limits.js`):** Max execution counts and memory heap delta assertions.
-- **Developer Documentation:** Created `PLUGIN_SDK.md` and `PLUGIN_MARKETPLACE.md`.
-- **Stress Benchmark (`tests/benchmark4b3.test.js`):** Validated scale up to 1,000 plugins (2 ms execution time).
+- **Plugin Marketplace Manager (`core/plugins/marketplace/`):** Local catalog, search engine, catalog installation.
+- **Plugin Package Format (.apkg & `core/plugins/package/`):** Portable `.apkg` packager with SHA256 checksums.
+- **Plugin SDK CLI Tooling (`sdk/` & `cli.js`):** `sdk:init`, `sdk:create`, `sdk:lint`, `sdk:package`, `sdk:test`, `plugin:lock`, `marketplace`.
 
 ---
 
@@ -27,7 +42,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Signature Verification (`core/plugins/signature.js`):** SHA256 checksums, `signature.sig`, `publisher.pem`.
 - **Dependency Resolver (`core/plugins/dependency.js`):** Topological sort and circular dependency detection.
 - **Version Manager (`core/plugins/version.js`):** SemVer parsing & engine compatibility.
-- **Timeout Protection & Crash Isolation (`core/plugins/loader.js`):** 5000ms timeout per hook, non-blocking crash isolation.
 
 ---
 

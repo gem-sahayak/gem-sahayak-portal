@@ -1,0 +1,33 @@
+name: ASTRA Engine Automated Release
+
+on:
+  push:
+    tags:
+      - 'astra-engine-v*'
+
+jobs:
+  astra-release-automation:
+    name: Generate Enterprise Release & Artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Generate Release Notes & Artifacts
+        run: |
+          node astra-engine/cli.js release
+          node astra-engine/cli.js artifacts
+
+      - name: Upload Release Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: astra-release-package
+          path: astra-engine/reports/releases/
