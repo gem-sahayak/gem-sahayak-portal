@@ -1,0 +1,1801 @@
+{
+  "metadata": {
+    "engineVersion": "1.2.0",
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2026-07-22T12:50:21.621Z",
+    "compositeFingerprint": "e28779ebdfe4b8f33080aabc6e12f7e0faf4df43287f1e3af4fc6db0b908c00c"
+  },
+  "entries": {
+    ".gitignore": {
+      "filePath": ".gitignore",
+      "hash": "44bba37cba4e68834eca4e47785e2d72fb770c6f55d4b29cffd3cbee54f1c706",
+      "mtime": 1784724615808,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.808Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    ".vercel/project.json": {
+      "filePath": ".vercel/project.json",
+      "hash": "8b2487f9f7213ff8ec103f588ac19aa4a4d7d3fb2f250adf46a8192ca4fe5c57",
+      "mtime": 1784724615811,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.811Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    ".vercel/README.txt": {
+      "filePath": ".vercel/README.txt",
+      "hash": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+      "mtime": 1784724615813,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.813Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "hash": "e3447d84251880fb34cfae09131cb4c57471529bbfe60976a3245793cf621627",
+      "mtime": 1784724615815,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.815Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "append_registry.js": {
+      "filePath": "append_registry.js",
+      "hash": "98a441370fd8bb253a2fe2212850cc6a82b265bb92740a3fe26e98535069737a",
+      "mtime": 1784724615816,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.816Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "CLAUDE.md": {
+      "filePath": "CLAUDE.md",
+      "hash": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "mtime": 1784724615818,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.818Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "eslint.config.mjs": {
+      "filePath": "eslint.config.mjs",
+      "hash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "mtime": 1784724615819,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.819Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "fix_registry.js": {
+      "filePath": "fix_registry.js",
+      "hash": "0e73c1327ba93c55289585e1f3693990cb2228397ce35ba15f239cf14fcd76ba",
+      "mtime": 1784724615821,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.821Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "fix_registry2.js": {
+      "filePath": "fix_registry2.js",
+      "hash": "7a6e02c4e5438343d418c3f1521786960896d26d3126b290e21e6ee11e3d43e0",
+      "mtime": 1784724615822,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.822Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "fix_registry3.js": {
+      "filePath": "fix_registry3.js",
+      "hash": "72c21957b0126b98a70ea8e7bafe084194a400b9ffaaec535cee8adceb57ba34",
+      "mtime": 1784724615823,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.823Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "fix_registry4.js": {
+      "filePath": "fix_registry4.js",
+      "hash": "6f42d2c969cef5f94a99d50ec8ced2a248491048f866cde24e88e343e284b806",
+      "mtime": 1784724615824,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.824Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "generate.js": {
+      "filePath": "generate.js",
+      "hash": "b6ec34c8e59c85bb111d505e586a556e81077d07dfa9d51d81b2b1cca1836dde",
+      "mtime": 1784724615825,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.826Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "generate_articles.py": {
+      "filePath": "generate_articles.py",
+      "hash": "9ef67efb3d6d3b2ca9e34b310cb821090c71d511553f1bdd12d2494ef92459d3",
+      "mtime": 1784724615827,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.827Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "next-env.d.ts": {
+      "filePath": "next-env.d.ts",
+      "hash": "7b550dda9686c16f36a17bf9051d5dbf31e98555b30d114ac49fc49a1e712651",
+      "mtime": 1784724615830,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.830Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "next.config.ts": {
+      "filePath": "next.config.ts",
+      "hash": "a937428952c03116aa439021a891f231d6a8b7f9630fe49b05455289ed507676",
+      "mtime": 1784724615831,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.831Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "package-lock.json": {
+      "filePath": "package-lock.json",
+      "hash": "30e8528adc6e7d84e34465465a2074ac12fe77a09029716b19334cb764c84545",
+      "mtime": 1784724615832,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.833Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "hash": "70d5bb5181afc456936ed88023f6414b8479fe241eea425c308a64b712c36f21",
+      "mtime": 1784724615833,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.833Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "postcss.config.mjs": {
+      "filePath": "postcss.config.mjs",
+      "hash": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "mtime": 1784724615834,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.834Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/bid-participation-rules.md": {
+      "filePath": "posts/bid-participation-rules.md",
+      "hash": "f6f9433eea81f44dabb3ae17fcca906bd837d870c33bb48ff28b4c0d87a28ee9",
+      "mtime": 1784724615835,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.835Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/bid-splitting-rules.md": {
+      "filePath": "posts/bid-splitting-rules.md",
+      "hash": "8994c6bf38ced0e8d2c23e21434699f5231a5d3b88ef8c88dc386bc25f4902af",
+      "mtime": 1784724615836,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.836Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/common-errors.md": {
+      "filePath": "posts/common-errors.md",
+      "hash": "5070226f8305169c8deb7d06a538ed132b43458e40b92fa4a632fbb037f3dfba",
+      "mtime": 1784724615837,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.837Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/complete-gem-registration-guide.md": {
+      "filePath": "posts/complete-gem-registration-guide.md",
+      "hash": "571c7f82f69dafba3a48d8b8f974e92f0373ab9fbf479b765c58b46f25d5a87f",
+      "mtime": 1784724615839,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.839Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/cppp-portal-registration-tender-search.md": {
+      "filePath": "posts/cppp-portal-registration-tender-search.md",
+      "hash": "36506d7f489078975e700247e4aab17406c04e367f0e7abda21a982ff1eaf518",
+      "mtime": 1784724615840,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.840Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/cpv-code-guide.md": {
+      "filePath": "posts/cpv-code-guide.md",
+      "hash": "dd8e949bca1bd0b7bbb092f56fcd623de85ff48e49d9e4eb0a210608605556b2",
+      "mtime": 1784724615841,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.841Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/daily-tender-monitoring.md": {
+      "filePath": "posts/daily-tender-monitoring.md",
+      "hash": "7b7187f7c12f6197550544f8e03a305154339d0a800e50423ec5c63060de3006",
+      "mtime": 1784724615842,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.842Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/documents-required.md": {
+      "filePath": "posts/documents-required.md",
+      "hash": "7902842926ade7c69ac23d8958c555fd7abaa1c946aa353f6274d46c37d47c9c",
+      "mtime": 1784724615844,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.844Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/earnest-money-deposit.md": {
+      "filePath": "posts/earnest-money-deposit.md",
+      "hash": "0ecc6d66d3c0647402ba6affaf9dbc58d0c745020192dfd2cb4a61476d5380da",
+      "mtime": 1784724615846,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.846Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/emd-exemption-rules.md": {
+      "filePath": "posts/emd-exemption-rules.md",
+      "hash": "7395f5d893712f6e90e22c34b1757446c73de833813b88eb534e0e3bf6f9845c",
+      "mtime": 1784724615848,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.848Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/emd-forfeiture-rules.md": {
+      "filePath": "posts/emd-forfeiture-rules.md",
+      "hash": "ac24da35433f34ed8110e25df0b9adc1d89b2de55ccb8f6eb49cdaf31d68973f",
+      "mtime": 1784724615849,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.849Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/emd-refund-process.md": {
+      "filePath": "posts/emd-refund-process.md",
+      "hash": "f9cf1dd6507d7ad50bc4de8821dc8bedf6c5fbc5ac7b96d0feba580e7fd020a1",
+      "mtime": 1784724615851,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.851Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/emd-vs-security-deposit.md": {
+      "filePath": "posts/emd-vs-security-deposit.md",
+      "hash": "5be4f2575c29f99399d2e18814815dbe5d04bec01ccce179dd9b410a893a8b74",
+      "mtime": 1784724615852,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.852Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/faqs.md": {
+      "filePath": "posts/faqs.md",
+      "hash": "182294dcf37da3b1c60ce3a70c534a4d01f7c8b5342a5a9e8440fe374edc66af",
+      "mtime": 1784724615853,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.853Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/fees-explained.md": {
+      "filePath": "posts/fees-explained.md",
+      "hash": "9902ee082d06a2b2d4e0bdfa5fedba5cd24058a69bfcfa6925b222cd33a82b2b",
+      "mtime": 1784724615854,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.854Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/financial-bid-evaluation.md": {
+      "filePath": "posts/financial-bid-evaluation.md",
+      "hash": "53e1fb5464b5d0debb6de7e8a672fd3d06c0dfe10539a0d2c007ce07860a40f3",
+      "mtime": 1784724615855,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.855Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-bank-account-change-kaise-kare.md": {
+      "filePath": "posts/gem-bank-account-change-kaise-kare.md",
+      "hash": "af57784e062e6611d5d65ec80d5f5e626fa2cedd6b1463df2abdcb490806b54e",
+      "mtime": 1784724615856,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.856Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-bid-participation-fees-guide.md": {
+      "filePath": "posts/gem-bid-participation-fees-guide.md",
+      "hash": "116262afa04aef8f9db60a3cc2e44f819b60d4a6cc4630d571d4efff0599324a",
+      "mtime": 1784724615858,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.858Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-bidding-fees.md": {
+      "filePath": "posts/gem-bidding-fees.md",
+      "hash": "aee8e860372582de1cb5dc5da0a4d01d178258358120d1d18e6f94f4bf3eb352",
+      "mtime": 1784724615859,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.859Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-bidding-mistakes-msme-tenders.md": {
+      "filePath": "posts/gem-bidding-mistakes-msme-tenders.md",
+      "hash": "74bfb5907f7c8ea0ddbecc20869cd66f20c275a2cad14714ac42f347282d958f",
+      "mtime": 1784724615861,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.861Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-bidding-rules-handbook.md": {
+      "filePath": "posts/gem-bidding-rules-handbook.md",
+      "hash": "3390362bfabbf243b63849614d01aae4281889d40363a9bdaf632918156153e9",
+      "mtime": 1784724615863,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.863Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-boq-excel-sheet-upload-errors.md": {
+      "filePath": "posts/gem-boq-excel-sheet-upload-errors.md",
+      "hash": "32339d397d47e8936097fbf1bf4709f2f1de04dd1a61e6609aa13f783e59a25f",
+      "mtime": 1784724615865,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.865Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-boq-excel-upload-errors-guide.md": {
+      "filePath": "posts/gem-boq-excel-upload-errors-guide.md",
+      "hash": "ab6ca3344fcfee7582e0b4737a6afd320f5157578b295a8566970c9fff2a766a",
+      "mtime": 1784724615866,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.866Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-buyer-seller-dispute-resolution-guide.md": {
+      "filePath": "posts/gem-buyer-seller-dispute-resolution-guide.md",
+      "hash": "d57bc7282b96a4781e58da5f55bb593e276c79ed06298cc6eca55c09ee2608be",
+      "mtime": 1784724615868,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.868Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-catalog-rejected-reasons-complete-guide.md": {
+      "filePath": "posts/gem-catalog-rejected-reasons-complete-guide.md",
+      "hash": "dbab979b3d662dcccdea176c31ba2ba8786fd1024abebbc40dee4cada522c9e1",
+      "mtime": 1784724615869,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.869Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-catalog-rejected-reasons.md": {
+      "filePath": "posts/gem-catalog-rejected-reasons.md",
+      "hash": "0dd2a9800f371fc59455f3291ce1ab371052d4d2e4fad214c77161b0c2c66364",
+      "mtime": 1784724615870,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.870Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-catalogue-upload-kaise-kare.md": {
+      "filePath": "posts/gem-catalogue-upload-kaise-kare.md",
+      "hash": "839ee9257678418910bec94b95a6cd6947791ec8f9265d8d03f32f768b2dc722",
+      "mtime": 1784724615872,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.872Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-category-approval-time-guide.md": {
+      "filePath": "posts/gem-category-approval-time-guide.md",
+      "hash": "95cdb2ae30ebd6851373b9d95d4ca4b0002b239a0e161a070d2f5ded702ba486",
+      "mtime": 1784724615873,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.873Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-category-search.md": {
+      "filePath": "posts/gem-category-search.md",
+      "hash": "91ac024f16aaea5b921258c6345e2808cdd8a94be56ebdb7306d37e4356b2443",
+      "mtime": 1784724615874,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.874Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-company-profile-edit-kaise-kare.md": {
+      "filePath": "posts/gem-company-profile-edit-kaise-kare.md",
+      "hash": "6de0a1a73705033a20c90b355e711e0c4fbf5927b40983fd53c339b781bb27ff",
+      "mtime": 1784724615875,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.875Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-consignee-receipt-process.md": {
+      "filePath": "posts/gem-consignee-receipt-process.md",
+      "hash": "ad7407e03ac4804c098b673e9e4f288029d85ad63d408aa87b783404f1f2a989",
+      "mtime": 1784724615877,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.877Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-contract-performance-security-guide.md": {
+      "filePath": "posts/gem-contract-performance-security-guide.md",
+      "hash": "7075657f760f2af44b12f2e3a85f10477d7b20df1b890710311930a0d190fd41",
+      "mtime": 1784724615879,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.879Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-contract-termination-rules.md": {
+      "filePath": "posts/gem-contract-termination-rules.md",
+      "hash": "0193bfe6a8e82a523f730f1c3a050888076b54f8eacc98586df18d79411466e5",
+      "mtime": 1784724615881,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.881Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-crac-kaise-generate-hota-hai.md": {
+      "filePath": "posts/gem-crac-kaise-generate-hota-hai.md",
+      "hash": "7a5351e276398762832fe2be7d4c06f3c2eb58a7fdab9eee667cdf14271dcda4",
+      "mtime": 1784724615882,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.882Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-custom-bid-specifications-rules.md": {
+      "filePath": "posts/gem-custom-bid-specifications-rules.md",
+      "hash": "567c46640ed69ec2f215f1e63b1fff241e3545ac21b96d83252ebd44f0957e1b",
+      "mtime": 1784724615884,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.884Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-custom-item-creation-rules-2026.md": {
+      "filePath": "posts/gem-custom-item-creation-rules-2026.md",
+      "hash": "9f5dab0b033649e3d48aed9d41a9946323030ab8d5505a0a51671580abea9667",
+      "mtime": 1784724615885,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.885Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-email-mobile-number-change.md": {
+      "filePath": "posts/gem-email-mobile-number-change.md",
+      "hash": "25419c9334915b4ea94069064176679e883bdf75c6a78b0633e1524d44c17772",
+      "mtime": 1784724615887,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.887Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-epbg-bank-guarantee-rules-refund.md": {
+      "filePath": "posts/gem-epbg-bank-guarantee-rules-refund.md",
+      "hash": "0c84c7b5e3e0e32462e6cdc97825464fd412772234e68781982b8816f1b07792",
+      "mtime": 1784724615888,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.888Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-generic-vs-brand-catalog-guide.md": {
+      "filePath": "posts/gem-generic-vs-brand-catalog-guide.md",
+      "hash": "a86986fb5058f6d1878c813bec8c06ebae1ff70e872d6d62d81b18eba46519c5",
+      "mtime": 1784724615889,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.889Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-hsn-code-gst-mapping-guide.md": {
+      "filePath": "posts/gem-hsn-code-gst-mapping-guide.md",
+      "hash": "b66be8e075834e479bfee0115a421e81ec7eaf75ba0f4edb7fd298fff20e805c",
+      "mtime": 1784724615890,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.890Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-incident-management-show-cause-reply.md": {
+      "filePath": "posts/gem-incident-management-show-cause-reply.md",
+      "hash": "f0ca51103dc8738bf09ae63e89a2b3503b96b31f212f7394d1925a7d2363da88",
+      "mtime": 1784724615891,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.891Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-inspection-acceptance-guide.md": {
+      "filePath": "posts/gem-inspection-acceptance-guide.md",
+      "hash": "5f0656a9f9c2d92b2458a47558dc79184596d7e1df79cf5d90edceabc90d093b",
+      "mtime": 1784724615893,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.893Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-invoice-generate-kaise-kare.md": {
+      "filePath": "posts/gem-invoice-generate-kaise-kare.md",
+      "hash": "1bc781efd305f5fa8af04b40711c0a792acc28670e71965b18e08587bd03ff7b",
+      "mtime": 1784724615896,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.896Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-joint-venture-consortium-bidding.md": {
+      "filePath": "posts/gem-joint-venture-consortium-bidding.md",
+      "hash": "cf67041f7c402055ac73bee9512c76ca492558d328f42b6e1abd7b88abd3fb93",
+      "mtime": 1784724615897,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.897Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-l1-price-matching-counter-offer.md": {
+      "filePath": "posts/gem-l1-price-matching-counter-offer.md",
+      "hash": "14211fca113c023a3da73392af248cc4c0ecd9036b884b00096e22c17f5e64b8",
+      "mtime": 1784724615899,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.899Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-liquidated-damages-rules.md": {
+      "filePath": "posts/gem-liquidated-damages-rules.md",
+      "hash": "dd6d9b212ade2fe7c956d3bcbb9b4069d3ffa611ba12ebce628a901919da499e",
+      "mtime": 1784724615900,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.900Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-login-kaise-kare.md": {
+      "filePath": "posts/gem-login-kaise-kare.md",
+      "hash": "1099c2120e1477411f32a210d40681fb1060d1c45d92d7381b954a779f50430e",
+      "mtime": 1784724615902,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.902Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-oem-authorization-letter-format.md": {
+      "filePath": "posts/gem-oem-authorization-letter-format.md",
+      "hash": "78a752ee22bc41bec25665ac70cc7984fcfd90ed6201bf35b9ead53de74ad841",
+      "mtime": 1784724615903,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.903Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-oem-panel-registration-guide.md": {
+      "filePath": "posts/gem-oem-panel-registration-guide.md",
+      "hash": "4509538c8a89d3f6067c0824d1c107a71ec0b5bc50f9c2171cd1ae6a4ed4696d",
+      "mtime": 1784724615904,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.904Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-order-accept-kaise-kare.md": {
+      "filePath": "posts/gem-order-accept-kaise-kare.md",
+      "hash": "a4104b86bca7af322428cadedeb26d08c012318690d1d22628a8d416825e3cee",
+      "mtime": 1784724615905,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.905Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-order-cancel-rules.md": {
+      "filePath": "posts/gem-order-cancel-rules.md",
+      "hash": "d21448c341fd34e1757331c59d0924b5a459958dce68bd512e92fdea3d618d12",
+      "mtime": 1784724615906,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.906Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-order-delivery-update-kaise-kare.md": {
+      "filePath": "posts/gem-order-delivery-update-kaise-kare.md",
+      "hash": "9b7d1549b834cbfd8dd1a5a33e3cd3d9fc19aae4ffb067e804296ef0a3ce80bc",
+      "mtime": 1784724615908,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.908Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-order-fulfillment-guide.md": {
+      "filePath": "posts/gem-order-fulfillment-guide.md",
+      "hash": "d3fb4405645bba489a0ac0f13ef4037427dccd5df679c97c11cb56b4a94aeca5",
+      "mtime": 1784724615909,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.909Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-payment-cycle-complete-guide.md": {
+      "filePath": "posts/gem-payment-cycle-complete-guide.md",
+      "hash": "dd7049132e7f8a70b12f734a9ff2de53dac5fc8fd7884eb7ba63acb49761ac46",
+      "mtime": 1784724615912,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.912Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-payment-kab-milta-hai.md": {
+      "filePath": "posts/gem-payment-kab-milta-hai.md",
+      "hash": "7cb473e1e51199d6bb740c68657ec43803998caab864b8d6a99db3b043d95567",
+      "mtime": 1784724615914,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.914Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-payment-status-kaise-check-kare.md": {
+      "filePath": "posts/gem-payment-status-kaise-check-kare.md",
+      "hash": "a00ea373dd77f48daec5604f50a8138c4b7e3ece9ebd3386c39bc2889233e2f0",
+      "mtime": 1784724615916,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.916Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-portal-direct-purchase-limit-rules-2026.md": {
+      "filePath": "posts/gem-portal-direct-purchase-limit-rules-2026.md",
+      "hash": "fe07044296712d1bbe5c5f4d0eb9a941413733b47c7c0016051ea0ecc647583c",
+      "mtime": 1784724615917,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.917Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-product-approval-time.md": {
+      "filePath": "posts/gem-product-approval-time.md",
+      "hash": "8e715472d82a1c96f635ed1d763a2eb950c1fae01db862567b11807c228b4b96",
+      "mtime": 1784724615918,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.918Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-product-cloning-duplication-guide.md": {
+      "filePath": "posts/gem-product-cloning-duplication-guide.md",
+      "hash": "028a92c20b21f7496af8896f49216e210bfe71e2f4b35822a2ca79e4bf588b66",
+      "mtime": 1784724615920,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.920Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-profile-update-kaise-kare.md": {
+      "filePath": "posts/gem-profile-update-kaise-kare.md",
+      "hash": "871b63a643c48407efb4a91e8eac430f1817b6b0ae3d5917adc275de6ca5e37b",
+      "mtime": 1784724615921,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.921Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-registration-kaise-kare.md": {
+      "filePath": "posts/gem-registration-kaise-kare.md",
+      "hash": "e306270578f9dc4fe9623e8fbc372971e441ef3f30fac06de05cf6c2495ee344",
+      "mtime": 1784724615922,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.922Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-return-replacement-rules.md": {
+      "filePath": "posts/gem-return-replacement-rules.md",
+      "hash": "8cb545755d0afd79cd10f504bc4d2f9cbd01d00753d8258e422e9fefee1abe03",
+      "mtime": 1784724615923,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.923Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-reverse-auction-complete-guide.md": {
+      "filePath": "posts/gem-reverse-auction-complete-guide.md",
+      "hash": "cd2f1744bb4010930fcabcee67a7a9beff4ea0ceea0c53f92fff76484974f36a",
+      "mtime": 1784724615924,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.924Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-search-filters-explained.md": {
+      "filePath": "posts/gem-search-filters-explained.md",
+      "hash": "6a0ff617a3563b52312742a6f4366100584a572df74f1217d156ab305ee0220c",
+      "mtime": 1784724615926,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.926Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-seller-dashboard-kaise-use-kare.md": {
+      "filePath": "posts/gem-seller-dashboard-kaise-use-kare.md",
+      "hash": "325026572366533a92fc033d51039ae6296d85616793bc1c7d76dd45ed2d3a9b",
+      "mtime": 1784724615929,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.929Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-seller-performance-dashboard.md": {
+      "filePath": "posts/gem-seller-performance-dashboard.md",
+      "hash": "77576cd5d620771c6b9d328b72389eaeeab3c4e943787b4c97d868819d3f6270",
+      "mtime": 1784724615930,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.930Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-seller-rating-improve-kaise-kare.md": {
+      "filePath": "posts/gem-seller-rating-improve-kaise-kare.md",
+      "hash": "bfe0f24fe2ef2d5ae3db198c6be56cd56ea4853a39e14c4e077289628e93b61c",
+      "mtime": 1784724615932,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.932Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-seller-rating-performance-guide.md": {
+      "filePath": "posts/gem-seller-rating-performance-guide.md",
+      "hash": "14abad0d97bb0659efbef5c02ca67c1b35748de5e20fdac96a1cc7cd863720c7",
+      "mtime": 1784724615934,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.934Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-seller-registration-kaise-kare.md": {
+      "filePath": "posts/gem-seller-registration-kaise-kare.md",
+      "hash": "90312e7dea21a4a027a6b337800f80d4e0c07b45b854b295285bf17b3637d01c",
+      "mtime": 1784724615935,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.935Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-service-contract-bidding-rules.md": {
+      "filePath": "posts/gem-service-contract-bidding-rules.md",
+      "hash": "adbed7bc2a152da824dc33662ad04270f15d83dc73f0cbf2617d2dc2f7fc1acf",
+      "mtime": 1784724615936,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.936Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-tender-search-guide.md": {
+      "filePath": "posts/gem-tender-search-guide.md",
+      "hash": "6b217622c4d4ffed778d7efd1e7aa9d02cad2f2fb03e552074e751329c8061de",
+      "mtime": 1784724615937,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.937Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-vendor-assessment-rules-exemption-guide.md": {
+      "filePath": "posts/gem-vendor-assessment-rules-exemption-guide.md",
+      "hash": "de6d754f99877fd977ea0a63651628e15147e0dcd4981f7aa6ec03657869b868",
+      "mtime": 1784724615938,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.938Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/gem-warranty-claim-process.md": {
+      "filePath": "posts/gem-warranty-claim-process.md",
+      "hash": "24cfc7eedb410700f48f056789e1b869d9b2a85ea56ad736456511ffd211ab1a",
+      "mtime": 1784724615940,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.940Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/how-to-automate-gem-bid-tracking-whatsapp-alerts.md": {
+      "filePath": "posts/how-to-automate-gem-bid-tracking-whatsapp-alerts.md",
+      "hash": "2581aa91be88e653916228eb60747fbaa43c2b885858d55a8af7f5ffa9389484",
+      "mtime": 1784724615941,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.941Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/how-to-claim-emd-exemption-gem-portal-bids.md": {
+      "filePath": "posts/how-to-claim-emd-exemption-gem-portal-bids.md",
+      "hash": "4d0eb86c9e6b6db4f68764a43277b0b6aa98f53e35c90f23e9fbad4c4fd3b2fc",
+      "mtime": 1784724615942,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.942Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/how-to-get-gem-portal-bid-alerts-on-whatsapp.md": {
+      "filePath": "posts/how-to-get-gem-portal-bid-alerts-on-whatsapp.md",
+      "hash": "55176871c7c10b296f06d7b72d9d4d26cabf185db1e835ff61bb320bea7b9dfd",
+      "mtime": 1784724615944,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.944Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/how-to-search-gem-tenders.md": {
+      "filePath": "posts/how-to-search-gem-tenders.md",
+      "hash": "561ac366696b2b592576fcd90d69b620420b684f80ff74537946a3a2f5389c15",
+      "mtime": 1784724615946,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.946Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/ireps-railway-tender-bidding-guide.md": {
+      "filePath": "posts/ireps-railway-tender-bidding-guide.md",
+      "hash": "271602b2c12013f01882e37db62e9f3abf674d305909634801d289765f861514",
+      "mtime": 1784724615948,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.948Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/keyword-search-tips.md": {
+      "filePath": "posts/keyword-search-tips.md",
+      "hash": "f7728584755b2833c0620fe00a8182aeda44e337b40bd453270a8c2e4b9e12b0",
+      "mtime": 1784724615950,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.950Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/l1-vs-qcbs.md": {
+      "filePath": "posts/l1-vs-qcbs.md",
+      "hash": "c8713ad8d9f1e9c67638626651688641c5177350a9a47e2d95952f07a2a9217b",
+      "mtime": 1784724615951,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.951Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/manufacturers-registration.md": {
+      "filePath": "posts/manufacturers-registration.md",
+      "hash": "f7ef9c9099e3d54075a44d985dd6fc6da677b75e5ffbda39ab8da4cba4318c15",
+      "mtime": 1784724615952,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.952Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/ministry-department-search.md": {
+      "filePath": "posts/ministry-department-search.md",
+      "hash": "b149fc08b3df450121c65737b271950d073d7598cd036b25cd140fab7e991e4d",
+      "mtime": 1784724615953,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.953Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/msme-registration.md": {
+      "filePath": "posts/msme-registration.md",
+      "hash": "622fc9f464d7c35aada22f4abd9274a696f422fe2b1b021c425d2dde1d6f6505",
+      "mtime": 1784724615954,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.954Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/partnership-docs.md": {
+      "filePath": "posts/partnership-docs.md",
+      "hash": "4d24accea41496f6889dfed5f0b784fae60215eb1d70990c9920e30e86d62ffd",
+      "mtime": 1784724615955,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.955Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/profile-completion.md": {
+      "filePath": "posts/profile-completion.md",
+      "hash": "9d4842ef2c5938c22ba65b5fd2d74b14468c8a67d5fddc30de58184712c733eb",
+      "mtime": 1784724615956,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.956Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/reasons-for-bid-rejection.md": {
+      "filePath": "posts/reasons-for-bid-rejection.md",
+      "hash": "8574fe957fa6dd76b1ea44357ae8e16f5882aa4ca413ab8c6df08ada119f3488",
+      "mtime": 1784724615957,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.957Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/representation-writing.md": {
+      "filePath": "posts/representation-writing.md",
+      "hash": "76a503f7441706732b1b04d0361df704e064ebc4f1fea537676be12ae0d85258",
+      "mtime": 1784724615959,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.959Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/resolving-gem-portal-catalog-upload-errors.md": {
+      "filePath": "posts/resolving-gem-portal-catalog-upload-errors.md",
+      "hash": "779399aad4b53b1d7a61f93a05fc592f9967c33cd36ca73aaa642f61374cfa40",
+      "mtime": 1784724615961,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.961Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/restrictive-specifications.md": {
+      "filePath": "posts/restrictive-specifications.md",
+      "hash": "82f7f83e4886dd516dc1a5c11b7462dd1e0778f80c7261d1a77a23019aca1fda",
+      "mtime": 1784724615963,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.963Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/reverse-auction-rules.md": {
+      "filePath": "posts/reverse-auction-rules.md",
+      "hash": "9032c0d14c7b6481195e12e6279c89ddade07b17ea89381dc3c751f98a7288f1",
+      "mtime": 1784724615964,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.964Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/saved-search-and-alerts.md": {
+      "filePath": "posts/saved-search-and-alerts.md",
+      "hash": "a232dbbd89f21cecc5dada2f1407bf21bf7839ef4982d07903bb1943db880ae0",
+      "mtime": 1784724615966,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.966Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/single-bid-compliance.md": {
+      "filePath": "posts/single-bid-compliance.md",
+      "hash": "d8df9f97f1467bd9af82eb64d10195886848111685ae443c75a9feacc5b0ac96",
+      "mtime": 1784724615967,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.967Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/state-procurement-up-tenders-gem-comparison.md": {
+      "filePath": "posts/state-procurement-up-tenders-gem-comparison.md",
+      "hash": "398305e17fdc502d2a8d7305424632883e580a4b3c96d62e62e897b160193504",
+      "mtime": 1784724615968,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.968Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/state-wise-tender-search.md": {
+      "filePath": "posts/state-wise-tender-search.md",
+      "hash": "b35e72c38820f20ff6be1bd4c85718ca0de083b454c8563e9b146a33d4ced4a4",
+      "mtime": 1784724615969,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.969Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/technical-evaluation-process.md": {
+      "filePath": "posts/technical-evaluation-process.md",
+      "hash": "ba28cc268f49a6736aa0ce0770b22173d3fab263e99b3a9dfac82c9edce6082a",
+      "mtime": 1784724615970,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.970Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/tender-evaluation-stages.md": {
+      "filePath": "posts/tender-evaluation-stages.md",
+      "hash": "b428be8ff65884e138b15ce1a785f8f984b76fe2987eecd73cebcd773ab039af",
+      "mtime": 1784724615971,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.971Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/timeframe.md": {
+      "filePath": "posts/timeframe.md",
+      "hash": "b364a26b4c9096858a821939a2e9c2527a9f2ae24bd404cadf0cc1f29a3191c6",
+      "mtime": 1784724615973,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.973Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/traders-registration.md": {
+      "filePath": "posts/traders-registration.md",
+      "hash": "76892c2200a5d1e41e563673b0182669516e9cceab614c3e0cdd69a66359d53a",
+      "mtime": 1784724615974,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.974Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/udyam-error.md": {
+      "filePath": "posts/udyam-error.md",
+      "hash": "487029a174c4edb3e7d31d60953692bd4be88ca83b8376fcd7eeb5537a2346d3",
+      "mtime": 1784724615975,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.975Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/ultimate-udyam-registration-gem-portal-exemptions.md": {
+      "filePath": "posts/ultimate-udyam-registration-gem-portal-exemptions.md",
+      "hash": "4804868cbf29965daaf931c1b0fde5beed8fdf2522e5b45921168c9125969e44",
+      "mtime": 1784724615977,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.977Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/use-ai-summarize-government-tender-pdfs.md": {
+      "filePath": "posts/use-ai-summarize-government-tender-pdfs.md",
+      "hash": "d06f68fba0cd82d430b1ce696b63d1cbd223f2d28c0416369dccb4c853acbd6e",
+      "mtime": 1784724615979,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.979Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/what-is-emd-in-gem.md": {
+      "filePath": "posts/what-is-emd-in-gem.md",
+      "hash": "2336def15de3f275f4b735392a912be966ea1431e83faac38ff31a3c04d54c15",
+      "mtime": 1784724615981,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.981Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "posts/what-is-l1-in-tender.md": {
+      "filePath": "posts/what-is-l1-in-tender.md",
+      "hash": "2a67bb3e732bbe4476eb546ff1002cd9c93062f2888c8d065fe89304e7ddcf7f",
+      "mtime": 1784724615983,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.983Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/file.svg": {
+      "filePath": "public/file.svg",
+      "hash": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "mtime": 1784724615984,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.984Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/globe.svg": {
+      "filePath": "public/globe.svg",
+      "hash": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "mtime": 1784724615985,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.985Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/google9ba3f572afcf73f2.html": {
+      "filePath": "public/google9ba3f572afcf73f2.html",
+      "hash": "024be590165bbce8ade1dffe78271db2afbd29cd985c8cf51d825892f46f5faf",
+      "mtime": 1784724615986,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.986Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/llms.txt": {
+      "filePath": "public/llms.txt",
+      "hash": "2c27ae61537bc3031a740c6b8ccf3f8e44f4727c3b23695bc45a9ba0c01b78b9",
+      "mtime": 1784724615987,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.987Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/logo_flat.png": {
+      "filePath": "public/logo_flat.png",
+      "hash": "ee0d2d0561c305fa23932e1b4649c48c45b1491d0423d1d3b8654281b0447d86",
+      "mtime": 1784724615988,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.988Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/logo_symbol.png": {
+      "filePath": "public/logo_symbol.png",
+      "hash": "ea539e5cd5c0a2126c128b33438dfe2f1b17fafd30ce91808173a26f156fe0ff",
+      "mtime": 1784724615989,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.989Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/mobile_mockup.png": {
+      "filePath": "public/mobile_mockup.png",
+      "hash": "580ad2f3de13ed213d49b20e3c16c055263f633cb7cfa01507c7521e4d30d974",
+      "mtime": 1784724615989,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.989Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/next.svg": {
+      "filePath": "public/next.svg",
+      "hash": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc",
+      "mtime": 1784724615990,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.990Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/og-image.png": {
+      "filePath": "public/og-image.png",
+      "hash": "165824019a3fb367a26aab33042296b01f7c6263d9636930b309e83d20d1d6fc",
+      "mtime": 1784724615992,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.992Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/search-index.json": {
+      "filePath": "public/search-index.json",
+      "hash": "cbb7daba8a36769392ad02a0b00266998feb7c6b9516c2f1d47f3c3c5b54e128",
+      "mtime": 1784724615995,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.995Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/vercel.svg": {
+      "filePath": "public/vercel.svg",
+      "hash": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4",
+      "mtime": 1784724615997,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.997Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "public/window.svg": {
+      "filePath": "public/window.svg",
+      "hash": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "mtime": 1784724615999,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:15.999Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "hash": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "mtime": 1784724616000,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.000Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "scratch/gen_articles.js": {
+      "filePath": "scratch/gen_articles.js",
+      "hash": "4f2e145032bf3da58bebb28e481fb35137a4cc727e15db928096efdd1af1aa8e",
+      "mtime": 1784724616002,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.002Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "scratch/gen_articles.py": {
+      "filePath": "scratch/gen_articles.py",
+      "hash": "eadb0e8691c3934f874ee6ba5ee929a98849cd9012e95de3a231ab857a565ac4",
+      "mtime": 1784724616003,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.003Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/about/page.tsx": {
+      "filePath": "src/app/about/page.tsx",
+      "hash": "f20bd0dc34f968c8a45b6ca2a2340c9061f027b5cc7f904088dddbbc7a75a142",
+      "mtime": 1784724616004,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.004Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/astra-hub/[portal]/page.tsx": {
+      "filePath": "src/app/astra-hub/[portal]/page.tsx",
+      "hash": "b791f62f2760ac88714adc1dec8be24b34c2fb0e12b38d7b21eb43125ebf8f81",
+      "mtime": 1784724616005,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.005Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/blog/page.tsx": {
+      "filePath": "src/app/blog/page.tsx",
+      "hash": "e54493f9de92236b4674e69c39fe4e8252a8fd8bf4422f130a01ea1d4c58e3ce",
+      "mtime": 1784724616006,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.006Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/blog/[slug]/page.tsx": {
+      "filePath": "src/app/blog/[slug]/page.tsx",
+      "hash": "1fa661f816e24333363b5015394fb84b646e769e4cdac142eb5b40c1ba235f05",
+      "mtime": 1784724616007,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.007Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/categories/[slug]/page.tsx": {
+      "filePath": "src/app/categories/[slug]/page.tsx",
+      "hash": "326e09ec27e552ed37cc42966f3259fafe7277c725a7490ac8873bb44d369664",
+      "mtime": 1784724616008,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.008Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/AIToolsGrid.tsx": {
+      "filePath": "src/app/components/AIToolsGrid.tsx",
+      "hash": "ef604775ba46e42bab61825bd484ef89151ef87c2d13c80cb0070b9f1858f2bc",
+      "mtime": 1784724616011,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.011Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/CategoryChips.tsx": {
+      "filePath": "src/app/components/CategoryChips.tsx",
+      "hash": "b8260b738a5f0706822fb72aa1054315e61a57eeccbc04419252d3726528de75",
+      "mtime": 1784724616012,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.013Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/CTASection.tsx": {
+      "filePath": "src/app/components/CTASection.tsx",
+      "hash": "5328d087011e7cce437db6411e68dbb67d011b7b7c357172b72051ee8e8e004f",
+      "mtime": 1784724616014,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.014Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/FAQAccordion.tsx": {
+      "filePath": "src/app/components/FAQAccordion.tsx",
+      "hash": "39d71cde13d455c8aac70b37d70f3852892d40c270f117b3fc42abd938568b65",
+      "mtime": 1784724616016,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.016Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/FeaturesBento.tsx": {
+      "filePath": "src/app/components/FeaturesBento.tsx",
+      "hash": "0a9efb3ae8cfae3cbd3d8c86007a73b53d53e09128fecca82ed40a8e667c5145",
+      "mtime": 1784724616017,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.017Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/FloatingSearchBar.tsx": {
+      "filePath": "src/app/components/FloatingSearchBar.tsx",
+      "hash": "714935d1d6341b1978fc8fc5f4ed83f9999054a6fb221eb5b3551f404f4e4394",
+      "mtime": 1784724616019,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.019Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/FooterV4.tsx": {
+      "filePath": "src/app/components/FooterV4.tsx",
+      "hash": "dfc5535ae19556275ecd13305c9da95fbde9cd0ec174c15bdeab63763eca3b3e",
+      "mtime": 1784724616020,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.020Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/HeroSectionV35.tsx": {
+      "filePath": "src/app/components/HeroSectionV35.tsx",
+      "hash": "c571da9d453c5d057f763a7d864c83bc68ba50ac2dbf5e9ea32c2e28ede798aa",
+      "mtime": 1784724616021,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.021Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/InteractiveDemo.tsx": {
+      "filePath": "src/app/components/InteractiveDemo.tsx",
+      "hash": "705a3d2377b633214683cdf869310c853d487944c3e17ab8b0102dd430986458",
+      "mtime": 1784724616022,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.022Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/InternalLinkingHub.tsx": {
+      "filePath": "src/app/components/InternalLinkingHub.tsx",
+      "hash": "b4a6cc5639f95bf4ac7db895a68b981e511a53a0dd327102656f73ccaa8b949e",
+      "mtime": 1784724616023,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.023Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/KnowledgeOS.tsx": {
+      "filePath": "src/app/components/KnowledgeOS.tsx",
+      "hash": "0b7b09f09ced66bbf86d2c94eb3e7e0bfa517422912c083932696deea836820c",
+      "mtime": 1784724616025,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.025Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/KnowledgeSignals.tsx": {
+      "filePath": "src/app/components/KnowledgeSignals.tsx",
+      "hash": "af11aaeebda8651e01428a5568db99273a7ac397c69172ae1b3f8878a06feaaf",
+      "mtime": 1784724616026,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.026Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/LiveAIDashboard.tsx": {
+      "filePath": "src/app/components/LiveAIDashboard.tsx",
+      "hash": "be301408fe5b038c840818440581e323acd8ff771d73091883df801e17121613",
+      "mtime": 1784724616028,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.028Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/Navbar.tsx": {
+      "filePath": "src/app/components/Navbar.tsx",
+      "hash": "74f4758a4947ff0845757625534cf2499159c55f157797aaa514d3d4b14dfc7e",
+      "mtime": 1784724616030,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.030Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/StatsSection.tsx": {
+      "filePath": "src/app/components/StatsSection.tsx",
+      "hash": "c38d1c024c74a15e147b5684d8c3a8c50904b7ae7733fe538cdb427b07729094",
+      "mtime": 1784724616032,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.032Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/components/ui/index.ts": {
+      "filePath": "src/app/components/ui/index.ts",
+      "hash": "8675780682089a0f8de972696658b7131eeec6852a10dfe76e5961c643a0119e",
+      "mtime": 1784724616033,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.033Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/contact/page.tsx": {
+      "filePath": "src/app/contact/page.tsx",
+      "hash": "526afb18e6e0a0c25d317b89616b9513f0a625c1d573ada5fe1310abe812b89a",
+      "mtime": 1784724616034,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.034Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/disclaimer/page.tsx": {
+      "filePath": "src/app/disclaimer/page.tsx",
+      "hash": "5420c0a804c407175589ff958ee1c4074a0f9a9d429a1292be220d9163ac097a",
+      "mtime": 1784724616035,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.035Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/faq/[slug]/page.tsx": {
+      "filePath": "src/app/faq/[slug]/page.tsx",
+      "hash": "fd89a34934d08dd4667964838092bee903091ee32f6841b8ad79439842feb2b5",
+      "mtime": 1784724616036,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.036Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/favicon.ico": {
+      "filePath": "src/app/favicon.ico",
+      "hash": "ab7f0e9d5332251094f519b0889fcf2d14fc07428c1de418110e6bc92580c6a1",
+      "mtime": 1784724616036,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.036Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/globals.css": {
+      "filePath": "src/app/globals.css",
+      "hash": "17886fb2853fd35575f4be4bbfed7a80681986650207cf84e6894ba9eea4a74f",
+      "mtime": 1784724616038,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.038Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/guides/[slug]/page.tsx": {
+      "filePath": "src/app/guides/[slug]/page.tsx",
+      "hash": "c2b5300a185e87c10a921dc556360f213e5ce8a240e83f92755ba595f2aaf6f7",
+      "mtime": 1784724616039,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.039Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/page.tsx": {
+      "filePath": "src/app/knowledge/page.tsx",
+      "hash": "3b1e03f704795eb9d7d576d5e199fcc03f0606d3b1e7e30dbc631e1fe5308048",
+      "mtime": 1784724616040,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.040Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/page.tsx": {
+      "filePath": "src/app/knowledge/[category]/page.tsx",
+      "hash": "f9220de6be3d09acf65250b953dabccc0d87d8c6c3f741931c3638a2daa1bb20",
+      "mtime": 1784724616041,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.041Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/CollapsibleDisclaimer.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/CollapsibleDisclaimer.tsx",
+      "hash": "97cc807895be4a2e3cd626ff0bf4adcaee79aedadc9e9a6c456bfc69d044d53d",
+      "mtime": 1784724616042,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.042Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/FaqAccordion.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/FaqAccordion.tsx",
+      "hash": "1ebd158a1704542c800cbb2092cda6b31f9a1fc16e43dfc2546c32936b45a3df",
+      "mtime": 1784724616044,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.044Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/InteractiveAiRecommendation.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/InteractiveAiRecommendation.tsx",
+      "hash": "ed9a9533073351fc6788891247432f1157d8698c0187272ce0afc2cd2908d76e",
+      "mtime": 1784724616046,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.046Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/QuickActions.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/QuickActions.tsx",
+      "hash": "1e9a551447016c82282a16ab175ab7aea5c8a480b3c92520b9718c93674c76fd",
+      "mtime": 1784724616048,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.048Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/QuickSearch.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/QuickSearch.tsx",
+      "hash": "6fab470a47f6b3fcb372387e8456b237b9db8fb7b921a6c84d0ace9e15335dc7",
+      "mtime": 1784724616050,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.050Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/components/TableOfContents.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/components/TableOfContents.tsx",
+      "hash": "f682aa276afde422ad447de76c95f9406955190364d6dca66851a75305183299",
+      "mtime": 1784724616051,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.051Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/knowledge/[category]/[slug]/page.tsx": {
+      "filePath": "src/app/knowledge/[category]/[slug]/page.tsx",
+      "hash": "7820605da717434e320e9e7202e82c7f2ad3c4842ed15e42a5985a4601f7eb26",
+      "mtime": 1784724616052,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.052Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/layout.tsx": {
+      "filePath": "src/app/layout.tsx",
+      "hash": "ca157fbe106531d90483ed74fa839178d7d7f2721aabb52670e7a817fdede2cf",
+      "mtime": 1784724616053,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.053Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/lib/siteConfig.ts": {
+      "filePath": "src/app/lib/siteConfig.ts",
+      "hash": "29994340b2bc9c4e13c6638c8208063cd9032f7ea55f51bca58a0d93e1723d1b",
+      "mtime": 1784724616054,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.054Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/page.tsx": {
+      "filePath": "src/app/page.tsx",
+      "hash": "b9419b4f69cf2fa82b998fce3263e26c66c103d81517e5e0ea5efe374b36cbd9",
+      "mtime": 1784724616055,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.055Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/pricing/page.tsx": {
+      "filePath": "src/app/pricing/page.tsx",
+      "hash": "6328805de25473ec38e77b02da4151ebd99d819cc5e276a46b75c9143d0b1b25",
+      "mtime": 1784724616056,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.056Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/privacy/page.tsx": {
+      "filePath": "src/app/privacy/page.tsx",
+      "hash": "ba7ab010dcc58c3ea93558b349eab9b745ec31537945609c7e3627af7396c5f7",
+      "mtime": 1784724616057,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.057Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/robots.ts": {
+      "filePath": "src/app/robots.ts",
+      "hash": "d04d4e20022a5a56d0ae4355bd189662de69493c996813a4f6d5eb5aa86eecf9",
+      "mtime": 1784724616058,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.058Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/sitemap.ts": {
+      "filePath": "src/app/sitemap.ts",
+      "hash": "3c2c24a5a1e09ac1f84435b4e9368a30bb552c3d9664261ece9eecda8e202181",
+      "mtime": 1784724616060,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.060Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/terms/page.tsx": {
+      "filePath": "src/app/terms/page.tsx",
+      "hash": "2069d74db201ee5b09affcbd0f8bd41b700100e14367a01b8a0ae5b5d7d9e68f",
+      "mtime": 1784724616063,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.063Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/page.tsx": {
+      "filePath": "src/app/tools/page.tsx",
+      "hash": "ebeec9a61e5bf40346c37782e341b67900cb8ad3af68a53bc456f57c5ebcb007",
+      "mtime": 1784724616064,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.064Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/report/page.tsx": {
+      "filePath": "src/app/tools/report/page.tsx",
+      "hash": "b30bb6b309089e434b77de10ae6f0c27f8f4d9753f02840144ed962749368c23",
+      "mtime": 1784724616066,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.066Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/[slug]/BidSearchDemo.tsx": {
+      "filePath": "src/app/tools/[slug]/BidSearchDemo.tsx",
+      "hash": "2daadd324064010d8001be2d492d45253b5551836a2dc476be90421701dc6a97",
+      "mtime": 1784724616068,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.068Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/[slug]/CatalogDemo.tsx": {
+      "filePath": "src/app/tools/[slug]/CatalogDemo.tsx",
+      "hash": "b9052e858a2834ab258173149e89f621fbe6c400b2753c450f23a844d9346757",
+      "mtime": 1784724616069,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.069Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/[slug]/page.tsx": {
+      "filePath": "src/app/tools/[slug]/page.tsx",
+      "hash": "c7d0073c105b11b7c19150c9d33fdd3ff4f0a4363b4e53a6225e79a2bae13dac",
+      "mtime": 1784724616071,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.071Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/app/tools/[slug]/TenderDemo.tsx": {
+      "filePath": "src/app/tools/[slug]/TenderDemo.tsx",
+      "hash": "7fad827007a38213e7f7fdda4ee73cd691271c6b1a3574666e61cc8681d0f8ab",
+      "mtime": 1784724616073,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.073Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/content/registry.ts": {
+      "filePath": "src/content/registry.ts",
+      "hash": "92b5af9b1ab425687b560a574a2e0b2baa548093b06c5224e12eb0c0d5f33cd2",
+      "mtime": 1784724616075,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.075Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/blog.ts": {
+      "filePath": "src/lib/blog.ts",
+      "hash": "3331407e2fbf3d15733e7ee10274b8394e30991028974a9c67d7323634343b87",
+      "mtime": 1784724616077,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.077Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/content/contentLoader.ts": {
+      "filePath": "src/lib/content/contentLoader.ts",
+      "hash": "0d7a6f6b9b96a1bbef0d96a1490beeeddf52e260d5bb6432c1a3405e109b6e72",
+      "mtime": 1784724616080,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.080Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/seo/jsonLd.ts": {
+      "filePath": "src/lib/seo/jsonLd.ts",
+      "hash": "8ef5a2dea1de48aa7655b83edff783556f8d7355ad6c4ec7c44d6b4c38c14847",
+      "mtime": 1784724616082,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.082Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/seo/linking.ts": {
+      "filePath": "src/lib/seo/linking.ts",
+      "hash": "f857bd87810d1b024cc27f33ce3fbd77e3d021ae5e500908a5e48a6d004c270e",
+      "mtime": 1784724616084,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.084Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/seo/metadata.ts": {
+      "filePath": "src/lib/seo/metadata.ts",
+      "hash": "b3e54cfffd331e3761cce25a716e3ff723ec9a365df457f6a2498934fbda279d",
+      "mtime": 1784724616085,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.085Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/seo/searchIndex.ts": {
+      "filePath": "src/lib/seo/searchIndex.ts",
+      "hash": "cb62f7488245de219acb73d31c2950760e13f9954554a85672fd719f2da61163",
+      "mtime": 1784724616086,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.086Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/seo/validation.ts": {
+      "filePath": "src/lib/seo/validation.ts",
+      "hash": "27fe5c985b278fd34001b41479fdc554a03ab4e1ea3802eba817eaef83d99d0e",
+      "mtime": 1784724616087,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.087Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "src/lib/slug/slug.ts": {
+      "filePath": "src/lib/slug/slug.ts",
+      "hash": "aea08af54c756c85e8351b757530470719e2f9baeb65b51d4f00ea2ab4df3232",
+      "mtime": 1784724616088,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.088Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "tailwind.config.js": {
+      "filePath": "tailwind.config.js",
+      "hash": "d5c3a4436e2303d5f45dc7d7cae003fc4f425b497403eecacc265311c137b2f1",
+      "mtime": 1784724616089,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.089Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "hash": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "mtime": 1784724616090,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.090Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "tsconfig.tsbuildinfo": {
+      "filePath": "tsconfig.tsbuildinfo",
+      "hash": "68d0b103dbb10aa4243d08969de3a332c20dabf5487aa7531260a939d5044780",
+      "mtime": 1784724616092,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.092Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    },
+    "update_reg.js": {
+      "filePath": "update_reg.js",
+      "hash": "e565bc9344d979f12b52e39a2505ab842508662b23c982ce7341f5f0bb1dc968",
+      "mtime": 1784724616094,
+      "size": 0,
+      "lastScan": "2026-07-22T12:50:16.094Z",
+      "engineVersion": "1.2.0",
+      "schemaVersion": "1.0.0"
+    }
+  }
+}

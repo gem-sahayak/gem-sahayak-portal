@@ -1,0 +1,25 @@
+{
+  "sessionTimestamp": "2026-07-22T12:50:29.459Z",
+  "executionTimeMs": 15,
+  "memory": {
+    "heapUsedMB": 5.48,
+    "heapTotalMB": 8.19,
+    "rssMB": 42.02
+  },
+  "throughput": {
+    "totalFiles": 0,
+    "totalArticles": 0,
+    "filesPerSec": 0,
+    "articlesPerSec": 0
+  },
+  "cacheMetrics": {
+    "cacheHitPct": 100,
+    "cacheMissPct": 0,
+    "fingerprintHitPct": 100,
+    "incrementalSavedPct": 100
+  },
+  "runtimes": {
+    "start:total_cli_execution": 1784724629453,
+    "total_cli_execution": 4
+  }
+}

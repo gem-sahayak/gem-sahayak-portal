@@ -1,0 +1,26 @@
+{
+  "state": {
+    "size": 0,
+    "hits": 0,
+    "misses": 0,
+    "hitRatePct": 100
+  },
+  "registry": {
+    "size": 0,
+    "hits": 0,
+    "misses": 0,
+    "hitRatePct": 100
+  },
+  "graph": {
+    "size": 0,
+    "hits": 0,
+    "misses": 0,
+    "hitRatePct": 100
+  },
+  "metadata": {
+    "size": 0,
+    "hits": 0,
+    "misses": 0,
+    "hitRatePct": 100
+  }
+}

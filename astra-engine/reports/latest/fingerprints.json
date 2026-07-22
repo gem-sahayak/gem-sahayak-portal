@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "timestamp": "2026-07-22T12:50:16.101Z",
+    "compositeFingerprint": "e28779ebdfe4b8f33080aabc6e12f7e0faf4df43287f1e3af4fc6db0b908c00c",
+    "fileCount": 199,
+    "registryHash": "a1d12430780037ad273d32bb549860bae0da8ad079de16dd80ab4a43972a0acf",
+    "graphHash": "57501e5c6808b3e14852a4ea21dc7873abf9409032a06f9b740c973e83f62cf7"
+  },
+  "databasePath": "reports/cache/fingerprint-db.json"
+}

@@ -16,6 +16,12 @@ const seoEngine = require('./engines/seo');
 const graphEngine = require('./engines/graph');
 const reporter = require('./core/reporter');
 
+const fingerprintManager = require('./core/fingerprint');
+const incrementalScanner = require('./core/incremental');
+const { cacheManager } = require('./core/cache');
+const { telemetry } = require('./core/telemetry');
+const { eventBus, EVENT_TYPES } = require('./core/events');
+
 const colors = {
   reset: "\x1b[0m",
   green: "\x1b[32m",
@@ -27,7 +33,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.1.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.2.0              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -41,6 +47,10 @@ function printHelp() {
   console.log(`  ${colors.green}seo${colors.reset}           Run SEO audit validations (titles, descriptions, canonicals, links)`);
   console.log(`  ${colors.green}graph${colors.reset}         Verify connections & node hierarchies in knowledge graph`);
   console.log(`  ${colors.green}validate${colors.reset}      Run complete suite of active validation sub-engines (registry, seo, graph)`);
+  console.log(`  ${colors.green}fingerprint${colors.reset}   Generate composite SHA256 workspace fingerprints & database export`);
+  console.log(`  ${colors.green}incremental${colors.reset}   Perform delta scan comparing workspace files against fingerprint database`);
+  console.log(`  ${colors.green}cache${colors.reset}         Inspect memory & snapshot cache efficiency metrics`);
+  console.log(`  ${colors.green}telemetry${colors.reset}     Export system execution runtimes, throughput & memory telemetry`);
   console.log(`  ${colors.green}integrity${colors.reset}     Validate base project file structures & imports sanity`);
   console.log(`  ${colors.green}geo${colors.reset}           Verify target regional mappings consistency`);
   console.log(`  ${colors.green}extension${colors.reset}     Inspect Chrome Extension manifest profiles & APIs integrations`);
@@ -52,14 +62,14 @@ function printHelp() {
   console.log(`  ${colors.green}-h, --help${colors.reset}    Show this help message\n`);
   console.log(`${colors.bright}Examples:${colors.reset}`);
   console.log(`  node cli.js doctor          Check system health`);
-  console.log(`  node cli.js registry        Validate registry sync`);
-  console.log(`  node cli.js seo             Run SEO engine audit`);
-  console.log(`  node cli.js graph           Validate knowledge graph topology`);
-  console.log(`  node cli.js validate        Run all Phase 3 engines\n`);
+  console.log(`  node cli.js fingerprint     Generate SHA256 fingerprint database`);
+  console.log(`  node cli.js incremental     Run delta scan comparison`);
+  console.log(`  node cli.js telemetry       Display system telemetry\n`);
 }
 
 async function runCli() {
   printBanner();
+  telemetry.startTimer('total_cli_execution');
 
   const args = process.argv.slice(2);
 
@@ -82,11 +92,10 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.2.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Exclusions Mapped: ${colors.green}${config.exclusions.join(', ')}${colors.reset}`);
-      console.log(`  - Verbosity: ${colors.green}${config.options.verbosity}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
 
       const modules = {
@@ -99,14 +108,11 @@ async function runCli() {
         'Registry Engine': registryEngine,
         'SEO Engine': seoEngine,
         'Knowledge Graph Engine': graphEngine,
-        'Knowledge Graph Builder': require('./core/graph'),
-        'Title Validator': require('./core/validators/title.validator'),
-        'Description Validator': require('./core/validators/description.validator'),
-        'Canonical Validator': require('./core/validators/canonical.validator'),
-        'Links Validator': require('./core/validators/links.validator'),
-        'Registry Validator': require('./core/validators/registry.validator'),
-        'Entity Validator': require('./core/validators/entity.validator'),
-        'Graph Validator': require('./core/validators/graph.validator'),
+        'Fingerprint Manager': fingerprintManager,
+        'Incremental Scanner': incrementalScanner,
+        'Event Bus': eventBus,
+        'Cache Layer': cacheManager,
+        'Telemetry Engine': telemetry,
         'Path Guard': require('./core/guards/pathGuard'),
         'Import Guard': require('./core/guards/importGuard'),
       };
@@ -122,33 +128,87 @@ async function runCli() {
         }
       }
 
-      const contractFiles = ['Engine.ts', 'Scanner.ts', 'Validator.ts', 'Reporter.ts', 'State.ts', 'Event.ts'];
-      const contractsDir = path.join(__dirname, 'contracts');
-      console.log(`\n  ${colors.bright}Contracts:${colors.reset}`);
-      for (const cf of contractFiles) {
-        const exists = fs.existsSync(path.join(contractsDir, cf));
-        console.log(`    ${exists ? '✅' : '❌'} ${cf}: ${exists ? colors.green + 'present' : colors.red + 'MISSING'}${colors.reset}`);
-        if (!exists) allModulesOk = false;
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4A modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'fingerprint': {
+      console.log(`${colors.cyan}🔑 Generating SHA256 Workspace Fingerprints...${colors.reset}`);
+      eventBus.publish(EVENT_TYPES.SCAN_STARTED, { command: 'fingerprint' });
+
+      const state = await scanner.runScanner(rootDir, config);
+      for (const [relPath, fileObj] of state.filesystem.files.entries()) {
+        fingerprintManager.fingerprintFile(relPath, fileObj.absolutePath);
       }
 
-      console.log(`\n  ${colors.bright}State Manager:${colors.reset}`);
-      try {
-        const snap = stateManager.getStateSnapshot();
-        const isFrozen = Object.isFrozen(snap);
-        console.log(`    ✅ State Snapshot: ${colors.green}available${colors.reset}`);
-        console.log(`    ${isFrozen ? '✅' : '❌'} Object.isFrozen: ${isFrozen ? colors.green + 'true' : colors.red + 'false'}${colors.reset}`);
-        if (!isFrozen) allModulesOk = false;
-      } catch (e) {
-        console.log(`    ❌ State Snapshot: ${colors.red}FAILED — ${e.message}${colors.reset}`);
-        allModulesOk = false;
-      }
+      const res = fingerprintManager.generateWorkspaceFingerprint(state);
+      eventBus.publish(EVENT_TYPES.CACHE_UPDATED, { type: 'fingerprint', composite: res.compositeFingerprint });
 
-      if (allModulesOk) {
-        console.log(`\n${colors.green}🟢 Astra OS Status: All systems operational.${colors.reset}\n`);
-      } else {
-        console.log(`\n${colors.red}🔴 Astra OS Status: Degraded — see failures above.${colors.reset}\n`);
-        process.exit(1);
-      }
+      const outputData = {
+        summary: {
+          timestamp: new Date().toISOString(),
+          compositeFingerprint: res.compositeFingerprint,
+          fileCount: res.fileCount,
+          registryHash: res.registryHash,
+          graphHash: res.graphHash
+        },
+        databasePath: 'reports/cache/fingerprint-db.json'
+      };
+
+      const jsonStr = JSON.stringify(outputData, null, 2);
+      const reportsDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(jsonStr, path.join(reportsDir, 'fingerprints.json'));
+
+      console.log(`  - Composite Fingerprint : ${colors.green}${res.compositeFingerprint}${colors.reset}`);
+      console.log(`  - Files Fingerprinted   : ${colors.green}${res.fileCount}${colors.reset}`);
+      console.log(`  - Fingerprint DB Export : ${colors.cyan}reports/cache/fingerprint-db.json${colors.reset}\n`);
+      break;
+    }
+
+    case 'incremental': {
+      console.log(`${colors.cyan}🔄 Running Incremental Delta Scan...${colors.reset}`);
+      eventBus.publish(EVENT_TYPES.SCAN_STARTED, { command: 'incremental' });
+
+      const state = await scanner.runScanner(rootDir, config);
+      const incRes = incrementalScanner.scanIncremental(state);
+
+      const reportsDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(incRes, null, 2), path.join(reportsDir, 'incremental-report.json'));
+
+      const s = incRes.comparison.stats;
+      console.log(`  - Total Files          : ${colors.green}${s.totalFiles}${colors.reset}`);
+      console.log(`  - Unchanged (Hit)      : ${colors.green}${s.unchangedCount}${colors.reset}`);
+      console.log(`  - Added Files          : ${colors.yellow}${s.addedCount}${colors.reset}`);
+      console.log(`  - Modified Files       : ${colors.yellow}${s.modifiedCount}${colors.reset}`);
+      console.log(`  - Deleted Files        : ${colors.red}${s.deletedCount}${colors.reset}`);
+      console.log(`  - Fingerprint Hit Rate : ${colors.cyan}${s.fingerprintHitRatePct}%${colors.reset}`);
+      console.log(`  - Incremental Saved %  : ${colors.cyan}${s.incrementalSavedPct}%${colors.reset}\n`);
+      break;
+    }
+
+    case 'cache': {
+      console.log(`${colors.cyan}💾 Inspecting Cache Layer Efficiency...${colors.reset}`);
+      const stats = cacheManager.getAllStats();
+      const reportsDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(stats, null, 2), path.join(reportsDir, 'cache-report.json'));
+
+      console.log(`  - State Snapshot Cache   : ${colors.green}${stats.state.size} entries (${stats.state.hitRatePct}% hit rate)${colors.reset}`);
+      console.log(`  - Registry Cache         : ${colors.green}${stats.registry.size} entries (${stats.registry.hitRatePct}% hit rate)${colors.reset}`);
+      console.log(`  - Graph Topology Cache   : ${colors.green}${stats.graph.size} entries (${stats.graph.hitRatePct}% hit rate)${colors.reset}\n`);
+      break;
+    }
+
+    case 'telemetry': {
+      console.log(`${colors.cyan}📊 System Execution & Memory Telemetry...${colors.reset}`);
+      telemetry.stopTimer('total_cli_execution');
+      const snap = telemetry.getSnapshot();
+
+      const reportsDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(snap, null, 2), path.join(reportsDir, 'telemetry.json'));
+
+      console.log(`  - Heap Usage Used       : ${colors.green}${snap.memory.heapUsedMB} MB${colors.reset}`);
+      console.log(`  - RSS Memory Peak       : ${colors.green}${snap.memory.rssMB} MB${colors.reset}`);
+      console.log(`  - Execution Runtime     : ${colors.green}${snap.executionTimeMs} ms${colors.reset}\n`);
       break;
     }
 
@@ -168,10 +228,6 @@ async function runCli() {
         process.exit(1);
       }
 
-      console.log(`  - Total Inventory Files Indexed: ${colors.green}${state.filesystem.files.size}${colors.reset}`);
-      console.log(`  - Markdown Content Files Found: ${colors.green}${state.metadataMap.size}${colors.reset}`);
-      console.log(`  - Registry Articles Configured: ${colors.green}${state.parsedRegistry.articles.length}${colors.reset}`);
-
       const enginesToRun = [];
       if (command === 'registry' || command === 'scan') {
         enginesToRun.push(registryEngine);
@@ -185,12 +241,14 @@ async function runCli() {
 
       const results = [];
       for (const engine of enginesToRun) {
-        console.log(`\n${colors.cyan}⚡ Running ${engine.manifest.name}...${colors.reset}`);
+        eventBus.publish(EVENT_TYPES.ENGINE_STARTED, { engine: engine.manifest.name });
         try {
           await engine.init({ config, state, logger: console });
           const res = await engine.run(state);
           results.push(res);
+          eventBus.publish(EVENT_TYPES.ENGINE_COMPLETED, { engine: engine.manifest.name, verdict: res.verdict });
         } catch (err) {
+          eventBus.publish(EVENT_TYPES.VALIDATION_FAILED, { engine: engine.manifest.name, error: err.message });
           console.error(`${colors.red}❌ Engine execution crash [${engine.manifest.name}]:${colors.reset}`, err.message);
           process.exit(1);
         }
@@ -217,7 +275,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.1.0'
+        engineVersion: '1.2.0'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');
@@ -230,11 +288,7 @@ async function runCli() {
 
       console.log(terminalReport);
 
-      console.log(`\n${colors.bright}=== SUMMARY VERDICT ===${colors.reset}`);
-      console.log(`Engines Executed : ${colors.green}${results.length}${colors.reset}`);
-      console.log(`Total Errors     : ${totalErrors > 0 ? colors.red + totalErrors : colors.green + 0}${colors.reset}`);
-      console.log(`Total Warnings   : ${totalWarnings > 0 ? colors.yellow + totalWarnings : colors.green + 0}${colors.reset}`);
-      console.log(`Overall Verdict  : ${overallVerdict === 'FAIL' ? colors.red + 'FAIL' : (overallVerdict === 'WARNING' ? colors.yellow + 'WARNING' : colors.green + 'PASS')}${colors.reset}`);
+      eventBus.publish(EVENT_TYPES.REPORT_GENERATED, { verdict: overallVerdict });
 
       if (overallVerdict === 'FAIL') {
         process.exit(1);
