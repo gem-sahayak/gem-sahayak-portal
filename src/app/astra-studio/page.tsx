@@ -19,16 +19,16 @@ export default function AstraStudioPage() {
   const [selectedReportContent, setSelectedReportContent] = useState<any>(null);
   
   // Console & Filter States
-  const [consoleFilter, setConsoleFilter] = useState<'ALL' | 'EVENTS' | 'ERRORS' | 'TELEMETRY'>('ALL');
+  const [consoleFilter, setConsoleFilter] = useState<'ALL' | 'KERNEL' | 'EVENTS' | 'ERRORS' | 'TELEMETRY'>('ALL');
   const [loading, setLoading] = useState<boolean>(false);
   const [consoleLogs, setConsoleLogs] = useState<Array<{ id: number; type: 'info' | 'success' | 'warn' | 'event' | 'error'; text: string; time: string }>>([
-    { id: 1, type: 'info', text: 'ASTRA Engine v1.14.0 Enterprise Kernel Initialized', time: '00:00:01' },
-    { id: 2, type: 'success', text: 'ImportGuard & PathGuard Security Rules Enforced', time: '00:00:02' },
-    { id: 3, type: 'event', text: 'Multi-Agent Mesh Coordinator: 23 Nodes Operational', time: '00:00:03' },
-    { id: 4, type: 'info', text: 'REST API Gateway v1 Synchronized with UI Workspace', time: '00:00:04' }
+    { id: 1, type: 'info', text: 'ASTRA Engine v1.14.0 Enterprise OS Kernel Booted', time: '00:07:01' },
+    { id: 2, type: 'success', text: 'ImportGuard & PathGuard Security Rules Active', time: '00:07:02' },
+    { id: 3, type: 'event', text: 'Multi-Agent Mesh Coordinator: 23 Nodes Operational', time: '00:07:03' },
+    { id: 4, type: 'info', text: 'REST API v1 Gateway Connected (100% Synchronized)', time: '00:07:04' }
   ]);
 
-  // Command Palette Keyboard Shortcut Listener (⌘K / Ctrl+K)
+  // Command Palette Keyboard Listener (⌘K / Ctrl+K)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
@@ -60,9 +60,9 @@ export default function AstraStudioPage() {
       if (telemRes.telemetry) setTelemetryData(telemRes.telemetry);
       if (repListRes.reports) setReportsList(repListRes.reports);
 
-      addLog('success', 'ASTRA REST APIs successfully synchronized with UI');
+      addLog('success', 'ASTRA REST APIs synchronized cleanly with Studio Workspace');
     } catch (err: any) {
-      addLog('warn', `API Fetch Notice: ${err.message}`);
+      addLog('warn', `API Sync Notice: ${err.message}`);
     } finally {
       setLoading(false);
     }
@@ -88,119 +88,120 @@ export default function AstraStudioPage() {
 
   const addLog = (type: 'info' | 'success' | 'warn' | 'event' | 'error', text: string) => {
     const time = new Date().toLocaleTimeString('en-US', { hour12: false });
-    setConsoleLogs(prev => [...prev.slice(-50), { id: Date.now(), type, text, time }]);
+    setConsoleLogs(prev => [...prev.slice(-60), { id: Date.now(), type, text, time }]);
   };
 
-  // Trigger Dynamic Engine Execution
+  // Trigger Dynamic Engine Pipeline
   const runEngine = async (engineName: string) => {
     setLoading(true);
     addLog('event', `Invoking Engine Pipeline: [${engineName.toUpperCase()}]`);
     setTimeout(() => {
       fetchAllData();
-      addLog('success', `Engine Execution Complete: [${engineName.toUpperCase()}] -> Output Written to reports/latest/`);
+      addLog('success', `Engine Pipeline Completed: [${engineName.toUpperCase()}] -> Artifact Exported`);
       setLoading(false);
     }, 400);
   };
 
-  // Grouped Navigation Items (Cursor / Linear / Datadog Style)
+  // Grouped Navigation (Cursor / Linear / Datadog Style)
   const navGroups = [
     {
       group: 'INTELLIGENCE ENGINES',
       items: [
-        { id: 'overview', label: 'Intelligence Overview', icon: '🏠' },
+        { id: 'overview', label: 'Command Center Overview', icon: '⚡' },
         { id: 'procurement', label: 'Procurement Intelligence', icon: '📦' },
-        { id: 'pricing', label: 'Pricing & Competition', icon: '💰' },
-        { id: 'compliance', label: 'Compliance & Audit', icon: '📑' },
-        { id: 'supplier', label: 'Supplier Capability & Risk', icon: '🏭' },
-        { id: 'market', label: 'Market Trends & HHI', icon: '📈' }
+        { id: 'pricing', label: 'Pricing & Competition Map', icon: '💰' },
+        { id: 'compliance', label: 'Compliance & Audit Matrix', icon: '📑' },
+        { id: 'supplier', label: 'Supplier Risk & Capability', icon: '🏭' },
+        { id: 'market', label: 'Market Trends & HHI Index', icon: '📈' }
       ]
     },
     {
       group: 'SYSTEM KERNEL & MEMORY',
       items: [
-        { id: 'agents', label: 'Multi-Agent Mesh', icon: '🤖' },
-        { id: 'reasoning', label: 'Reasoning Engine', icon: '🧠' },
+        { id: 'agents', label: 'Multi-Agent Mesh Network', icon: '🤖' },
+        { id: 'reasoning', label: 'Fact Reasoning Engine', icon: '🧠' },
         { id: 'memory', label: 'Episodic & Graph Memory', icon: '💾' }
       ]
     },
     {
       group: 'EXPORTS & DIAGNOSTICS',
       items: [
-        { id: 'reports', label: 'Report Explorer (102)', icon: '📊' },
+        { id: 'reports', label: 'Intelligence Center (102)', icon: '📊' },
         { id: 'telemetry', label: 'Telemetry & Diagnostics', icon: '📡' },
         { id: 'plugins', label: 'Plugins & SDK', icon: '🔌' },
-        { id: 'settings', label: 'OS Settings', icon: '⚙' }
+        { id: 'settings', label: 'OS Configuration', icon: '⚙' }
       ]
     }
   ];
 
   const filteredLogs = consoleLogs.filter(log => {
     if (consoleFilter === 'ALL') return true;
+    if (consoleFilter === 'KERNEL') return log.type === 'info' || log.type === 'success';
     if (consoleFilter === 'EVENTS') return log.type === 'event';
     if (consoleFilter === 'ERRORS') return log.type === 'error' || log.type === 'warn';
-    if (consoleFilter === 'TELEMETRY') return log.type === 'info' || log.type === 'success';
+    if (consoleFilter === 'TELEMETRY') return log.type === 'info';
     return true;
   });
 
   return (
-    <div style={{ background: '#090D14', color: '#E2E8F0', height: '100vh', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+    <div style={{ background: '#070A10', color: '#F8FAFC', height: '100vh', fontFamily: '-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
       
-      {/* ───── ENTERPRISE HEADER BAR (CURSOR / LINEAR STYLE) ───── */}
-      <header style={{ height: '52px', borderBottom: '1px solid rgba(255,255,255,0.08)', background: '#0D131F', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', position: 'sticky', top: 0, zIndex: 40, backdropFilter: 'blur(12px)' }}>
+      {/* ───── ENTERPRISE COMMAND CENTER HEADER ───── */}
+      <header style={{ height: '52px', borderBottom: '1px solid rgba(255,255,255,0.07)', background: '#0B0F19', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', position: 'sticky', top: 0, zIndex: 40, backdropFilter: 'blur(16px)' }}>
         
-        {/* Left Brand & Workspace Selector */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 800, fontSize: '1.05rem', color: '#38BDF8', letterSpacing: '-0.5px' }}>
-            <span style={{ fontSize: '1.2rem', filter: 'drop-shadow(0 0 6px rgba(56, 189, 248, 0.6))' }}>⚡</span> ASTRA STUDIO
+        {/* Brand & Workspace Switcher */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, fontSize: '1.05rem', color: '#38BDF8', letterSpacing: '-0.5px' }}>
+            <span style={{ fontSize: '1.25rem', filter: 'drop-shadow(0 0 8px rgba(56, 189, 248, 0.7))' }}>⚡</span> ASTRA STUDIO
           </div>
           
-          <div style={{ height: '16px', width: '1px', background: 'rgba(255,255,255,0.12)' }}></div>
+          <div style={{ height: '16px', width: '1px', background: 'rgba(255,255,255,0.1)' }}></div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', padding: '4px 12px', borderRadius: '6px', fontSize: '0.78rem', color: '#CBD5E1', cursor: 'pointer' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', padding: '4px 12px', borderRadius: '6px', fontSize: '0.78rem', color: '#E2E8F0', cursor: 'pointer' }}>
             <span>🏢 SahayakAI Enterprise Workspace</span>
             <span style={{ fontSize: '0.65rem', color: '#64748B' }}>▼</span>
           </div>
 
-          <span style={{ background: 'rgba(56, 189, 248, 0.12)', color: '#38BDF8', border: '1px solid rgba(56, 189, 248, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
+          <span style={{ background: 'rgba(56, 189, 248, 0.1)', color: '#38BDF8', border: '1px solid rgba(56, 189, 248, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
             v1.14.0 OS
           </span>
 
-          <span style={{ background: 'rgba(245, 130, 32, 0.12)', color: '#F58220', border: '1px solid rgba(245, 130, 32, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
+          <span style={{ background: 'rgba(245, 130, 32, 0.1)', color: '#F58220', border: '1px solid rgba(245, 130, 32, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
             Powered by ASTRA™
           </span>
         </div>
 
-        {/* Center Search / Command Trigger Input */}
+        {/* AI Command Center Input Trigger (⌘K) */}
         <div 
           onClick={() => setCmdOpen(true)}
-          style={{ background: 'rgba(0, 0, 0, 0.3)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '6px 16px', width: '340px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', color: '#94A3B8', fontSize: '0.8rem', transition: 'all 0.2s ease' }}
+          style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '6px 16px', width: '360px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', color: '#94A3B8', fontSize: '0.8rem', transition: 'all 0.2s ease' }}
           onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.4)'}
           onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)'}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span>🔍</span> Search modules, engines or run commands...
+            <span style={{ color: '#38BDF8' }}>🤖</span> Search tenders, run pricing or type command...
           </span>
-          <span style={{ background: '#1E293B', border: '1px solid #334155', borderRadius: '4px', padding: '1px 6px', fontSize: '0.68rem', color: '#E2E8F0', fontWeight: 600 }}>⌘K</span>
+          <span style={{ background: '#1E293B', border: '1px solid #334155', borderRadius: '4px', padding: '1px 6px', fontSize: '0.68rem', color: '#F8FAFC', fontWeight: 700 }}>⌘K</span>
         </div>
 
-        {/* Right Status Controls */}
+        {/* Status Indicators */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', fontSize: '0.78rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(74, 222, 128, 0.08)', border: '1px solid rgba(74, 222, 128, 0.2)', padding: '4px 12px', borderRadius: '20px', color: '#4ADE80' }}>
             <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#4ADE80', boxShadow: '0 0 8px #4ADE80' }}></span>
             <span style={{ fontWeight: 700, fontSize: '0.72rem', letterSpacing: '0.3px' }}>OPERATIONAL</span>
           </div>
 
-          <button onClick={fetchAllData} style={{ background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.12)', color: '#E2E8F0', padding: '6px 14px', borderRadius: '6px', fontSize: '0.75rem', cursor: 'pointer', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <button onClick={fetchAllData} style={{ background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.12)', color: '#F8FAFC', padding: '6px 14px', borderRadius: '6px', fontSize: '0.75rem', cursor: 'pointer', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
             <span>🔄</span> Sync APIs
           </button>
         </div>
       </header>
 
-      {/* ───── MAIN STUDIO BODY (SIDEBAR + CENTER + INSPECTOR) ───── */}
+      {/* ───── MAIN COMMAND CENTER BODY (SIDEBAR + CENTER + COPILOT) ───── */}
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
 
-        {/* ───── LEFT SIDEBAR (GROUPED / CURSOR IDE STYLE) ───── */}
-        <aside style={{ width: '250px', borderRight: '1px solid rgba(255,255,255,0.08)', background: '#0B0F19', padding: '16px 10px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
+        {/* ───── LEFT SIDEBAR (GROUPED NAVIGATION) ───── */}
+        <aside style={{ width: '255px', borderRight: '1px solid rgba(255,255,255,0.07)', background: '#090D14', padding: '16px 10px', display: 'flex', flexDirection: 'column', gap: '22px', overflowY: 'auto' }}>
           {navGroups.map((grp, idx) => (
             <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
               <div style={{ padding: '0 10px 6px 10px', fontSize: '0.64rem', fontWeight: 800, color: '#64748B', letterSpacing: '0.8px' }}>
@@ -219,7 +220,7 @@ export default function AstraStudioPage() {
                       padding: '8px 12px',
                       borderRadius: '6px',
                       border: 'none',
-                      background: isActive ? 'linear-gradient(90deg, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0.05) 100%)' : 'transparent',
+                      background: isActive ? 'linear-gradient(90deg, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0.04) 100%)' : 'transparent',
                       borderLeft: isActive ? '3px solid #38BDF8' : '3px solid transparent',
                       color: isActive ? '#38BDF8' : '#94A3B8',
                       fontWeight: isActive ? 700 : 500,
@@ -240,34 +241,34 @@ export default function AstraStudioPage() {
           ))}
         </aside>
 
-        {/* ───── CENTER CONTENT PANEL ───── */}
-        <main style={{ flex: 1, padding: '24px', overflowY: 'auto', background: '#0D131F', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+        {/* ───── CENTER INTELLIGENCE WORKSPACE ───── */}
+        <main style={{ flex: 1, padding: '24px', overflowY: 'auto', background: '#0B0F19', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           
-          {/* Top Metric Cards Bar with Sparklines & Elevation */}
+          {/* Elevation Metrics Bar with Sparklines */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
             
             {/* Card 1: System Health */}
-            <div style={{ background: 'linear-gradient(145deg, #131C2E 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.3)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>SYSTEM HEALTH</span>
+                <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>KERNEL HEALTH</span>
                 <span style={{ background: 'rgba(74, 222, 128, 0.12)', color: '#4ADE80', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>+0.4%</span>
               </div>
-              <div style={{ fontSize: '2.1rem', fontWeight: 800, color: '#4ADE80', marginTop: '6px', letterSpacing: '-0.5px' }}>98.4%</div>
-              <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>All 23 Guards & Engines Operational</div>
+              <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#4ADE80', marginTop: '6px', letterSpacing: '-0.5px' }}>98.4%</div>
+              <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>23 Engines & Core Guards Operational</div>
             </div>
 
             {/* Card 2: Stress Latency */}
-            <div style={{ background: 'linear-gradient(145deg, #131C2E 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.3)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>STRESS LATENCY</span>
                 <span style={{ background: 'rgba(56, 189, 248, 0.12)', color: '#38BDF8', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>92 ms</span>
               </div>
-              <div style={{ fontSize: '2.1rem', fontWeight: 800, color: '#38BDF8', marginTop: '6px', letterSpacing: '-0.5px' }}>92 ms</div>
+              <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#38BDF8', marginTop: '6px', letterSpacing: '-0.5px' }}>92 ms</div>
               <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>770,000 Operations &lt;4000ms target</div>
             </div>
 
             {/* Card 3: Compliance Risk */}
-            <div style={{ background: 'linear-gradient(145deg, #131C2E 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.3)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>COMPLIANCE RISK</span>
                 <span style={{ background: 'rgba(250, 204, 21, 0.12)', color: '#FACC15', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>SAFE</span>
@@ -277,45 +278,45 @@ export default function AstraStudioPage() {
             </div>
 
             {/* Card 4: Report Artifacts */}
-            <div style={{ background: 'linear-gradient(145deg, #131C2E 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.3)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>REPORT ARTIFACTS</span>
                 <span style={{ background: 'rgba(245, 130, 32, 0.12)', color: '#F58220', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>LIVE</span>
               </div>
-              <div style={{ fontSize: '2.1rem', fontWeight: 800, color: '#F58220', marginTop: '6px', letterSpacing: '-0.5px' }}>{reportsList.length || 102}</div>
+              <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#F58220', marginTop: '6px', letterSpacing: '-0.5px' }}>{reportsList.length || 102}</div>
               <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>Exported to reports/latest/</div>
             </div>
 
           </div>
 
-          {/* ───── TAB 1: OVERVIEW & INTELLIGENCE CENTER ───── */}
+          {/* ───── TAB 1: COMMAND CENTER OVERVIEW ───── */}
           {activeTab === 'overview' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               
-              {/* Strategic AI Recommendation Center */}
-              <div style={{ background: 'linear-gradient(135deg, #0F172A 0%, #16253B 100%)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', padding: '24px', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}>
+              {/* Hero AI Strategic Recommendation Box */}
+              <div style={{ background: 'linear-gradient(135deg, #0F172A 0%, #17253B 100%)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', padding: '24px', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#38BDF8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '8px' }}>
                   <span>✨</span> ASTRA AI STRATEGIC RECOMMENDATIONS
                 </div>
                 <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '10px' }}>
-                  Enterprise Procurement Intelligence Platform (v1.14.0)
+                  Enterprise Procurement Intelligence Operating System (v1.14.0)
                 </h2>
                 <p style={{ fontSize: '0.88rem', color: '#94A3B8', lineHeight: 1.6, maxWidth: '850px' }}>
                   ASTRA Engine has evaluated your procurement parameters across 7 domain engines. Your catalog health score is <strong>92/100</strong> (EXCELLENT), pricing is <strong>17% below benchmark</strong>, and MSME Turnover & EMD Exemptions are fully verified under GFR 2017 policies.
                 </p>
                 <div style={{ display: 'flex', gap: '14px', marginTop: '20px' }}>
-                  <button onClick={() => runEngine('procurement')} style={{ background: '#F58220', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 12px rgba(245, 130, 32, 0.3)' }}>
+                  <button onClick={() => runEngine('procurement')} style={{ background: '#F58220', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(245, 130, 32, 0.35)' }}>
                     ▶ Run Procurement Engine
                   </button>
-                  <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#0D131F', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 12px rgba(56, 189, 248, 0.3)' }}>
+                  <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#070A10', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(56, 189, 248, 0.35)' }}>
                     ▶ Run Pricing Benchmark
                   </button>
                 </div>
               </div>
 
-              {/* Subsystems Matrix */}
+              {/* Active Subsystems Grid */}
               <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px' }}>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#E2E8F0', marginBottom: '16px' }}>Active OS Subsystems Status</h3>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F8FAFC', marginBottom: '16px' }}>Active OS Subsystems Status</h3>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
                   {[
                     { name: 'Procurement Engine', status: 'PASS', ver: 'v1.14.0', desc: 'Marketplace & catalog registry' },
@@ -385,7 +386,7 @@ export default function AstraStudioPage() {
               {/* Raw JSON Code Block */}
               <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '18px' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#CBD5E1', marginBottom: '12px' }}>📄 Live Output Report JSON (procurement-report.json)</div>
-                <pre style={{ background: '#060A12', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
+                <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
                   {JSON.stringify(procurementData, null, 2)}
                 </pre>
               </div>
@@ -400,7 +401,7 @@ export default function AstraStudioPage() {
                   <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>💰 Pricing Intelligence & Market Competition</h2>
                   <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '4px' }}>Price Variance, Percentile Positioning, & Herfindahl-Hirschman Index (HHI)</p>
                 </div>
-                <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#0D131F', border: 'none', padding: '10px 18px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem' }}>
+                <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#070A10', border: 'none', padding: '10px 18px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem' }}>
                   ▶ Execute Pricing Engine
                 </button>
               </div>
@@ -433,7 +434,7 @@ export default function AstraStudioPage() {
 
               <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '18px' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#CBD5E1', marginBottom: '12px' }}>📄 Live Output Report JSON (pricing-report.json)</div>
-                <pre style={{ background: '#060A12', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
+                <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
                   {JSON.stringify(pricingData, null, 2)}
                 </pre>
               </div>
@@ -444,7 +445,7 @@ export default function AstraStudioPage() {
           {activeTab === 'reports' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px' }}>
-                <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>📊 Report Explorer ({reportsList.length} Files)</h2>
+                <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>📊 Intelligence Center ({reportsList.length} Files)</h2>
                 <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '4px' }}>Select any JSON report artifact exported to reports/latest/ to view dynamic JSON content</p>
               </div>
 
@@ -482,7 +483,7 @@ export default function AstraStudioPage() {
                 {/* Report Content */}
                 <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   <div style={{ fontWeight: 700, fontSize: '0.92rem', color: '#38BDF8' }}>Active Report: {selectedReportFile}</div>
-                  <pre style={{ background: '#060A12', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#4ADE80', overflowX: 'auto', maxHeight: '400px', fontFamily: 'monospace' }}>
+                  <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#4ADE80', overflowX: 'auto', maxHeight: '400px', fontFamily: 'monospace' }}>
                     {selectedReportContent ? JSON.stringify(selectedReportContent, null, 2) : '// Click a report file on the left panel to inspect content...'}
                   </pre>
                 </div>
@@ -499,7 +500,7 @@ export default function AstraStudioPage() {
               <p style={{ fontSize: '0.85rem', color: '#94A3B8' }}>
                 Operational Subsystem connected directly to ASTRA Engine Kernel v1.14.0. ImportGuard & PathGuard rules active.
               </p>
-              <pre style={{ background: '#060A12', padding: '18px', borderRadius: '10px', marginTop: '16px', fontSize: '0.82rem', color: '#38BDF8', fontFamily: 'monospace' }}>
+              <pre style={{ background: '#05080E', padding: '18px', borderRadius: '10px', marginTop: '16px', fontSize: '0.82rem', color: '#38BDF8', fontFamily: 'monospace' }}>
                 {JSON.stringify({ subsystem: activeTab, status: 'OPERATIONAL', guardActive: true, version: '1.14.0' }, null, 2)}
               </pre>
             </div>
@@ -507,18 +508,21 @@ export default function AstraStudioPage() {
 
         </main>
 
-        {/* ───── RIGHT PANEL: LIVE INSPECTOR ───── */}
-        <aside style={{ width: '290px', borderLeft: '1px solid rgba(255,255,255,0.08)', background: '#0B0F19', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
-          <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#F1F5F9', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '10px', letterSpacing: '0.5px' }}>
-            🔍 LIVE INSPECTOR
+        {/* ───── RIGHT PANEL: ASTRA AI STRATEGIC COPILOT & DECISION ENGINE ───── */}
+        <aside style={{ width: '310px', borderLeft: '1px solid rgba(255,255,255,0.07)', background: '#090D14', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
+          <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#F8FAFC', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '10px', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🤖</span> ASTRA AI COPILOT & DECISION ENGINE
           </div>
 
-          <div style={{ background: '#172033', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)' }}>
-            <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>ACTIVE SUBSYSTEM</div>
-            <div style={{ fontWeight: 800, color: '#38BDF8', marginTop: '4px', fontSize: '1rem', textTransform: 'uppercase' }}>{activeTab}</div>
+          <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(56, 189, 248, 0.25)', borderRadius: '12px', padding: '16px' }}>
+            <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>CONFIDENCE RATING</div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px' }}>
+              <div style={{ fontWeight: 800, color: '#38BDF8', fontSize: '1.8rem' }}>98%</div>
+              <span style={{ background: 'rgba(74, 222, 128, 0.12)', color: '#4ADE80', padding: '2px 8px', borderRadius: '4px', fontSize: '0.7rem', fontWeight: 700 }}>HIGH TRUST</span>
+            </div>
           </div>
 
-          <div style={{ background: '#172033', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.78rem' }}>
+          <div style={{ background: '#111827', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.78rem' }}>
             <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>KERNEL GUARDIANS</div>
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ ImportGuard: ACTIVE</div>
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ PathGuard: ACTIVE</div>
@@ -526,26 +530,28 @@ export default function AstraStudioPage() {
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ Read-Only Validation: ENFORCED</div>
           </div>
 
-          <div style={{ background: '#172033', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', fontSize: '0.78rem' }}>
-            <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>AI INSIGHTS</div>
-            <div style={{ color: '#CBD5E1', marginTop: '6px', lineHeight: 1.5 }}>
-              Engine execution nominal. 0 critical errors reported in kernel.
+          <div style={{ background: '#111827', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', fontSize: '0.78rem' }}>
+            <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>STRATEGIC ACTION CHECKLIST</div>
+            <div style={{ color: '#CBD5E1', marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <div>• Verify PAN/GST match on GeM profile</div>
+              <div>• Review L1 Margin Variance (-17%)</div>
+              <div>• Confirm MSME Turnover Exemption</div>
             </div>
           </div>
         </aside>
       </div>
 
-      {/* ───── BOTTOM PANEL: VS CODE / DEVELOPER IDE CONSOLE ───── */}
-      <footer style={{ height: '150px', borderTop: '1px solid rgba(255,255,255,0.08)', background: '#060A12', padding: '12px 20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+      {/* ───── BOTTOM PANEL: VS CODE / DEVELOPER IDE TERMINAL ───── */}
+      <footer style={{ height: '150px', borderTop: '1px solid rgba(255,255,255,0.07)', background: '#05080E', padding: '12px 20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
         
-        {/* Console Header Controls */}
+        {/* Terminal Header Controls */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '8px' }}>
           <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <span>💻 ASTRA Developer Console</span>
+            <span>💻 ASTRA Developer Terminal</span>
             
             {/* Filter Tabs */}
             <div style={{ display: 'flex', gap: '6px' }}>
-              {(['ALL', 'EVENTS', 'ERRORS', 'TELEMETRY'] as const).map((filter) => (
+              {(['ALL', 'KERNEL', 'EVENTS', 'ERRORS', 'TELEMETRY'] as const).map((filter) => (
                 <button
                   key={filter}
                   onClick={() => setConsoleFilter(filter)}
@@ -567,11 +573,11 @@ export default function AstraStudioPage() {
           </div>
 
           <button onClick={() => setConsoleLogs([])} style={{ background: 'transparent', border: 'none', color: '#64748B', fontSize: '0.72rem', cursor: 'pointer', fontWeight: 600 }}>
-            Clear Logs
+            Clear Console
           </button>
         </div>
 
-        {/* Console Log Stream */}
+        {/* Terminal Log Stream */}
         <div style={{ flex: 1, overflowY: 'auto', fontFamily: 'monospace', fontSize: '0.75rem', display: 'flex', flexDirection: 'column', gap: '4px' }}>
           {filteredLogs.map(log => (
             <div key={log.id} style={{ display: 'flex', gap: '12px', color: log.type === 'error' ? '#F87171' : log.type === 'warn' ? '#FACC15' : log.type === 'success' ? '#4ADE80' : '#38BDF8' }}>
@@ -582,16 +588,16 @@ export default function AstraStudioPage() {
         </div>
       </footer>
 
-      {/* ───── COMMAND PALETTE MODAL (⌘K) ───── */}
+      {/* ───── AI COMMAND PALETTE MODAL (⌘K) ───── */}
       {cmdOpen && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '100px', backdropFilter: 'blur(8px)' }} onClick={() => setCmdOpen(false)}>
-          <div style={{ background: '#0F172A', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', width: '520px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.7)' }} onClick={e => e.stopPropagation()}>
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '100px', backdropFilter: 'blur(10px)' }} onClick={() => setCmdOpen(false)}>
+          <div style={{ background: '#0F172A', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', width: '540px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.8)' }} onClick={e => e.stopPropagation()}>
             <div style={{ padding: '14px 18px', borderBottom: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ fontSize: '1.1rem' }}>🔍</span>
+              <span style={{ fontSize: '1.1rem', color: '#38BDF8' }}>🤖</span>
               <input
                 type="text"
                 autoFocus
-                placeholder="Type command or jump to module..."
+                placeholder="Type command or search module..."
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
                 style={{ background: 'transparent', border: 'none', color: 'white', outline: 'none', width: '100%', fontSize: '0.92rem' }}
@@ -604,7 +610,7 @@ export default function AstraStudioPage() {
                   <div
                     key={item.id}
                     onClick={() => { setActiveTab(item.id); setCmdOpen(false); }}
-                    style={{ padding: '10px 14px', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '12px', fontSize: '0.85rem', color: '#E2E8F0', transition: 'all 0.15s ease' }}
+                    style={{ padding: '10px 14px', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '12px', fontSize: '0.85rem', color: '#F8FAFC', transition: 'all 0.15s ease' }}
                     onMouseEnter={e => (e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)')}
                     onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                   >
