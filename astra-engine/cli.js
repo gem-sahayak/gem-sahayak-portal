@@ -18,6 +18,7 @@ const { reviewEngine } = require('./engines/review');
 const { semanticEngine } = require('./engines/semantic');
 const { optimizerEngine } = require('./engines/optimizer');
 const { knowledgeEngine } = require('./engines/knowledge');
+const { studioWorkspace, settingsManager } = require('./studio');
 const reporter = require('./core/reporter');
 
 const fingerprintManager = require('./core/fingerprint');
@@ -57,7 +58,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.6.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.7.0              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -73,7 +74,8 @@ function printHelp() {
   console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit`);
   console.log(`  ${colors.green}semantic${colors.reset}        Run Semantic SEO Intelligence Engine`);
   console.log(`  ${colors.green}optimize${colors.reset}        Run AI Content Optimization Platform`);
-  console.log(`  ${colors.green}knowledge${colors.reset}       Run Enterprise Knowledge Intelligence RAG Engine (vector, retrieval, context)`);
+  console.log(`  ${colors.green}knowledge${colors.reset}       Run Enterprise Knowledge Intelligence RAG Engine`);
+  console.log(`  ${colors.green}studio${colors.reset}          Launch ASTRA Studio Visual AI Workspace`);
   console.log(`  ${colors.green}validate${colors.reset}        Run complete suite of active validation sub-engines`);
   console.log(`  ${colors.green}fingerprint${colors.reset}     Generate composite SHA256 workspace fingerprints`);
   console.log(`  ${colors.green}incremental${colors.reset}     Perform delta scan comparing workspace files`);
@@ -110,7 +112,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.7.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -129,6 +131,7 @@ async function runCli() {
         'Semantic SEO Engine': semanticEngine,
         'AI Content Optimizer Platform': optimizerEngine,
         'Enterprise Knowledge Intelligence RAG Engine': knowledgeEngine,
+        'ASTRA Studio Foundation': studioWorkspace,
         'Fingerprint Manager': fingerprintManager,
         'Incremental Scanner': incrementalScanner,
         'Event Bus': eventBus,
@@ -152,56 +155,49 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4C.4 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 5A modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'studio': {
+      console.log(`${colors.cyan}🎨 Launching ASTRA Studio Visual AI Workspace (v1.7.0)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      const reportsDir = path.join(__dirname, 'reports');
+      const studioRes = await studioWorkspace.run(state, reportsDir);
+
+      if (args.includes('--settings')) {
+        console.log(`  - Studio Settings:`, settingsManager.getSettings());
+        process.exit(0);
+      }
+
+      console.log(`  - Active Workspace Project : ${colors.green}${studioRes.activeProject.name}${colors.reset}`);
+      console.log(`  - Studio Layout Theme       : ${colors.green}${studioRes.layout.theme}${colors.reset}`);
+      console.log(`  - Discovered Reports        : ${colors.green}${studioRes.reports.length}${colors.reset}`);
+      console.log(`  - Registered Commands       : ${colors.cyan}${studioRes.commands.length}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(studioRes, null, 2), path.join(reportsLatestDir, 'studio-report.json'));
+      await reporter.write(JSON.stringify(studioRes.activeProject, null, 2), path.join(reportsLatestDir, 'workspace-report.json'));
+      await reporter.write(JSON.stringify(studioRes.layout, null, 2), path.join(reportsLatestDir, 'navigation-report.json'));
+      await reporter.write(JSON.stringify(settingsManager.getSettings(), null, 2), path.join(reportsLatestDir, 'settings-report.json'));
+
+      console.log(`  - Studio JSON Exporter    : ${colors.cyan}reports/latest/studio-report.json${colors.reset}`);
+      console.log(`  - Workspace Exporter      : ${colors.cyan}reports/latest/workspace-report.json${colors.reset}`);
+      console.log(`  - Navigation Exporter     : ${colors.cyan}reports/latest/navigation-report.json${colors.reset}\n`);
       break;
     }
 
     case 'knowledge': {
-      console.log(`${colors.cyan}🧠 Running Enterprise Knowledge Intelligence RAG Engine (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🧠 Running Enterprise Knowledge Intelligence RAG Engine (v1.7.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await knowledgeEngine.init({ config, state, logger: console });
       const knwRes = await knowledgeEngine.run(state);
-
-      if (args.includes('--stats') || args.includes('--vector')) {
-        console.log(`  - Vector Index Size : ${colors.green}${knwRes.summary.vectorStoreSize} embeddings${colors.reset}`);
-        console.log(`  - Documents Indexed : ${colors.green}${knwRes.summary.totalDocumentsIndexed}${colors.reset}`);
-        console.log(`  - Chunks Generated  : ${colors.green}${knwRes.summary.totalChunksGenerated}${colors.reset}`);
-        console.log(`  - Cache Hit Ratio   : ${colors.cyan}${knwRes.summary.cacheHitRatio * 100}%${colors.reset}\n`);
-        process.exit(0);
-      }
-
-      console.log(`  - Total Documents Indexed : ${colors.green}${knwRes.summary.totalDocumentsIndexed}${colors.reset}`);
-      console.log(`  - Total Chunks Generated  : ${colors.green}${knwRes.summary.totalChunksGenerated}${colors.reset}`);
-      console.log(`  - Vector Store Size       : ${colors.green}${knwRes.summary.vectorStoreSize} embeddings${colors.reset}\n`);
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(knwRes, null, 2), path.join(reportsLatestDir, 'knowledge-report.json'));
-      await reporter.write(JSON.stringify({ vectorSize: knwRes.summary.vectorStoreSize }, null, 2), path.join(reportsLatestDir, 'vector-index.json'));
-      await reporter.write(JSON.stringify(knwRes.chunks, null, 2), path.join(reportsLatestDir, 'chunk-report.json'));
-      await reporter.write(JSON.stringify(knwRes.retrievedResults, null, 2), path.join(reportsLatestDir, 'retrieval-report.json'));
-      await reporter.write(JSON.stringify(knwRes.contextWindow, null, 2), path.join(reportsLatestDir, 'context-report.json'));
-      await reporter.write(JSON.stringify(knwRes.citationsFormatted, null, 2), path.join(reportsLatestDir, 'citation-report.json'));
-      await reporter.write(JSON.stringify(knwRes.cacheStats, null, 2), path.join(reportsLatestDir, 'knowledge-cache.json'));
-
-      const mdLines = [];
-      mdLines.push(`# ASTRA ENGINE v1.6.0 — KNOWLEDGE INTELLIGENCE RAG REPORT\n`);
-      mdLines.push(`**Indexed Documents:** ${knwRes.summary.totalDocumentsIndexed}\n`);
-      mdLines.push(`**Generated Chunks:** ${knwRes.summary.totalChunksGenerated}\n`);
-      mdLines.push(`**Vector Store Embeddings:** ${knwRes.summary.vectorStoreSize}\n`);
-      mdLines.push(`## Sample Reasoning Plan\n`);
-      for (const s of knwRes.answerPlan.reasoningSteps) {
-        mdLines.push(`- ${s}`);
-      }
-      await reporter.write(mdLines.join('\n'), path.join(reportsLatestDir, 'knowledge-report.md'));
-
-      console.log(`  - Knowledge JSON Exporter  : ${colors.cyan}reports/latest/knowledge-report.json${colors.reset}`);
-      console.log(`  - Vector Index Exporter    : ${colors.cyan}reports/latest/vector-index.json${colors.reset}`);
-      console.log(`  - Retrieval Report Exporter: ${colors.cyan}reports/latest/retrieval-report.json${colors.reset}\n`);
+      console.log(`  - Vector Store Size : ${colors.green}${knwRes.summary.vectorStoreSize} embeddings${colors.reset}\n`);
       break;
     }
 
     case 'optimize': {
-      console.log(`${colors.cyan}🚀 Running AI Content Optimization Platform Audit (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🚀 Running AI Content Optimization Platform Audit (v1.7.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await optimizerEngine.init({ config, state, logger: console });
       const optRes = await optimizerEngine.run(state);
@@ -210,7 +206,7 @@ async function runCli() {
     }
 
     case 'semantic': {
-      console.log(`${colors.cyan}🌐 Running Semantic SEO Intelligence Engine Audit (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🌐 Running Semantic SEO Intelligence Engine Audit (v1.7.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await semanticEngine.init({ config, state, logger: console });
       const semRes = await semanticEngine.run(state);
@@ -219,7 +215,7 @@ async function runCli() {
     }
 
     case 'review': {
-      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.7.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await reviewEngine.init({ config, state, logger: console });
       const revRes = await reviewEngine.run(state);
@@ -229,8 +225,8 @@ async function runCli() {
 
     case 'release':
     case 'artifacts': {
-      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.6.0)...${colors.reset}`);
-      const pkg = releaseManager.generateReleasePackage('1.6.0', 'astra-engine-v1.6.0-phase4C.4');
+      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.7.0)...${colors.reset}`);
+      const pkg = releaseManager.generateReleasePackage('1.7.0', 'astra-engine-v1.7.0-phase5A');
       console.log(`  - JSON Release Package : ${colors.green}reports/releases/release.json${colors.reset}\n`);
       break;
     }
@@ -238,7 +234,7 @@ async function runCli() {
     case 'build':
     case 'verify':
     case 'ci': {
-      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.6.0)...${colors.reset}`);
+      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.7.0)...${colors.reset}`);
       const bRes = buildValidator.validateBuild();
       console.log(`  - Integrity Check : ${bRes.passed ? colors.green + 'PASSED' : colors.red + 'FAILED'}${colors.reset}\n`);
       break;
@@ -246,7 +242,7 @@ async function runCli() {
 
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.6.0${colors.reset}\n`);
+      console.log(`  - SemVer Version : ${colors.green}1.7.0${colors.reset}\n`);
       break;
     }
 
@@ -305,7 +301,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.6.0'
+        engineVersion: '1.7.0'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');

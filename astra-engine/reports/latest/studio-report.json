@@ -1,0 +1,443 @@
+{
+  "manifest": {
+    "name": "ASTRA Studio Foundation",
+    "version": "1.7.0",
+    "description": "Enterprise Visual AI Workspace for SEO, Knowledge Graph, AI Review, Optimization & Knowledge Intelligence"
+  },
+  "verdict": "PASS",
+  "activeProject": {
+    "path": "C:/Users/hp/Desktop/Gem-Sahayak",
+    "name": "Gem-Sahayak",
+    "openedAt": "2026-07-22T13:44:36.104Z"
+  },
+  "layout": {
+    "theme": "dark",
+    "themeTokens": {
+      "background": "#1E1E2E",
+      "foreground": "#D9E0EE",
+      "primary": "#89B4FA",
+      "border": "#313244"
+    },
+    "activityBar": {
+      "activeItem": "explorer",
+      "items": [
+        {
+          "id": "explorer",
+          "name": "Explorer",
+          "icon": "folder"
+        },
+        {
+          "id": "reports",
+          "name": "Reports",
+          "icon": "file-text"
+        },
+        {
+          "id": "knowledge",
+          "name": "Knowledge RAG",
+          "icon": "cpu"
+        },
+        {
+          "id": "graph",
+          "name": "Knowledge Graph",
+          "icon": "git-merge"
+        },
+        {
+          "id": "review",
+          "name": "AI Review",
+          "icon": "shield-check"
+        },
+        {
+          "id": "semantic",
+          "name": "Semantic SEO",
+          "icon": "globe"
+        },
+        {
+          "id": "optimizer",
+          "name": "Content Optimizer",
+          "icon": "trending-up"
+        },
+        {
+          "id": "plugins",
+          "name": "Plugins",
+          "icon": "box"
+        },
+        {
+          "id": "settings",
+          "name": "Settings",
+          "icon": "settings"
+        }
+      ]
+    },
+    "mainPanel": {
+      "activeView": "explorer"
+    },
+    "statusBar": {
+      "project": "Gem-Sahayak",
+      "version": "1.7.0",
+      "loadedEnginesCount": 6,
+      "memoryUsage": "11 MB",
+      "statusText": "🟢 ASTRA OS: All Phase 5A modules operational"
+    }
+  },
+  "reports": [
+    {
+      "name": "anchor-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\anchor-report.json",
+      "sizeBytes": 127276,
+      "modifiedAt": "2026-07-22T13:33:52.626Z"
+    },
+    {
+      "name": "cache-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\cache-report.json",
+      "sizeBytes": 356,
+      "modifiedAt": "2026-07-22T12:50:25.691Z"
+    },
+    {
+      "name": "category-mapping-report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\category-mapping-report.md",
+      "sizeBytes": 956,
+      "modifiedAt": "2026-07-22T10:26:39.652Z"
+    },
+    {
+      "name": "chunk-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\chunk-report.json",
+      "sizeBytes": 112590,
+      "modifiedAt": "2026-07-22T13:39:08.484Z"
+    },
+    {
+      "name": "citation-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\citation-report.json",
+      "sizeBytes": 1397,
+      "modifiedAt": "2026-07-22T13:39:08.492Z"
+    },
+    {
+      "name": "content-gap.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\content-gap.json",
+      "sizeBytes": 13567,
+      "modifiedAt": "2026-07-22T13:33:52.627Z"
+    },
+    {
+      "name": "context-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\context-report.json",
+      "sizeBytes": 4832,
+      "modifiedAt": "2026-07-22T13:39:08.490Z"
+    },
+    {
+      "name": "entity-coverage.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\entity-coverage.json",
+      "sizeBytes": 1318,
+      "modifiedAt": "2026-07-22T13:26:53.186Z"
+    },
+    {
+      "name": "entity-expansion.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\entity-expansion.json",
+      "sizeBytes": 56782,
+      "modifiedAt": "2026-07-22T13:33:52.631Z"
+    },
+    {
+      "name": "faq-recommendations.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\faq-recommendations.json",
+      "sizeBytes": 91606,
+      "modifiedAt": "2026-07-22T13:33:52.632Z"
+    },
+    {
+      "name": "final-security-audit.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\final-security-audit.md",
+      "sizeBytes": 2475,
+      "modifiedAt": "2026-07-22T10:28:28.088Z"
+    },
+    {
+      "name": "fingerprints.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\fingerprints.json",
+      "sizeBytes": 412,
+      "modifiedAt": "2026-07-22T12:50:16.107Z"
+    },
+    {
+      "name": "heading-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\heading-report.json",
+      "sizeBytes": 14411,
+      "modifiedAt": "2026-07-22T13:33:52.629Z"
+    },
+    {
+      "name": "incremental-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\incremental-report.json",
+      "sizeBytes": 8740,
+      "modifiedAt": "2026-07-22T12:50:21.632Z"
+    },
+    {
+      "name": "internal-links.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\internal-links.json",
+      "sizeBytes": 32517,
+      "modifiedAt": "2026-07-22T13:33:52.624Z"
+    },
+    {
+      "name": "keyword-graph.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\keyword-graph.json",
+      "sizeBytes": 40543,
+      "modifiedAt": "2026-07-22T13:26:53.190Z"
+    },
+    {
+      "name": "knowledge-cache.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\knowledge-cache.json",
+      "sizeBytes": 60,
+      "modifiedAt": "2026-07-22T13:39:08.497Z"
+    },
+    {
+      "name": "knowledge-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\knowledge-report.json",
+      "sizeBytes": 180014,
+      "modifiedAt": "2026-07-22T13:39:08.477Z"
+    },
+    {
+      "name": "knowledge-report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\knowledge-report.md",
+      "sizeBytes": 411,
+      "modifiedAt": "2026-07-22T13:39:08.500Z"
+    },
+    {
+      "name": "optimization-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\optimization-report.json",
+      "sizeBytes": 709037,
+      "modifiedAt": "2026-07-22T13:33:52.622Z"
+    },
+    {
+      "name": "optimization-report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\optimization-report.md",
+      "sizeBytes": 1241,
+      "modifiedAt": "2026-07-22T13:33:52.639Z"
+    },
+    {
+      "name": "plugin-marketplace.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\plugin-marketplace.json",
+      "sizeBytes": 1497,
+      "modifiedAt": "2026-07-22T13:08:22.086Z"
+    },
+    {
+      "name": "priority-roadmap.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\priority-roadmap.json",
+      "sizeBytes": 90667,
+      "modifiedAt": "2026-07-22T13:33:52.637Z"
+    },
+    {
+      "name": "release-dashboard.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\release-dashboard.json",
+      "sizeBytes": 152,
+      "modifiedAt": "2026-07-22T13:12:07.427Z"
+    },
+    {
+      "name": "release-dashboard.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\release-dashboard.md",
+      "sizeBytes": 82,
+      "modifiedAt": "2026-07-22T13:12:07.427Z"
+    },
+    {
+      "name": "report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\report.json",
+      "sizeBytes": 134619,
+      "modifiedAt": "2026-07-22T12:58:16.988Z"
+    },
+    {
+      "name": "report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\report.md",
+      "sizeBytes": 37311,
+      "modifiedAt": "2026-07-22T12:58:16.988Z"
+    },
+    {
+      "name": "retrieval-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\retrieval-report.json",
+      "sizeBytes": 3195,
+      "modifiedAt": "2026-07-22T13:39:08.484Z"
+    },
+    {
+      "name": "review-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\review-report.json",
+      "sizeBytes": 23763,
+      "modifiedAt": "2026-07-22T13:21:40.217Z"
+    },
+    {
+      "name": "review-report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\review-report.md",
+      "sizeBytes": 5701,
+      "modifiedAt": "2026-07-22T13:21:40.220Z"
+    },
+    {
+      "name": "sample-plugin.apkg",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\sample-plugin.apkg",
+      "sizeBytes": 1141,
+      "modifiedAt": "2026-07-22T13:08:29.908Z"
+    },
+    {
+      "name": "sample-test.apkg",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\sample-test.apkg",
+      "sizeBytes": 1141,
+      "modifiedAt": "2026-07-22T13:07:51.033Z"
+    },
+    {
+      "name": "semantic-clusters.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\semantic-clusters.json",
+      "sizeBytes": 4345,
+      "modifiedAt": "2026-07-22T13:26:53.183Z"
+    },
+    {
+      "name": "semantic-report.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\semantic-report.json",
+      "sizeBytes": 67601,
+      "modifiedAt": "2026-07-22T13:26:53.180Z"
+    },
+    {
+      "name": "semantic-report.md",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\semantic-report.md",
+      "sizeBytes": 4523,
+      "modifiedAt": "2026-07-22T13:26:53.190Z"
+    },
+    {
+      "name": "telemetry.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\telemetry.json",
+      "sizeBytes": 509,
+      "modifiedAt": "2026-07-22T12:50:29.466Z"
+    },
+    {
+      "name": "topic-expansion.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\topic-expansion.json",
+      "sizeBytes": 46910,
+      "modifiedAt": "2026-07-22T13:33:52.634Z"
+    },
+    {
+      "name": "vector-index.json",
+      "category": "latest",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\latest\\vector-index.json",
+      "sizeBytes": 23,
+      "modifiedAt": "2026-07-22T13:39:08.479Z"
+    },
+    {
+      "name": "release-summary.json",
+      "category": "releases",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\releases\\release-summary.json",
+      "sizeBytes": 116,
+      "modifiedAt": "2026-07-22T13:12:07.287Z"
+    },
+    {
+      "name": "release.html",
+      "category": "releases",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\releases\\release.html",
+      "sizeBytes": 2443,
+      "modifiedAt": "2026-07-22T13:12:07.282Z"
+    },
+    {
+      "name": "release.json",
+      "category": "releases",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\releases\\release.json",
+      "sizeBytes": 3940,
+      "modifiedAt": "2026-07-22T13:12:07.282Z"
+    },
+    {
+      "name": "release.md",
+      "category": "releases",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\releases\\release.md",
+      "sizeBytes": 2343,
+      "modifiedAt": "2026-07-22T13:12:07.282Z"
+    },
+    {
+      "name": "fingerprint-db.json",
+      "category": "cache",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\cache\\fingerprint-db.json",
+      "sizeBytes": 68157,
+      "modifiedAt": "2026-07-22T12:50:21.629Z"
+    },
+    {
+      "name": "plugin-lock.json",
+      "category": "cache",
+      "path": "C:\\Users\\hp\\Desktop\\Gem-Sahayak\\gem-sahayak-portal\\astra-engine\\reports\\cache\\plugin-lock.json",
+      "sizeBytes": 122,
+      "modifiedAt": "2026-07-22T13:08:02.230Z"
+    }
+  ],
+  "commands": [
+    {
+      "id": "cmd.scan",
+      "name": "Run Repository Scan",
+      "command": "node cli.js scan"
+    },
+    {
+      "id": "cmd.seo",
+      "name": "Run SEO Engine Audit",
+      "command": "node cli.js seo"
+    },
+    {
+      "id": "cmd.graph",
+      "name": "Run Knowledge Graph Audit",
+      "command": "node cli.js graph"
+    },
+    {
+      "id": "cmd.review",
+      "name": "Run AI Review Engine Audit",
+      "command": "node cli.js review"
+    },
+    {
+      "id": "cmd.semantic",
+      "name": "Run Semantic SEO Intelligence Engine",
+      "command": "node cli.js semantic"
+    },
+    {
+      "id": "cmd.optimize",
+      "name": "Run Content Optimization Platform",
+      "command": "node cli.js optimize"
+    },
+    {
+      "id": "cmd.knowledge",
+      "name": "Run Knowledge RAG Pipeline",
+      "command": "node cli.js knowledge"
+    },
+    {
+      "id": "cmd.doctor",
+      "name": "Run Astra Doctor Diagnostics",
+      "command": "node cli.js doctor"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-cpuoy7",
+      "title": "ASTRA Studio Ready",
+      "message": "Visual AI Workspace operational",
+      "type": "SUCCESS",
+      "timestamp": "2026-07-22T13:44:36.116Z"
+    }
+  ]
+}

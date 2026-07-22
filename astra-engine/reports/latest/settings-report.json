@@ -1,0 +1,10 @@
+{
+  "theme": "dark",
+  "layout": "default-grid",
+  "autoSave": true,
+  "performanceMode": "high-speed",
+  "engineDefaults": {
+    "autoRunDoctor": true,
+    "reportFormat": "json"
+  }
+}

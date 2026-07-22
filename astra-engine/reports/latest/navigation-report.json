@@ -1,0 +1,69 @@
+{
+  "theme": "dark",
+  "themeTokens": {
+    "background": "#1E1E2E",
+    "foreground": "#D9E0EE",
+    "primary": "#89B4FA",
+    "border": "#313244"
+  },
+  "activityBar": {
+    "activeItem": "explorer",
+    "items": [
+      {
+        "id": "explorer",
+        "name": "Explorer",
+        "icon": "folder"
+      },
+      {
+        "id": "reports",
+        "name": "Reports",
+        "icon": "file-text"
+      },
+      {
+        "id": "knowledge",
+        "name": "Knowledge RAG",
+        "icon": "cpu"
+      },
+      {
+        "id": "graph",
+        "name": "Knowledge Graph",
+        "icon": "git-merge"
+      },
+      {
+        "id": "review",
+        "name": "AI Review",
+        "icon": "shield-check"
+      },
+      {
+        "id": "semantic",
+        "name": "Semantic SEO",
+        "icon": "globe"
+      },
+      {
+        "id": "optimizer",
+        "name": "Content Optimizer",
+        "icon": "trending-up"
+      },
+      {
+        "id": "plugins",
+        "name": "Plugins",
+        "icon": "box"
+      },
+      {
+        "id": "settings",
+        "name": "Settings",
+        "icon": "settings"
+      }
+    ]
+  },
+  "mainPanel": {
+    "activeView": "explorer"
+  },
+  "statusBar": {
+    "project": "Gem-Sahayak",
+    "version": "1.7.0",
+    "loadedEnginesCount": 6,
+    "memoryUsage": "11 MB",
+    "statusText": "🟢 ASTRA OS: All Phase 5A modules operational"
+  }
+}
