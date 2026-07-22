@@ -6,57 +6,68 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.0] — Phase 4B.1 (Developer Platform Foundation: Plugin SDK) - 2026-07-22
+
+### Added
+- **Plugin SDK Contracts (`contracts/`):**
+  - `Plugin.ts` (IAstraPlugin & IAstraPluginManifest interfaces)
+  - `PluginContext.ts` (IAstraPluginContext interface)
+  - `PluginResult.ts` (IAstraPluginResult interface)
+  - `PluginLifecycle.ts` (PluginLifecycleState enum)
+- **Plugin Loader Engine (`core/plugins/`):**
+  - `loader.js` (Discovers, validates manifest, loads/unloads, executes lifecycle hook pipelines)
+  - `registry.js` (Runtime registry: `register`, `unregister`, `enable`, `disable`, `list`, `find`)
+  - `sandbox.js` (Generates deepFrozen immutable context snapshots & enforces permission assertions)
+  - `manifest.js` (Validates `plugin.json` against `plugin.schema.json`)
+- **Plugin Schema (`schemas/plugin.schema.json`):** Validates plugin manifests for `id`, `name`, `version`, `permissions`, `hooks`.
+- **CLI Commands:** Added `plugins`, `plugin:list`, `plugin:validate`, `plugin:load`, `plugin:disable`.
+- **Unit Test Suite (`tests/`):** Added `manifest.test.js`, `permission.test.js`, `registry4b.test.js`, `loader.test.js`, and `plugin.test.js` (100% pass rate).
+- **Sample Read-Only Plugin (`plugins/sample-plugin/`):** Sample audit plugin testing hook execution pipelines.
+
+### Security & Isolation
+- **Read-Only Permission Enforcement:** Supported read permissions `READ_REPORTS`, `READ_STATE`, `READ_RESULTS`, `READ_GRAPH`, `READ_REGISTRY`. Zero write permissions allowed.
+- **Deep Freeze Isolation:** Plugin contexts are deeply frozen using `Reflect.ownKeys()` recursion to prevent plugin state mutation.
+- **Import & Path Guards Preserved:** Plugins cannot bypass `ImportGuard` or `PathGuard`.
+
+---
+
+## [1.2.0] — Phase 4A (Core Platform Infrastructure) - 2026-07-22
+
+### Added
+- **Fingerprint Database (`core/fingerprint/`):** SHA256 composite workspace fingerprints stored in `reports/cache/fingerprint-db.json`.
+- **Incremental Scanner (`core/incremental/`):** Delta scan comparer (`added`, `modified`, `deleted`, `unchanged`).
+- **Event Bus (`core/events/`):** Real-time event bus activating `contracts/Event.ts` with 8 event channels.
+- **Cache Layer (`core/cache/`):** In-memory TTL cache & domain snapshot manager.
+- **Telemetry Engine (`core/telemetry/`):** Performance metrics tracking runtimes, throughput, and memory bounds.
+- **CLI Commands:** Added `fingerprint`, `incremental`, `cache`, `telemetry`.
+
+---
+
 ## [1.1.1] — Phase 3.1 (Reporting Framework & Severity System) - 2026-07-22
 
 ### Added
-- **Severity Framework (`core/reporter/severity.js`):** Classifies issue findings into 4 distinct severities:
-  - `PASS`: No issue detected.
-  - `RECOMMENDATION`: Editorial / optimization suggestion (never blocks CI).
-  - `WARNING`: Important issue requiring attention (does not immediately block deployment).
-  - `FAIL`: Critical integrity failure (must block CI / deployment).
-- **Priority System:** Assigns priority levels `P0` (Critical), `P1` (High), `P2` (Medium), `P3` (Editorial).
-- **Standard Issue Object Schema:** Every finding follows uniform shape `{ id, engine, validator, severity, priority, code, file, entity, message, recommendation }`.
-- **Standardized Issue Codes:** `REG001`-`REG002`, `SEO001`-`SEO015`, `GRAPH001`-`GRAPH008`.
-- **Reporter Dashboard Upgrade (`core/reporter/index.js`):** Unified JSON, Markdown, and Terminal reports presenting Severity & Priority dashboards.
-- **Unit Test Suite (`tests/`):** Added `severity.test.js`, `priority.test.js`, and `reporter.test.js`.
-
-### Preserved & Unchanged
-- **Zero Engine Logic Mutations:** Scanner, Registry Engine, SEO Engine, Knowledge Graph Engine, Parsers, State Manager, and Security Guards remain 100% untouched.
-- **Observer-Only:** Zero writes outside `astra-engine/reports/`. Full backward compatibility for `report.json`, `report.md`, and CLI commands (`doctor`, `registry`, `seo`, `graph`, `validate`).
+- **Severity Framework (`core/reporter/severity.js`):** `PASS`, `RECOMMENDATION`, `WARNING`, `FAIL`.
+- **Priority System:** `P0` (Critical), `P1` (High), `P2` (Medium), `P3` (Editorial).
+- **Standard Issue Schema & Codes:** Standardized shape across JSON, Markdown, and Terminal reports.
 
 ---
 
 ## [1.1.0] — Phase 3 (SEO Engine & Knowledge Graph Engine) - 2026-07-22
 
 ### Added
-- **SEO Engine (`engines/seo/index.js`):** Multi-factor validation for metadata, titles, descriptions, canonical URLs, link quality, and heading hierarchy.
-- **Knowledge Graph Engine (`engines/graph/index.js`):** Topology analysis for parent/child/hub/spoke structures, cycle detection, orphan detection, dead ends, and max graph depth.
-- **Knowledge Graph Builder (`core/graph/index.js`):** O(V+E) memoized DFS graph topology builder.
-- **Isolated Core Validators (`core/validators/`):** Title, Description, Canonical, Links, Registry, Entity, Graph validators.
-- **JSON Schemas (`schemas/`):** `metadata.schema.json`, `entity.schema.json`.
-- **CLI Commands:** Added `astra seo`, `astra graph`, `astra validate`.
-- **Test Suite (`tests/`):** `seo.test.js`, `graph.test.js`, `stress.test.js` (1,000 synthetic articles in 61ms).
-- **Certification Docs:** `PHASE3_CERTIFIED.md` and git tag `astra-engine-v1.1.0-phase3-certified`.
+- **SEO Engine & Knowledge Graph Engine:** Multi-factor metadata, canonicals, links, graph topology, cycle detection.
 
 ---
 
 ## [1.0.1] — Phase 2 Hardening & Security Freeze - 2026-07-22
 
 ### Fixed
-- **SEC-001:** Removed `new Function()` from `core/parser/typescript.js`. Replaced with pure lexical tokenizer.
-- **SEC-002:** Added `core/guards/pathGuard.js` to restrict report writes strictly to `astra-engine/reports/`.
-- **SEC-003:** Added `core/guards/importGuard.js` to block production imports (`/src/`, `/app/`, `react`, etc.).
-- **CLI-001:** Added `help` subcommand support (`cli.js help`, `--help`, `-h`).
-- **STYLE-001:** Added `'use strict';` directive to all CommonJS runtime files.
+- **SEC-001:** Removed `new Function()`. Added pure lexical parser.
+- **SEC-002 / SEC-003:** Added `pathGuard.js` and `importGuard.js`.
 
 ---
 
 ## [1.0.0] — Phase 1 Core Engine Foundation - 2026-07-22
 
 ### Added
-- Initial ASTRA Engine core structure (`contracts/`, `core/`, `engines/registry/`, `schemas/`, `policies/`).
-- Filesystem scanner (`core/filesystem/index.js`) with SHA256 checksum fingerprinting.
-- Immutable state manager (`core/state/index.js`) with recursive `deepFreeze()`.
-- Markdown parser (`core/parser/markdown.js`) for frontmatter & headings extraction without rendering.
-- Multi-format reporter (`core/reporter/index.js`) for JSON, Markdown, and Terminal.
-- CLI entry point (`cli.js`) with `doctor`, `scan`, `registry` subcommands.
+- Initial ASTRA Engine core structure, scanner, parser, state manager, reporter, and CLI.

@@ -1,0 +1,10 @@
+{
+  "id": "sample-auditor",
+  "name": "Sample Audit Plugin",
+  "version": "1.0.0",
+  "author": "Astra Plugin Team",
+  "engineVersion": "1.3.0",
+  "description": "Sample read-only plugin inspecting ASTRA state snapshots",
+  "permissions": ["READ_STATE", "READ_REPORTS"],
+  "hooks": ["afterScan", "afterReport"]
+}
