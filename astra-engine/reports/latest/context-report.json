@@ -1,0 +1,107 @@
+{
+  "totalTokensEstimate": 213,
+  "maxTokenBudget": 2048,
+  "chunksIncluded": [
+    {
+      "chunkId": "chk-doc-art-udyam-error-1",
+      "parentId": "doc-art-udyam-error",
+      "sourceType": "ARTICLE",
+      "chunkType": "SEMANTIC",
+      "content": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein. Udyam verification errors block profile setup. Learn how to verify PAN/GST match, name discrepancies, and profile validation on the GeM portal.",
+      "metadata": {
+        "title": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+        "slug": "udyam-error",
+        "category": "gem-registration"
+      }
+    },
+    {
+      "chunkId": "chk-doc-art-representation-writing-2",
+      "parentId": "doc-art-representation-writing",
+      "sourceType": "ARTICLE",
+      "chunkType": "PARAGRAPH",
+      "content": "Detailed compliance rules for How to Write Technical Representations for Disqualified GeM Bids",
+      "metadata": {
+        "title": "How to Write Technical Representations for Disqualified GeM Bids",
+        "slug": "representation-writing",
+        "sectionHeading": "Detailed Guidelines"
+      }
+    },
+    {
+      "chunkId": "chk-doc-art-gem-l1-price-matching-counter-offer-1",
+      "parentId": "doc-art-gem-l1-price-matching-counter-offer",
+      "sourceType": "ARTICLE",
+      "chunkType": "SEMANTIC",
+      "content": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide. GeM portal bidding me L1 Price Matching aur counter-offer ke kya niyam hain? Janein L1+15% price band rule, divisible/indivisible splits, aur online response kaise submit karein.",
+      "metadata": {
+        "title": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+        "slug": "gem-l1-price-matching-counter-offer",
+        "category": "compliance-policy"
+      }
+    },
+    {
+      "chunkId": "chk-doc-art-gem-epbg-bank-guarantee-rules-refund-1",
+      "parentId": "doc-art-gem-epbg-bank-guarantee-rules-refund",
+      "sourceType": "ARTICLE",
+      "chunkType": "SEMANTIC",
+      "content": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process. Understand GeM ePBG (Electronic Performance Bank Guarantee) rules, online submission, SFMS verification, and the refund process for sellers.",
+      "metadata": {
+        "title": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+        "slug": "gem-epbg-bank-guarantee-rules-refund",
+        "category": "compliance-policy"
+      }
+    },
+    {
+      "chunkId": "chk-doc-hub-government-procurement-1",
+      "parentId": "doc-hub-government-procurement",
+      "sourceType": "HUB",
+      "chunkType": "SEMANTIC",
+      "content": "Knowledge Hub Category covering government-procurement guidelines",
+      "metadata": {
+        "title": "government-procurement Hub",
+        "slug": "government-procurement"
+      }
+    }
+  ],
+  "citations": [
+    {
+      "citationId": "cit-chk-doc-art-udyam-error-1",
+      "sourceSlug": "udyam-error",
+      "title": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+      "sectionHeading": "Main",
+      "chunkId": "chk-doc-art-udyam-error-1",
+      "url": "https://sahayakai.co.in/guides/udyam-error"
+    },
+    {
+      "citationId": "cit-chk-doc-art-representation-writing-2",
+      "sourceSlug": "representation-writing",
+      "title": "How to Write Technical Representations for Disqualified GeM Bids",
+      "sectionHeading": "Detailed Guidelines",
+      "chunkId": "chk-doc-art-representation-writing-2",
+      "url": "https://sahayakai.co.in/guides/representation-writing"
+    },
+    {
+      "citationId": "cit-chk-doc-art-gem-l1-price-matching-counter-offer-1",
+      "sourceSlug": "gem-l1-price-matching-counter-offer",
+      "title": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+      "sectionHeading": "Main",
+      "chunkId": "chk-doc-art-gem-l1-price-matching-counter-offer-1",
+      "url": "https://sahayakai.co.in/guides/gem-l1-price-matching-counter-offer"
+    },
+    {
+      "citationId": "cit-chk-doc-art-gem-epbg-bank-guarantee-rules-refund-1",
+      "sourceSlug": "gem-epbg-bank-guarantee-rules-refund",
+      "title": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+      "sectionHeading": "Main",
+      "chunkId": "chk-doc-art-gem-epbg-bank-guarantee-rules-refund-1",
+      "url": "https://sahayakai.co.in/guides/gem-epbg-bank-guarantee-rules-refund"
+    },
+    {
+      "citationId": "cit-chk-doc-hub-government-procurement-1",
+      "sourceSlug": "government-procurement",
+      "title": "government-procurement Hub",
+      "sectionHeading": "Main",
+      "chunkId": "chk-doc-hub-government-procurement-1",
+      "url": "https://sahayakai.co.in/guides/government-procurement"
+    }
+  ]
+}

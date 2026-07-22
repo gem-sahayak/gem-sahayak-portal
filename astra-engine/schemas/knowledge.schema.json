@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstraKnowledgeReportSchema",
+  "type": "object",
+  "properties": {
+    "engineVersion": { "type": "string" },
+    "evaluatedAt": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "totalDocumentsIndexed": { "type": "integer" },
+        "totalChunksGenerated": { "type": "integer" },
+        "vectorStoreSize": { "type": "integer" },
+        "cacheHitRatio": { "type": "number" }
+      },
+      "required": ["totalDocumentsIndexed", "totalChunksGenerated", "vectorStoreSize", "cacheHitRatio"]
+    }
+  },
+  "required": ["engineVersion", "evaluatedAt", "summary"]
+}
