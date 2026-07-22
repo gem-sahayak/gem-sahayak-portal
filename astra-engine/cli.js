@@ -14,7 +14,8 @@ const scanner = require('./core/scanner');
 const registryEngine = require('./engines/registry');
 const seoEngine = require('./engines/seo');
 const graphEngine = require('./engines/graph');
-const { reviewEngine, ReviewEngine } = require('./engines/review');
+const { reviewEngine } = require('./engines/review');
+const { semanticEngine } = require('./engines/semantic');
 const reporter = require('./core/reporter');
 
 const fingerprintManager = require('./core/fingerprint');
@@ -54,7 +55,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.5.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.5.1              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -67,7 +68,8 @@ function printHelp() {
   console.log(`  ${colors.green}registry${colors.reset}        Verify sync consistency between registry.ts & content files`);
   console.log(`  ${colors.green}seo${colors.reset}             Run SEO audit validations (titles, descriptions, canonicals, links)`);
   console.log(`  ${colors.green}graph${colors.reset}           Verify connections & node hierarchies in knowledge graph`);
-  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit (intent, EEAT, scores)`);
+  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit`);
+  console.log(`  ${colors.green}semantic${colors.reset}        Run Semantic SEO Intelligence Engine (clusters, cannibalization, entities)`);
   console.log(`  ${colors.green}validate${colors.reset}        Run complete suite of active validation sub-engines`);
   console.log(`  ${colors.green}fingerprint${colors.reset}     Generate composite SHA256 workspace fingerprints`);
   console.log(`  ${colors.green}incremental${colors.reset}     Perform delta scan comparing workspace files`);
@@ -104,7 +106,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.5.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.5.1)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -120,6 +122,7 @@ async function runCli() {
         'SEO Engine': seoEngine,
         'Knowledge Graph Engine': graphEngine,
         'AI Review Engine': reviewEngine,
+        'Semantic SEO Engine': semanticEngine,
         'Fingerprint Manager': fingerprintManager,
         'Incremental Scanner': incrementalScanner,
         'Event Bus': eventBus,
@@ -143,60 +146,85 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4C.1 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4C.2 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'semantic': {
+      console.log(`${colors.cyan}🌐 Running Semantic SEO Intelligence Engine Audit (v1.5.1)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      await semanticEngine.init({ config, state, logger: console });
+      const semRes = await semanticEngine.run(state);
+
+      if (args.includes('--clusters')) {
+        console.log(`  - Total Content Clusters: ${colors.green}${semRes.clusters.length}${colors.reset}`);
+        for (const cl of semRes.clusters) {
+          console.log(`    - Hub [${cl.hubSlug}]: ${cl.supportingArticles.length} supporting articles, Authority: ${cl.topicalAuthorityScore}%`);
+        }
+        console.log('');
+        process.exit(0);
+      }
+
+      if (args.includes('--entities')) {
+        console.log(`  - Total Entities Detected: ${colors.green}${semRes.entityCoverage.totalEntitiesDetected}${colors.reset}`);
+        console.log(`  - Covered Entities      : ${colors.green}${semRes.entityCoverage.covered.length}${colors.reset}`);
+        console.log(`  - Weak Coverage Entities: ${colors.yellow}${semRes.entityCoverage.weak.length}${colors.reset}`);
+        console.log(`  - Missing Entities      : ${colors.red}${semRes.entityCoverage.missing.length}${colors.reset}\n`);
+        process.exit(0);
+      }
+
+      if (args.includes('--cannibalization')) {
+        console.log(`  - Cannibalization Issues: ${colors.yellow}${semRes.summary.cannibalizationIssues}${colors.reset}`);
+        for (const w of semRes.warnings.filter(x => x.type === 'CANNIBALIZATION')) {
+          console.log(`    - ${colors.yellow}${w.message}${colors.reset}`);
+        }
+        console.log('');
+        process.exit(0);
+      }
+
+      console.log(`  - Overall Semantic SEO Score : ${colors.green}${semRes.scores.overallScore} / 100${colors.reset}`);
+      console.log(`  - Content Clusters Built     : ${colors.green}${semRes.summary.clustersCount}${colors.reset}`);
+      console.log(`  - Cannibalization Alerts     : ${colors.yellow}${semRes.summary.cannibalizationIssues}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(semRes, null, 2), path.join(reportsLatestDir, 'semantic-report.json'));
+      await reporter.write(JSON.stringify(semRes.clusters, null, 2), path.join(reportsLatestDir, 'semantic-clusters.json'));
+      await reporter.write(JSON.stringify(semRes.entityCoverage, null, 2), path.join(reportsLatestDir, 'entity-coverage.json'));
+      await reporter.write(JSON.stringify(semRes.keywordGraph, null, 2), path.join(reportsLatestDir, 'keyword-graph.json'));
+
+      const mdLines = [];
+      mdLines.push(`# ASTRA ENGINE v1.5.1 — SEMANTIC SEO INTELLIGENCE REPORT\n`);
+      mdLines.push(`**Overall Semantic Score:** ${semRes.scores.overallScore} / 100\n`);
+      mdLines.push(`## Category Scores\n`);
+      for (const [k, v] of Object.entries(semRes.scores.categoryScores)) {
+        mdLines.push(`- **${k}**: ${v}`);
+      }
+      mdLines.push(`\n## Top Priority Recommendations\n`);
+      for (const rec of semRes.recommendations) {
+        mdLines.push(`- **[${rec.type}]** ${rec.message} -> *${rec.recommendation}*`);
+      }
+      await reporter.write(mdLines.join('\n'), path.join(reportsLatestDir, 'semantic-report.md'));
+
+      console.log(`  - Semantic Report JSON Export : ${colors.cyan}reports/latest/semantic-report.json${colors.reset}`);
+      console.log(`  - Semantic Clusters Export    : ${colors.cyan}reports/latest/semantic-clusters.json${colors.reset}`);
+      console.log(`  - Entity Coverage Export      : ${colors.cyan}reports/latest/entity-coverage.json${colors.reset}`);
+      console.log(`  - Keyword Graph Export        : ${colors.cyan}reports/latest/keyword-graph.json${colors.reset}\n`);
       break;
     }
 
     case 'review': {
-      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.5.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.5.1)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await reviewEngine.init({ config, state, logger: console });
       const revRes = await reviewEngine.run(state);
-
-      const isJsonOnly = args.includes('--json');
-      const isScoreOnly = args.includes('--score');
-      const targetArticleIdx = args.indexOf('--article');
-      const targetArticle = targetArticleIdx !== -1 ? args[targetArticleIdx + 1] : null;
-
-      if (isScoreOnly) {
-        console.log(`  - Overall Score: ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}`);
-        console.log(`  - Intent       : ${revRes.scores.categoryScores.intent}`);
-        console.log(`  - EEAT         : ${revRes.scores.categoryScores.eeat}`);
-        console.log(`  - Completeness : ${revRes.scores.categoryScores.completeness}\n`);
-        process.exit(0);
-      }
-
-      console.log(`  - Overall AI Review Score : ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}`);
-      console.log(`  - Articles Evaluated     : ${colors.green}${revRes.summary.totalArticlesEvaluated}${colors.reset}`);
-      console.log(`  - AI Recommendations     : ${colors.yellow}${revRes.summary.totalRecommendations}${colors.reset}\n`);
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(revRes, null, 2), path.join(reportsLatestDir, 'review-report.json'));
-
-      const mdLines = [];
-      mdLines.push(`# ASTRA ENGINE v1.5.0 — AI REVIEW REPORT\n`);
-      mdLines.push(`**Overall Score:** ${revRes.scores.overallScore} / 100\n`);
-      mdLines.push(`## Category Scores Table\n`);
-      mdLines.push(`| Category | Score |`);
-      mdLines.push(`|---|---|`);
-      for (const [k, v] of Object.entries(revRes.scores.categoryScores)) {
-        mdLines.push(`| ${k} | ${v} |`);
-      }
-      mdLines.push(`\n## Top AI Recommendations\n`);
-      for (const rec of revRes.recommendations) {
-        mdLines.push(`- **[${rec.articleSlug}]** ${rec.suggestedHeading} (Reason: ${rec.reason}) [Impact: ${rec.impact}, Confidence: ${(rec.confidence * 100).toFixed(0)}%]`);
-      }
-      await reporter.write(mdLines.join('\n'), path.join(reportsLatestDir, 'review-report.md'));
-
-      console.log(`  - Review JSON Export: ${colors.cyan}reports/latest/review-report.json${colors.reset}`);
-      console.log(`  - Review MD Export  : ${colors.cyan}reports/latest/review-report.md${colors.reset}\n`);
+      console.log(`  - Overall AI Review Score : ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}\n`);
       break;
     }
 
     case 'release':
     case 'artifacts': {
-      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.5.0)...${colors.reset}`);
-      const pkg = releaseManager.generateReleasePackage('1.5.0', 'astra-engine-v1.5.0-phase4C.1');
+      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.5.1)...${colors.reset}`);
+      const pkg = releaseManager.generateReleasePackage('1.5.1', 'astra-engine-v1.5.1-phase4C.2');
       console.log(`  - JSON Release Package : ${colors.green}reports/releases/release.json${colors.reset}\n`);
       break;
     }
@@ -204,7 +232,7 @@ async function runCli() {
     case 'build':
     case 'verify':
     case 'ci': {
-      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.5.0)...${colors.reset}`);
+      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.5.1)...${colors.reset}`);
       const bRes = buildValidator.validateBuild();
       console.log(`  - Integrity Check : ${bRes.passed ? colors.green + 'PASSED' : colors.red + 'FAILED'}${colors.reset}\n`);
       break;
@@ -212,38 +240,7 @@ async function runCli() {
 
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.5.0${colors.reset}\n`);
-      break;
-    }
-
-    case 'fingerprint': {
-      console.log(`${colors.cyan}🔑 Generating SHA256 Workspace Fingerprints...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      const res = fingerprintManager.generateWorkspaceFingerprint(state);
-      console.log(`  - Composite Fingerprint : ${colors.green}${res.compositeFingerprint}${colors.reset}\n`);
-      break;
-    }
-
-    case 'incremental': {
-      console.log(`${colors.cyan}🔄 Running Incremental Delta Scan...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      const incRes = incrementalScanner.scanIncremental(state);
-      console.log(`  - Total Files          : ${colors.green}${incRes.comparison.stats.totalFiles}${colors.reset}\n`);
-      break;
-    }
-
-    case 'cache': {
-      console.log(`${colors.cyan}💾 Inspecting Cache Layer Efficiency...${colors.reset}`);
-      const stats = cacheManager.getAllStats();
-      console.log(`  - State Snapshot Cache   : ${colors.green}${stats.state.size} entries${colors.reset}\n`);
-      break;
-    }
-
-    case 'telemetry': {
-      console.log(`${colors.cyan}📊 System Execution & Memory Telemetry...${colors.reset}`);
-      telemetry.stopTimer('total_cli_execution');
-      const snap = telemetry.getSnapshot();
-      console.log(`  - Heap Usage Used       : ${colors.green}${snap.memory.heapUsedMB} MB${colors.reset}\n`);
+      console.log(`  - SemVer Version : ${colors.green}1.5.1${colors.reset}\n`);
       break;
     }
 
@@ -267,7 +264,7 @@ async function runCli() {
       if (command === 'registry' || command === 'scan') enginesToRun.push(registryEngine);
       else if (command === 'seo') enginesToRun.push(seoEngine);
       else if (command === 'graph') enginesToRun.push(graphEngine);
-      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine, reviewEngine);
+      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine, reviewEngine, semanticEngine);
 
       const results = [];
       for (const engine of enginesToRun) {
@@ -302,7 +299,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.5.0'
+        engineVersion: '1.5.1'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');

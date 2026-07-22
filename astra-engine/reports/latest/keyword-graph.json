@@ -1,0 +1,1376 @@
+{
+  "nodesCount": 103,
+  "edgesCount": 150,
+  "nodes": [
+    {
+      "id": "udyam-error",
+      "label": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "partnership-docs",
+      "label": "GeM Registration Documents Required for Partnership Firms",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "gem-portal-direct-purchase-limit-rules-2026",
+      "label": "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-bidding-mistakes-msme-tenders",
+      "label": "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "what-is-emd-in-gem",
+      "label": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "how-to-claim-emd-exemption-gem-portal-bids",
+      "label": "GeM Portal Bids Par EMD Exemption Kaise Claim Karein",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "label": "How to Automate GeM Bid Tracking & WhatsApp Alerts",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "label": "Get Real-Time GeM Portal Bid Alerts on WhatsApp",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "resolving-gem-portal-catalog-upload-errors",
+      "label": "Resolving Catalog Upload and Generic Brand Errors on GeM",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "ultimate-udyam-registration-gem-portal-exemptions",
+      "label": "Ultimate Udyam Registration & GeM Portal Exemptions Guide",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "emd-exemption-rules",
+      "label": "EMD Exemption Rules on GeM Portal â€” Complete Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "emd-refund-process",
+      "label": "EMD Refund Process on GeM â€” Timelines & Tracking Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "emd-vs-security-deposit",
+      "label": "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "emd-forfeiture-rules",
+      "label": "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "what-is-l1-in-tender",
+      "label": "What is L1 in Tender? Bid Evaluation & Pricing Guide",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "l1-vs-qcbs",
+      "label": "L1 vs QCBS: Understanding Tender Evaluation Methods",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "technical-evaluation-process",
+      "label": "Technical Evaluation Process & Bid Scrutiny on GeM Portal",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "financial-bid-evaluation",
+      "label": "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "reasons-for-bid-rejection",
+      "label": "10 Common Reasons for Bid Rejection on GeM Portal",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "bid-participation-rules",
+      "label": "GeM Bid Participation Eligibility Criteria (2026 Guide)",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "bid-splitting-rules",
+      "label": "GeM Bid Splitting Rules & GFR Compliance Guidelines",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "common-errors",
+      "label": "Common GeM Registration Errors and Solutions: Fix Blockers Instantly",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "complete-gem-registration-guide",
+      "label": "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "cppp-portal-registration-tender-search",
+      "label": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)",
+      "type": "Article",
+      "category": "Government Procurement Hub"
+    },
+    {
+      "id": "cpv-code-guide",
+      "label": "CPV Code Guide for GeM Sellers: Categorizing Tenders",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "daily-tender-monitoring",
+      "label": "Daily GeM Tender Monitoring Best Practices for MSMEs",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "documents-required",
+      "label": "Documents Required for GeM Registration (2026 Checklist)",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "earnest-money-deposit",
+      "label": "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "faqs",
+      "label": "Frequently Asked Questions About GeM Registration (2026 Q&A)",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "fees-explained",
+      "label": "GeM Registration Fees Explained: Caution Money and Charges",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "gem-bank-account-change-kaise-kare",
+      "label": "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-bidding-fees",
+      "label": "GeM Bidding Fees: Transaction Charges & Seller Commissions",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "gem-bidding-rules-handbook",
+      "label": "GeM Bidding Rules & Compliance Handbook (2026)",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "gem-boq-excel-sheet-upload-errors",
+      "label": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-catalog-rejected-reasons",
+      "label": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-catalogue-upload-kaise-kare",
+      "label": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-category-search",
+      "label": "How to Search GeM Tenders by Product Category",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "gem-company-profile-edit-kaise-kare",
+      "label": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "gem-consignee-receipt-process",
+      "label": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-crac-kaise-generate-hota-hai",
+      "label": "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-custom-bid-specifications-rules",
+      "label": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-email-mobile-number-change",
+      "label": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "gem-epbg-bank-guarantee-rules-refund",
+      "label": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-incident-management-show-cause-reply",
+      "label": "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-invoice-generate-kaise-kare",
+      "label": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-joint-venture-consortium-bidding",
+      "label": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-l1-price-matching-counter-offer",
+      "label": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-login-kaise-kare",
+      "label": "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)",
+      "type": "Article",
+      "category": "GeM Account Management"
+    },
+    {
+      "id": "gem-order-accept-kaise-kare",
+      "label": "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-order-cancel-rules",
+      "label": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-order-delivery-update-kaise-kare",
+      "label": "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-payment-kab-milta-hai",
+      "label": "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-payment-status-kaise-check-kare",
+      "label": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-product-approval-time",
+      "label": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-profile-update-kaise-kare",
+      "label": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "gem-registration-kaise-kare",
+      "label": "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)",
+      "type": "Article",
+      "category": "GeM Seller Onboarding"
+    },
+    {
+      "id": "gem-return-replacement-rules",
+      "label": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-search-filters-explained",
+      "label": "GeM Search Filters Explained: Narrowing Active Tenders",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "gem-seller-dashboard-kaise-use-kare",
+      "label": "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money",
+      "type": "Article",
+      "category": "gem-registration"
+    },
+    {
+      "id": "gem-seller-performance-dashboard",
+      "label": "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-seller-rating-improve-kaise-kare",
+      "label": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-seller-registration-kaise-kare",
+      "label": "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
+      "type": "Article",
+      "category": "GeM Seller Onboarding"
+    },
+    {
+      "id": "gem-service-contract-bidding-rules",
+      "label": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-tender-search-guide",
+      "label": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "gem-warranty-claim-process",
+      "label": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "how-to-search-gem-tenders",
+      "label": "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "ireps-railway-tender-bidding-guide",
+      "label": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)",
+      "type": "Article",
+      "category": "Government Procurement Hub"
+    },
+    {
+      "id": "keyword-search-tips",
+      "label": "Best Keyword Search Tips for Finding GeM Tenders",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "manufacturers-registration",
+      "label": "GeM Registration for Manufacturers: Complete OEM Guide",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "ministry-department-search",
+      "label": "How to Search GeM Tenders by Ministry and Department",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "msme-registration",
+      "label": "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "profile-completion",
+      "label": "How to Complete Your GeM Seller Profile (100% Checklist)",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "representation-writing",
+      "label": "How to Write Technical Representations for Disqualified GeM Bids",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "restrictive-specifications",
+      "label": "Appealing Restrictive Tender Specifications on GeM",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "reverse-auction-rules",
+      "label": "GeM Reverse Auction (RA) Rules and Bidding Strategies",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "saved-search-and-alerts",
+      "label": "Using Saved Searches and Tender Alerts on GeM",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "single-bid-compliance",
+      "label": "GeM Single Bid Evaluation and GFR Compliance Rules",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "state-procurement-up-tenders-gem-comparison",
+      "label": "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)",
+      "type": "Article",
+      "category": "government-procurement"
+    },
+    {
+      "id": "state-wise-tender-search",
+      "label": "How to Search State-wise Government Tenders on GeM",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "tender-evaluation-stages",
+      "label": "GeM Tender Evaluation Stages: Technical & Financial Opens",
+      "type": "Article",
+      "category": "GeM Bidding"
+    },
+    {
+      "id": "timeframe",
+      "label": "How Long Does GeM Registration Take: Step-by-Step Timelines",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "traders-registration",
+      "label": "GeM Registration for Traders: Resellers and Distributors",
+      "type": "Article",
+      "category": "GeM Registration"
+    },
+    {
+      "id": "use-ai-summarize-government-tender-pdfs",
+      "label": "How to Use AI to Summarize Government Tender PDFs in 30 Seconds",
+      "type": "Article",
+      "category": "Automation"
+    },
+    {
+      "id": "gem-oem-panel-registration-guide",
+      "label": "GeM OEM Panel Registration Complete Guide (2026)",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-catalog-rejected-reasons-complete-guide",
+      "label": "GeM Catalog Rejected Reasons & How to Fix Them",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-oem-authorization-letter-format",
+      "label": "GeM OEM Authorization Letter Format & Approval Tips",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-custom-item-creation-rules-2026",
+      "label": "GeM Custom Item Creation Rules & BOQ Upload Guide",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-generic-vs-brand-catalog-guide",
+      "label": "Generic Product vs Brand Product on GeM: What to Choose?",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-boq-excel-upload-errors-guide",
+      "label": "GeM BOQ Upload Errors & Excel Validation Fixes",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-hsn-code-gst-mapping-guide",
+      "label": "GeM HSN Code Mapping & GST Slab Approval Guide",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-product-cloning-duplication-guide",
+      "label": "GeM Product Clone Guide: How to Duplicate Catalog Fast",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-vendor-assessment-rules-exemption-guide",
+      "label": "GeM Vendor Assessment Rules & QCI Exemption Criteria",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-category-approval-time-guide",
+      "label": "GeM Category Approval Time & Escalation Process",
+      "type": "Article",
+      "category": "catalog-management"
+    },
+    {
+      "id": "gem-reverse-auction-complete-guide",
+      "label": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-bid-participation-fees-guide",
+      "label": "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-contract-performance-security-guide",
+      "label": "GeM Contract Performance Security (ePBG) Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-payment-cycle-complete-guide",
+      "label": "GeM Payment Cycle Complete Guide: Timeline & Process",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-order-fulfillment-guide",
+      "label": "GeM Order Fulfillment Guide: Generation to Dispatch",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-inspection-acceptance-guide",
+      "label": "GeM Inspection & Acceptance Guide (CRAC Rules)",
+      "type": "Article",
+      "category": "gem-bidding"
+    },
+    {
+      "id": "gem-liquidated-damages-rules",
+      "label": "GeM Liquidated Damages (LD) Rules Explained",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-contract-termination-rules",
+      "label": "GeM Contract Termination & Cancellation Rules Explained",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-seller-rating-performance-guide",
+      "label": "GeM Seller Rating & Performance Score Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    },
+    {
+      "id": "gem-buyer-seller-dispute-resolution-guide",
+      "label": "GeM Buyer Seller Dispute Resolution Guide",
+      "type": "Article",
+      "category": "compliance-policy"
+    }
+  ],
+  "edges": [
+    {
+      "source": "udyam-error",
+      "target": "partnership-docs",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "udyam-error",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "udyam-error",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "partnership-docs",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "partnership-docs",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-portal-direct-purchase-limit-rules-2026",
+      "target": "gem-bidding-mistakes-msme-tenders",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-portal-direct-purchase-limit-rules-2026",
+      "target": "l1-margin-calculator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-portal-direct-purchase-limit-rules-2026",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-bidding-mistakes-msme-tenders",
+      "target": "gem-portal-direct-purchase-limit-rules-2026",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-bidding-mistakes-msme-tenders",
+      "target": "how-to-claim-emd-exemption-gem-portal-bids",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-bidding-mistakes-msme-tenders",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-bidding-mistakes-msme-tenders",
+      "target": "rejection-reply-generator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "what-is-emd-in-gem",
+      "target": "how-to-claim-emd-exemption-gem-portal-bids",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "what-is-emd-in-gem",
+      "target": "gem-bidding-mistakes-msme-tenders",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "what-is-emd-in-gem",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "what-is-emd-in-gem",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "how-to-claim-emd-exemption-gem-portal-bids",
+      "target": "gem-bidding-mistakes-msme-tenders",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "how-to-claim-emd-exemption-gem-portal-bids",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "how-to-claim-emd-exemption-gem-portal-bids",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "target": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "target": "tender-summarizer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "target": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "target": "gem-keyword-generator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "resolving-gem-portal-catalog-upload-errors",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "resolving-gem-portal-catalog-upload-errors",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "resolving-gem-portal-catalog-upload-errors",
+      "target": "gem-keyword-generator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "ultimate-udyam-registration-gem-portal-exemptions",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "ultimate-udyam-registration-gem-portal-exemptions",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "emd-exemption-rules",
+      "target": "what-is-emd-in-gem",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-exemption-rules",
+      "target": "how-to-claim-emd-exemption-gem-portal-bids",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-exemption-rules",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "emd-refund-process",
+      "target": "what-is-emd-in-gem",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-refund-process",
+      "target": "emd-vs-security-deposit",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-refund-process",
+      "target": "l1-margin-calculator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "emd-vs-security-deposit",
+      "target": "what-is-emd-in-gem",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-vs-security-deposit",
+      "target": "emd-refund-process",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-vs-security-deposit",
+      "target": "l1-margin-calculator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "emd-forfeiture-rules",
+      "target": "what-is-emd-in-gem",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-forfeiture-rules",
+      "target": "gem-bidding-mistakes-msme-tenders",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "emd-forfeiture-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "what-is-l1-in-tender",
+      "target": "l1-vs-qcbs",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "what-is-l1-in-tender",
+      "target": "financial-bid-evaluation",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "what-is-l1-in-tender",
+      "target": "l1-margin-calculator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "l1-vs-qcbs",
+      "target": "what-is-l1-in-tender",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "l1-vs-qcbs",
+      "target": "technical-evaluation-process",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "l1-vs-qcbs",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "technical-evaluation-process",
+      "target": "financial-bid-evaluation",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "technical-evaluation-process",
+      "target": "reasons-for-bid-rejection",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "technical-evaluation-process",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "technical-evaluation-process",
+      "target": "eligibility-checker",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "financial-bid-evaluation",
+      "target": "what-is-l1-in-tender",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "financial-bid-evaluation",
+      "target": "technical-evaluation-process",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "financial-bid-evaluation",
+      "target": "l1-margin-calculator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "reasons-for-bid-rejection",
+      "target": "technical-evaluation-process",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "reasons-for-bid-rejection",
+      "target": "gem-bidding-mistakes-msme-tenders",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "reasons-for-bid-rejection",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "reasons-for-bid-rejection",
+      "target": "rejection-reply-generator",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "bid-participation-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "bid-splitting-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "common-errors",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "complete-gem-registration-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "cppp-portal-registration-tender-search",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "cpv-code-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "daily-tender-monitoring",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "documents-required",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "earnest-money-deposit",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "faqs",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "fees-explained",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-bank-account-change-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-bidding-fees",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-bidding-rules-handbook",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-boq-excel-sheet-upload-errors",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-catalog-rejected-reasons",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-catalogue-upload-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-category-search",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-company-profile-edit-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-consignee-receipt-process",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-crac-kaise-generate-hota-hai",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-custom-bid-specifications-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-email-mobile-number-change",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-epbg-bank-guarantee-rules-refund",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-incident-management-show-cause-reply",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-invoice-generate-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-joint-venture-consortium-bidding",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-l1-price-matching-counter-offer",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-login-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-order-accept-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-order-cancel-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-order-delivery-update-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-payment-kab-milta-hai",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-payment-status-kaise-check-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-product-approval-time",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-profile-update-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-registration-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-return-replacement-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-search-filters-explained",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-seller-dashboard-kaise-use-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-seller-performance-dashboard",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-seller-rating-improve-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-seller-registration-kaise-kare",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-service-contract-bidding-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-tender-search-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-warranty-claim-process",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "how-to-search-gem-tenders",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "ireps-railway-tender-bidding-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "keyword-search-tips",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "manufacturers-registration",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "ministry-department-search",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "msme-registration",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "profile-completion",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "representation-writing",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "restrictive-specifications",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "reverse-auction-rules",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "saved-search-and-alerts",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "single-bid-compliance",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "state-procurement-up-tenders-gem-comparison",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "state-wise-tender-search",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "tender-evaluation-stages",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "timeframe",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "traders-registration",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "use-ai-summarize-government-tender-pdfs",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-oem-panel-registration-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-oem-panel-registration-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-oem-panel-registration-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-catalog-rejected-reasons-complete-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-catalog-rejected-reasons-complete-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-catalog-rejected-reasons-complete-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-oem-authorization-letter-format",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-oem-authorization-letter-format",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-oem-authorization-letter-format",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-custom-item-creation-rules-2026",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-custom-item-creation-rules-2026",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-custom-item-creation-rules-2026",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-generic-vs-brand-catalog-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-generic-vs-brand-catalog-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-generic-vs-brand-catalog-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-boq-excel-upload-errors-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-boq-excel-upload-errors-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-boq-excel-upload-errors-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-hsn-code-gst-mapping-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-hsn-code-gst-mapping-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-hsn-code-gst-mapping-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-product-cloning-duplication-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-product-cloning-duplication-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-product-cloning-duplication-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-vendor-assessment-rules-exemption-guide",
+      "target": "udyam-error",
+      "relationship": "RELATED_ARTICLE"
+    },
+    {
+      "source": "gem-vendor-assessment-rules-exemption-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-vendor-assessment-rules-exemption-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-category-approval-time-guide",
+      "target": "bid-analyzer",
+      "relationship": "USES_TOOL"
+    },
+    {
+      "source": "gem-category-approval-time-guide",
+      "target": "hsn-code-finder",
+      "relationship": "USES_TOOL"
+    }
+  ]
+}

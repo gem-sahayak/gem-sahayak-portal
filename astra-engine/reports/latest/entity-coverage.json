@@ -1,0 +1,65 @@
+{
+  "totalEntitiesDetected": 8,
+  "covered": [
+    {
+      "name": "GeM Portal",
+      "category": "Platform",
+      "importance": 1,
+      "coveredInCount": 36,
+      "status": "COVERED"
+    }
+  ],
+  "weak": [
+    {
+      "name": "Udyam Certificate",
+      "category": "Compliance",
+      "importance": 0.9,
+      "coveredInCount": 1,
+      "status": "WEAK"
+    },
+    {
+      "name": "Direct Purchase Limit",
+      "category": "Compliance",
+      "importance": 0.85,
+      "coveredInCount": 1,
+      "status": "WEAK"
+    }
+  ],
+  "missing": [
+    {
+      "name": "EMD Deposit",
+      "category": "Finance",
+      "importance": 0.95,
+      "coveredInCount": 0,
+      "status": "MISSING"
+    },
+    {
+      "name": "L1 Bidder",
+      "category": "Bidding",
+      "importance": 0.9,
+      "coveredInCount": 0,
+      "status": "MISSING"
+    },
+    {
+      "name": "GFR Guidelines 2017",
+      "category": "Regulation",
+      "importance": 0.85,
+      "coveredInCount": 0,
+      "status": "MISSING"
+    },
+    {
+      "name": "MSME Preference",
+      "category": "Policy",
+      "importance": 0.8,
+      "coveredInCount": 0,
+      "status": "MISSING"
+    },
+    {
+      "name": "Bank Guarantee / ePBG",
+      "category": "Finance",
+      "importance": 0.8,
+      "coveredInCount": 0,
+      "status": "MISSING"
+    }
+  ]
+}

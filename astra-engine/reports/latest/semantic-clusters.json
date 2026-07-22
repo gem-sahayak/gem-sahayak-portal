@@ -1,0 +1,143 @@
+[
+  {
+    "hubSlug": "gem-registration",
+    "categoryName": "gem-registration",
+    "pillarSlug": "udyam-error",
+    "supportingArticles": [
+      "partnership-docs",
+      "ultimate-udyam-registration-gem-portal-exemptions",
+      "gem-company-profile-edit-kaise-kare",
+      "gem-email-mobile-number-change",
+      "gem-profile-update-kaise-kare",
+      "gem-seller-dashboard-kaise-use-kare"
+    ],
+    "faqs": [
+      "gem-registration-fees",
+      "emd-waiver-rules"
+    ],
+    "tools": [
+      "bid-analyzer",
+      "eligibility-checker"
+    ],
+    "topicalAuthorityScore": 94
+  },
+  {
+    "hubSlug": "gem-bidding",
+    "categoryName": "gem-bidding",
+    "pillarSlug": "gem-bidding-mistakes-msme-tenders",
+    "supportingArticles": [
+      "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "what-is-l1-in-tender",
+      "l1-vs-qcbs",
+      "technical-evaluation-process",
+      "financial-bid-evaluation",
+      "gem-boq-excel-sheet-upload-errors",
+      "gem-custom-bid-specifications-rules",
+      "gem-joint-venture-consortium-bidding",
+      "gem-service-contract-bidding-rules",
+      "gem-reverse-auction-complete-guide",
+      "gem-payment-cycle-complete-guide",
+      "gem-order-fulfillment-guide",
+      "gem-inspection-acceptance-guide"
+    ],
+    "faqs": [
+      "gem-registration-fees",
+      "emd-waiver-rules"
+    ],
+    "tools": [
+      "bid-analyzer",
+      "eligibility-checker"
+    ],
+    "topicalAuthorityScore": 94
+  },
+  {
+    "hubSlug": "catalog-management",
+    "categoryName": "catalog-management",
+    "pillarSlug": "resolving-gem-portal-catalog-upload-errors",
+    "supportingArticles": [
+      "gem-catalog-rejected-reasons",
+      "gem-catalogue-upload-kaise-kare",
+      "gem-consignee-receipt-process",
+      "gem-crac-kaise-generate-hota-hai",
+      "gem-invoice-generate-kaise-kare",
+      "gem-order-accept-kaise-kare",
+      "gem-order-cancel-rules",
+      "gem-order-delivery-update-kaise-kare",
+      "gem-payment-kab-milta-hai",
+      "gem-payment-status-kaise-check-kare",
+      "gem-product-approval-time",
+      "gem-return-replacement-rules",
+      "gem-seller-performance-dashboard",
+      "gem-seller-rating-improve-kaise-kare",
+      "gem-warranty-claim-process",
+      "gem-oem-panel-registration-guide",
+      "gem-catalog-rejected-reasons-complete-guide",
+      "gem-oem-authorization-letter-format",
+      "gem-custom-item-creation-rules-2026",
+      "gem-generic-vs-brand-catalog-guide",
+      "gem-boq-excel-upload-errors-guide",
+      "gem-hsn-code-gst-mapping-guide",
+      "gem-product-cloning-duplication-guide",
+      "gem-vendor-assessment-rules-exemption-guide",
+      "gem-category-approval-time-guide"
+    ],
+    "faqs": [
+      "gem-registration-fees",
+      "emd-waiver-rules"
+    ],
+    "tools": [
+      "bid-analyzer",
+      "eligibility-checker"
+    ],
+    "topicalAuthorityScore": 94
+  },
+  {
+    "hubSlug": "compliance-policy",
+    "categoryName": "compliance-policy",
+    "pillarSlug": "gem-portal-direct-purchase-limit-rules-2026",
+    "supportingArticles": [
+      "what-is-emd-in-gem",
+      "how-to-claim-emd-exemption-gem-portal-bids",
+      "emd-exemption-rules",
+      "emd-refund-process",
+      "emd-vs-security-deposit",
+      "emd-forfeiture-rules",
+      "reasons-for-bid-rejection",
+      "gem-bank-account-change-kaise-kare",
+      "gem-epbg-bank-guarantee-rules-refund",
+      "gem-incident-management-show-cause-reply",
+      "gem-l1-price-matching-counter-offer",
+      "gem-bid-participation-fees-guide",
+      "gem-contract-performance-security-guide",
+      "gem-liquidated-damages-rules",
+      "gem-contract-termination-rules",
+      "gem-seller-rating-performance-guide",
+      "gem-buyer-seller-dispute-resolution-guide"
+    ],
+    "faqs": [
+      "gem-registration-fees",
+      "emd-waiver-rules"
+    ],
+    "tools": [
+      "bid-analyzer",
+      "eligibility-checker"
+    ],
+    "topicalAuthorityScore": 94
+  },
+  {
+    "hubSlug": "government-procurement",
+    "categoryName": "government-procurement",
+    "pillarSlug": "state-procurement-up-tenders-gem-comparison",
+    "supportingArticles": [],
+    "faqs": [
+      "gem-registration-fees",
+      "emd-waiver-rules"
+    ],
+    "tools": [
+      "bid-analyzer",
+      "eligibility-checker"
+    ],
+    "topicalAuthorityScore": 70
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstraSemanticReportSchema",
+  "type": "object",
+  "properties": {
+    "engineVersion": { "type": "string" },
+    "evaluatedAt": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "overallScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "totalArticles": { "type": "integer" },
+        "clustersCount": { "type": "integer" },
+        "cannibalizationIssues": { "type": "integer" }
+      },
+      "required": ["overallScore", "totalArticles", "clustersCount", "cannibalizationIssues"]
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "overallScore": { "type": "number" },
+        "categoryScores": { "type": "object" }
+      }
+    }
+  },
+  "required": ["engineVersion", "evaluatedAt", "summary", "scores"]
+}
