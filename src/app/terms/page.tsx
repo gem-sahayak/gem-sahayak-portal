@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — GeM Sahayak",
-  description: "Read the Terms of Service of GeM Sahayak Chrome Extension. Understand the guidelines and limitations of our software utility.",
+  title: "Terms of Service — SahayakAI",
+  description: "Read the Terms of Service of SahayakAI Chrome Extension. Understand the guidelines and limitations of our software utility.",
 };
 
 export default function TermsOfServicePage() {
@@ -19,31 +19,31 @@ export default function TermsOfServicePage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>1. Acceptance of Terms</h2>
             <p style={{ color: "#64748B" }}>
-              By installing the GeM Sahayak Chrome extension or using gemsahayak.co.in, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not install or use our services.
+              By installing the SahayakAI Chrome extension or using sahayakai.co.in, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not install or use our services.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>2. Description of Service</h2>
             <p style={{ color: "#64748B" }}>
-              GeM Sahayak is a productivity helper and voice-assistant tool designed to assist registered sellers in searching active bids, setting up automated WhatsApp alerts, analyzing compliance requirements, and organizing product catalogue details. It acts as an automation overlay to simplify navigation on the Government e-Marketplace (GeM) portal.
+              SahayakAI is a productivity helper and voice-assistant tool designed to assist registered sellers in searching active bids, setting up automated WhatsApp alerts, analyzing compliance requirements, and organizing product catalogue details. It acts as an automation overlay to simplify navigation on the government e-marketplace (Gem India) portal.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>3. Official Government Disclaimer & Non-Affiliation</h2>
             <p style={{ color: "#64748B", fontWeight: "600" }}>
-              ⚠️ GeM Sahayak is an INDEPENDENT utility software. We are NOT associated, authorized, endorsed by, or in any way officially connected with the Government e-Marketplace (GeM India), the Ministry of Commerce and Industry, or any other Indian government department.
+              ⚠️ SahayakAI is an INDEPENDENT utility software. We are NOT associated, authorized, endorsed by, or in any way officially connected with the government e-marketplace (Gem India), the Ministry of Commerce and Industry, or any other Indian government department.
             </p>
             <p style={{ color: "#64748B", marginTop: "10px" }}>
-              The official portal is accessible at <a href="https://gem.gov.in" target="_blank" style={{ color: "#16a34a", textDecoration: "underline" }}>https://gem.gov.in</a>. All transactions, bidding regulations, registrations, and official portal updates must be performed directly on the official GeM website in compliance with government rules.
+              The official portal is accessible at <a href="https://gem.gov.in" target="_blank" style={{ color: "#16a34a", textDecoration: "underline" }}>https://gem.gov.in</a>. All transactions, bidding regulations, registrations, and official portal updates must be performed directly on the official Gem portal website in compliance with government rules.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>4. AI and Data Limitations</h2>
             <p style={{ color: "#64748B" }}>
-              GeM Sahayak utilizes artificial intelligence (AI) and automated network requests to compile and present information. 
+              SahayakAI utilizes artificial intelligence (AI) and automated network requests to compile and present information. 
             </p>
             <ul style={{ listStyle: "disc", marginLeft: "20px", marginTop: "8px", color: "#64748B" }}>
               <li><strong>AI Error Margins</strong>: AI models can make errors or overlook details. You must manually check and verify any L1 eligibility, category selection, or pricing suggestions before placing bids.</li>
@@ -54,14 +54,14 @@ export default function TermsOfServicePage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>5. Permitted Use & Account Security</h2>
             <p style={{ color: "#64748B" }}>
-              You agree to use GeM Sahayak solely for lawful business purposes in compliance with the GeM Portal Terms of Use. You are solely responsible for keeping your login credentials, passwords, and OTPs secure. GeM Sahayak does not collect, record, or request your official login credentials.
+              You agree to use SahayakAI solely for lawful business purposes in compliance with the Gem portal Terms of Use. You are solely responsible for keeping your login credentials, passwords, and OTPs secure. SahayakAI does not collect, record, or request your official login credentials.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>6. Limitation of Liability</h2>
             <p style={{ color: "#64748B" }}>
-              In no event shall GeM Sahayak, its developers, or its team be liable for any direct, indirect, incidental, special, or consequential damages (including loss of business, bids, or profits) arising out of the use or inability to use the helper extension, even if advised of the possibility of such damages.
+              In no event shall SahayakAI, its developers, or its team be liable for any direct, indirect, incidental, special, or consequential damages (including loss of business, bids, or profits) arising out of the use or inability to use the helper extension, even if advised of the possibility of such damages.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>8. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              For any questions regarding these terms, please contact us at <strong>support@gemsahayak.co.in</strong>.
+              For any questions regarding these terms, please contact us at <strong>support@sahayakai.co.in</strong>.
             </p>
           </section>
         </div>

@@ -12,6 +12,17 @@ export interface PostItem {
   date: string;
   author: string;
   category: string;
+  layout?: string;
+  reviewer?: string;
+  updatedDate?: string;
+  version?: string;
+  readingTime?: string;
+  sources?: string[];
+  cta?: string;
+  keyTakeaways?: string[];
+  faqs?: { q: string; a: string }[];
+  relatedTools?: string[];
+  relatedArticles?: string[];
 }
 
 export interface PostDetails extends PostItem {
@@ -44,8 +55,19 @@ export function getSortedPostsData(): PostItem[] {
         title: matterResult.data.title || '',
         summary: matterResult.data.summary || '',
         date: matterResult.data.date || '',
-        author: matterResult.data.author || 'GeM Sahayak Team',
+        author: matterResult.data.author || 'SahayakAI Team',
         category: matterResult.data.category || 'General',
+        layout: matterResult.data.layout,
+        reviewer: matterResult.data.reviewer,
+        updatedDate: matterResult.data.updatedDate,
+        version: matterResult.data.version,
+        readingTime: matterResult.data.readingTime,
+        sources: matterResult.data.sources,
+        cta: matterResult.data.cta,
+        keyTakeaways: matterResult.data.keyTakeaways,
+        faqs: matterResult.data.faqs,
+        relatedTools: matterResult.data.relatedTools,
+        relatedArticles: matterResult.data.relatedArticles
       };
     });
 
@@ -81,7 +103,18 @@ export async function getPostData(slug: string): Promise<PostDetails | null> {
     title: matterResult.data.title || '',
     summary: matterResult.data.summary || '',
     date: matterResult.data.date || '',
-    author: matterResult.data.author || 'GeM Sahayak Team',
+    author: matterResult.data.author || 'SahayakAI Team',
     category: matterResult.data.category || 'General',
+    layout: matterResult.data.layout,
+    reviewer: matterResult.data.reviewer,
+    updatedDate: matterResult.data.updatedDate,
+    version: matterResult.data.version,
+    readingTime: matterResult.data.readingTime,
+    sources: matterResult.data.sources,
+    cta: matterResult.data.cta,
+    keyTakeaways: matterResult.data.keyTakeaways,
+    faqs: matterResult.data.faqs,
+    relatedTools: matterResult.data.relatedTools,
+    relatedArticles: matterResult.data.relatedArticles
   };
 }

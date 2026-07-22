@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer — GeM Sahayak",
-  description: "Read the official legal disclaimer and non-affiliation notice for GeM Sahayak. Learn about our status as an independent third-party tool.",
+  title: "Disclaimer — SahayakAI",
+  description: "Read the official legal disclaimer and non-affiliation notice for SahayakAI. Learn about our status as an independent third-party tool.",
 };
 
 export default function DisclaimerPage() {
@@ -19,38 +19,38 @@ export default function DisclaimerPage() {
           <section style={{ background: "#fef2f2", padding: "20px", borderRadius: "8px", borderLeft: "4px solid #ef4444" }}>
             <h2 style={{ fontSize: "1.2rem", color: "#991b1b", marginBottom: "8px" }}>1. Non-Affiliation and Independence</h2>
             <p style={{ color: "#7f1d1d", fontSize: "0.95rem" }}>
-              <strong>GeM Sahayak</strong> is an independent, third-party software utility and browser extension. We are <strong>NOT affiliated, associated, authorized, endorsed by, or in any way officially connected</strong> with the Government e-Marketplace (GeM India), the Ministry of Commerce and Industry, or any official government agency, department, or enterprise of the Government of India.
+              <strong>SahayakAI</strong> is an independent, third-party software utility and browser extension. We are <strong>NOT affiliated, associated, authorized, endorsed by, or in any way officially connected</strong> with the government e-marketplace (Gem India), the Ministry of Commerce and Industry, or any official government agency, department, or enterprise of the Government of India.
             </p>
             <p style={{ color: "#7f1d1d", fontSize: "0.95rem", marginTop: "10px" }}>
-              The official Government e-Marketplace portal is hosted at <a href="https://gem.gov.in" target="_blank" style={{ color: "#b91c1c", textDecoration: "underline", fontWeight: "600" }}>https://gem.gov.in</a>. All official transactions, bid updates, catalog submissions, and registrations must be performed directly on that official domain.
+              The official government e-marketplace portal is hosted at <a href="https://gem.gov.in" target="_blank" style={{ color: "#b91c1c", textDecoration: "underline", fontWeight: "600" }}>https://gem.gov.in</a>. All official transactions, bid updates, catalog submissions, and registrations must be performed directly on that official domain.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>2. Software Provided "As Is"</h2>
             <p style={{ color: "#64748B" }}>
-              GeM Sahayak is provided on an "as is" and "as available" basis. While we strive to maintain high accuracy and up-to-date data, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, bid listings, pricing data, or PDF analysis reports compiled by the software.
+              SahayakAI is provided on an "as is" and "as available" basis. While we strive to maintain high accuracy and up-to-date data, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, bid listings, pricing data, or PDF analysis reports compiled by the software.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>3. Bidding Price & L1 Suggestions</h2>
             <p style={{ color: "#64748B" }}>
-              Any suggestions or calculations provided by the extension's Bid Pricing Intelligence or PDF Summary tools are for informational and convenience purposes only. Sellers and contractors are solely responsible for manually verifying tender documents, eligibility rules, compliance requirements, and pricing limits before submitting active bids on the GeM portal. We are not responsible for any bid rejections, pricing errors, or tender losses.
+              Any suggestions or calculations provided by the extension's Bid Pricing Intelligence or PDF Summary tools are for informational and convenience purposes only. Sellers and contractors are solely responsible for manually verifying tender documents, eligibility rules, compliance requirements, and pricing limits before submitting active bids on the Gem portal. We are not responsible for any bid rejections, pricing errors, or tender losses.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>4. Local Data Security</h2>
             <p style={{ color: "#64748B" }}>
-              GeM Sahayak does not collect, record, or request your official GeM portal username, passwords, or transactional details. All user configurations, alert filters, and profile settings are stored locally on your device. It is your responsibility to maintain the physical and digital security of your device.
+              SahayakAI does not collect, record, or request your official Gem portal username, passwords, or transactional details. All user configurations, alert filters, and profile settings are stored locally on your device. It is your responsibility to maintain the physical and digital security of your device.
             </p>
           </section>
 
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>5. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              If you have any questions or require legal clarification regarding this disclaimer, please contact us via email at <strong>support@gemsahayak.co.in</strong>.
+              If you have any questions or require legal clarification regarding this disclaimer, please contact us via email at <strong>support@sahayakai.co.in</strong>.
             </p>
           </section>
         </div>

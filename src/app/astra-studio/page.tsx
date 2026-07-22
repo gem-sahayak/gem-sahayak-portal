@@ -25,7 +25,7 @@ export default function AstraStudioPage() {
   
   // Execution & Loading States
   const [loading, setLoading] = useState<boolean>(false);
-  const [consoleLogs, setConsoleLogs] = useState<Array<{ id: number; type: 'info' | 'success' | 'warn' | 'event'; text: string; time: string }>>([
+  const [consoleLogs, setConsoleLogs] = useState<Array<{ id: number; type: 'info' | 'success' | 'warn' | 'event' | 'error'; text: string; time: string }>>([
     { id: 1, type: 'info', text: 'ASTRA Engine v1.14.0 Kernel Initialized', time: '23:30:01' },
     { id: 2, type: 'success', text: 'ImportGuard & PathGuard Security Rules Enforced', time: '23:30:02' },
     { id: 3, type: 'event', text: 'Multi-Agent Mesh Coordinator: 2 Nodes Operational', time: '23:30:03' }
@@ -89,7 +89,7 @@ export default function AstraStudioPage() {
     }
   };
 
-  const addLog = (type: 'info' | 'success' | 'warn' | 'event', text: string) => {
+  const addLog = (type: 'info' | 'success' | 'warn' | 'event' | 'error', text: string) => {
     const time = new Date().toLocaleTimeString('en-US', { hour12: false });
     setConsoleLogs(prev => [...prev.slice(-40), { id: Date.now(), type, text, time }]);
   };

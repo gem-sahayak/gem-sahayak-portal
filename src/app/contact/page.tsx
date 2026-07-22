@@ -2,8 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us — GeM Sahayak",
-  description: "Get in touch with Suneel Verma and the GeM Sahayak team for support, feedback, and inquiries.",
+  title: "Contact Us — SahayakAI",
+  description: "Get in touch with Suneel Verma and the SahayakAI team for support, feedback, and inquiries.",
 };
 
 export default function ContactUs() {
@@ -36,7 +36,7 @@ export default function ContactUs() {
               <div>
                 <h3 style={{ fontSize: "1.1rem", color: "var(--primary-dark)", marginBottom: "4px" }}>WhatsApp</h3>
                 <p style={{ color: "var(--text-muted)" }}>
-                  <a href="https://wa.me/918982255900" target="_blank" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "600" }}>+91 8982255900</a>
+                  <a href="https://wa.me/919183712004" target="_blank" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "600" }}>+91 9183712004</a>
                 </p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function ContactUs() {
               <div>
                 <h3 style={{ fontSize: "1.1rem", color: "var(--primary-dark)", marginBottom: "4px" }}>Email</h3>
                 <p style={{ color: "var(--text-muted)" }}>
-                  <a href="mailto:gemsahayak@gmail.com" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "600" }}>gemsahayak@gmail.com</a>
+                  <a href="mailto:support@sahayakai.co.in" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "600" }}>support@sahayakai.co.in</a>
                 </p>
               </div>
             </div>
@@ -55,9 +55,9 @@ export default function ContactUs() {
           <div style={{ marginTop: "40px", paddingTop: "32px", borderTop: "1px solid var(--border-light)" }}>
             <h3 style={{ fontSize: "1.2rem", color: "var(--primary-dark)", marginBottom: "16px" }}>Follow Us</h3>
             <div style={{ display: "flex", gap: "16px" }}>
-              <a href="#" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>🐦 Twitter</a>
-              <a href="#" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>💼 LinkedIn</a>
-              <a href="#" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>📘 Facebook</a>
+              <a href="https://x.com/SahayakAIofcial" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>🐦 Twitter</a>
+              <a href="https://www.linkedin.com/company/sahayakai/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>💼 LinkedIn</a>
+              <a href="https://www.facebook.com/profile.php?id=61591684731511" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: "8px 16px", borderRadius: "8px", fontSize: "0.9rem" }}>📘 Facebook</a>
             </div>
           </div>
         </div>

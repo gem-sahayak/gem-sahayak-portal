@@ -1,14 +1,14 @@
 ---
-title: "Top 10 GeM Bidding Mistakes That Cost MSMEs Government Tenders"
+title: "Top 10 Gem Bidding Mistakes That Cost MSMEs Government Tenders"
 summary: "Government tenders have strict compliance criteria. Avoid standard documentation slip-ups, Turnover eligibility failures, Make in India certificate errors, and L1 calculation traps."
 date: "2026-06-17"
-author: "GeM Sahayak Team"
+author: "SahayakAI Team"
 category: "Compliance"
 ---
 
-## Why are so many MSME bids rejected technically on the GeM Portal?
+## Why are so many MSME bids rejected technically on the Gem Portal?
 
-Almost 40% of bids submitted by MSMEs on the **Government e-Marketplace (GeM)** are disqualified during the technical evaluation phase. Most of these rejections are not due to product quality, but because of minor clerical errors or misunderstandings of compliance criteria.
+Almost 40% of bids submitted by MSMEs on the **government e-marketplace (Gem Portal)** are disqualified during the technical evaluation phase. Most of these rejections are not due to product quality, but because of minor clerical errors or misunderstandings of compliance criteria.
 
 Here are the top mistakes sellers make and how you can prevent them:
 
@@ -32,9 +32,9 @@ Buyers set strict criteria for past experience (e.g., *"Seller must have complet
 
 ## 3. Catalog Pricing & L1 Evaluation Traps
 
-Under GeM rules, L1 is evaluated dynamically based on the total bundled cost of the catalog items including shipping.
-* **The Mistake**: Setting individual item prices low but charging high delivery fees, or vice-versa, which shifts your rank from L1 to L2.
-* **The Fix**: Prior to bidding, run a mock catalog check. Check how L1 is calculated for bunched bids so you can adjust your margins beforehand.
+Under Gem rules, the lowest bidder (L1) is evaluated dynamically based on the total bundled cost of the catalog items including shipping.
+* **The Mistake**: Setting individual item prices low but charging high delivery fees, or vice-versa, which shifts your rank from a competitive position to L2 or lower.
+* **The Fix**: Prior to bidding, run a mock catalog check. Calculate the total delivery and product cost together to determine your most competitive price, allowing you to maximize your margins while remaining highly competitive.
 
 ---
 
@@ -42,4 +42,6 @@ Under GeM rules, L1 is evaluated dynamically based on the total bundled cost of 
 
 Buyers regularly post clarifications or extend bid end dates through **Corrigendums**.
 * **The Mistake**: Submitting documents based on the original bid document without incorporating the revised specifications posted in a corrigendum.
-* **The Fix**: Always check the "Bid Details" tab on the portal just before final submission, or use an automated notification system like **GeM Sahayak** that flags bid updates immediately.
+* **The Fix**: Always check the "Bid Details" tab on the portal just before final submission, or use an automated notification system like **SahayakAI** that flags bid updates immediately.
+
+*SahayakAI is an independent AI-powered procurement knowledge platform and is not affiliated with Government e Marketplace (GeM) or any government authority.*

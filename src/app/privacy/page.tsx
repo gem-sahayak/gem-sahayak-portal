@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — GeM Sahayak",
-  description: "Read the Privacy Policy of GeM Sahayak Chrome Extension. Understand how we protect your data and handle local storage securely.",
+  title: "Privacy Policy — SahayakAI",
+  description: "Read the Privacy Policy of SahayakAI Chrome Extension. Understand how we protect your data and handle local storage securely.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>1. Introduction</h2>
             <p style={{ color: "#64748B" }}>
-              GeM Sahayak ("we", "our", or "us") operates the GeM Sahayak Chrome extension and the website gemsahayak.co.in. We are committed to protecting your privacy. This Privacy Policy explains how we handle data within our browser extension and associated services.
+              SahayakAI ("we", "our", or "us") operates the SahayakAI Chrome extension and the website sahayakai.co.in. We are committed to protecting your privacy. This Privacy Policy explains how we handle data within our browser extension and associated services.
             </p>
           </section>
 
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
               To perform searches and deliver alerts, the extension securely transmits data to the following endpoints:
             </p>
             <ul style={{ listStyle: "disc", marginLeft: "20px", marginTop: "8px", color: "#64748B" }}>
-              <li><strong>Backend API Server (api.gemsahayak.co.in)</strong>: Search parameters (state, city, keyword) are sent to execute automated query selectors on the GeM portal and retrieve active tenders.</li>
+              <li><strong>Backend API Server (api.sahayakai.co.in)</strong>: Search parameters (state, city, keyword) are sent to execute automated query selectors on the Gem portal and retrieve active tenders.</li>
               <li><strong>WhatsApp Gateway API (Green API / UltraMsg)</strong>: When you click "Send WA" or "WA Digest", the bid text is transmitted to your configured instance to deliver a message to your phone.</li>
               <li><strong>Google Gemini API</strong>: The text of bids or search queries is sent to Gemini only to translate search intent or summarize PDF documents.</li>
             </ul>
@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>4. Security of Your Data</h2>
             <p style={{ color: "#64748B" }}>
-              All communications between the GeM Sahayak extension, our backend APIs, and third-party APIs are encrypted in transit using industry-standard SSL (HTTPS) protocols. Since your profile details remain in your browser's local storage, they are protected by your operating system's local user security.
+              All communications between the SahayakAI extension, our backend APIs, and third-party APIs are encrypted in transit using industry-standard SSL (HTTPS) protocols. Since your profile details remain in your browser's local storage, they are protected by your operating system's local user security.
             </p>
           </section>
 
@@ -63,10 +63,10 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section>
+          <section style={{ marginTop: "12px" }}>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>6. Third-Party Links & Disclaimers</h2>
             <p style={{ color: "#64748B" }}>
-              Our extension interacts with the official Government e-Marketplace (GeM India) portal (`gem.gov.in`). We are not affiliated with, authorized, or officially connected with GeM India. Please check GeM's official terms and privacy policy when interacting with their portal.
+              Our extension interacts with the official government e-marketplace (Gem India) portal (`gem.gov.in`). We are not affiliated with, authorized, or officially connected with Gem portal India. Please check Gem portal's official terms and privacy policy when interacting with their portal.
             </p>
           </section>
 
@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>8. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              If you have any questions or feedback regarding this privacy policy, please contact us via email at <strong>support@gemsahayak.co.in</strong>.
+              If you have any questions or feedback regarding this privacy policy, please contact us via email at <strong>support@sahayakai.co.in</strong>.
             </p>
           </section>
         </div>

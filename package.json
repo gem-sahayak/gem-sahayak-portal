@@ -1,5 +1,5 @@
 {
-  "name": "gem-sahayak-portal",
+  "name": "sahayakai-portal",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "framer-motion": "^12.42.2",
     "gray-matter": "^4.0.3",
     "marked": "^18.0.5",
     "next": "16.2.9",
