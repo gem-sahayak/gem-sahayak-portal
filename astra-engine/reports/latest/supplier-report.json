@@ -1,0 +1,19 @@
+{
+  "name": "Gem Sahayak Supplier",
+  "gstin": "07AAACG1234A1Z5",
+  "category": "IT_SERVICES",
+  "turnover": 5000000,
+  "yearsActive": 5,
+  "certifications": [
+    "ISO_9001",
+    "MSME_UDYAM"
+  ],
+  "profileCompleteness": 75,
+  "tier": "SILVER",
+  "fieldsProvided": 6,
+  "fieldsMissing": 2,
+  "missingFields": [
+    "state",
+    "city"
+  ]
+}

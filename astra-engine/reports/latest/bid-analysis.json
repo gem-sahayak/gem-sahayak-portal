@@ -1,0 +1,31 @@
+{
+  "classification": {
+    "type": "CUSTOM_BID_SERVICE",
+    "category": "IT_CONSULTING",
+    "layout": "L1_EVALUATION"
+  },
+  "complexity": {
+    "score": 45,
+    "level": "MEDIUM",
+    "parameters": [
+      "EMD_REQUIRED",
+      "TURNOVER_SLAB_50L"
+    ]
+  },
+  "timeline": {
+    "publishedAt": "2026-07-01",
+    "preBidMeeting": "2026-07-08",
+    "submissionDeadline": "2026-07-25",
+    "openingDate": "2026-07-26"
+  },
+  "dependencies": {
+    "requiredCertificates": [
+      "UDYAM_REGISTRATION",
+      "GST_CERTIFICATE",
+      "OEM_AUTHORIZATION"
+    ]
+  },
+  "metrics": {
+    "totalBidsAnalyzed": 1
+  }
+}

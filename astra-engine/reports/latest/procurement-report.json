@@ -1,0 +1,21 @@
+{
+  "manifest": {
+    "name": "Enterprise Procurement Intelligence Platform Engine",
+    "version": "1.14.0",
+    "description": "Procurement Domain Intelligence, Marketplace Registry, and Lifecycle Management"
+  },
+  "verdict": "PASS",
+  "marketplaceRegistry": [
+    {
+      "id": "gem-portal-india",
+      "record": {
+        "name": "GeM Portal India",
+        "domain": "government-procurement"
+      },
+      "registeredAt": "2026-07-22T15:59:22.636Z"
+    }
+  ],
+  "metrics": {
+    "totalProcurementSessions": 1
+  }
+}

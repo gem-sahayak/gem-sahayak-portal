@@ -1,0 +1,63 @@
+{
+  "engine": {
+    "name": "Enterprise Procurement Intelligence Platform Engine",
+    "version": "1.14.0",
+    "description": "Procurement Domain Intelligence, Marketplace Registry, and Lifecycle Management"
+  },
+  "procurement": {
+    "manifest": {
+      "name": "Enterprise Procurement Intelligence Platform Engine",
+      "version": "1.14.0",
+      "description": "Procurement Domain Intelligence, Marketplace Registry, and Lifecycle Management"
+    },
+    "verdict": "PASS",
+    "marketplaceRegistry": [
+      {
+        "id": "gem-portal-india",
+        "record": {
+          "name": "GeM Portal India",
+          "domain": "government-procurement"
+        },
+        "registeredAt": "2026-07-22T15:59:22.636Z"
+      }
+    ],
+    "metrics": {
+      "totalProcurementSessions": 1
+    }
+  },
+  "catalog": {
+    "health": {
+      "healthScore": 92,
+      "status": "EXCELLENT",
+      "issueCount": 0
+    },
+    "coverage": {
+      "coveredCategories": 5,
+      "missingCategories": 0,
+      "coveragePercentage": 100
+    },
+    "metrics": {
+      "totalCatalogsAudited": 1
+    }
+  },
+  "supplierProfile": {
+    "name": "Gem Sahayak Supplier",
+    "gstin": "07AAACG1234A1Z5",
+    "category": "IT_SERVICES",
+    "turnover": 5000000,
+    "yearsActive": 5,
+    "certifications": [
+      "ISO_9001",
+      "MSME_UDYAM"
+    ],
+    "profileCompleteness": 75,
+    "tier": "SILVER",
+    "fieldsProvided": 6,
+    "fieldsMissing": 2,
+    "missingFields": [
+      "state",
+      "city"
+    ]
+  },
+  "generatedAt": "2026-07-22T15:59:22.660Z"
+}

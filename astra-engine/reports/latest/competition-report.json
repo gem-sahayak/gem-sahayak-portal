@@ -1,0 +1,10 @@
+{
+  "totalCompetitors": 5,
+  "herfindahlIndex": 2500,
+  "concentrationLevel": "MODERATE",
+  "topPlayer": {
+    "name": "Supplier A",
+    "marketShare": 35,
+    "rating": 4.5
+  }
+}

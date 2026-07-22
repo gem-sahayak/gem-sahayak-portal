@@ -1,0 +1,27 @@
+{
+  "variance": {
+    "currentPrice": 1500,
+    "benchmarkPrice": 1800,
+    "variancePercent": -17,
+    "status": "COMPETITIVE"
+  },
+  "position": {
+    "position": "BELOW_AVERAGE",
+    "percentile": 25,
+    "deviation": -16.67,
+    "recommendation": "COMPETITIVE_ADVANTAGE"
+  },
+  "benchmark": {
+    "mean": 1700,
+    "median": 1700,
+    "stdDev": 70.71,
+    "zScore": -2.83,
+    "trend": "RISING",
+    "sampleSize": 5
+  },
+  "metrics": {
+    "totalAnalyses": 1,
+    "totalBenchmarks": 0,
+    "totalPositionChecks": 0
+  }
+}

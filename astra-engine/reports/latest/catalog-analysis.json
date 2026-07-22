@@ -1,0 +1,15 @@
+{
+  "health": {
+    "healthScore": 92,
+    "status": "EXCELLENT",
+    "issueCount": 0
+  },
+  "coverage": {
+    "coveredCategories": 5,
+    "missingCategories": 0,
+    "coveragePercentage": 100
+  },
+  "metrics": {
+    "totalCatalogsAudited": 1
+  }
+}

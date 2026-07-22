@@ -1,0 +1,29 @@
+{
+  "eligible": true,
+  "exemptionStatus": "MSME_EMD_EXEMPTED",
+  "qualification": {
+    "turnoverRequired": "50L INR",
+    "experienceYears": 3,
+    "certifications": [
+      "ISO_9001_2015",
+      "MSME_UDYAM"
+    ]
+  },
+  "documents": [
+    {
+      "docType": "PAN_CARD",
+      "status": "VERIFIED",
+      "source": "REGISTRY"
+    },
+    {
+      "docType": "GST_RETURN",
+      "status": "VERIFIED",
+      "source": "REGISTRY"
+    }
+  ],
+  "risk": {
+    "complianceRiskScore": 5,
+    "classification": "LOW_RISK",
+    "blacklistingRisk": "NONE"
+  }
+}
