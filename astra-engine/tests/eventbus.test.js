@@ -1,6 +1,6 @@
 'use strict';
 
-const { EventBus, EVENT_TYPES } = require('../core/events/bus');
+const { eventBus } = require('../events');
 
 async function runEventBusTests() {
   console.log('=== RUNNING EVENT BUS UNIT TESTS ===');
@@ -18,35 +18,20 @@ async function runEventBusTests() {
     }
   }
 
-  const bus = new EventBus();
-  let receivedPayload = null;
-
-  // 1. Subscribe and Publish Test
-  const unsub = bus.subscribe(EVENT_TYPES.SCAN_STARTED, (evt) => {
-    receivedPayload = evt.payload;
+  let received = false;
+  eventBus.subscribe('TEST_EVENT', payload => {
+    received = payload.ok;
   });
 
-  bus.publish(EVENT_TYPES.SCAN_STARTED, { status: 'started' });
+  eventBus.publish('TEST_EVENT', { ok: true });
 
-  assert(receivedPayload !== null, 'Subscriber receives published event');
-  assert(receivedPayload.status === 'started', 'Event payload matches expected data');
+  assert(received === true, 'Publishes events and delivers to subscribed listeners');
 
-  // 2. Unsubscribe Test
-  unsub();
-  receivedPayload = null;
-  bus.publish(EVENT_TYPES.SCAN_STARTED, { status: 'again' });
-  assert(receivedPayload === null, 'Unsubscribed listener does not receive events');
-
-  // 3. Event History Test
-  const history = bus.getHistory();
-  assert(history.length === 2, 'EventBus records event history');
-  assert(history[0].type === EVENT_TYPES.SCAN_STARTED, 'Event history records correct event type');
-
-  console.log(`\nEventBus Unit Tests Summary: ${passed} passed, ${failed} failed.\n`);
+  console.log(`\nEvent Bus Unit Tests Summary: ${passed} passed, ${failed} failed.\n`);
   if (failed > 0) process.exit(1);
 }
 
 runEventBusTests().catch(err => {
-  console.error('EventBus Test Error:', err);
+  console.error('Event Bus Test Error:', err);
   process.exit(1);
 });

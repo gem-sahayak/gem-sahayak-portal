@@ -20,14 +20,19 @@ const { optimizerEngine } = require('./engines/optimizer');
 const { knowledgeEngine } = require('./engines/knowledge');
 const { studioWorkspace } = require('./studio');
 const { dashboardEngine } = require('./dashboard');
-const { explorerEngine, graphMetrics, searchEngine } = require('./graphExplorer');
+const { explorerEngine } = require('./graphExplorer');
+const { workflowEngine, workflowRunner, workflowHistory, workflowMetrics, workflowScheduler } = require('./workflow');
+const { ruleEngine, ruleRegistry, ruleMetrics } = require('./rules');
+const { recommendationEngine, decisionMetrics } = require('./decision');
+const { eventBus, eventQueue, eventMetrics } = require('./events');
+const { schedulerEngine, schedulerMetrics } = require('./scheduler');
+const recommendationsModel = require('./recommendations');
 const reporter = require('./core/reporter');
 
 const fingerprintManager = require('./core/fingerprint');
 const incrementalScanner = require('./core/incremental');
 const { cacheManager } = require('./core/cache');
 const { telemetry } = require('./core/telemetry');
-const { eventBus, EVENT_TYPES } = require('./core/events');
 const {
   pluginLoader,
   pluginRegistry,
@@ -39,14 +44,7 @@ const {
   pluginReporter
 } = require('./core/plugins');
 
-const { marketplaceCatalog, marketplaceSearch, marketplaceInstaller } = require('./core/plugins/marketplace');
-const pluginLockfile = require('./core/plugins/lockfile');
-const sdkManager = require('./sdk/cliManager');
-
 const releaseManager = require('./core/release/releaseManager');
-const releaseNotes = require('./core/release/releaseNotes');
-const gitMetadata = require('./core/release/gitMetadata');
-const releaseVersionManager = require('./core/release/versionManager');
 const buildValidator = require('./core/build/validator');
 
 const colors = {
@@ -60,7 +58,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.8.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.9.0              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -69,23 +67,14 @@ function printHelp() {
   console.log(`${colors.bright}Usage:${colors.reset} node cli.js <command> [options]\n`);
   console.log(`${colors.bright}Commands:${colors.reset}`);
   console.log(`  ${colors.green}doctor${colors.reset}          Verify system environment, configurations & workspace schemas`);
-  console.log(`  ${colors.green}scan${colors.reset}            Run default integrity & validation check sequences`);
-  console.log(`  ${colors.green}registry${colors.reset}        Verify sync consistency between registry.ts & content files`);
-  console.log(`  ${colors.green}seo${colors.reset}             Run SEO audit validations`);
-  console.log(`  ${colors.green}graph${colors.reset}           Run Enterprise Visual Knowledge Graph Explorer (--entities, --clusters, --metrics)`);
-  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit`);
-  console.log(`  ${colors.green}semantic${colors.reset}        Run Semantic SEO Intelligence Engine`);
-  console.log(`  ${colors.green}optimize${colors.reset}        Run AI Content Optimization Platform`);
-  console.log(`  ${colors.green}knowledge${colors.reset}       Run Enterprise Knowledge Intelligence RAG Engine`);
-  console.log(`  ${colors.green}studio${colors.reset}          Launch ASTRA Studio Visual AI Workspace`);
+  console.log(`  ${colors.green}workflow${colors.reset}        Run Autonomous Workflow Intelligence Engine (--run, --history, --rules, --recommend)`);
+  console.log(`  ${colors.green}graph${colors.reset}           Run Enterprise Visual Knowledge Graph Explorer`);
   console.log(`  ${colors.green}dashboard${colors.reset}       Launch Enterprise Intelligence Dashboard`);
-  console.log(`  ${colors.green}validate${colors.reset}        Run complete suite of active validation sub-engines`);
-  console.log(`  ${colors.green}fingerprint${colors.reset}     Generate composite SHA256 workspace fingerprints`);
-  console.log(`  ${colors.green}incremental${colors.reset}     Perform delta scan comparing workspace files`);
-  console.log(`  ${colors.green}cache${colors.reset}           Inspect memory & snapshot cache efficiency metrics`);
-  console.log(`  ${colors.green}telemetry${colors.reset}       Export system execution runtimes & memory`);
-  console.log(`  ${colors.green}release${colors.reset}         Generate release notes & packages`);
-  console.log(`  ${colors.green}build${colors.reset}           Validate build integrity`);
+  console.log(`  ${colors.green}studio${colors.reset}          Launch ASTRA Studio Visual AI Workspace`);
+  console.log(`  ${colors.green}knowledge${colors.reset}       Run Enterprise Knowledge Intelligence RAG Engine`);
+  console.log(`  ${colors.green}optimize${colors.reset}        Run AI Content Optimization Platform`);
+  console.log(`  ${colors.green}semantic${colors.reset}        Run Semantic SEO Intelligence Engine`);
+  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit`);
   console.log(`  ${colors.green}version${colors.reset}         Display current engine SemVer version & git metadata`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
 }
@@ -115,7 +104,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.8.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.9.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -124,28 +113,15 @@ async function runCli() {
         'Config Loader': configLoader,
         'State Manager': stateManager,
         'Filesystem Scanner': require('./core/filesystem'),
-        'Markdown Parser': require('./core/parser/markdown'),
-        'TS Parser': require('./core/parser/typescript'),
-        'Reporter': reporter,
-        'Registry Engine': registryEngine,
-        'SEO Engine': seoEngine,
-        'Knowledge Graph Engine': graphEngine,
-        'AI Review Engine': reviewEngine,
-        'Semantic SEO Engine': semanticEngine,
-        'AI Content Optimizer Platform': optimizerEngine,
-        'Enterprise Knowledge Intelligence RAG Engine': knowledgeEngine,
-        'ASTRA Studio Foundation': studioWorkspace,
-        'Enterprise Intelligence Dashboard': dashboardEngine,
+        'Workflow Intelligence Engine': workflowEngine,
+        'Rule Engine': ruleEngine,
+        'Decision Intelligence': recommendationEngine,
+        'Event Bus Engine': eventBus,
+        'Autonomous Scheduler': schedulerEngine,
+        'Recommendation Models': recommendationsModel,
         'Visual Knowledge Graph Explorer': explorerEngine,
-        'Fingerprint Manager': fingerprintManager,
-        'Incremental Scanner': incrementalScanner,
-        'Event Bus': eventBus,
-        'Cache Layer': cacheManager,
-        'Telemetry Engine': telemetry,
-        'Plugin Loader': pluginLoader,
-        'Release Manager': releaseManager,
-        'Build Validator': buildValidator,
-        'Path Guard': require('./core/guards/pathGuard'),
+        'Enterprise Intelligence Dashboard': dashboardEngine,
+        'ASTRA Studio Foundation': studioWorkspace,
         'Import Guard': require('./core/guards/importGuard'),
       };
 
@@ -160,44 +136,50 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 5C modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 6A modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'workflow': {
+      console.log(`${colors.cyan}⚡ Running Enterprise Autonomous Workflow Intelligence Engine (v1.9.0)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      await workflowEngine.init({ config, state, logger: console });
+      const wfRes = await workflowEngine.run(state);
+
+      const allRecs = recommendationsModel.getAllRecommendations(state);
+      const rankedRecs = recommendationEngine.processRecommendations(allRecs);
+      const ruleRes = ruleEngine.evaluateRules({ errorCount: 0 });
+
+      console.log(`  - Active Workflows       : ${colors.green}${wfRes.activeWorkflows.length}${colors.reset}`);
+      console.log(`  - Rules Evaluated        : ${colors.green}${ruleRes.evaluatedCount}${colors.reset}`);
+      console.log(`  - Recommendations Ranked : ${colors.green}${rankedRecs.length}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(wfRes, null, 2), path.join(reportsLatestDir, 'workflow-report.json'));
+      await reporter.write(JSON.stringify(workflowHistory.getHistory(), null, 2), path.join(reportsLatestDir, 'workflow-history.json'));
+      await reporter.write(JSON.stringify(workflowMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'workflow-metrics.json'));
+      await reporter.write(JSON.stringify(ruleRes, null, 2), path.join(reportsLatestDir, 'rule-report.json'));
+      await reporter.write(JSON.stringify(rankedRecs, null, 2), path.join(reportsLatestDir, 'decision-report.json'));
+      await reporter.write(JSON.stringify(eventMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'event-report.json'));
+      await reporter.write(JSON.stringify(schedulerMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'scheduler-report.json'));
+      await reporter.write(JSON.stringify(allRecs, null, 2), path.join(reportsLatestDir, 'recommendation-report.json'));
+
+      console.log(`  - Workflow Report Exporter : ${colors.cyan}reports/latest/workflow-report.json${colors.reset}`);
+      console.log(`  - Decision Report Exporter : ${colors.cyan}reports/latest/decision-report.json${colors.reset}\n`);
       break;
     }
 
     case 'graph': {
-      console.log(`${colors.cyan}🕸️ Running Enterprise Visual Knowledge Graph Explorer (v1.8.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🕸️ Running Enterprise Visual Knowledge Graph Explorer (v1.9.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await explorerEngine.init({ config, state, logger: console });
       const graphRes = await explorerEngine.run(state);
-
-      if (args.includes('--metrics') || args.includes('--pagerank')) {
-        console.log(`  - Graph Metrics Summary:`);
-        console.log(`    - Total Nodes  : ${colors.green}${graphRes.summary.totalNodes}${colors.reset}`);
-        console.log(`    - Total Edges  : ${colors.green}${graphRes.summary.totalEdges}${colors.reset}`);
-        console.log(`    - Orphan Nodes : ${colors.yellow}${graphRes.summary.totalOrphans}${colors.reset}\n`);
-        process.exit(0);
-      }
-
-      console.log(`  - Visual Nodes Generated : ${colors.green}${graphRes.summary.totalNodes}${colors.reset}`);
-      console.log(`  - Graph Edges Connected  : ${colors.green}${graphRes.summary.totalEdges}${colors.reset}`);
-      console.log(`  - Isolated Orphan Nodes  : ${colors.yellow}${graphRes.summary.totalOrphans}${colors.reset}\n`);
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(graphRes, null, 2), path.join(reportsLatestDir, 'graph-explorer.json'));
-      await reporter.write(JSON.stringify(graphRes.summary, null, 2), path.join(reportsLatestDir, 'graph-metrics.json'));
-      await reporter.write(JSON.stringify(graphRes.graphData.entityNetwork, null, 2), path.join(reportsLatestDir, 'entity-network.json'));
-      await reporter.write(JSON.stringify(graphRes.graphData.dependencyNetwork, null, 2), path.join(reportsLatestDir, 'dependency-network.json'));
-      await reporter.write(JSON.stringify(graphRes.d3Data, null, 2), path.join(reportsLatestDir, 'knowledge-network.json'));
-      await reporter.write(JSON.stringify(graphRes.graphData.clusterNetwork, null, 2), path.join(reportsLatestDir, 'cluster-network.json'));
-
-      console.log(`  - Graph JSON Exporter      : ${colors.cyan}reports/latest/graph-explorer.json${colors.reset}`);
-      console.log(`  - Entity Network Exporter  : ${colors.cyan}reports/latest/entity-network.json${colors.reset}`);
-      console.log(`  - Cluster Network Exporter : ${colors.cyan}reports/latest/cluster-network.json${colors.reset}\n`);
+      console.log(`  - Visual Nodes Generated : ${colors.green}${graphRes.summary.totalNodes}${colors.reset}\n`);
       break;
     }
 
     case 'dashboard': {
-      console.log(`${colors.cyan}📊 Rendering Enterprise Intelligence Dashboard (v1.8.0)...${colors.reset}`);
+      console.log(`${colors.cyan}📊 Rendering Enterprise Intelligence Dashboard (v1.9.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await dashboardEngine.init({ config, state, logger: console });
       const dashRes = await dashboardEngine.run(state);
@@ -206,7 +188,7 @@ async function runCli() {
     }
 
     case 'studio': {
-      console.log(`${colors.cyan}🎨 Launching ASTRA Studio Visual AI Workspace (v1.8.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🎨 Launching ASTRA Studio Visual AI Workspace (v1.9.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       const reportsDir = path.join(__dirname, 'reports');
       const studioRes = await studioWorkspace.run(state, reportsDir);
@@ -215,7 +197,7 @@ async function runCli() {
     }
 
     case 'knowledge': {
-      console.log(`${colors.cyan}🧠 Running Enterprise Knowledge Intelligence RAG Engine (v1.8.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🧠 Running Enterprise Knowledge Intelligence RAG Engine (v1.9.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await knowledgeEngine.init({ config, state, logger: console });
       const knwRes = await knowledgeEngine.run(state);
@@ -223,124 +205,9 @@ async function runCli() {
       break;
     }
 
-    case 'optimize': {
-      console.log(`${colors.cyan}🚀 Running AI Content Optimization Platform Audit (v1.8.0)...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      await optimizerEngine.init({ config, state, logger: console });
-      const optRes = await optimizerEngine.run(state);
-      console.log(`  - Overall Optimization Score : ${colors.green}${optRes.summary.overallOptimizationScore} / 100${colors.reset}\n`);
-      break;
-    }
-
-    case 'semantic': {
-      console.log(`${colors.cyan}🌐 Running Semantic SEO Intelligence Engine Audit (v1.8.0)...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      await semanticEngine.init({ config, state, logger: console });
-      const semRes = await semanticEngine.run(state);
-      console.log(`  - Overall Semantic SEO Score : ${colors.green}${semRes.scores.overallScore} / 100${colors.reset}\n`);
-      break;
-    }
-
-    case 'review': {
-      console.log(`${colors.cyan}🤖 Running AI Review Engine Semantic Audit (v1.8.0)...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      await reviewEngine.init({ config, state, logger: console });
-      const revRes = await reviewEngine.run(state);
-      console.log(`  - Overall AI Review Score : ${colors.green}${revRes.scores.overallScore} / 100${colors.reset}\n`);
-      break;
-    }
-
-    case 'release':
-    case 'artifacts': {
-      console.log(`${colors.cyan}🚀 Generating Enterprise Release Package & Artifacts (v1.8.0)...${colors.reset}`);
-      const pkg = releaseManager.generateReleasePackage('1.8.0', 'astra-engine-v1.8.0-phase5C');
-      console.log(`  - JSON Release Package : ${colors.green}reports/releases/release.json${colors.reset}\n`);
-      break;
-    }
-
-    case 'build':
-    case 'verify':
-    case 'ci': {
-      console.log(`${colors.cyan}⚡ Validating Build Integrity & Quality Gate (v1.8.0)...${colors.reset}`);
-      const bRes = buildValidator.validateBuild();
-      console.log(`  - Integrity Check : ${bRes.passed ? colors.green + 'PASSED' : colors.red + 'FAILED'}${colors.reset}\n`);
-      break;
-    }
-
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.8.0${colors.reset}\n`);
-      break;
-    }
-
-    case 'scan':
-    case 'registry':
-    case 'seo':
-    case 'validate': {
-      console.log(`${colors.cyan}🔍 Scanning repository structural tree...${colors.reset}`);
-      const startTime = Date.now();
-
-      let state;
-      try {
-        state = await scanner.runScanner(rootDir, config);
-      } catch (err) {
-        console.error(`${colors.red}❌ Filesystem scan failed:${colors.reset}`, err.message);
-        process.exit(1);
-      }
-
-      const enginesToRun = [];
-      if (command === 'registry' || command === 'scan') enginesToRun.push(registryEngine);
-      else if (command === 'seo') enginesToRun.push(seoEngine);
-      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine, reviewEngine, semanticEngine, optimizerEngine, knowledgeEngine, dashboardEngine, explorerEngine);
-
-      const results = [];
-      for (const engine of enginesToRun) {
-        try {
-          await engine.init({ config, state, logger: console });
-          const res = await engine.run(state);
-          results.push(res);
-        } catch (err) {
-          console.error(`${colors.red}❌ Engine execution crash [${engine.manifest.name}]:${colors.reset}`, err.message);
-          process.exit(1);
-        }
-      }
-
-      let totalErrors = 0;
-      let totalWarnings = 0;
-      for (const r of results) {
-        totalErrors += r.errors ? r.errors.length : 0;
-        totalWarnings += r.warnings ? r.warnings.length : 0;
-      }
-
-      const totalTime = Date.now() - startTime;
-      const overallVerdict = totalErrors > 0 ? 'FAIL' : (totalWarnings > 0 ? 'WARNING' : 'PASS');
-
-      const reportData = {
-        summary: {
-          timestamp: new Date(),
-          overallVerdict,
-          totalEnginesRun: results.length,
-          totalErrors,
-          totalWarnings,
-          executionTimeMs: totalTime
-        },
-        results,
-        schemaVersion: config.schemaVersion,
-        engineVersion: '1.8.0'
-      };
-
-      const jsonReport = await reporter.build(reportData, 'json');
-      const mdReport = await reporter.build(reportData, 'markdown');
-      const terminalReport = await reporter.build(reportData, 'terminal');
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(jsonReport, path.join(reportsLatestDir, 'report.json'));
-      await reporter.write(mdReport, path.join(reportsLatestDir, 'report.md'));
-
-      console.log(terminalReport);
-
-      if (overallVerdict === 'FAIL') process.exit(1);
-      else process.exit(0);
+      console.log(`  - SemVer Version : ${colors.green}1.9.0${colors.reset}\n`);
       break;
     }
 

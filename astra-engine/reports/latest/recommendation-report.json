@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rec-seo-1",
+    "category": "SEO",
+    "title": "Fix Keyword Cannibalization in Bidding Cluster",
+    "impact": "HIGH",
+    "confidence": 0.95,
+    "target": "gem-bidding-mistakes-msme-tenders"
+  },
+  {
+    "id": "rec-knw-1",
+    "category": "KNOWLEDGE",
+    "title": "Re-index Procurement Rules Chunks for RAG Cache",
+    "impact": "MEDIUM",
+    "confidence": 0.88,
+    "target": "vectorStore"
+  },
+  {
+    "id": "rec-opt-1",
+    "category": "OPTIMIZATION",
+    "title": "Add Internal Linking Anchor to Udyam Error Guide",
+    "impact": "HIGH",
+    "confidence": 0.92,
+    "target": "udyam-error"
+  },
+  {
+    "id": "rec-rev-1",
+    "category": "REVIEW",
+    "title": "Upgrade Author Credentials Metadata on GeM Direct Purchase",
+    "impact": "MEDIUM",
+    "confidence": 0.9,
+    "target": "gem-portal-direct-purchase-limit-rules-2026"
+  },
+  {
+    "id": "rec-wf-1",
+    "category": "WORKFLOW",
+    "title": "Schedule Daily Full Repo Audit Cron Job",
+    "impact": "HIGH",
+    "confidence": 0.98,
+    "target": "wf-full-repo-audit"
+  },
+  {
+    "id": "rec-rsk-1",
+    "category": "RISK",
+    "title": "Monitor Orphaned Markdown Posts for Unindexed Content",
+    "impact": "MEDIUM",
+    "confidence": 0.85,
+    "target": "orphaned-posts"
+  }
+]

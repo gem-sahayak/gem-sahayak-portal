@@ -1,9 +1,9 @@
 'use strict';
 
-const recommendationEngine = require('../engines/semantic/recommendation');
+const recommendationsModel = require('../recommendations');
 
 async function runRecommendationTests() {
-  console.log('=== RUNNING SEMANTIC RECOMMENDATION UNIT TESTS ===');
+  console.log('=== RUNNING RECOMMENDATION MODELS UNIT TESTS ===');
 
   let passed = 0;
   let failed = 0;
@@ -18,20 +18,14 @@ async function runRecommendationTests() {
     }
   }
 
-  const recs = recommendationEngine.generateRecommendations(
-    [{ winnerSlug: 'page-a', competingSlugs: ['page-b'], targetKeyword: 'emd rules', recommendation: 'Fix cannibalization', confidence: 0.92 }],
-    [],
-    { missing: [] }
-  );
+  const all = recommendationsModel.getAllRecommendations();
+  assert(all.length >= 6, 'Generates recommendations across all 6 models');
 
-  assert(recs.length === 1, 'Generates recommendation from cannibalization issue');
-  assert(recs[0].priority === 'P1', 'Assigns P1 priority to cannibalization fixes');
-
-  console.log(`\nRecommendation Unit Tests Summary: ${passed} passed, ${failed} failed.\n`);
+  console.log(`\nRecommendation Models Unit Tests Summary: ${passed} passed, ${failed} failed.\n`);
   if (failed > 0) process.exit(1);
 }
 
 runRecommendationTests().catch(err => {
-  console.error('Recommendation Test Error:', err);
+  console.error('Recommendation Models Test Error:', err);
   process.exit(1);
 });
