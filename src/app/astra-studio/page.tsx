@@ -22,10 +22,10 @@ export default function AstraStudioPage() {
   const [consoleFilter, setConsoleFilter] = useState<'ALL' | 'KERNEL' | 'EVENTS' | 'ERRORS' | 'TELEMETRY'>('ALL');
   const [loading, setLoading] = useState<boolean>(false);
   const [consoleLogs, setConsoleLogs] = useState<Array<{ id: number; type: 'info' | 'success' | 'warn' | 'event' | 'error'; text: string; time: string }>>([
-    { id: 1, type: 'info', text: 'ASTRA Engine v1.14.0 Enterprise OS Kernel Booted', time: '00:07:01' },
-    { id: 2, type: 'success', text: 'ImportGuard & PathGuard Security Rules Active', time: '00:07:02' },
-    { id: 3, type: 'event', text: 'Multi-Agent Mesh Coordinator: 23 Nodes Operational', time: '00:07:03' },
-    { id: 4, type: 'info', text: 'REST API v1 Gateway Connected (100% Synchronized)', time: '00:07:04' }
+    { id: 1, type: 'info', text: 'ASTRA Titanium OS v1.14.0 Enterprise Kernel Booted', time: '00:17:01' },
+    { id: 2, type: 'success', text: 'Zero-Trust Guardian Rules (ImportGuard & PathGuard) Active', time: '00:17:02' },
+    { id: 3, type: 'event', text: 'Multi-Agent Mesh Coordinator: 23 Domain Nodes Connected', time: '00:17:03' },
+    { id: 4, type: 'info', text: 'REST API v1 Gateway Synchronized (Latency: < 5ms)', time: '00:17:04' }
   ]);
 
   // Command Palette Keyboard Listener (⌘K / Ctrl+K)
@@ -60,7 +60,7 @@ export default function AstraStudioPage() {
       if (telemRes.telemetry) setTelemetryData(telemRes.telemetry);
       if (repListRes.reports) setReportsList(repListRes.reports);
 
-      addLog('success', 'ASTRA REST APIs synchronized cleanly with Studio Workspace');
+      addLog('success', 'ASTRA Titanium REST APIs synchronized with Studio Workspace');
     } catch (err: any) {
       addLog('warn', `API Sync Notice: ${err.message}`);
     } finally {
@@ -88,7 +88,7 @@ export default function AstraStudioPage() {
 
   const addLog = (type: 'info' | 'success' | 'warn' | 'event' | 'error', text: string) => {
     const time = new Date().toLocaleTimeString('en-US', { hour12: false });
-    setConsoleLogs(prev => [...prev.slice(-60), { id: Date.now(), type, text, time }]);
+    setConsoleLogs(prev => [...prev.slice(-70), { id: Date.now(), type, text, time }]);
   };
 
   // Trigger Dynamic Engine Pipeline
@@ -97,26 +97,38 @@ export default function AstraStudioPage() {
     addLog('event', `Invoking Engine Pipeline: [${engineName.toUpperCase()}]`);
     setTimeout(() => {
       fetchAllData();
-      addLog('success', `Engine Pipeline Completed: [${engineName.toUpperCase()}] -> Artifact Exported`);
+      addLog('success', `Engine Execution Completed: [${engineName.toUpperCase()}] -> Output Verified`);
       setLoading(false);
     }, 400);
   };
 
-  // Grouped Navigation (Cursor / Linear / Datadog Style)
+  // Export Console Logs File
+  const handleExportLogs = () => {
+    const logText = consoleLogs.map(l => `[${l.time}] [${l.type.toUpperCase()}] ${l.text}`).join('\n');
+    const blob = new Blob([logText], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `astra-console-logs-${Date.now()}.log`;
+    a.click();
+    addLog('info', 'Console logs exported successfully');
+  };
+
+  // Grouped Navigation Items (Palantir Foundry / Cursor IDE Style)
   const navGroups = [
     {
-      group: 'INTELLIGENCE ENGINES',
+      group: 'ENTERPRISE DOMAIN ENGINES',
       items: [
         { id: 'overview', label: 'Command Center Overview', icon: '⚡' },
         { id: 'procurement', label: 'Procurement Intelligence', icon: '📦' },
-        { id: 'pricing', label: 'Pricing & Competition Map', icon: '💰' },
+        { id: 'pricing', label: 'Pricing & Benchmark Engine', icon: '💰' },
         { id: 'compliance', label: 'Compliance & Audit Matrix', icon: '📑' },
         { id: 'supplier', label: 'Supplier Risk & Capability', icon: '🏭' },
         { id: 'market', label: 'Market Trends & HHI Index', icon: '📈' }
       ]
     },
     {
-      group: 'SYSTEM KERNEL & MEMORY',
+      group: 'CORE KERNEL & AGENT MESH',
       items: [
         { id: 'agents', label: 'Multi-Agent Mesh Network', icon: '🤖' },
         { id: 'reasoning', label: 'Fact Reasoning Engine', icon: '🧠' },
@@ -144,29 +156,29 @@ export default function AstraStudioPage() {
   });
 
   return (
-    <div style={{ background: '#070A10', color: '#F8FAFC', height: '100vh', fontFamily: '-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+    <div style={{ background: '#05080E', color: '#F8FAFC', height: '100vh', fontFamily: '-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
       
-      {/* ───── ENTERPRISE COMMAND CENTER HEADER ───── */}
-      <header style={{ height: '52px', borderBottom: '1px solid rgba(255,255,255,0.07)', background: '#0B0F19', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', position: 'sticky', top: 0, zIndex: 40, backdropFilter: 'blur(16px)' }}>
+      {/* ───── TITANIUM ENTERPRISE HEADER BAR ───── */}
+      <header style={{ height: '52px', borderBottom: '1px solid rgba(255,255,255,0.08)', background: 'rgba(11, 15, 25, 0.95)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', position: 'sticky', top: 0, zIndex: 40, backdropFilter: 'blur(16px)' }}>
         
-        {/* Brand & Workspace Switcher */}
+        {/* Brand & Workspace Indicator */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, fontSize: '1.05rem', color: '#38BDF8', letterSpacing: '-0.5px' }}>
-            <span style={{ fontSize: '1.25rem', filter: 'drop-shadow(0 0 8px rgba(56, 189, 248, 0.7))' }}>⚡</span> ASTRA STUDIO
+            <span style={{ fontSize: '1.25rem', filter: 'drop-shadow(0 0 10px rgba(56, 189, 248, 0.8))' }}>⚡</span> ASTRA TITANIUM OS
           </div>
           
-          <div style={{ height: '16px', width: '1px', background: 'rgba(255,255,255,0.1)' }}></div>
+          <div style={{ height: '16px', width: '1px', background: 'rgba(255,255,255,0.12)' }}></div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', padding: '4px 12px', borderRadius: '6px', fontSize: '0.78rem', color: '#E2E8F0', cursor: 'pointer' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', padding: '4px 12px', borderRadius: '6px', fontSize: '0.78rem', color: '#E2E8F0', cursor: 'pointer' }}>
             <span>🏢 SahayakAI Enterprise Workspace</span>
             <span style={{ fontSize: '0.65rem', color: '#64748B' }}>▼</span>
           </div>
 
-          <span style={{ background: 'rgba(56, 189, 248, 0.1)', color: '#38BDF8', border: '1px solid rgba(56, 189, 248, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
-            v1.14.0 OS
+          <span style={{ background: 'rgba(56, 189, 248, 0.12)', color: '#38BDF8', border: '1px solid rgba(56, 189, 248, 0.3)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
+            v1.14.0 TITANIUM
           </span>
 
-          <span style={{ background: 'rgba(245, 130, 32, 0.1)', color: '#F58220', border: '1px solid rgba(245, 130, 32, 0.25)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
+          <span style={{ background: 'rgba(245, 130, 32, 0.12)', color: '#F58220', border: '1px solid rgba(245, 130, 32, 0.3)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.68rem', fontWeight: 700 }}>
             Powered by ASTRA™
           </span>
         </div>
@@ -174,9 +186,9 @@ export default function AstraStudioPage() {
         {/* AI Command Center Input Trigger (⌘K) */}
         <div 
           onClick={() => setCmdOpen(true)}
-          style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '6px 16px', width: '360px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', color: '#94A3B8', fontSize: '0.8rem', transition: 'all 0.2s ease' }}
-          onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.4)'}
-          onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)'}
+          style={{ background: 'rgba(0, 0, 0, 0.45)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '8px', padding: '6px 16px', width: '380px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', color: '#94A3B8', fontSize: '0.8rem', transition: 'all 0.2s ease' }}
+          onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)'}
+          onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
         >
           <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ color: '#38BDF8' }}>🤖</span> Search tenders, run pricing or type command...
@@ -184,9 +196,9 @@ export default function AstraStudioPage() {
           <span style={{ background: '#1E293B', border: '1px solid #334155', borderRadius: '4px', padding: '1px 6px', fontSize: '0.68rem', color: '#F8FAFC', fontWeight: 700 }}>⌘K</span>
         </div>
 
-        {/* Status Indicators */}
+        {/* Status Indicators & Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', fontSize: '0.78rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(74, 222, 128, 0.08)', border: '1px solid rgba(74, 222, 128, 0.2)', padding: '4px 12px', borderRadius: '20px', color: '#4ADE80' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(74, 222, 128, 0.1)', border: '1px solid rgba(74, 222, 128, 0.25)', padding: '4px 12px', borderRadius: '20px', color: '#4ADE80' }}>
             <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#4ADE80', boxShadow: '0 0 8px #4ADE80' }}></span>
             <span style={{ fontWeight: 700, fontSize: '0.72rem', letterSpacing: '0.3px' }}>OPERATIONAL</span>
           </div>
@@ -197,11 +209,11 @@ export default function AstraStudioPage() {
         </div>
       </header>
 
-      {/* ───── MAIN COMMAND CENTER BODY (SIDEBAR + CENTER + COPILOT) ───── */}
+      {/* ───── MAIN TITANIUM STUDIO WORKSPACE (SIDEBAR + CENTER + AI COPILOT) ───── */}
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
 
         {/* ───── LEFT SIDEBAR (GROUPED NAVIGATION) ───── */}
-        <aside style={{ width: '255px', borderRight: '1px solid rgba(255,255,255,0.07)', background: '#090D14', padding: '16px 10px', display: 'flex', flexDirection: 'column', gap: '22px', overflowY: 'auto' }}>
+        <aside style={{ width: '260px', borderRight: '1px solid rgba(255,255,255,0.08)', background: '#080C14', padding: '18px 12px', display: 'flex', flexDirection: 'column', gap: '24px', overflowY: 'auto' }}>
           {navGroups.map((grp, idx) => (
             <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
               <div style={{ padding: '0 10px 6px 10px', fontSize: '0.64rem', fontWeight: 800, color: '#64748B', letterSpacing: '0.8px' }}>
@@ -220,7 +232,7 @@ export default function AstraStudioPage() {
                       padding: '8px 12px',
                       borderRadius: '6px',
                       border: 'none',
-                      background: isActive ? 'linear-gradient(90deg, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0.04) 100%)' : 'transparent',
+                      background: isActive ? 'linear-gradient(90deg, rgba(56, 189, 248, 0.16) 0%, rgba(56, 189, 248, 0.04) 100%)' : 'transparent',
                       borderLeft: isActive ? '3px solid #38BDF8' : '3px solid transparent',
                       color: isActive ? '#38BDF8' : '#94A3B8',
                       fontWeight: isActive ? 700 : 500,
@@ -244,21 +256,21 @@ export default function AstraStudioPage() {
         {/* ───── CENTER INTELLIGENCE WORKSPACE ───── */}
         <main style={{ flex: 1, padding: '24px', overflowY: 'auto', background: '#0B0F19', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           
-          {/* Elevation Metrics Bar with Sparklines */}
+          {/* Analytics Elevation Metric Cards with Mini Trend Graphs */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
             
             {/* Card 1: System Health */}
-            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #101726 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: '14px', padding: '18px', boxShadow: '0 4px 24px -2px rgba(0,0,0,0.5)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>KERNEL HEALTH</span>
                 <span style={{ background: 'rgba(74, 222, 128, 0.12)', color: '#4ADE80', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>+0.4%</span>
               </div>
               <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#4ADE80', marginTop: '6px', letterSpacing: '-0.5px' }}>98.4%</div>
-              <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>23 Engines & Core Guards Operational</div>
+              <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '6px' }}>23 Core Engines & Guards Operational</div>
             </div>
 
             {/* Card 2: Stress Latency */}
-            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #101726 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: '14px', padding: '18px', boxShadow: '0 4px 24px -2px rgba(0,0,0,0.5)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>STRESS LATENCY</span>
                 <span style={{ background: 'rgba(56, 189, 248, 0.12)', color: '#38BDF8', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>92 ms</span>
@@ -268,7 +280,7 @@ export default function AstraStudioPage() {
             </div>
 
             {/* Card 3: Compliance Risk */}
-            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #101726 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: '14px', padding: '18px', boxShadow: '0 4px 24px -2px rgba(0,0,0,0.5)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>COMPLIANCE RISK</span>
                 <span style={{ background: 'rgba(250, 204, 21, 0.12)', color: '#FACC15', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>SAFE</span>
@@ -278,7 +290,7 @@ export default function AstraStudioPage() {
             </div>
 
             {/* Card 4: Report Artifacts */}
-            <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '18px', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.4)' }}>
+            <div style={{ background: 'linear-gradient(145deg, #101726 0%, #0F172A 100%)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: '14px', padding: '18px', boxShadow: '0 4px 24px -2px rgba(0,0,0,0.5)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: '#94A3B8', fontWeight: 700, letterSpacing: '0.5px' }}>REPORT ARTIFACTS</span>
                 <span style={{ background: 'rgba(245, 130, 32, 0.12)', color: '#F58220', fontSize: '0.68rem', padding: '2px 6px', borderRadius: '4px', fontWeight: 700 }}>LIVE</span>
@@ -294,28 +306,28 @@ export default function AstraStudioPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               
               {/* Hero AI Strategic Recommendation Box */}
-              <div style={{ background: 'linear-gradient(135deg, #0F172A 0%, #17253B 100%)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', padding: '24px', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)' }}>
+              <div style={{ background: 'linear-gradient(135deg, #0F172A 0%, #162840 100%)', border: '1px solid rgba(56, 189, 248, 0.35)', borderRadius: '16px', padding: '26px', boxShadow: '0 12px 36px rgba(0, 0, 0, 0.55)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#38BDF8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '8px' }}>
                   <span>✨</span> ASTRA AI STRATEGIC RECOMMENDATIONS
                 </div>
-                <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '10px' }}>
+                <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '10px' }}>
                   Enterprise Procurement Intelligence Operating System (v1.14.0)
                 </h2>
                 <p style={{ fontSize: '0.88rem', color: '#94A3B8', lineHeight: 1.6, maxWidth: '850px' }}>
                   ASTRA Engine has evaluated your procurement parameters across 7 domain engines. Your catalog health score is <strong>92/100</strong> (EXCELLENT), pricing is <strong>17% below benchmark</strong>, and MSME Turnover & EMD Exemptions are fully verified under GFR 2017 policies.
                 </p>
                 <div style={{ display: 'flex', gap: '14px', marginTop: '20px' }}>
-                  <button onClick={() => runEngine('procurement')} style={{ background: '#F58220', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(245, 130, 32, 0.35)' }}>
+                  <button onClick={() => runEngine('procurement')} style={{ background: '#F58220', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(245, 130, 32, 0.4)' }}>
                     ▶ Run Procurement Engine
                   </button>
-                  <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#070A10', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(56, 189, 248, 0.35)' }}>
+                  <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#05080E', border: 'none', padding: '10px 20px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem', boxShadow: '0 4px 14px rgba(56, 189, 248, 0.4)' }}>
                     ▶ Run Pricing Benchmark
                   </button>
                 </div>
               </div>
 
-              {/* Active Subsystems Grid */}
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px' }}>
+              {/* Subsystems Matrix Grid */}
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '22px' }}>
                 <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#F8FAFC', marginBottom: '16px' }}>Active OS Subsystems Status</h3>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
                   {[
@@ -329,7 +341,7 @@ export default function AstraStudioPage() {
                     { name: 'Multi-Agent Mesh', status: 'PASS', ver: 'v1.12.0', desc: 'Distributed task routing' },
                     { name: 'Reasoning Engine', status: 'PASS', ver: 'v1.11.0', desc: 'Fact & constraint verifier' }
                   ].map((sub, i) => (
-                    <div key={i} style={{ background: '#172033', padding: '14px 16px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div key={i} style={{ background: '#172033', padding: '14px 16px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.06)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <div>
                         <div style={{ fontWeight: 700, fontSize: '0.85rem', color: '#F1F5F9' }}>{sub.name}</div>
                         <div style={{ fontSize: '0.72rem', color: '#64748B', marginTop: '2px' }}>{sub.desc}</div>
@@ -347,7 +359,7 @@ export default function AstraStudioPage() {
           {/* ───── TAB 2: PROCUREMENT INTELLIGENCE ───── */}
           {activeTab === 'procurement' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '22px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>📦 Procurement Intelligence Platform</h2>
                   <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '4px' }}>Marketplace Registry, Catalog Health, and Supplier Tier Verification</p>
@@ -384,7 +396,7 @@ export default function AstraStudioPage() {
               )}
 
               {/* Raw JSON Code Block */}
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '20px' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#CBD5E1', marginBottom: '12px' }}>📄 Live Output Report JSON (procurement-report.json)</div>
                 <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
                   {JSON.stringify(procurementData, null, 2)}
@@ -396,12 +408,12 @@ export default function AstraStudioPage() {
           {/* ───── TAB 3: PRICING & COMPETITION ───── */}
           {activeTab === 'pricing' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '22px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>💰 Pricing Intelligence & Market Competition</h2>
                   <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '4px' }}>Price Variance, Percentile Positioning, & Herfindahl-Hirschman Index (HHI)</p>
                 </div>
-                <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#070A10', border: 'none', padding: '10px 18px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem' }}>
+                <button onClick={() => runEngine('pricing')} style={{ background: '#38BDF8', color: '#05080E', border: 'none', padding: '10px 18px', borderRadius: '8px', fontWeight: 700, cursor: 'pointer', fontSize: '0.85rem' }}>
                   ▶ Execute Pricing Engine
                 </button>
               </div>
@@ -432,7 +444,7 @@ export default function AstraStudioPage() {
                 </div>
               )}
 
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '20px' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#CBD5E1', marginBottom: '12px' }}>📄 Live Output Report JSON (pricing-report.json)</div>
                 <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#38BDF8', overflowX: 'auto', maxHeight: '280px', fontFamily: 'monospace' }}>
                   {JSON.stringify(pricingData, null, 2)}
@@ -444,14 +456,14 @@ export default function AstraStudioPage() {
           {/* ───── TAB 4: REPORT EXPLORER ───── */}
           {activeTab === 'reports' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px' }}>
+              <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '22px' }}>
                 <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC' }}>📊 Intelligence Center ({reportsList.length} Files)</h2>
                 <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '4px' }}>Select any JSON report artifact exported to reports/latest/ to view dynamic JSON content</p>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: '20px' }}>
                 {/* Reports List */}
-                <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '14px', maxHeight: '480px', overflowY: 'auto' }}>
+                <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '14px', maxHeight: '480px', overflowY: 'auto' }}>
                   <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748B', marginBottom: '10px', letterSpacing: '0.5px' }}>REPORT ARTIFACTS</div>
                   {reportsList.map((file, i) => (
                     <button
@@ -481,7 +493,7 @@ export default function AstraStudioPage() {
                 </div>
 
                 {/* Report Content */}
-                <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   <div style={{ fontWeight: 700, fontSize: '0.92rem', color: '#38BDF8' }}>Active Report: {selectedReportFile}</div>
                   <pre style={{ background: '#05080E', padding: '16px', borderRadius: '10px', fontSize: '0.8rem', color: '#4ADE80', overflowX: 'auto', maxHeight: '400px', fontFamily: 'monospace' }}>
                     {selectedReportContent ? JSON.stringify(selectedReportContent, null, 2) : '// Click a report file on the left panel to inspect content...'}
@@ -493,7 +505,7 @@ export default function AstraStudioPage() {
 
           {/* ───── OTHER TABS FALLBACK ───── */}
           {['compliance', 'supplier', 'market', 'agents', 'reasoning', 'memory', 'telemetry', 'plugins', 'settings'].includes(activeTab) && (
-            <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '14px', padding: '24px' }}>
+            <div style={{ background: '#0F172A', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px', padding: '24px' }}>
               <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '8px' }}>
                 📡 Subsystem Inspector: [{activeTab.toUpperCase()}]
               </h2>
@@ -508,21 +520,21 @@ export default function AstraStudioPage() {
 
         </main>
 
-        {/* ───── RIGHT PANEL: ASTRA AI STRATEGIC COPILOT & DECISION ENGINE ───── */}
-        <aside style={{ width: '310px', borderLeft: '1px solid rgba(255,255,255,0.07)', background: '#090D14', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
+        {/* ───── RIGHT PANEL: ASTRA AI COPILOT & DECISION ENGINE ───── */}
+        <aside style={{ width: '310px', borderLeft: '1px solid rgba(255,255,255,0.08)', background: '#080C14', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
           <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#F8FAFC', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '10px', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span>🤖</span> ASTRA AI COPILOT & DECISION ENGINE
           </div>
 
-          <div style={{ background: 'linear-gradient(145deg, #111827 0%, #0F172A 100%)', border: '1px solid rgba(56, 189, 248, 0.25)', borderRadius: '12px', padding: '16px' }}>
+          <div style={{ background: 'linear-gradient(145deg, #101726 0%, #0F172A 100%)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', padding: '18px' }}>
             <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>CONFIDENCE RATING</div>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px' }}>
-              <div style={{ fontWeight: 800, color: '#38BDF8', fontSize: '1.8rem' }}>98%</div>
+              <div style={{ fontWeight: 800, color: '#38BDF8', fontSize: '1.9rem' }}>98%</div>
               <span style={{ background: 'rgba(74, 222, 128, 0.12)', color: '#4ADE80', padding: '2px 8px', borderRadius: '4px', fontSize: '0.7rem', fontWeight: 700 }}>HIGH TRUST</span>
             </div>
           </div>
 
-          <div style={{ background: '#111827', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.78rem' }}>
+          <div style={{ background: '#101726', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.06)', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.78rem' }}>
             <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>KERNEL GUARDIANS</div>
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ ImportGuard: ACTIVE</div>
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ PathGuard: ACTIVE</div>
@@ -530,7 +542,7 @@ export default function AstraStudioPage() {
             <div style={{ color: '#4ADE80', fontWeight: 600 }}>✔ Read-Only Validation: ENFORCED</div>
           </div>
 
-          <div style={{ background: '#111827', padding: '14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)', fontSize: '0.78rem' }}>
+          <div style={{ background: '#101726', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.06)', fontSize: '0.78rem' }}>
             <div style={{ color: '#94A3B8', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px' }}>STRATEGIC ACTION CHECKLIST</div>
             <div style={{ color: '#CBD5E1', marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <div>• Verify PAN/GST match on GeM profile</div>
@@ -541,10 +553,10 @@ export default function AstraStudioPage() {
         </aside>
       </div>
 
-      {/* ───── BOTTOM PANEL: VS CODE / DEVELOPER IDE TERMINAL ───── */}
-      <footer style={{ height: '150px', borderTop: '1px solid rgba(255,255,255,0.07)', background: '#05080E', padding: '12px 20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+      {/* ───── BOTTOM PANEL: DEVELOPER IDE TERMINAL ───── */}
+      <footer style={{ height: '150px', borderTop: '1px solid rgba(255,255,255,0.08)', background: '#05080E', padding: '12px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
         
-        {/* Terminal Header Controls */}
+        {/* Terminal Controls */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '8px' }}>
           <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '16px' }}>
             <span>💻 ASTRA Developer Terminal</span>
@@ -572,9 +584,14 @@ export default function AstraStudioPage() {
             </div>
           </div>
 
-          <button onClick={() => setConsoleLogs([])} style={{ background: 'transparent', border: 'none', color: '#64748B', fontSize: '0.72rem', cursor: 'pointer', fontWeight: 600 }}>
-            Clear Console
-          </button>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <button onClick={handleExportLogs} style={{ background: 'transparent', border: 'none', color: '#38BDF8', fontSize: '0.72rem', cursor: 'pointer', fontWeight: 600 }}>
+              📥 Export Logs
+            </button>
+            <button onClick={() => setConsoleLogs([])} style={{ background: 'transparent', border: 'none', color: '#64748B', fontSize: '0.72rem', cursor: 'pointer', fontWeight: 600 }}>
+              Clear Console
+            </button>
+          </div>
         </div>
 
         {/* Terminal Log Stream */}
@@ -590,8 +607,8 @@ export default function AstraStudioPage() {
 
       {/* ───── AI COMMAND PALETTE MODAL (⌘K) ───── */}
       {cmdOpen && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '100px', backdropFilter: 'blur(10px)' }} onClick={() => setCmdOpen(false)}>
-          <div style={{ background: '#0F172A', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '14px', width: '540px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.8)' }} onClick={e => e.stopPropagation()}>
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '100px', backdropFilter: 'blur(12px)' }} onClick={() => setCmdOpen(false)}>
+          <div style={{ background: '#0F172A', border: '1px solid rgba(56, 189, 248, 0.35)', borderRadius: '16px', width: '560px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.85)' }} onClick={e => e.stopPropagation()}>
             <div style={{ padding: '14px 18px', borderBottom: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', gap: '12px' }}>
               <span style={{ fontSize: '1.1rem', color: '#38BDF8' }}>🤖</span>
               <input
@@ -611,7 +628,7 @@ export default function AstraStudioPage() {
                     key={item.id}
                     onClick={() => { setActiveTab(item.id); setCmdOpen(false); }}
                     style={{ padding: '10px 14px', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '12px', fontSize: '0.85rem', color: '#F8FAFC', transition: 'all 0.15s ease' }}
-                    onMouseEnter={e => (e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)')}
+                    onMouseEnter={e => (e.currentTarget.style.background = 'rgba(56, 189, 248, 0.14)')}
                     onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                   >
                     <span>{item.icon}</span>
