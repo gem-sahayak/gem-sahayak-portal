@@ -3,69 +3,92 @@
 const fs = require('fs');
 const path = require('path');
 const { validateReportPath, ReporterPathViolationError } = require('../guards/pathGuard');
+const severityClassifier = require('./severity');
 
 class ReportGenerator {
   /**
    * Generates string outputs for specified format options.
    */
   async build(data, format = 'json') {
+    // Standardize issues and counts via Severity Classifier
+    const processed = severityClassifier.processResults(data.results || []);
+
     switch (format) {
       case 'json':
-        return JSON.stringify(data, null, 2);
+        return this.buildJson(data, processed);
 
       case 'markdown':
-        return this.buildMarkdown(data);
+        return this.buildMarkdown(data, processed);
 
       case 'terminal':
-        return this.buildTerminal(data);
+        return this.buildTerminal(data, processed);
 
       default:
         throw new Error(`Unsupported reporting format: ${format}`);
     }
   }
 
-  buildMarkdown(data) {
-    const summary = data.summary;
-    let md = `# ASTRA ENGINE Validation Audit Report\n\n`;
-    md += `**Execution Timestamp:** ${summary.timestamp}\n`;
-    md += `**Verdict:** ${summary.overallVerdict === 'FAIL' ? '❌ FAIL' : (summary.overallVerdict === 'WARNING' ? '⚠️ WARNING' : '✅ PASS')}\n\n`;
-    
-    md += `### Audit Summary\n`;
-    md += `| Metric | Count |\n`;
-    md += `| :--- | :--- |\n`;
-    md += `| Engines Executed | ${summary.totalEnginesRun} |\n`;
-    md += `| Total Errors | ${summary.totalErrors} |\n`;
-    md += `| Total Warnings | ${summary.totalWarnings} |\n`;
-    md += `| Execution Time | ${summary.executionTimeMs} ms |\n\n`;
+  buildJson(data, processed) {
+    const summary = data.summary || {};
 
-    md += `### Detailed Results\n`;
-    for (const res of data.results) {
-      md += `#### Engine: \`${res.engineName}\` (${res.verdict})\n`;
-      md += `*   **Errors:** ${res.errors.length}\n`;
-      md += `*   **Warnings:** ${res.warnings.length}\n`;
-      md += `*   **Execution Time:** ${res.executionTimeMs} ms\n\n`;
+    const output = {
+      summary: {
+        timestamp: summary.timestamp || new Date().toISOString(),
+        overallVerdict: processed.overallVerdict,
+        totalEnginesRun: summary.totalEnginesRun || (data.results ? data.results.length : 0),
+        executionTimeMs: summary.executionTimeMs || 0,
+        severityCounts: processed.severityCounts,
+        priorityCounts: processed.priorityCounts
+      },
+      schemaVersion: data.schemaVersion || '1.0.0',
+      engineVersion: data.engineVersion || '1.1.1',
+      issues: processed.issues,
+      rawResults: data.results
+    };
 
-      if (res.errors.length > 0) {
-        md += `##### Errors Evidence:\n`;
-        res.errors.forEach(err => {
-          md += `-   **[${err.code}]** ${err.message} (File: \`${err.file || 'N/A'}\`)\n`;
-        });
-        md += `\n`;
+    return JSON.stringify(output, null, 2);
+  }
+
+  buildMarkdown(data, processed) {
+    const summary = data.summary || {};
+    const sev = processed.severityCounts;
+    const pri = processed.priorityCounts;
+
+    let md = `# ASTRA ENGINE v1.1.1 — Audit Summary Report\n\n`;
+    md += `**Execution Timestamp:** ${summary.timestamp || new Date().toISOString()}\n`;
+    md += `**Overall Verdict:** ${processed.overallVerdict === 'FAIL' ? '❌ FAIL' : (processed.overallVerdict === 'WARNING' ? '⚠️ WARNING' : (processed.overallVerdict === 'RECOMMENDATION' ? '💡 RECOMMENDATION' : '✅ PASS'))}\n`;
+    md += `**Engine Version:** ${data.engineVersion || '1.1.1'}\n\n`;
+
+    md += `### Summary Dashboard\n\n`;
+    md += `| Severity | Count | Priority | Count |\n`;
+    md += `| :--- | :--- | :--- | :--- |\n`;
+    md += `| PASS | ${sev.PASS} | P0 (Critical) | ${pri.P0} |\n`;
+    md += `| RECOMMENDATION | ${sev.RECOMMENDATION} | P1 (High) | ${pri.P1} |\n`;
+    md += `| WARNING | ${sev.WARNING} | P2 (Medium) | ${pri.P2} |\n`;
+    md += `| FAIL | ${sev.FAIL} | P3 (Editorial) | ${pri.P3} |\n\n`;
+
+    md += `### Standardized Issues List (${processed.issues.length} items)\n\n`;
+    if (processed.issues.length === 0) {
+      md += `*No issues detected across all active sub-engines.*\n\n`;
+    } else {
+      md += `| ID | Code | Severity | Priority | Engine | File / Entity | Message | Recommendation |\n`;
+      md += `|---|---|---|---|---|---|---|---|\n`;
+
+      for (const issue of processed.issues) {
+        const sevIcon = issue.severity === 'FAIL' ? '❌' : (issue.severity === 'WARNING' ? '⚠️' : '💡');
+        md += `| \`${issue.id}\` | \`${issue.code}\` | ${sevIcon} ${issue.severity} | ${issue.priority} | \`${issue.engine}\` | \`${issue.file}\` | ${issue.message} | ${issue.recommendation} |\n`;
       }
-
-      if (res.warnings.length > 0) {
-        md += `##### Warnings Evidence:\n`;
-        res.warnings.forEach(wrn => {
-          md += `-   **[${wrn.code}]** ${wrn.message} (File: \`${wrn.file || 'N/A'}\`)\n`;
-        });
-        md += `\n`;
-      }
+      md += `\n`;
     }
+
     return md;
   }
 
-  buildTerminal(data) {
-    const summary = data.summary;
+  buildTerminal(data, processed) {
+    const summary = data.summary || {};
+    const sev = processed.severityCounts;
+    const pri = processed.priorityCounts;
+
     const colors = {
       reset: "\x1b[0m",
       green: "\x1b[32m",
@@ -75,42 +98,42 @@ class ReportGenerator {
       bright: "\x1b[1m"
     };
 
-    let t = `\n${colors.bright}=== ASTRA ENGINE SCAN AUDIT SUMMARY ===${colors.reset}\n`;
-    const vColor = summary.overallVerdict === 'FAIL' ? colors.red : (summary.overallVerdict === 'WARNING' ? colors.yellow : colors.green);
-    t += `Verdict: ${vColor}${colors.bright}${summary.overallVerdict}${colors.reset}\n`;
-    t += `Engines Executed: ${summary.totalEnginesRun}\n`;
-    t += `Total Errors: ${colors.red}${summary.totalErrors}${colors.reset}\n`;
-    t += `Total Warnings: ${colors.yellow}${summary.totalWarnings}${colors.reset}\n`;
-    t += `Execution Time: ${summary.executionTimeMs} ms\n\n`;
+    let t = `\n${colors.bright}=== ASTRA ENGINE v1.1.1 SCAN AUDIT SUMMARY ===${colors.reset}\n`;
+    const vColor = processed.overallVerdict === 'FAIL' ? colors.red : (processed.overallVerdict === 'WARNING' ? colors.yellow : (processed.overallVerdict === 'RECOMMENDATION' ? colors.cyan : colors.green));
+    
+    t += `Verdict: ${vColor}${colors.bright}${processed.overallVerdict}${colors.reset}\n`;
+    t += `Engines Executed: ${summary.totalEnginesRun || (data.results ? data.results.length : 0)}\n`;
+    t += `Execution Time: ${summary.executionTimeMs || 0} ms\n\n`;
 
-    for (const res of data.results) {
-      const resColor = res.verdict === 'FAIL' ? colors.red : (res.verdict === 'WARNING' ? colors.yellow : colors.green);
-      t += `➔ Engine: ${colors.cyan}${res.engineName}${colors.reset} [${resColor}${res.verdict}${colors.reset}] (${res.executionTimeMs} ms)\n`;
-      
-      if (res.errors.length > 0) {
-        res.errors.forEach(err => {
-          t += `    ${colors.red}● Error [${err.code}]${colors.reset}: ${err.message}\n`;
-          if (err.file) t += `      File: ${err.file}\n`;
-        });
-      }
-      
-      if (res.warnings.length > 0) {
-        res.warnings.forEach(wrn => {
-          t += `    ${colors.yellow}▲ Warning [${wrn.code}]${colors.reset}: ${wrn.message}\n`;
-          if (wrn.file) t += `      File: ${wrn.file}\n`;
-        });
+    t += `${colors.bright}SEVERITY DASHBOARD:${colors.reset}\n`;
+    t += `  PASS            : ${colors.green}${sev.PASS}${colors.reset}\n`;
+    t += `  RECOMMENDATION  : ${colors.cyan}${sev.RECOMMENDATION}${colors.reset}\n`;
+    t += `  WARNING         : ${colors.yellow}${sev.WARNING}${colors.reset}\n`;
+    t += `  FAIL            : ${colors.red}${sev.FAIL}${colors.reset}\n\n`;
+
+    t += `${colors.bright}PRIORITY DASHBOARD:${colors.reset}\n`;
+    t += `  P0 (Critical)   : ${pri.P0 > 0 ? colors.red + pri.P0 : colors.green + 0}${colors.reset}\n`;
+    t += `  P1 (High)       : ${pri.P1 > 0 ? colors.yellow + pri.P1 : colors.green + 0}${colors.reset}\n`;
+    t += `  P2 (Medium)     : ${pri.P2 > 0 ? colors.cyan + pri.P2 : colors.green + 0}${colors.reset}\n`;
+    t += `  P3 (Editorial)  : ${colors.green}${pri.P3}${colors.reset}\n\n`;
+
+    if (processed.issues.length > 0) {
+      t += `${colors.bright}DETAILED ISSUES SUMMARY (${processed.issues.length} items):${colors.reset}\n`;
+      for (const issue of processed.issues) {
+        const sColor = issue.severity === 'FAIL' ? colors.red : (issue.severity === 'WARNING' ? colors.yellow : colors.cyan);
+        t += `  ${sColor}[${issue.severity}] [${issue.priority}] [${issue.code}]${colors.reset} (${issue.file}): ${issue.message}\n`;
+        t += `    └─ Rec: ${colors.cyan}${issue.recommendation}${colors.reset}\n`;
       }
     }
+
     return t;
   }
 
   /**
    * Write report to a target path.
    * SEC-002: Path guard enforces writes ONLY inside astra-engine/reports/.
-   * Throws ReporterPathViolationError for any path outside.
    */
   async write(content, outputPath) {
-    // SEC-002: Validate path before any write operation
     const resolvedPath = validateReportPath(outputPath);
 
     try {
@@ -120,7 +143,6 @@ class ReportGenerator {
       }
       fs.writeFileSync(resolvedPath, content, 'utf8');
     } catch (e) {
-      // Re-throw path violation errors without wrapping
       if (e instanceof ReporterPathViolationError) {
         throw e;
       }

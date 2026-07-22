@@ -1,13 +1,2166 @@
 {
   "summary": {
-    "timestamp": "2026-07-22T12:05:55.491Z",
+    "timestamp": "2026-07-22T12:18:07.363Z",
     "overallVerdict": "WARNING",
     "totalEnginesRun": 3,
-    "totalErrors": 0,
-    "totalWarnings": 124,
-    "executionTimeMs": 431
+    "executionTimeMs": 457,
+    "severityCounts": {
+      "PASS": 0,
+      "RECOMMENDATION": 112,
+      "WARNING": 12,
+      "FAIL": 0
+    },
+    "priorityCounts": {
+      "P0": 0,
+      "P1": 6,
+      "P2": 71,
+      "P3": 47
+    }
   },
-  "results": [
+  "schemaVersion": "1.0.0",
+  "engineVersion": "1.1.0",
+  "issues": [
+    {
+      "id": "ISS-c9cd4e5a99",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "cppp-portal-registration-tender-search",
+      "message": "Registry item \"cppp-portal-registration-tender-search\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "cppp-portal-registration-tender-search",
+        "category": "Government Procurement Hub"
+      }
+    },
+    {
+      "id": "ISS-9e3630aa91",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "gem-login-kaise-kare",
+      "message": "Registry item \"gem-login-kaise-kare\" uses category \"GeM Account Management\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "gem-login-kaise-kare",
+        "category": "GeM Account Management"
+      }
+    },
+    {
+      "id": "ISS-4181978412",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "gem-registration-kaise-kare",
+      "message": "Registry item \"gem-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "gem-registration-kaise-kare",
+        "category": "GeM Seller Onboarding"
+      }
+    },
+    {
+      "id": "ISS-fae41e353e",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "gem-seller-registration-kaise-kare",
+      "message": "Registry item \"gem-seller-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "gem-seller-registration-kaise-kare",
+        "category": "GeM Seller Onboarding"
+      }
+    },
+    {
+      "id": "ISS-d24bb34ed0",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "ireps-railway-tender-bidding-guide",
+      "message": "Registry item \"ireps-railway-tender-bidding-guide\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "ireps-railway-tender-bidding-guide",
+        "category": "Government Procurement Hub"
+      }
+    },
+    {
+      "id": "ISS-cfc83424d8",
+      "engine": "registry-validation-engine",
+      "validator": "category_mismatch.validator",
+      "severity": "WARNING",
+      "priority": "P2",
+      "code": "CATEGORY_MISMATCH",
+      "rawCode": "CATEGORY_MISMATCH",
+      "file": "src/content/registry.ts",
+      "entity": "use-ai-summarize-government-tender-pdfs",
+      "message": "Registry item \"use-ai-summarize-government-tender-pdfs\" uses category \"Automation\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Review issue evidence and resolve finding",
+      "evidence": {
+        "slug": "use-ai-summarize-government-tender-pdfs",
+        "category": "Automation"
+      }
+    },
+    {
+      "id": "ISS-a82533a64f",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/cppp-portal-registration-tender-search.md",
+      "entity": "cppp-portal-registration-tender-search",
+      "message": "Article \"cppp-portal-registration-tender-search\" title exceeds recommended search length (76 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "cppp-portal-registration-tender-search",
+        "titleLength": 76,
+        "title": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)"
+      }
+    },
+    {
+      "id": "ISS-a437823938",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-boq-excel-sheet-upload-errors.md",
+      "entity": "gem-boq-excel-sheet-upload-errors",
+      "message": "Article \"gem-boq-excel-sheet-upload-errors\" title exceeds recommended search length (84 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-boq-excel-sheet-upload-errors",
+        "titleLength": 84,
+        "title": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)"
+      }
+    },
+    {
+      "id": "ISS-25a819c9ce",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-catalog-rejected-reasons.md",
+      "entity": "gem-catalog-rejected-reasons",
+      "message": "Article \"gem-catalog-rejected-reasons\" title exceeds recommended search length (72 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-catalog-rejected-reasons",
+        "titleLength": 72,
+        "title": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes"
+      }
+    },
+    {
+      "id": "ISS-ddddd70284",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-catalogue-upload-kaise-kare.md",
+      "entity": "gem-catalogue-upload-kaise-kare",
+      "message": "Article \"gem-catalogue-upload-kaise-kare\" title exceeds recommended search length (94 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-catalogue-upload-kaise-kare",
+        "titleLength": 94,
+        "title": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide"
+      }
+    },
+    {
+      "id": "ISS-fbc7a867bd",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-company-profile-edit-kaise-kare.md",
+      "entity": "gem-company-profile-edit-kaise-kare",
+      "message": "Article \"gem-company-profile-edit-kaise-kare\" title exceeds recommended search length (88 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-company-profile-edit-kaise-kare",
+        "titleLength": 88,
+        "title": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)"
+      }
+    },
+    {
+      "id": "ISS-e78f39112e",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-consignee-receipt-process.md",
+      "entity": "gem-consignee-receipt-process",
+      "message": "Article \"gem-consignee-receipt-process\" title exceeds recommended search length (71 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-consignee-receipt-process",
+        "titleLength": 71,
+        "title": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)"
+      }
+    },
+    {
+      "id": "ISS-8633a6bf7b",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-custom-bid-specifications-rules.md",
+      "entity": "gem-custom-bid-specifications-rules",
+      "message": "Article \"gem-custom-bid-specifications-rules\" title exceeds recommended search length (87 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-custom-bid-specifications-rules",
+        "titleLength": 87,
+        "title": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide"
+      }
+    },
+    {
+      "id": "ISS-0d34dc576f",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-email-mobile-number-change.md",
+      "entity": "gem-email-mobile-number-change",
+      "message": "Article \"gem-email-mobile-number-change\" title exceeds recommended search length (85 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-email-mobile-number-change",
+        "titleLength": 85,
+        "title": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)"
+      }
+    },
+    {
+      "id": "ISS-5ef2775488",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-epbg-bank-guarantee-rules-refund.md",
+      "entity": "gem-epbg-bank-guarantee-rules-refund",
+      "message": "Article \"gem-epbg-bank-guarantee-rules-refund\" title exceeds recommended search length (73 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-epbg-bank-guarantee-rules-refund",
+        "titleLength": 73,
+        "title": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process"
+      }
+    },
+    {
+      "id": "ISS-bd255cc52a",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-invoice-generate-kaise-kare.md",
+      "entity": "gem-invoice-generate-kaise-kare",
+      "message": "Article \"gem-invoice-generate-kaise-kare\" title exceeds recommended search length (79 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-invoice-generate-kaise-kare",
+        "titleLength": 79,
+        "title": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)"
+      }
+    },
+    {
+      "id": "ISS-c20c3170db",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-joint-venture-consortium-bidding.md",
+      "entity": "gem-joint-venture-consortium-bidding",
+      "message": "Article \"gem-joint-venture-consortium-bidding\" title exceeds recommended search length (72 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-joint-venture-consortium-bidding",
+        "titleLength": 72,
+        "title": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026"
+      }
+    },
+    {
+      "id": "ISS-1bdcc0b85a",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-l1-price-matching-counter-offer.md",
+      "entity": "gem-l1-price-matching-counter-offer",
+      "message": "Article \"gem-l1-price-matching-counter-offer\" title exceeds recommended search length (80 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-l1-price-matching-counter-offer",
+        "titleLength": 80,
+        "title": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide"
+      }
+    },
+    {
+      "id": "ISS-7aec6680ef",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-order-cancel-rules.md",
+      "entity": "gem-order-cancel-rules",
+      "message": "Article \"gem-order-cancel-rules\" title exceeds recommended search length (76 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-order-cancel-rules",
+        "titleLength": 76,
+        "title": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines"
+      }
+    },
+    {
+      "id": "ISS-7cc1b8abb8",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-payment-status-kaise-check-kare.md",
+      "entity": "gem-payment-status-kaise-check-kare",
+      "message": "Article \"gem-payment-status-kaise-check-kare\" title exceeds recommended search length (74 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-payment-status-kaise-check-kare",
+        "titleLength": 74,
+        "title": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps"
+      }
+    },
+    {
+      "id": "ISS-8ffd02e653",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-product-approval-time.md",
+      "entity": "gem-product-approval-time",
+      "message": "Article \"gem-product-approval-time\" title exceeds recommended search length (84 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-product-approval-time",
+        "titleLength": 84,
+        "title": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals"
+      }
+    },
+    {
+      "id": "ISS-77bd577ff9",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-profile-update-kaise-kare.md",
+      "entity": "gem-profile-update-kaise-kare",
+      "message": "Article \"gem-profile-update-kaise-kare\" title exceeds recommended search length (114 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-profile-update-kaise-kare",
+        "titleLength": 114,
+        "title": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution"
+      }
+    },
+    {
+      "id": "ISS-73a714eea7",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-return-replacement-rules.md",
+      "entity": "gem-return-replacement-rules",
+      "message": "Article \"gem-return-replacement-rules\" title exceeds recommended search length (75 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-return-replacement-rules",
+        "titleLength": 75,
+        "title": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost"
+      }
+    },
+    {
+      "id": "ISS-6b12b6a72b",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-reverse-auction-complete-guide.md",
+      "entity": "gem-reverse-auction-complete-guide",
+      "message": "Article \"gem-reverse-auction-complete-guide\" title exceeds recommended search length (77 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-reverse-auction-complete-guide",
+        "titleLength": 77,
+        "title": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein"
+      }
+    },
+    {
+      "id": "ISS-b29f14cba2",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-seller-rating-improve-kaise-kare.md",
+      "entity": "gem-seller-rating-improve-kaise-kare",
+      "message": "Article \"gem-seller-rating-improve-kaise-kare\" title exceeds recommended search length (75 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-seller-rating-improve-kaise-kare",
+        "titleLength": 75,
+        "title": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer"
+      }
+    },
+    {
+      "id": "ISS-de9e050f84",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-service-contract-bidding-rules.md",
+      "entity": "gem-service-contract-bidding-rules",
+      "message": "Article \"gem-service-contract-bidding-rules\" title exceeds recommended search length (87 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-service-contract-bidding-rules",
+        "titleLength": 87,
+        "title": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)"
+      }
+    },
+    {
+      "id": "ISS-235db391fd",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-tender-search-guide.md",
+      "entity": "gem-tender-search-guide",
+      "message": "Article \"gem-tender-search-guide\" title exceeds recommended search length (80 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-tender-search-guide",
+        "titleLength": 80,
+        "title": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM"
+      }
+    },
+    {
+      "id": "ISS-62aca77c14",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/gem-warranty-claim-process.md",
+      "entity": "gem-warranty-claim-process",
+      "message": "Article \"gem-warranty-claim-process\" title exceeds recommended search length (82 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "gem-warranty-claim-process",
+        "titleLength": 82,
+        "title": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules"
+      }
+    },
+    {
+      "id": "ISS-3f25a7f4f5",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/ireps-railway-tender-bidding-guide.md",
+      "entity": "ireps-railway-tender-bidding-guide",
+      "message": "Article \"ireps-railway-tender-bidding-guide\" title exceeds recommended search length (79 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "ireps-railway-tender-bidding-guide",
+        "titleLength": 79,
+        "title": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)"
+      }
+    },
+    {
+      "id": "ISS-f15aef3d49",
+      "engine": "seo-validation-engine",
+      "validator": "seo003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO003",
+      "rawCode": "LONG_TITLE",
+      "file": "posts/what-is-emd-in-gem.md",
+      "entity": "what-is-emd-in-gem",
+      "message": "Article \"what-is-emd-in-gem\" title exceeds recommended search length (74 chars, recommended <= 70)",
+      "recommendation": "Shorten title to <= 70 characters to avoid SERP truncation",
+      "evidence": {
+        "slug": "what-is-emd-in-gem",
+        "titleLength": 74,
+        "title": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish"
+      }
+    },
+    {
+      "id": "ISS-c872b8a2d8",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/bid-participation-rules.md",
+      "entity": "bid-participation-rules",
+      "message": "Article \"bid-participation-rules\" has a short description (42 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "bid-participation-rules",
+        "descLength": 42
+      }
+    },
+    {
+      "id": "ISS-b501293b3c",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/bid-splitting-rules.md",
+      "entity": "bid-splitting-rules",
+      "message": "Article \"bid-splitting-rules\" has a short description (38 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "bid-splitting-rules",
+        "descLength": 38
+      }
+    },
+    {
+      "id": "ISS-48b7b46c78",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/common-errors.md",
+      "entity": "common-errors",
+      "message": "Article \"common-errors\" has a short description (32 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "common-errors",
+        "descLength": 32
+      }
+    },
+    {
+      "id": "ISS-078e5b3747",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/cpv-code-guide.md",
+      "entity": "cpv-code-guide",
+      "message": "Article \"cpv-code-guide\" has a short description (33 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "cpv-code-guide",
+        "descLength": 33
+      }
+    },
+    {
+      "id": "ISS-431d6b21aa",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/daily-tender-monitoring.md",
+      "entity": "daily-tender-monitoring",
+      "message": "Article \"daily-tender-monitoring\" has a short description (42 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "daily-tender-monitoring",
+        "descLength": 42
+      }
+    },
+    {
+      "id": "ISS-f5579bbe30",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/documents-required.md",
+      "entity": "documents-required",
+      "message": "Article \"documents-required\" has a short description (37 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "documents-required",
+        "descLength": 37
+      }
+    },
+    {
+      "id": "ISS-d7784a343e",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/earnest-money-deposit.md",
+      "entity": "earnest-money-deposit",
+      "message": "Article \"earnest-money-deposit\" has a short description (40 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "earnest-money-deposit",
+        "descLength": 40
+      }
+    },
+    {
+      "id": "ISS-5540f50738",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/faqs.md",
+      "entity": "faqs",
+      "message": "Article \"faqs\" has a short description (23 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "faqs",
+        "descLength": 23
+      }
+    },
+    {
+      "id": "ISS-2225ceb739",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/fees-explained.md",
+      "entity": "fees-explained",
+      "message": "Article \"fees-explained\" has a short description (33 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "fees-explained",
+        "descLength": 33
+      }
+    },
+    {
+      "id": "ISS-b48fcaf727",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-bank-account-change-kaise-kare.md",
+      "entity": "gem-bank-account-change-kaise-kare",
+      "message": "Article \"gem-bank-account-change-kaise-kare\" description exceeds recommended search length (171 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-bank-account-change-kaise-kare",
+        "descLength": 171
+      }
+    },
+    {
+      "id": "ISS-6a4514f3fe",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-bidding-fees.md",
+      "entity": "gem-bidding-fees",
+      "message": "Article \"gem-bidding-fees\" has a short description (35 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-bidding-fees",
+        "descLength": 35
+      }
+    },
+    {
+      "id": "ISS-57a9e67a25",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-bidding-rules-handbook.md",
+      "entity": "gem-bidding-rules-handbook",
+      "message": "Article \"gem-bidding-rules-handbook\" has a short description (45 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-bidding-rules-handbook",
+        "descLength": 45
+      }
+    },
+    {
+      "id": "ISS-cc3fb4519b",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-boq-excel-sheet-upload-errors.md",
+      "entity": "gem-boq-excel-sheet-upload-errors",
+      "message": "Article \"gem-boq-excel-sheet-upload-errors\" description exceeds recommended search length (226 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-boq-excel-sheet-upload-errors",
+        "descLength": 226
+      }
+    },
+    {
+      "id": "ISS-ce6df10e43",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-catalog-rejected-reasons.md",
+      "entity": "gem-catalog-rejected-reasons",
+      "message": "Article \"gem-catalog-rejected-reasons\" description exceeds recommended search length (182 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-catalog-rejected-reasons",
+        "descLength": 182
+      }
+    },
+    {
+      "id": "ISS-d7a1334f76",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-catalogue-upload-kaise-kare.md",
+      "entity": "gem-catalogue-upload-kaise-kare",
+      "message": "Article \"gem-catalogue-upload-kaise-kare\" description exceeds recommended search length (233 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-catalogue-upload-kaise-kare",
+        "descLength": 233
+      }
+    },
+    {
+      "id": "ISS-b4317e0be8",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-category-search.md",
+      "entity": "gem-category-search",
+      "message": "Article \"gem-category-search\" has a short description (38 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-category-search",
+        "descLength": 38
+      }
+    },
+    {
+      "id": "ISS-3b6e48ccbc",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-company-profile-edit-kaise-kare.md",
+      "entity": "gem-company-profile-edit-kaise-kare",
+      "message": "Article \"gem-company-profile-edit-kaise-kare\" description exceeds recommended search length (173 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-company-profile-edit-kaise-kare",
+        "descLength": 173
+      }
+    },
+    {
+      "id": "ISS-488db8d166",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-consignee-receipt-process.md",
+      "entity": "gem-consignee-receipt-process",
+      "message": "Article \"gem-consignee-receipt-process\" description exceeds recommended search length (232 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-consignee-receipt-process",
+        "descLength": 232
+      }
+    },
+    {
+      "id": "ISS-9d7a82b3ae",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-crac-kaise-generate-hota-hai.md",
+      "entity": "gem-crac-kaise-generate-hota-hai",
+      "message": "Article \"gem-crac-kaise-generate-hota-hai\" description exceeds recommended search length (171 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-crac-kaise-generate-hota-hai",
+        "descLength": 171
+      }
+    },
+    {
+      "id": "ISS-16a81bdc29",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-custom-bid-specifications-rules.md",
+      "entity": "gem-custom-bid-specifications-rules",
+      "message": "Article \"gem-custom-bid-specifications-rules\" description exceeds recommended search length (217 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-custom-bid-specifications-rules",
+        "descLength": 217
+      }
+    },
+    {
+      "id": "ISS-dc94fbeb23",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-email-mobile-number-change.md",
+      "entity": "gem-email-mobile-number-change",
+      "message": "Article \"gem-email-mobile-number-change\" description exceeds recommended search length (219 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-email-mobile-number-change",
+        "descLength": 219
+      }
+    },
+    {
+      "id": "ISS-f1eccd89ff",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-incident-management-show-cause-reply.md",
+      "entity": "gem-incident-management-show-cause-reply",
+      "message": "Article \"gem-incident-management-show-cause-reply\" description exceeds recommended search length (164 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-incident-management-show-cause-reply",
+        "descLength": 164
+      }
+    },
+    {
+      "id": "ISS-0584f4ce07",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-l1-price-matching-counter-offer.md",
+      "entity": "gem-l1-price-matching-counter-offer",
+      "message": "Article \"gem-l1-price-matching-counter-offer\" description exceeds recommended search length (178 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-l1-price-matching-counter-offer",
+        "descLength": 178
+      }
+    },
+    {
+      "id": "ISS-dd46664ed3",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-login-kaise-kare.md",
+      "entity": "gem-login-kaise-kare",
+      "message": "Article \"gem-login-kaise-kare\" has a short description (25 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-login-kaise-kare",
+        "descLength": 25
+      }
+    },
+    {
+      "id": "ISS-3718e66316",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-order-accept-kaise-kare.md",
+      "entity": "gem-order-accept-kaise-kare",
+      "message": "Article \"gem-order-accept-kaise-kare\" description exceeds recommended search length (188 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-order-accept-kaise-kare",
+        "descLength": 188
+      }
+    },
+    {
+      "id": "ISS-145f1f0340",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-order-cancel-rules.md",
+      "entity": "gem-order-cancel-rules",
+      "message": "Article \"gem-order-cancel-rules\" description exceeds recommended search length (189 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-order-cancel-rules",
+        "descLength": 189
+      }
+    },
+    {
+      "id": "ISS-59320b94aa",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-payment-kab-milta-hai.md",
+      "entity": "gem-payment-kab-milta-hai",
+      "message": "Article \"gem-payment-kab-milta-hai\" description exceeds recommended search length (200 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-payment-kab-milta-hai",
+        "descLength": 200
+      }
+    },
+    {
+      "id": "ISS-64dcc89587",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-payment-status-kaise-check-kare.md",
+      "entity": "gem-payment-status-kaise-check-kare",
+      "message": "Article \"gem-payment-status-kaise-check-kare\" description exceeds recommended search length (183 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-payment-status-kaise-check-kare",
+        "descLength": 183
+      }
+    },
+    {
+      "id": "ISS-22fb5ce7e7",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-product-approval-time.md",
+      "entity": "gem-product-approval-time",
+      "message": "Article \"gem-product-approval-time\" description exceeds recommended search length (183 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-product-approval-time",
+        "descLength": 183
+      }
+    },
+    {
+      "id": "ISS-beb4a2bda1",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-registration-kaise-kare.md",
+      "entity": "gem-registration-kaise-kare",
+      "message": "Article \"gem-registration-kaise-kare\" has a short description (46 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-registration-kaise-kare",
+        "descLength": 46
+      }
+    },
+    {
+      "id": "ISS-a08dc4852c",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-return-replacement-rules.md",
+      "entity": "gem-return-replacement-rules",
+      "message": "Article \"gem-return-replacement-rules\" description exceeds recommended search length (170 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-return-replacement-rules",
+        "descLength": 170
+      }
+    },
+    {
+      "id": "ISS-d1b370a8f2",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-search-filters-explained.md",
+      "entity": "gem-search-filters-explained",
+      "message": "Article \"gem-search-filters-explained\" has a short description (47 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-search-filters-explained",
+        "descLength": 47
+      }
+    },
+    {
+      "id": "ISS-48ea55fbc8",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-seller-dashboard-kaise-use-kare.md",
+      "entity": "gem-seller-dashboard-kaise-use-kare",
+      "message": "Article \"gem-seller-dashboard-kaise-use-kare\" description exceeds recommended search length (164 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-seller-dashboard-kaise-use-kare",
+        "descLength": 164
+      }
+    },
+    {
+      "id": "ISS-9751d3077b",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-seller-performance-dashboard.md",
+      "entity": "gem-seller-performance-dashboard",
+      "message": "Article \"gem-seller-performance-dashboard\" description exceeds recommended search length (171 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-seller-performance-dashboard",
+        "descLength": 171
+      }
+    },
+    {
+      "id": "ISS-7cdf861e06",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-seller-rating-improve-kaise-kare.md",
+      "entity": "gem-seller-rating-improve-kaise-kare",
+      "message": "Article \"gem-seller-rating-improve-kaise-kare\" description exceeds recommended search length (184 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-seller-rating-improve-kaise-kare",
+        "descLength": 184
+      }
+    },
+    {
+      "id": "ISS-49e877778b",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-seller-registration-kaise-kare.md",
+      "entity": "gem-seller-registration-kaise-kare",
+      "message": "Article \"gem-seller-registration-kaise-kare\" has a short description (29 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-seller-registration-kaise-kare",
+        "descLength": 29
+      }
+    },
+    {
+      "id": "ISS-3e1cb135ca",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/gem-tender-search-guide.md",
+      "entity": "gem-tender-search-guide",
+      "message": "Article \"gem-tender-search-guide\" has a short description (42 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "gem-tender-search-guide",
+        "descLength": 42
+      }
+    },
+    {
+      "id": "ISS-f5fce01f92",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/gem-warranty-claim-process.md",
+      "entity": "gem-warranty-claim-process",
+      "message": "Article \"gem-warranty-claim-process\" description exceeds recommended search length (178 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "gem-warranty-claim-process",
+        "descLength": 178
+      }
+    },
+    {
+      "id": "ISS-80f6c7f5a8",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/ireps-railway-tender-bidding-guide.md",
+      "entity": "ireps-railway-tender-bidding-guide",
+      "message": "Article \"ireps-railway-tender-bidding-guide\" description exceeds recommended search length (172 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "ireps-railway-tender-bidding-guide",
+        "descLength": 172
+      }
+    },
+    {
+      "id": "ISS-f82c845918",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/keyword-search-tips.md",
+      "entity": "keyword-search-tips",
+      "message": "Article \"keyword-search-tips\" has a short description (38 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "keyword-search-tips",
+        "descLength": 38
+      }
+    },
+    {
+      "id": "ISS-a84339a437",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/manufacturers-registration.md",
+      "entity": "manufacturers-registration",
+      "message": "Article \"manufacturers-registration\" has a short description (45 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "manufacturers-registration",
+        "descLength": 45
+      }
+    },
+    {
+      "id": "ISS-ede008b100",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/ministry-department-search.md",
+      "entity": "ministry-department-search",
+      "message": "Article \"ministry-department-search\" has a short description (45 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "ministry-department-search",
+        "descLength": 45
+      }
+    },
+    {
+      "id": "ISS-160d34c60a",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/msme-registration.md",
+      "entity": "msme-registration",
+      "message": "Article \"msme-registration\" has a short description (36 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "msme-registration",
+        "descLength": 36
+      }
+    },
+    {
+      "id": "ISS-72feefc80c",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/profile-completion.md",
+      "entity": "profile-completion",
+      "message": "Article \"profile-completion\" has a short description (37 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "profile-completion",
+        "descLength": 37
+      }
+    },
+    {
+      "id": "ISS-b80f1acbf7",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/representation-writing.md",
+      "entity": "representation-writing",
+      "message": "Article \"representation-writing\" has a short description (41 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "representation-writing",
+        "descLength": 41
+      }
+    },
+    {
+      "id": "ISS-3009dd8d6a",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/restrictive-specifications.md",
+      "entity": "restrictive-specifications",
+      "message": "Article \"restrictive-specifications\" has a short description (45 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "restrictive-specifications",
+        "descLength": 45
+      }
+    },
+    {
+      "id": "ISS-9f054fefa2",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/reverse-auction-rules.md",
+      "entity": "reverse-auction-rules",
+      "message": "Article \"reverse-auction-rules\" has a short description (40 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "reverse-auction-rules",
+        "descLength": 40
+      }
+    },
+    {
+      "id": "ISS-fbece30067",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/saved-search-and-alerts.md",
+      "entity": "saved-search-and-alerts",
+      "message": "Article \"saved-search-and-alerts\" has a short description (42 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "saved-search-and-alerts",
+        "descLength": 42
+      }
+    },
+    {
+      "id": "ISS-59966ee886",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/single-bid-compliance.md",
+      "entity": "single-bid-compliance",
+      "message": "Article \"single-bid-compliance\" has a short description (40 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "single-bid-compliance",
+        "descLength": 40
+      }
+    },
+    {
+      "id": "ISS-b107f3586a",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/state-procurement-up-tenders-gem-comparison.md",
+      "entity": "state-procurement-up-tenders-gem-comparison",
+      "message": "Article \"state-procurement-up-tenders-gem-comparison\" description exceeds recommended search length (184 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "state-procurement-up-tenders-gem-comparison",
+        "descLength": 184
+      }
+    },
+    {
+      "id": "ISS-cf084f9ab4",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/state-wise-tender-search.md",
+      "entity": "state-wise-tender-search",
+      "message": "Article \"state-wise-tender-search\" has a short description (43 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "state-wise-tender-search",
+        "descLength": 43
+      }
+    },
+    {
+      "id": "ISS-21e7c080fa",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/tender-evaluation-stages.md",
+      "entity": "tender-evaluation-stages",
+      "message": "Article \"tender-evaluation-stages\" has a short description (43 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "tender-evaluation-stages",
+        "descLength": 43
+      }
+    },
+    {
+      "id": "ISS-0610e20ba2",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/timeframe.md",
+      "entity": "timeframe",
+      "message": "Article \"timeframe\" has a short description (28 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "timeframe",
+        "descLength": 28
+      }
+    },
+    {
+      "id": "ISS-cbf9addffc",
+      "engine": "seo-validation-engine",
+      "validator": "seo006.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "SEO006",
+      "rawCode": "SHORT_DESCRIPTION",
+      "file": "posts/traders-registration.md",
+      "entity": "traders-registration",
+      "message": "Article \"traders-registration\" has a short description (39 chars, recommended >= 50)",
+      "recommendation": "Expand description to >= 50 characters to provide meaningful context",
+      "evidence": {
+        "slug": "traders-registration",
+        "descLength": 39
+      }
+    },
+    {
+      "id": "ISS-f4bfdb573d",
+      "engine": "seo-validation-engine",
+      "validator": "seo007.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO007",
+      "rawCode": "LONG_DESCRIPTION",
+      "file": "posts/what-is-emd-in-gem.md",
+      "entity": "what-is-emd-in-gem",
+      "message": "Article \"what-is-emd-in-gem\" description exceeds recommended search length (174 chars, recommended <= 160)",
+      "recommendation": "Trim description to <= 160 characters to fit search snippet boundaries",
+      "evidence": {
+        "slug": "what-is-emd-in-gem",
+        "descLength": 174
+      }
+    },
+    {
+      "id": "ISS-b24956b817",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-bid-participation-fees-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-bid-participation-fees-guide\" references unregistered tool \"emd-calculator\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-bid-participation-fees-guide",
+        "targetTool": "emd-calculator"
+      }
+    },
+    {
+      "id": "ISS-3836fe29bd",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-buyer-seller-dispute-resolution-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-buyer-seller-dispute-resolution-guide\" references unregistered tool \"dispute-drafter\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-buyer-seller-dispute-resolution-guide",
+        "targetTool": "dispute-drafter"
+      }
+    },
+    {
+      "id": "ISS-e295674899",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-contract-performance-security-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-contract-performance-security-guide\" references unregistered tool \"epbg-checker\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-contract-performance-security-guide",
+        "targetTool": "epbg-checker"
+      }
+    },
+    {
+      "id": "ISS-69355cc783",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-contract-termination-rules.md",
+      "entity": "global",
+      "message": "Article \"gem-contract-termination-rules\" references unregistered tool \"incident-tracker\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-contract-termination-rules",
+        "targetTool": "incident-tracker"
+      }
+    },
+    {
+      "id": "ISS-e8445cd84d",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-inspection-acceptance-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-inspection-acceptance-guide\" references unregistered tool \"quality-checklist\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-inspection-acceptance-guide",
+        "targetTool": "quality-checklist"
+      }
+    },
+    {
+      "id": "ISS-4a288d0e08",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-liquidated-damages-rules.md",
+      "entity": "global",
+      "message": "Article \"gem-liquidated-damages-rules\" references unregistered tool \"ld-calculator\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-liquidated-damages-rules",
+        "targetTool": "ld-calculator"
+      }
+    },
+    {
+      "id": "ISS-d421b93190",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-order-fulfillment-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-order-fulfillment-guide\" references unregistered tool \"delivery-timeline-calculator\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-order-fulfillment-guide",
+        "targetTool": "delivery-timeline-calculator"
+      }
+    },
+    {
+      "id": "ISS-9e4f892423",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-payment-cycle-complete-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-payment-cycle-complete-guide\" references unregistered tool \"payment-tracker\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-payment-cycle-complete-guide",
+        "targetTool": "payment-tracker"
+      }
+    },
+    {
+      "id": "ISS-49593e2130",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-reverse-auction-complete-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-reverse-auction-complete-guide\" references unregistered tool \"auction-calculator\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-reverse-auction-complete-guide",
+        "targetTool": "auction-calculator"
+      }
+    },
+    {
+      "id": "ISS-cdd8745ae4",
+      "engine": "seo-validation-engine",
+      "validator": "seo012.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "SEO012",
+      "rawCode": "BROKEN_INTERNAL_TOOL_LINK",
+      "file": "posts/gem-seller-rating-performance-guide.md",
+      "entity": "global",
+      "message": "Article \"gem-seller-rating-performance-guide\" references unregistered tool \"rating-simulator\"",
+      "recommendation": "Register missing tool in REGISTRY_TOOLS or fix target tool slug",
+      "evidence": {
+        "sourceSlug": "gem-seller-rating-performance-guide",
+        "targetTool": "rating-simulator"
+      }
+    },
+    {
+      "id": "ISS-f5a4d92d83",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "cppp-portal-registration-tender-search",
+      "message": "Article \"cppp-portal-registration-tender-search\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "cppp-portal-registration-tender-search",
+        "category": "Government Procurement Hub"
+      }
+    },
+    {
+      "id": "ISS-61c44232db",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "gem-login-kaise-kare",
+      "message": "Article \"gem-login-kaise-kare\" uses category \"GeM Account Management\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "gem-login-kaise-kare",
+        "category": "GeM Account Management"
+      }
+    },
+    {
+      "id": "ISS-8b18bbc8c9",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "gem-registration-kaise-kare",
+      "message": "Article \"gem-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "gem-registration-kaise-kare",
+        "category": "GeM Seller Onboarding"
+      }
+    },
+    {
+      "id": "ISS-dcca74265d",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "gem-seller-registration-kaise-kare",
+      "message": "Article \"gem-seller-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "gem-seller-registration-kaise-kare",
+        "category": "GeM Seller Onboarding"
+      }
+    },
+    {
+      "id": "ISS-25fd1367a8",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "ireps-railway-tender-bidding-guide",
+      "message": "Article \"ireps-railway-tender-bidding-guide\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "ireps-railway-tender-bidding-guide",
+        "category": "Government Procurement Hub"
+      }
+    },
+    {
+      "id": "ISS-87cd4cf0f6",
+      "engine": "seo-validation-engine",
+      "validator": "reg002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "REG002",
+      "rawCode": "UNAPPROVED_CATEGORY",
+      "file": "src/content/registry.ts",
+      "entity": "use-ai-summarize-government-tender-pdfs",
+      "message": "Article \"use-ai-summarize-government-tender-pdfs\" uses category \"Automation\" which is not defined in REGISTRY_CATEGORIES",
+      "recommendation": "Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy",
+      "evidence": {
+        "slug": "use-ai-summarize-government-tender-pdfs",
+        "category": "Automation"
+      }
+    },
+    {
+      "id": "ISS-723543e04f",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph002.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P2",
+      "code": "GRAPH002",
+      "rawCode": "ORPHAN_TOOL_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "global",
+      "message": "Tool \"clarification-generator\" has 0 inbound article links in the Knowledge Graph",
+      "recommendation": "Add inbound links from relevant articles to this tool",
+      "evidence": {
+        "toolSlug": "clarification-generator",
+        "type": "tool",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-94506cbe14",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "cppp-portal-registration-tender-search",
+      "message": "Article \"cppp-portal-registration-tender-search\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "cppp-portal-registration-tender-search",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-2da8e8ac21",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-login-kaise-kare",
+      "message": "Article \"gem-login-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "gem-login-kaise-kare",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-5b0c2590a4",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-registration-kaise-kare",
+      "message": "Article \"gem-registration-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "gem-registration-kaise-kare",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-2515636d1a",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-seller-registration-kaise-kare",
+      "message": "Article \"gem-seller-registration-kaise-kare\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "gem-seller-registration-kaise-kare",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-84131b28e8",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "ireps-railway-tender-bidding-guide",
+      "message": "Article \"ireps-railway-tender-bidding-guide\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "ireps-railway-tender-bidding-guide",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-c2270607b6",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph001.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH001",
+      "rawCode": "ORPHAN_ARTICLE_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "use-ai-summarize-government-tender-pdfs",
+      "message": "Article \"use-ai-summarize-government-tender-pdfs\" has 0 inbound links in the Knowledge Graph (Orphan Node)",
+      "recommendation": "Link this article from category hub or related articles to build inbound context",
+      "evidence": {
+        "slug": "use-ai-summarize-government-tender-pdfs",
+        "type": "article",
+        "inboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-34ccc4f4ff",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-reverse-auction-complete-guide",
+      "message": "Article \"gem-reverse-auction-complete-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-reverse-auction-complete-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-01d5279cba",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-bid-participation-fees-guide",
+      "message": "Article \"gem-bid-participation-fees-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-bid-participation-fees-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-24589579b6",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-contract-performance-security-guide",
+      "message": "Article \"gem-contract-performance-security-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-contract-performance-security-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-559281ef6e",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-payment-cycle-complete-guide",
+      "message": "Article \"gem-payment-cycle-complete-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-payment-cycle-complete-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-c09dc20e59",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-order-fulfillment-guide",
+      "message": "Article \"gem-order-fulfillment-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-order-fulfillment-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-a18ecc1867",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-inspection-acceptance-guide",
+      "message": "Article \"gem-inspection-acceptance-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-inspection-acceptance-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-46f82f3509",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-liquidated-damages-rules",
+      "message": "Article \"gem-liquidated-damages-rules\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-liquidated-damages-rules",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-544ce07f2a",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-contract-termination-rules",
+      "message": "Article \"gem-contract-termination-rules\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-contract-termination-rules",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-0045ab32cd",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-seller-rating-performance-guide",
+      "message": "Article \"gem-seller-rating-performance-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-seller-rating-performance-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-450d0cba43",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph003.validator",
+      "severity": "RECOMMENDATION",
+      "priority": "P3",
+      "code": "GRAPH003",
+      "rawCode": "DEAD_END_NODE",
+      "file": "src/content/registry.ts",
+      "entity": "gem-buyer-seller-dispute-resolution-guide",
+      "message": "Article \"gem-buyer-seller-dispute-resolution-guide\" has 0 outbound internal links",
+      "recommendation": "Add relatedArticles or relatedTools links to prevent dead-end navigation",
+      "evidence": {
+        "slug": "gem-buyer-seller-dispute-resolution-guide",
+        "outboundLinks": 0
+      }
+    },
+    {
+      "id": "ISS-90924c53fa",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"cppp-portal-registration-tender-search\" references unknown parent entity \"government-procurement-hub\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "cppp-portal-registration-tender-search",
+        "parent": "government-procurement-hub"
+      }
+    },
+    {
+      "id": "ISS-f5c9217546",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"gem-login-kaise-kare\" references unknown parent entity \"gem-account-management\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "gem-login-kaise-kare",
+        "parent": "gem-account-management"
+      }
+    },
+    {
+      "id": "ISS-0fdbfbb0e0",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"gem-registration-kaise-kare\" references unknown parent entity \"gem-seller-onboarding\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "gem-registration-kaise-kare",
+        "parent": "gem-seller-onboarding"
+      }
+    },
+    {
+      "id": "ISS-2d4b92025f",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"gem-seller-registration-kaise-kare\" references unknown parent entity \"gem-seller-onboarding\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "gem-seller-registration-kaise-kare",
+        "parent": "gem-seller-onboarding"
+      }
+    },
+    {
+      "id": "ISS-95fb52f381",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"ireps-railway-tender-bidding-guide\" references unknown parent entity \"government-procurement-hub\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "ireps-railway-tender-bidding-guide",
+        "parent": "government-procurement-hub"
+      }
+    },
+    {
+      "id": "ISS-c786ac46dc",
+      "engine": "knowledge-graph-engine",
+      "validator": "graph007.validator",
+      "severity": "WARNING",
+      "priority": "P1",
+      "code": "GRAPH007",
+      "rawCode": "UNRESOLVED_PARENT_ENTITY",
+      "file": "knowledge_graph_engine.md",
+      "entity": "global",
+      "message": "Entity \"use-ai-summarize-government-tender-pdfs\" references unknown parent entity \"automation\"",
+      "recommendation": "Ensure parent entity exists in knowledge graph index",
+      "evidence": {
+        "entity": "use-ai-summarize-government-tender-pdfs",
+        "parent": "automation"
+      }
+    }
+  ],
+  "rawResults": [
     {
       "engineName": "registry-validation-engine",
       "verdict": "WARNING",
@@ -68,7 +2221,7 @@
           }
         }
       ],
-      "executionTimeMs": 1
+      "executionTimeMs": 2
     },
     {
       "engineName": "seo-validation-engine",
@@ -1177,7 +3330,7 @@
           }
         }
       ],
-      "executionTimeMs": 3,
+      "executionTimeMs": 4,
       "graphMetrics": {
         "totalNodes": 119,
         "totalEdges": 247,
@@ -1188,7 +3341,5 @@
         "maxDepth": 8
       }
     }
-  ],
-  "schemaVersion": "1.0.0",
-  "engineVersion": "1.1.0"
+  ]
 }

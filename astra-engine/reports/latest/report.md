@@ -1,159 +1,144 @@
-# ASTRA ENGINE Validation Audit Report
+# ASTRA ENGINE v1.1.1 — Audit Summary Report
 
-**Execution Timestamp:** Wed Jul 22 2026 17:35:55 GMT+0530 (India Standard Time)
-**Verdict:** ⚠️ WARNING
+**Execution Timestamp:** Wed Jul 22 2026 17:48:07 GMT+0530 (India Standard Time)
+**Overall Verdict:** ⚠️ WARNING
+**Engine Version:** 1.1.0
 
-### Audit Summary
-| Metric | Count |
-| :--- | :--- |
-| Engines Executed | 3 |
-| Total Errors | 0 |
-| Total Warnings | 124 |
-| Execution Time | 431 ms |
+### Summary Dashboard
 
-### Detailed Results
-#### Engine: `registry-validation-engine` (WARNING)
-*   **Errors:** 0
-*   **Warnings:** 6
-*   **Execution Time:** 1 ms
+| Severity | Count | Priority | Count |
+| :--- | :--- | :--- | :--- |
+| PASS | 0 | P0 (Critical) | 0 |
+| RECOMMENDATION | 112 | P1 (High) | 6 |
+| WARNING | 12 | P2 (Medium) | 71 |
+| FAIL | 0 | P3 (Editorial) | 47 |
 
-##### Warnings Evidence:
--   **[CATEGORY_MISMATCH]** Registry item "cppp-portal-registration-tender-search" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[CATEGORY_MISMATCH]** Registry item "gem-login-kaise-kare" uses category "GeM Account Management" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[CATEGORY_MISMATCH]** Registry item "gem-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[CATEGORY_MISMATCH]** Registry item "gem-seller-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[CATEGORY_MISMATCH]** Registry item "ireps-railway-tender-bidding-guide" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[CATEGORY_MISMATCH]** Registry item "use-ai-summarize-government-tender-pdfs" uses category "Automation" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
+### Standardized Issues List (124 items)
 
-#### Engine: `seo-validation-engine` (WARNING)
-*   **Errors:** 0
-*   **Warnings:** 95
-*   **Execution Time:** 5 ms
-
-##### Warnings Evidence:
--   **[LONG_TITLE]** Article "cppp-portal-registration-tender-search" title exceeds recommended search length (76 chars, recommended <= 70) (File: `posts/cppp-portal-registration-tender-search.md`)
--   **[LONG_TITLE]** Article "gem-boq-excel-sheet-upload-errors" title exceeds recommended search length (84 chars, recommended <= 70) (File: `posts/gem-boq-excel-sheet-upload-errors.md`)
--   **[LONG_TITLE]** Article "gem-catalog-rejected-reasons" title exceeds recommended search length (72 chars, recommended <= 70) (File: `posts/gem-catalog-rejected-reasons.md`)
--   **[LONG_TITLE]** Article "gem-catalogue-upload-kaise-kare" title exceeds recommended search length (94 chars, recommended <= 70) (File: `posts/gem-catalogue-upload-kaise-kare.md`)
--   **[LONG_TITLE]** Article "gem-company-profile-edit-kaise-kare" title exceeds recommended search length (88 chars, recommended <= 70) (File: `posts/gem-company-profile-edit-kaise-kare.md`)
--   **[LONG_TITLE]** Article "gem-consignee-receipt-process" title exceeds recommended search length (71 chars, recommended <= 70) (File: `posts/gem-consignee-receipt-process.md`)
--   **[LONG_TITLE]** Article "gem-custom-bid-specifications-rules" title exceeds recommended search length (87 chars, recommended <= 70) (File: `posts/gem-custom-bid-specifications-rules.md`)
--   **[LONG_TITLE]** Article "gem-email-mobile-number-change" title exceeds recommended search length (85 chars, recommended <= 70) (File: `posts/gem-email-mobile-number-change.md`)
--   **[LONG_TITLE]** Article "gem-epbg-bank-guarantee-rules-refund" title exceeds recommended search length (73 chars, recommended <= 70) (File: `posts/gem-epbg-bank-guarantee-rules-refund.md`)
--   **[LONG_TITLE]** Article "gem-invoice-generate-kaise-kare" title exceeds recommended search length (79 chars, recommended <= 70) (File: `posts/gem-invoice-generate-kaise-kare.md`)
--   **[LONG_TITLE]** Article "gem-joint-venture-consortium-bidding" title exceeds recommended search length (72 chars, recommended <= 70) (File: `posts/gem-joint-venture-consortium-bidding.md`)
--   **[LONG_TITLE]** Article "gem-l1-price-matching-counter-offer" title exceeds recommended search length (80 chars, recommended <= 70) (File: `posts/gem-l1-price-matching-counter-offer.md`)
--   **[LONG_TITLE]** Article "gem-order-cancel-rules" title exceeds recommended search length (76 chars, recommended <= 70) (File: `posts/gem-order-cancel-rules.md`)
--   **[LONG_TITLE]** Article "gem-payment-status-kaise-check-kare" title exceeds recommended search length (74 chars, recommended <= 70) (File: `posts/gem-payment-status-kaise-check-kare.md`)
--   **[LONG_TITLE]** Article "gem-product-approval-time" title exceeds recommended search length (84 chars, recommended <= 70) (File: `posts/gem-product-approval-time.md`)
--   **[LONG_TITLE]** Article "gem-profile-update-kaise-kare" title exceeds recommended search length (114 chars, recommended <= 70) (File: `posts/gem-profile-update-kaise-kare.md`)
--   **[LONG_TITLE]** Article "gem-return-replacement-rules" title exceeds recommended search length (75 chars, recommended <= 70) (File: `posts/gem-return-replacement-rules.md`)
--   **[LONG_TITLE]** Article "gem-reverse-auction-complete-guide" title exceeds recommended search length (77 chars, recommended <= 70) (File: `posts/gem-reverse-auction-complete-guide.md`)
--   **[LONG_TITLE]** Article "gem-seller-rating-improve-kaise-kare" title exceeds recommended search length (75 chars, recommended <= 70) (File: `posts/gem-seller-rating-improve-kaise-kare.md`)
--   **[LONG_TITLE]** Article "gem-service-contract-bidding-rules" title exceeds recommended search length (87 chars, recommended <= 70) (File: `posts/gem-service-contract-bidding-rules.md`)
--   **[LONG_TITLE]** Article "gem-tender-search-guide" title exceeds recommended search length (80 chars, recommended <= 70) (File: `posts/gem-tender-search-guide.md`)
--   **[LONG_TITLE]** Article "gem-warranty-claim-process" title exceeds recommended search length (82 chars, recommended <= 70) (File: `posts/gem-warranty-claim-process.md`)
--   **[LONG_TITLE]** Article "ireps-railway-tender-bidding-guide" title exceeds recommended search length (79 chars, recommended <= 70) (File: `posts/ireps-railway-tender-bidding-guide.md`)
--   **[LONG_TITLE]** Article "what-is-emd-in-gem" title exceeds recommended search length (74 chars, recommended <= 70) (File: `posts/what-is-emd-in-gem.md`)
--   **[SHORT_DESCRIPTION]** Article "bid-participation-rules" has a short description (42 chars, recommended >= 50) (File: `posts/bid-participation-rules.md`)
--   **[SHORT_DESCRIPTION]** Article "bid-splitting-rules" has a short description (38 chars, recommended >= 50) (File: `posts/bid-splitting-rules.md`)
--   **[SHORT_DESCRIPTION]** Article "common-errors" has a short description (32 chars, recommended >= 50) (File: `posts/common-errors.md`)
--   **[SHORT_DESCRIPTION]** Article "cpv-code-guide" has a short description (33 chars, recommended >= 50) (File: `posts/cpv-code-guide.md`)
--   **[SHORT_DESCRIPTION]** Article "daily-tender-monitoring" has a short description (42 chars, recommended >= 50) (File: `posts/daily-tender-monitoring.md`)
--   **[SHORT_DESCRIPTION]** Article "documents-required" has a short description (37 chars, recommended >= 50) (File: `posts/documents-required.md`)
--   **[SHORT_DESCRIPTION]** Article "earnest-money-deposit" has a short description (40 chars, recommended >= 50) (File: `posts/earnest-money-deposit.md`)
--   **[SHORT_DESCRIPTION]** Article "faqs" has a short description (23 chars, recommended >= 50) (File: `posts/faqs.md`)
--   **[SHORT_DESCRIPTION]** Article "fees-explained" has a short description (33 chars, recommended >= 50) (File: `posts/fees-explained.md`)
--   **[LONG_DESCRIPTION]** Article "gem-bank-account-change-kaise-kare" description exceeds recommended search length (171 chars, recommended <= 160) (File: `posts/gem-bank-account-change-kaise-kare.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-bidding-fees" has a short description (35 chars, recommended >= 50) (File: `posts/gem-bidding-fees.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-bidding-rules-handbook" has a short description (45 chars, recommended >= 50) (File: `posts/gem-bidding-rules-handbook.md`)
--   **[LONG_DESCRIPTION]** Article "gem-boq-excel-sheet-upload-errors" description exceeds recommended search length (226 chars, recommended <= 160) (File: `posts/gem-boq-excel-sheet-upload-errors.md`)
--   **[LONG_DESCRIPTION]** Article "gem-catalog-rejected-reasons" description exceeds recommended search length (182 chars, recommended <= 160) (File: `posts/gem-catalog-rejected-reasons.md`)
--   **[LONG_DESCRIPTION]** Article "gem-catalogue-upload-kaise-kare" description exceeds recommended search length (233 chars, recommended <= 160) (File: `posts/gem-catalogue-upload-kaise-kare.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-category-search" has a short description (38 chars, recommended >= 50) (File: `posts/gem-category-search.md`)
--   **[LONG_DESCRIPTION]** Article "gem-company-profile-edit-kaise-kare" description exceeds recommended search length (173 chars, recommended <= 160) (File: `posts/gem-company-profile-edit-kaise-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-consignee-receipt-process" description exceeds recommended search length (232 chars, recommended <= 160) (File: `posts/gem-consignee-receipt-process.md`)
--   **[LONG_DESCRIPTION]** Article "gem-crac-kaise-generate-hota-hai" description exceeds recommended search length (171 chars, recommended <= 160) (File: `posts/gem-crac-kaise-generate-hota-hai.md`)
--   **[LONG_DESCRIPTION]** Article "gem-custom-bid-specifications-rules" description exceeds recommended search length (217 chars, recommended <= 160) (File: `posts/gem-custom-bid-specifications-rules.md`)
--   **[LONG_DESCRIPTION]** Article "gem-email-mobile-number-change" description exceeds recommended search length (219 chars, recommended <= 160) (File: `posts/gem-email-mobile-number-change.md`)
--   **[LONG_DESCRIPTION]** Article "gem-incident-management-show-cause-reply" description exceeds recommended search length (164 chars, recommended <= 160) (File: `posts/gem-incident-management-show-cause-reply.md`)
--   **[LONG_DESCRIPTION]** Article "gem-l1-price-matching-counter-offer" description exceeds recommended search length (178 chars, recommended <= 160) (File: `posts/gem-l1-price-matching-counter-offer.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-login-kaise-kare" has a short description (25 chars, recommended >= 50) (File: `posts/gem-login-kaise-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-order-accept-kaise-kare" description exceeds recommended search length (188 chars, recommended <= 160) (File: `posts/gem-order-accept-kaise-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-order-cancel-rules" description exceeds recommended search length (189 chars, recommended <= 160) (File: `posts/gem-order-cancel-rules.md`)
--   **[LONG_DESCRIPTION]** Article "gem-payment-kab-milta-hai" description exceeds recommended search length (200 chars, recommended <= 160) (File: `posts/gem-payment-kab-milta-hai.md`)
--   **[LONG_DESCRIPTION]** Article "gem-payment-status-kaise-check-kare" description exceeds recommended search length (183 chars, recommended <= 160) (File: `posts/gem-payment-status-kaise-check-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-product-approval-time" description exceeds recommended search length (183 chars, recommended <= 160) (File: `posts/gem-product-approval-time.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-registration-kaise-kare" has a short description (46 chars, recommended >= 50) (File: `posts/gem-registration-kaise-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-return-replacement-rules" description exceeds recommended search length (170 chars, recommended <= 160) (File: `posts/gem-return-replacement-rules.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-search-filters-explained" has a short description (47 chars, recommended >= 50) (File: `posts/gem-search-filters-explained.md`)
--   **[LONG_DESCRIPTION]** Article "gem-seller-dashboard-kaise-use-kare" description exceeds recommended search length (164 chars, recommended <= 160) (File: `posts/gem-seller-dashboard-kaise-use-kare.md`)
--   **[LONG_DESCRIPTION]** Article "gem-seller-performance-dashboard" description exceeds recommended search length (171 chars, recommended <= 160) (File: `posts/gem-seller-performance-dashboard.md`)
--   **[LONG_DESCRIPTION]** Article "gem-seller-rating-improve-kaise-kare" description exceeds recommended search length (184 chars, recommended <= 160) (File: `posts/gem-seller-rating-improve-kaise-kare.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-seller-registration-kaise-kare" has a short description (29 chars, recommended >= 50) (File: `posts/gem-seller-registration-kaise-kare.md`)
--   **[SHORT_DESCRIPTION]** Article "gem-tender-search-guide" has a short description (42 chars, recommended >= 50) (File: `posts/gem-tender-search-guide.md`)
--   **[LONG_DESCRIPTION]** Article "gem-warranty-claim-process" description exceeds recommended search length (178 chars, recommended <= 160) (File: `posts/gem-warranty-claim-process.md`)
--   **[LONG_DESCRIPTION]** Article "ireps-railway-tender-bidding-guide" description exceeds recommended search length (172 chars, recommended <= 160) (File: `posts/ireps-railway-tender-bidding-guide.md`)
--   **[SHORT_DESCRIPTION]** Article "keyword-search-tips" has a short description (38 chars, recommended >= 50) (File: `posts/keyword-search-tips.md`)
--   **[SHORT_DESCRIPTION]** Article "manufacturers-registration" has a short description (45 chars, recommended >= 50) (File: `posts/manufacturers-registration.md`)
--   **[SHORT_DESCRIPTION]** Article "ministry-department-search" has a short description (45 chars, recommended >= 50) (File: `posts/ministry-department-search.md`)
--   **[SHORT_DESCRIPTION]** Article "msme-registration" has a short description (36 chars, recommended >= 50) (File: `posts/msme-registration.md`)
--   **[SHORT_DESCRIPTION]** Article "profile-completion" has a short description (37 chars, recommended >= 50) (File: `posts/profile-completion.md`)
--   **[SHORT_DESCRIPTION]** Article "representation-writing" has a short description (41 chars, recommended >= 50) (File: `posts/representation-writing.md`)
--   **[SHORT_DESCRIPTION]** Article "restrictive-specifications" has a short description (45 chars, recommended >= 50) (File: `posts/restrictive-specifications.md`)
--   **[SHORT_DESCRIPTION]** Article "reverse-auction-rules" has a short description (40 chars, recommended >= 50) (File: `posts/reverse-auction-rules.md`)
--   **[SHORT_DESCRIPTION]** Article "saved-search-and-alerts" has a short description (42 chars, recommended >= 50) (File: `posts/saved-search-and-alerts.md`)
--   **[SHORT_DESCRIPTION]** Article "single-bid-compliance" has a short description (40 chars, recommended >= 50) (File: `posts/single-bid-compliance.md`)
--   **[LONG_DESCRIPTION]** Article "state-procurement-up-tenders-gem-comparison" description exceeds recommended search length (184 chars, recommended <= 160) (File: `posts/state-procurement-up-tenders-gem-comparison.md`)
--   **[SHORT_DESCRIPTION]** Article "state-wise-tender-search" has a short description (43 chars, recommended >= 50) (File: `posts/state-wise-tender-search.md`)
--   **[SHORT_DESCRIPTION]** Article "tender-evaluation-stages" has a short description (43 chars, recommended >= 50) (File: `posts/tender-evaluation-stages.md`)
--   **[SHORT_DESCRIPTION]** Article "timeframe" has a short description (28 chars, recommended >= 50) (File: `posts/timeframe.md`)
--   **[SHORT_DESCRIPTION]** Article "traders-registration" has a short description (39 chars, recommended >= 50) (File: `posts/traders-registration.md`)
--   **[LONG_DESCRIPTION]** Article "what-is-emd-in-gem" description exceeds recommended search length (174 chars, recommended <= 160) (File: `posts/what-is-emd-in-gem.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-bid-participation-fees-guide" references unregistered tool "emd-calculator" (File: `posts/gem-bid-participation-fees-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-buyer-seller-dispute-resolution-guide" references unregistered tool "dispute-drafter" (File: `posts/gem-buyer-seller-dispute-resolution-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-contract-performance-security-guide" references unregistered tool "epbg-checker" (File: `posts/gem-contract-performance-security-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-contract-termination-rules" references unregistered tool "incident-tracker" (File: `posts/gem-contract-termination-rules.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-inspection-acceptance-guide" references unregistered tool "quality-checklist" (File: `posts/gem-inspection-acceptance-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-liquidated-damages-rules" references unregistered tool "ld-calculator" (File: `posts/gem-liquidated-damages-rules.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-order-fulfillment-guide" references unregistered tool "delivery-timeline-calculator" (File: `posts/gem-order-fulfillment-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-payment-cycle-complete-guide" references unregistered tool "payment-tracker" (File: `posts/gem-payment-cycle-complete-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-reverse-auction-complete-guide" references unregistered tool "auction-calculator" (File: `posts/gem-reverse-auction-complete-guide.md`)
--   **[BROKEN_INTERNAL_TOOL_LINK]** Article "gem-seller-rating-performance-guide" references unregistered tool "rating-simulator" (File: `posts/gem-seller-rating-performance-guide.md`)
--   **[UNAPPROVED_CATEGORY]** Article "cppp-portal-registration-tender-search" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[UNAPPROVED_CATEGORY]** Article "gem-login-kaise-kare" uses category "GeM Account Management" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[UNAPPROVED_CATEGORY]** Article "gem-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[UNAPPROVED_CATEGORY]** Article "gem-seller-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[UNAPPROVED_CATEGORY]** Article "ireps-railway-tender-bidding-guide" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
--   **[UNAPPROVED_CATEGORY]** Article "use-ai-summarize-government-tender-pdfs" uses category "Automation" which is not defined in REGISTRY_CATEGORIES (File: `src/content/registry.ts`)
-
-#### Engine: `knowledge-graph-engine` (WARNING)
-*   **Errors:** 0
-*   **Warnings:** 23
-*   **Execution Time:** 3 ms
-
-##### Warnings Evidence:
--   **[ORPHAN_TOOL_NODE]** Tool "clarification-generator" has 0 inbound article links in the Knowledge Graph (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "cppp-portal-registration-tender-search" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "gem-login-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "gem-registration-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "gem-seller-registration-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "ireps-railway-tender-bidding-guide" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[ORPHAN_ARTICLE_NODE]** Article "use-ai-summarize-government-tender-pdfs" has 0 inbound links in the Knowledge Graph (Orphan Node) (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-reverse-auction-complete-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-bid-participation-fees-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-contract-performance-security-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-payment-cycle-complete-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-order-fulfillment-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-inspection-acceptance-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-liquidated-damages-rules" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-contract-termination-rules" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-seller-rating-performance-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[DEAD_END_NODE]** Article "gem-buyer-seller-dispute-resolution-guide" has 0 outbound internal links (File: `src/content/registry.ts`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "cppp-portal-registration-tender-search" references unknown parent entity "government-procurement-hub" (File: `knowledge_graph_engine.md`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "gem-login-kaise-kare" references unknown parent entity "gem-account-management" (File: `knowledge_graph_engine.md`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "gem-registration-kaise-kare" references unknown parent entity "gem-seller-onboarding" (File: `knowledge_graph_engine.md`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "gem-seller-registration-kaise-kare" references unknown parent entity "gem-seller-onboarding" (File: `knowledge_graph_engine.md`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "ireps-railway-tender-bidding-guide" references unknown parent entity "government-procurement-hub" (File: `knowledge_graph_engine.md`)
--   **[UNRESOLVED_PARENT_ENTITY]** Entity "use-ai-summarize-government-tender-pdfs" references unknown parent entity "automation" (File: `knowledge_graph_engine.md`)
+| ID | Code | Severity | Priority | Engine | File / Entity | Message | Recommendation |
+|---|---|---|---|---|---|---|---|
+| `ISS-c9cd4e5a99` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "cppp-portal-registration-tender-search" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-9e3630aa91` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "gem-login-kaise-kare" uses category "GeM Account Management" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-4181978412` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "gem-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-fae41e353e` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "gem-seller-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-d24bb34ed0` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "ireps-railway-tender-bidding-guide" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-cfc83424d8` | `CATEGORY_MISMATCH` | ⚠️ WARNING | P2 | `registry-validation-engine` | `src/content/registry.ts` | Registry item "use-ai-summarize-government-tender-pdfs" uses category "Automation" which is not defined in REGISTRY_CATEGORIES | Review issue evidence and resolve finding |
+| `ISS-a82533a64f` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/cppp-portal-registration-tender-search.md` | Article "cppp-portal-registration-tender-search" title exceeds recommended search length (76 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-a437823938` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-boq-excel-sheet-upload-errors.md` | Article "gem-boq-excel-sheet-upload-errors" title exceeds recommended search length (84 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-25a819c9ce` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-catalog-rejected-reasons.md` | Article "gem-catalog-rejected-reasons" title exceeds recommended search length (72 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-ddddd70284` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-catalogue-upload-kaise-kare.md` | Article "gem-catalogue-upload-kaise-kare" title exceeds recommended search length (94 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-fbc7a867bd` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-company-profile-edit-kaise-kare.md` | Article "gem-company-profile-edit-kaise-kare" title exceeds recommended search length (88 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-e78f39112e` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-consignee-receipt-process.md` | Article "gem-consignee-receipt-process" title exceeds recommended search length (71 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-8633a6bf7b` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-custom-bid-specifications-rules.md` | Article "gem-custom-bid-specifications-rules" title exceeds recommended search length (87 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-0d34dc576f` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-email-mobile-number-change.md` | Article "gem-email-mobile-number-change" title exceeds recommended search length (85 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-5ef2775488` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-epbg-bank-guarantee-rules-refund.md` | Article "gem-epbg-bank-guarantee-rules-refund" title exceeds recommended search length (73 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-bd255cc52a` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-invoice-generate-kaise-kare.md` | Article "gem-invoice-generate-kaise-kare" title exceeds recommended search length (79 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-c20c3170db` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-joint-venture-consortium-bidding.md` | Article "gem-joint-venture-consortium-bidding" title exceeds recommended search length (72 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-1bdcc0b85a` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-l1-price-matching-counter-offer.md` | Article "gem-l1-price-matching-counter-offer" title exceeds recommended search length (80 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-7aec6680ef` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-order-cancel-rules.md` | Article "gem-order-cancel-rules" title exceeds recommended search length (76 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-7cc1b8abb8` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-payment-status-kaise-check-kare.md` | Article "gem-payment-status-kaise-check-kare" title exceeds recommended search length (74 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-8ffd02e653` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-product-approval-time.md` | Article "gem-product-approval-time" title exceeds recommended search length (84 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-77bd577ff9` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-profile-update-kaise-kare.md` | Article "gem-profile-update-kaise-kare" title exceeds recommended search length (114 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-73a714eea7` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-return-replacement-rules.md` | Article "gem-return-replacement-rules" title exceeds recommended search length (75 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-6b12b6a72b` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-reverse-auction-complete-guide.md` | Article "gem-reverse-auction-complete-guide" title exceeds recommended search length (77 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-b29f14cba2` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-seller-rating-improve-kaise-kare.md` | Article "gem-seller-rating-improve-kaise-kare" title exceeds recommended search length (75 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-de9e050f84` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-service-contract-bidding-rules.md` | Article "gem-service-contract-bidding-rules" title exceeds recommended search length (87 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-235db391fd` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-tender-search-guide.md` | Article "gem-tender-search-guide" title exceeds recommended search length (80 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-62aca77c14` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-warranty-claim-process.md` | Article "gem-warranty-claim-process" title exceeds recommended search length (82 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-3f25a7f4f5` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/ireps-railway-tender-bidding-guide.md` | Article "ireps-railway-tender-bidding-guide" title exceeds recommended search length (79 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-f15aef3d49` | `SEO003` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/what-is-emd-in-gem.md` | Article "what-is-emd-in-gem" title exceeds recommended search length (74 chars, recommended <= 70) | Shorten title to <= 70 characters to avoid SERP truncation |
+| `ISS-c872b8a2d8` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/bid-participation-rules.md` | Article "bid-participation-rules" has a short description (42 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-b501293b3c` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/bid-splitting-rules.md` | Article "bid-splitting-rules" has a short description (38 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-48b7b46c78` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/common-errors.md` | Article "common-errors" has a short description (32 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-078e5b3747` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/cpv-code-guide.md` | Article "cpv-code-guide" has a short description (33 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-431d6b21aa` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/daily-tender-monitoring.md` | Article "daily-tender-monitoring" has a short description (42 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-f5579bbe30` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/documents-required.md` | Article "documents-required" has a short description (37 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-d7784a343e` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/earnest-money-deposit.md` | Article "earnest-money-deposit" has a short description (40 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-5540f50738` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/faqs.md` | Article "faqs" has a short description (23 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-2225ceb739` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/fees-explained.md` | Article "fees-explained" has a short description (33 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-b48fcaf727` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-bank-account-change-kaise-kare.md` | Article "gem-bank-account-change-kaise-kare" description exceeds recommended search length (171 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-6a4514f3fe` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-bidding-fees.md` | Article "gem-bidding-fees" has a short description (35 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-57a9e67a25` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-bidding-rules-handbook.md` | Article "gem-bidding-rules-handbook" has a short description (45 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-cc3fb4519b` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-boq-excel-sheet-upload-errors.md` | Article "gem-boq-excel-sheet-upload-errors" description exceeds recommended search length (226 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-ce6df10e43` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-catalog-rejected-reasons.md` | Article "gem-catalog-rejected-reasons" description exceeds recommended search length (182 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-d7a1334f76` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-catalogue-upload-kaise-kare.md` | Article "gem-catalogue-upload-kaise-kare" description exceeds recommended search length (233 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-b4317e0be8` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-category-search.md` | Article "gem-category-search" has a short description (38 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-3b6e48ccbc` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-company-profile-edit-kaise-kare.md` | Article "gem-company-profile-edit-kaise-kare" description exceeds recommended search length (173 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-488db8d166` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-consignee-receipt-process.md` | Article "gem-consignee-receipt-process" description exceeds recommended search length (232 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-9d7a82b3ae` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-crac-kaise-generate-hota-hai.md` | Article "gem-crac-kaise-generate-hota-hai" description exceeds recommended search length (171 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-16a81bdc29` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-custom-bid-specifications-rules.md` | Article "gem-custom-bid-specifications-rules" description exceeds recommended search length (217 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-dc94fbeb23` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-email-mobile-number-change.md` | Article "gem-email-mobile-number-change" description exceeds recommended search length (219 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-f1eccd89ff` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-incident-management-show-cause-reply.md` | Article "gem-incident-management-show-cause-reply" description exceeds recommended search length (164 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-0584f4ce07` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-l1-price-matching-counter-offer.md` | Article "gem-l1-price-matching-counter-offer" description exceeds recommended search length (178 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-dd46664ed3` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-login-kaise-kare.md` | Article "gem-login-kaise-kare" has a short description (25 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-3718e66316` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-order-accept-kaise-kare.md` | Article "gem-order-accept-kaise-kare" description exceeds recommended search length (188 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-145f1f0340` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-order-cancel-rules.md` | Article "gem-order-cancel-rules" description exceeds recommended search length (189 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-59320b94aa` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-payment-kab-milta-hai.md` | Article "gem-payment-kab-milta-hai" description exceeds recommended search length (200 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-64dcc89587` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-payment-status-kaise-check-kare.md` | Article "gem-payment-status-kaise-check-kare" description exceeds recommended search length (183 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-22fb5ce7e7` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-product-approval-time.md` | Article "gem-product-approval-time" description exceeds recommended search length (183 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-beb4a2bda1` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-registration-kaise-kare.md` | Article "gem-registration-kaise-kare" has a short description (46 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-a08dc4852c` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-return-replacement-rules.md` | Article "gem-return-replacement-rules" description exceeds recommended search length (170 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-d1b370a8f2` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-search-filters-explained.md` | Article "gem-search-filters-explained" has a short description (47 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-48ea55fbc8` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-seller-dashboard-kaise-use-kare.md` | Article "gem-seller-dashboard-kaise-use-kare" description exceeds recommended search length (164 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-9751d3077b` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-seller-performance-dashboard.md` | Article "gem-seller-performance-dashboard" description exceeds recommended search length (171 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-7cdf861e06` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-seller-rating-improve-kaise-kare.md` | Article "gem-seller-rating-improve-kaise-kare" description exceeds recommended search length (184 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-49e877778b` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-seller-registration-kaise-kare.md` | Article "gem-seller-registration-kaise-kare" has a short description (29 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-3e1cb135ca` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/gem-tender-search-guide.md` | Article "gem-tender-search-guide" has a short description (42 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-f5fce01f92` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-warranty-claim-process.md` | Article "gem-warranty-claim-process" description exceeds recommended search length (178 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-80f6c7f5a8` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/ireps-railway-tender-bidding-guide.md` | Article "ireps-railway-tender-bidding-guide" description exceeds recommended search length (172 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-f82c845918` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/keyword-search-tips.md` | Article "keyword-search-tips" has a short description (38 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-a84339a437` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/manufacturers-registration.md` | Article "manufacturers-registration" has a short description (45 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-ede008b100` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/ministry-department-search.md` | Article "ministry-department-search" has a short description (45 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-160d34c60a` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/msme-registration.md` | Article "msme-registration" has a short description (36 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-72feefc80c` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/profile-completion.md` | Article "profile-completion" has a short description (37 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-b80f1acbf7` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/representation-writing.md` | Article "representation-writing" has a short description (41 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-3009dd8d6a` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/restrictive-specifications.md` | Article "restrictive-specifications" has a short description (45 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-9f054fefa2` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/reverse-auction-rules.md` | Article "reverse-auction-rules" has a short description (40 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-fbece30067` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/saved-search-and-alerts.md` | Article "saved-search-and-alerts" has a short description (42 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-59966ee886` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/single-bid-compliance.md` | Article "single-bid-compliance" has a short description (40 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-b107f3586a` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/state-procurement-up-tenders-gem-comparison.md` | Article "state-procurement-up-tenders-gem-comparison" description exceeds recommended search length (184 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-cf084f9ab4` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/state-wise-tender-search.md` | Article "state-wise-tender-search" has a short description (43 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-21e7c080fa` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/tender-evaluation-stages.md` | Article "tender-evaluation-stages" has a short description (43 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-0610e20ba2` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/timeframe.md` | Article "timeframe" has a short description (28 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-cbf9addffc` | `SEO006` | 💡 RECOMMENDATION | P3 | `seo-validation-engine` | `posts/traders-registration.md` | Article "traders-registration" has a short description (39 chars, recommended >= 50) | Expand description to >= 50 characters to provide meaningful context |
+| `ISS-f4bfdb573d` | `SEO007` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/what-is-emd-in-gem.md` | Article "what-is-emd-in-gem" description exceeds recommended search length (174 chars, recommended <= 160) | Trim description to <= 160 characters to fit search snippet boundaries |
+| `ISS-b24956b817` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-bid-participation-fees-guide.md` | Article "gem-bid-participation-fees-guide" references unregistered tool "emd-calculator" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-3836fe29bd` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-buyer-seller-dispute-resolution-guide.md` | Article "gem-buyer-seller-dispute-resolution-guide" references unregistered tool "dispute-drafter" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-e295674899` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-contract-performance-security-guide.md` | Article "gem-contract-performance-security-guide" references unregistered tool "epbg-checker" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-69355cc783` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-contract-termination-rules.md` | Article "gem-contract-termination-rules" references unregistered tool "incident-tracker" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-e8445cd84d` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-inspection-acceptance-guide.md` | Article "gem-inspection-acceptance-guide" references unregistered tool "quality-checklist" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-4a288d0e08` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-liquidated-damages-rules.md` | Article "gem-liquidated-damages-rules" references unregistered tool "ld-calculator" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-d421b93190` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-order-fulfillment-guide.md` | Article "gem-order-fulfillment-guide" references unregistered tool "delivery-timeline-calculator" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-9e4f892423` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-payment-cycle-complete-guide.md` | Article "gem-payment-cycle-complete-guide" references unregistered tool "payment-tracker" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-49593e2130` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-reverse-auction-complete-guide.md` | Article "gem-reverse-auction-complete-guide" references unregistered tool "auction-calculator" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-cdd8745ae4` | `SEO012` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `posts/gem-seller-rating-performance-guide.md` | Article "gem-seller-rating-performance-guide" references unregistered tool "rating-simulator" | Register missing tool in REGISTRY_TOOLS or fix target tool slug |
+| `ISS-f5a4d92d83` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "cppp-portal-registration-tender-search" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-61c44232db` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "gem-login-kaise-kare" uses category "GeM Account Management" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-8b18bbc8c9` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "gem-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-dcca74265d` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "gem-seller-registration-kaise-kare" uses category "GeM Seller Onboarding" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-25fd1367a8` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "ireps-railway-tender-bidding-guide" uses category "Government Procurement Hub" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-87cd4cf0f6` | `REG002` | 💡 RECOMMENDATION | P2 | `seo-validation-engine` | `src/content/registry.ts` | Article "use-ai-summarize-government-tender-pdfs" uses category "Automation" which is not defined in REGISTRY_CATEGORIES | Add category to REGISTRY_CATEGORIES or remap article to approved taxonomy |
+| `ISS-723543e04f` | `GRAPH002` | 💡 RECOMMENDATION | P2 | `knowledge-graph-engine` | `src/content/registry.ts` | Tool "clarification-generator" has 0 inbound article links in the Knowledge Graph | Add inbound links from relevant articles to this tool |
+| `ISS-94506cbe14` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "cppp-portal-registration-tender-search" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-2da8e8ac21` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-login-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-5b0c2590a4` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-registration-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-2515636d1a` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-seller-registration-kaise-kare" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-84131b28e8` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "ireps-railway-tender-bidding-guide" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-c2270607b6` | `GRAPH001` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "use-ai-summarize-government-tender-pdfs" has 0 inbound links in the Knowledge Graph (Orphan Node) | Link this article from category hub or related articles to build inbound context |
+| `ISS-34ccc4f4ff` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-reverse-auction-complete-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-01d5279cba` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-bid-participation-fees-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-24589579b6` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-contract-performance-security-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-559281ef6e` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-payment-cycle-complete-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-c09dc20e59` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-order-fulfillment-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-a18ecc1867` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-inspection-acceptance-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-46f82f3509` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-liquidated-damages-rules" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-544ce07f2a` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-contract-termination-rules" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-0045ab32cd` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-seller-rating-performance-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-450d0cba43` | `GRAPH003` | 💡 RECOMMENDATION | P3 | `knowledge-graph-engine` | `src/content/registry.ts` | Article "gem-buyer-seller-dispute-resolution-guide" has 0 outbound internal links | Add relatedArticles or relatedTools links to prevent dead-end navigation |
+| `ISS-90924c53fa` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "cppp-portal-registration-tender-search" references unknown parent entity "government-procurement-hub" | Ensure parent entity exists in knowledge graph index |
+| `ISS-f5c9217546` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "gem-login-kaise-kare" references unknown parent entity "gem-account-management" | Ensure parent entity exists in knowledge graph index |
+| `ISS-0fdbfbb0e0` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "gem-registration-kaise-kare" references unknown parent entity "gem-seller-onboarding" | Ensure parent entity exists in knowledge graph index |
+| `ISS-2d4b92025f` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "gem-seller-registration-kaise-kare" references unknown parent entity "gem-seller-onboarding" | Ensure parent entity exists in knowledge graph index |
+| `ISS-95fb52f381` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "ireps-railway-tender-bidding-guide" references unknown parent entity "government-procurement-hub" | Ensure parent entity exists in knowledge graph index |
+| `ISS-c786ac46dc` | `GRAPH007` | ⚠️ WARNING | P1 | `knowledge-graph-engine` | `knowledge_graph_engine.md` | Entity "use-ai-summarize-government-tender-pdfs" references unknown parent entity "automation" | Ensure parent entity exists in knowledge graph index |
 
