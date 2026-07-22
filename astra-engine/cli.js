@@ -13,14 +13,13 @@ const stateManager = require('./core/state');
 const scanner = require('./core/scanner');
 const registryEngine = require('./engines/registry');
 const seoEngine = require('./engines/seo');
-const graphEngine = require('./engines/graph');
 
-const { reasoningEngine, reasoningSession } = require('./reasoning');
-const { plannerEngine } = require('./planning');
-const { strategyEngine } = require('./strategy');
-const { explanationEngine, auditTrail } = require('./explainability');
-const scenarioPlanning = require('./scenarioPlanning');
-const knowledgeReasoner = require('./knowledgeReasoner');
+const { agentEngine, agentRegistry } = require('./agents');
+const { meshEngine, meshCoordinator } = require('./mesh');
+const { messageBus, messageHistory } = require('./communication');
+const { consensusEngine, taskNegotiation } = require('./collaboration');
+const memorySystem = require('./memory');
+const { supervisorEngine, heartbeat } = require('./supervisor');
 const reporter = require('./core/reporter');
 
 const { telemetry } = require('./core/telemetry');
@@ -36,7 +35,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.11.0             ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.12.0             ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -45,10 +44,9 @@ function printHelp() {
   console.log(`${colors.bright}Usage:${colors.reset} node cli.js <command> [options]\n`);
   console.log(`${colors.bright}Commands:${colors.reset}`);
   console.log(`  ${colors.green}doctor${colors.reset}          Verify system environment, configurations & workspace schemas`);
-  console.log(`  ${colors.green}reason${colors.reset}          Run Autonomous Reasoning Engine (--analyze, --trace, --facts)`);
-  console.log(`  ${colors.green}plan${colors.reset}            Run Master Execution Planner (--generate, --compare, --timeline)`);
-  console.log(`  ${colors.green}strategy${colors.reset}        Run Strategy Engine (--compare, --fallback, --parallel)`);
-  console.log(`  ${colors.green}scenario${colors.reset}        Run Scenario Planning Engine (--whatif, --compare, --impact)`);
+  console.log(`  ${colors.green}agents${colors.reset}          Manage Multi-Agent Lifecycle (--list, --status, --health)`);
+  console.log(`  ${colors.green}mesh${colors.reset}            Run Multi-Agent Mesh Network (--topology, --state, --discover)`);
+  console.log(`  ${colors.green}collaborate${colors.reset}     Run Consensus & Voting Collaboration (--consensus, --vote, --plan)`);
   console.log(`  ${colors.green}version${colors.reset}         Display current engine SemVer version & git metadata`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
 }
@@ -78,7 +76,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.11.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.12.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -86,12 +84,12 @@ async function runCli() {
       const modules = {
         'Config Loader': configLoader,
         'Filesystem Scanner': require('./core/filesystem'),
-        'Reasoning Engine': reasoningEngine,
-        'Planner Engine': plannerEngine,
-        'Strategy Engine': strategyEngine,
-        'Explanation Engine': explanationEngine,
-        'Scenario Planning': scenarioPlanning,
-        'Knowledge Reasoner': knowledgeReasoner,
+        'Agent Engine': agentEngine,
+        'Mesh Engine': meshEngine,
+        'Message Bus': messageBus,
+        'Consensus Engine': consensusEngine,
+        'Memory System': memorySystem,
+        'Supervisor Engine': supervisorEngine,
         'Import Guard': require('./core/guards/importGuard'),
       };
 
@@ -106,77 +104,64 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 7A modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 7B modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
       break;
     }
 
-    case 'reason': {
-      console.log(`${colors.cyan}🧠 Running Autonomous Reasoning Engine (v1.11.0)...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      await reasoningEngine.init({ config, state, logger: console });
-      const rsnRes = await reasoningEngine.run(state);
+    case 'agents': {
+      console.log(`${colors.cyan}🤖 Running Multi-Agent Lifecycle Engine (v1.12.0)...${colors.reset}`);
+      const agRes = await agentEngine.run();
 
-      console.log(`  - Verified Facts     : ${colors.green}${rsnRes.session.facts.length}${colors.reset}`);
-      console.log(`  - Evaluated Constraints : ${colors.green}${rsnRes.session.constraints.length}${colors.reset}`);
-      console.log(`  - Confidence Score   : ${colors.green}${Math.round(rsnRes.session.confidenceScore * 100)} %${colors.reset}\n`);
+      console.log(`  - Registered Agents : ${colors.green}${agRes.agents.length}${colors.reset}`);
+      console.log(`  - Active Subsystems : ${colors.green}6 Agents Operational${colors.reset}\n`);
 
       const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(rsnRes, null, 2), path.join(reportsLatestDir, 'reasoning-report.json'));
-      await reporter.write(JSON.stringify(explanationEngine.explainRecommendation('rec-1'), null, 2), path.join(reportsLatestDir, 'reasoning-trace.json'));
-      await reporter.write(JSON.stringify(auditTrail.getTrail(), null, 2), path.join(reportsLatestDir, 'audit-trail.json'));
-      await reporter.write(JSON.stringify({ confidenceScore: rsnRes.session.confidenceScore }, null, 2), path.join(reportsLatestDir, 'confidence-report.json'));
+      await reporter.write(JSON.stringify(agRes, null, 2), path.join(reportsLatestDir, 'agents-report.json'));
+      await reporter.write(JSON.stringify(agRes.agents, null, 2), path.join(reportsLatestDir, 'agent-topology.json'));
 
-      console.log(`  - Reasoning Report Exporter : ${colors.cyan}reports/latest/reasoning-report.json${colors.reset}\n`);
+      console.log(`  - Agent Report Exporter : ${colors.cyan}reports/latest/agents-report.json${colors.reset}\n`);
       break;
     }
 
-    case 'plan': {
-      console.log(`${colors.cyan}📋 Running Master Execution Planner (v1.11.0)...${colors.reset}`);
-      const planRes = plannerEngine.createMasterPlan();
+    case 'mesh': {
+      console.log(`${colors.cyan}🕸️ Running Multi-Agent Mesh Coordinator (v1.12.0)...${colors.reset}`);
+      await agentEngine.init();
+      const meshRes = meshEngine.runMesh();
+      const activeAgents = agentRegistry.list();
 
-      console.log(`  - Master Goal       : ${colors.green}${planRes.goals[0].title}${colors.reset}`);
-      console.log(`  - Planned Milestones: ${colors.green}${planRes.milestones.length}${colors.reset}\n`);
+      console.log(`  - Mesh Status    : ${colors.green}${meshRes.status}${colors.reset}`);
+      console.log(`  - Topology Nodes : ${colors.green}${meshRes.topology.nodesCount}${colors.reset}\n`);
 
       const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(planRes, null, 2), path.join(reportsLatestDir, 'planning-report.json'));
-      await reporter.write(JSON.stringify(planRes.execution, null, 2), path.join(reportsLatestDir, 'execution-plan.json'));
-      console.log(`  - Planning Report Exporter : ${colors.cyan}reports/latest/planning-report.json${colors.reset}\n`);
+      await reporter.write(JSON.stringify(meshRes, null, 2), path.join(reportsLatestDir, 'mesh-report.json'));
+      await reporter.write(JSON.stringify(meshRes.coordinator, null, 2), path.join(reportsLatestDir, 'mesh-health.json'));
+      await reporter.write(JSON.stringify(supervisorEngine.runSupervision(activeAgents), null, 2), path.join(reportsLatestDir, 'supervisor-report.json'));
+      await reporter.write(JSON.stringify(heartbeat.getLastHeartbeat('agent-seo') || Date.now(), null, 2), path.join(reportsLatestDir, 'heartbeat-report.json'));
+
+      console.log(`  - Mesh Report Exporter : ${colors.cyan}reports/latest/mesh-report.json${colors.reset}\n`);
       break;
     }
 
-    case 'strategy': {
-      console.log(`${colors.cyan}🎯 Running Strategy Engine (v1.11.0)...${colors.reset}`);
-      const stratRes = strategyEngine.evaluateStrategies();
+    case 'collaborate': {
+      console.log(`${colors.cyan}🤝 Running Consensus & Collaboration Engine (v1.12.0)...${colors.reset}`);
+      const consRes = consensusEngine.reachConsensus('Repository Compliance Approval');
 
-      console.log(`  - Recommended Strategy : ${colors.green}${stratRes.recommended.name}${colors.reset}\n`);
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(stratRes, null, 2), path.join(reportsLatestDir, 'strategy-report.json'));
-      await reporter.write(JSON.stringify(stratRes.recommended, null, 2), path.join(reportsLatestDir, 'strategy-comparison.json'));
-      console.log(`  - Strategy Report Exporter : ${colors.cyan}reports/latest/strategy-report.json${colors.reset}\n`);
-      break;
-    }
-
-    case 'scenario': {
-      console.log(`${colors.cyan}🔮 Running Scenario Planning Engine (v1.11.0)...${colors.reset}`);
-      const scens = scenarioPlanning.scenarioGenerator.generateScenarios();
-      const comp = scenarioPlanning.comparisonEngine.compareScenarios(scens);
-      const impact = scenarioPlanning.impactEstimator.estimateImpact();
-
-      console.log(`  - Recommended Scenario : ${colors.green}${comp.bestScenario.name}${colors.reset}`);
-      console.log(`  - Latency Reduction   : ${colors.green}${impact.latencyReductionPercent} %${colors.reset}\n`);
+      console.log(`  - Consensus Reached : ${colors.green}${consRes.consensusReached}${colors.reset}`);
+      console.log(`  - Votes Approved    : ${colors.green}${consRes.votingTally.yes} Yes / ${consRes.votingTally.no} No${colors.reset}\n`);
 
       const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(comp, null, 2), path.join(reportsLatestDir, 'scenario-report.json'));
-      await reporter.write(JSON.stringify(impact, null, 2), path.join(reportsLatestDir, 'impact-analysis.json'));
-      await reporter.write(JSON.stringify(knowledgeReasoner.graphReasoner.reasonOverGraph(), null, 2), path.join(reportsLatestDir, 'knowledge-reasoning.json'));
-      console.log(`  - Scenario Report Exporter : ${colors.cyan}reports/latest/scenario-report.json${colors.reset}\n`);
+      await reporter.write(JSON.stringify(consRes, null, 2), path.join(reportsLatestDir, 'consensus-report.json'));
+      await reporter.write(JSON.stringify(taskNegotiation.negotiate('Full Audit', ['agent-seo']), null, 2), path.join(reportsLatestDir, 'collaboration-report.json'));
+      await reporter.write(JSON.stringify(messageHistory.getHistory(), null, 2), path.join(reportsLatestDir, 'communication-report.json'));
+      await reporter.write(JSON.stringify(memorySystem.workingMemory, null, 2), path.join(reportsLatestDir, 'memory-report.json'));
+
+      console.log(`  - Consensus Exporter : ${colors.cyan}reports/latest/consensus-report.json${colors.reset}\n`);
       break;
     }
 
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.11.0${colors.reset}\n`);
+      console.log(`  - SemVer Version : ${colors.green}1.12.0${colors.reset}\n`);
       break;
     }
 

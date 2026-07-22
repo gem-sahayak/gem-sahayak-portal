@@ -1,0 +1,9 @@
+{
+  "topic": "Repository Compliance Approval",
+  "consensusReached": true,
+  "votingTally": {
+    "yes": 2,
+    "no": 0,
+    "approved": true
+  }
+}

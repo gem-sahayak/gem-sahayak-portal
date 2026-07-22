@@ -1,0 +1,23 @@
+{
+  "health": {
+    "overallHealth": "HEALTHY",
+    "activeSubsystems": 6
+  },
+  "agentStatus": [
+    {
+      "agentId": "agent-seo",
+      "healthy": true
+    },
+    {
+      "agentId": "agent-graph",
+      "healthy": true
+    },
+    {
+      "agentId": "agent-review",
+      "healthy": true
+    }
+  ],
+  "metrics": {
+    "totalHealthChecks": 1
+  }
+}

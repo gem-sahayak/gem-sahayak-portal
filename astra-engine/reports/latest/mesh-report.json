@@ -1,0 +1,39 @@
+{
+  "status": "OPERATIONAL",
+  "topology": {
+    "nodesCount": 2,
+    "nodes": [
+      {
+        "nodeId": "node-seo",
+        "metadata": {
+          "role": "SEO_AUDITOR"
+        },
+        "registeredAt": "2026-07-22T15:03:16.591Z"
+      },
+      {
+        "nodeId": "node-graph",
+        "metadata": {
+          "role": "GRAPH_REASONER"
+        },
+        "registeredAt": "2026-07-22T15:03:16.593Z"
+      }
+    ]
+  },
+  "coordinator": {
+    "status": "HEALTHY",
+    "nodesCount": 2,
+    "scheduledTasks": [
+      {
+        "task": "scan",
+        "status": "SCHEDULED"
+      },
+      {
+        "task": "audit",
+        "status": "SCHEDULED"
+      }
+    ]
+  },
+  "metrics": {
+    "totalMessagesRouted": 1
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "agent-seo",
+    "name": "SEO Agent",
+    "role": "AUDITOR",
+    "state": "INITIALIZED"
+  },
+  {
+    "id": "agent-graph",
+    "name": "Graph Agent",
+    "role": "REASONER",
+    "state": "INITIALIZED"
+  },
+  {
+    "id": "agent-review",
+    "name": "Review Agent",
+    "role": "QUALITY",
+    "state": "INITIALIZED"
+  }
+]
