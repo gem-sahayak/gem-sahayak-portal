@@ -37,6 +37,11 @@ function printHelp() {
   console.log(`  ${colors.green}history${colors.reset}       Display historical health telemetry trends over time\n`);
 }
 
+const scanner = require('./core/scanner');
+const registryEngine = require('./engines/registry');
+const reporter = require('./core/reporter');
+const fs = require('fs');
+
 async function runCli() {
   printBanner();
   
@@ -57,6 +62,9 @@ async function runCli() {
     process.exit(1);
   }
 
+  // Decoupled read-only target workspace directory (parent of astra-engine)
+  const rootDir = path.resolve(__dirname, '..');
+
   switch (command) {
     case 'doctor':
       console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics...${colors.reset}`);
@@ -67,17 +75,93 @@ async function runCli() {
       break;
 
     case 'scan':
-    case 'integrity':
+    case 'registry': {
+      console.log(`${colors.cyan}🔍 Scanning repository structural tree...${colors.reset}`);
+      const startTime = Date.now();
+      
+      let state;
+      try {
+        state = await scanner.runScanner(rootDir, config);
+      } catch (err) {
+        console.error(`${colors.red}❌ Filesystem scan failed:${colors.reset}`, err.message);
+        process.exit(1);
+      }
+
+      console.log(`  - Total Inventory Files Indexed: ${colors.green}${state.filesystem.files.size}${colors.reset}`);
+      console.log(`  - Markdown Content Files Found: ${colors.green}${state.metadataMap.size}${colors.reset}`);
+      console.log(`  - Registry Articles Configured: ${colors.green}${state.parsedRegistry.articles.length}${colors.reset}`);
+      
+      console.log(`\n${colors.cyan}⚡ Running Registry Validation sub-engine...${colors.reset}`);
+      
+      let result;
+      try {
+        await registryEngine.init({ config, state, logger: console });
+        result = await registryEngine.run(state);
+      } catch (err) {
+        console.error(`${colors.red}❌ Registry validation execution crash:${colors.reset}`, err.message);
+        process.exit(1);
+      }
+
+      // Compile data summaries
+      const totalErrors = result.errors.length;
+      const totalWarnings = result.warnings.length;
+      const totalTime = Date.now() - startTime;
+      
+      const overallVerdict = totalErrors > 0 ? 'FAIL' : (totalWarnings > 0 ? 'WARNING' : 'PASS');
+
+      const reportData = {
+        summary: {
+          timestamp: new Date(),
+          overallVerdict,
+          totalEnginesRun: 1,
+          totalErrors,
+          totalWarnings,
+          executionTimeMs: totalTime
+        },
+        results: [result],
+        schemaVersion: config.schemaVersion,
+        engineVersion: config.engineVersion
+      };
+
+      // Generate reports content
+      const jsonReport = await reporter.build(reportData, 'json');
+      const mdReport = await reporter.build(reportData, 'markdown');
+      const terminalReport = await reporter.build(reportData, 'terminal');
+
+      // Write files in reports/latest
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(jsonReport, path.join(reportsLatestDir, 'report.json'));
+      await reporter.write(mdReport, path.join(reportsLatestDir, 'report.md'));
+
+      // Print output logs
+      console.log(terminalReport);
+
+      // Print success criteria status matching instructions
+      console.log(`\n${colors.bright}=== SUCCESS CRITERIA CHECK ===${colors.reset}`);
+      console.log(`Posts : ${colors.green}${state.metadataMap.size}${colors.reset}`);
+      console.log(`Registry : ${colors.green}${state.parsedRegistry.articles.length}${colors.reset}`);
+      
+      const diffCount = Math.abs(state.metadataMap.size - state.parsedRegistry.articles.length);
+      console.log(`Difference : ${colors.yellow}${diffCount}${colors.reset}`);
+
+      if (overallVerdict === 'FAIL') {
+        console.log(`\n${colors.red}${colors.bright}Result Status: FAIL${colors.reset}`);
+        process.exit(1);
+      } else {
+        console.log(`\n${colors.green}${colors.bright}Result Status: PASS${colors.reset}`);
+        process.exit(0);
+      }
+      break;
+    }
+
     case 'seo':
     case 'geo':
-    case 'registry':
     case 'graph':
     case 'extension':
     case 'report':
     case 'deploy':
     case 'history':
-      console.log(`${colors.yellow}🚧 Command "${command}" is under phase implementation bootstrap...${colors.reset}`);
-      console.log(`${colors.cyan}State initialized successfully. Initial scan snapshot timestamp: ${colors.green}${stateManager.getStateSnapshot().timestamp.toISOString()}${colors.reset}`);
+      console.log(`${colors.yellow}🚧 Command "${command}" belongs to later implementation phases...${colors.reset}`);
       break;
 
     default:

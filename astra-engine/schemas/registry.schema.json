@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "category": { "type": "string" },
+    "date": { "type": "string" },
+    "author": { "type": "string" }
+  },
+  "required": ["slug", "title", "summary", "category", "date", "author"]
+}

@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "timestamp": "2026-07-22T09:18:32.703Z",
+    "overallVerdict": "WARNING",
+    "totalEnginesRun": 1,
+    "totalErrors": 0,
+    "totalWarnings": 6,
+    "executionTimeMs": 254
+  },
+  "results": [
+    {
+      "engineName": "registry-validation-engine",
+      "verdict": "WARNING",
+      "errors": [],
+      "warnings": [
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"cppp-portal-registration-tender-search\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "cppp-portal-registration-tender-search",
+            "category": "Government Procurement Hub"
+          }
+        },
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"gem-login-kaise-kare\" uses category \"GeM Account Management\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-login-kaise-kare",
+            "category": "GeM Account Management"
+          }
+        },
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"gem-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-registration-kaise-kare",
+            "category": "GeM Seller Onboarding"
+          }
+        },
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"gem-seller-registration-kaise-kare\" uses category \"GeM Seller Onboarding\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "gem-seller-registration-kaise-kare",
+            "category": "GeM Seller Onboarding"
+          }
+        },
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"ireps-railway-tender-bidding-guide\" uses category \"Government Procurement Hub\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "ireps-railway-tender-bidding-guide",
+            "category": "Government Procurement Hub"
+          }
+        },
+        {
+          "code": "CATEGORY_MISMATCH",
+          "message": "Registry item \"use-ai-summarize-government-tender-pdfs\" uses category \"Automation\" which is not defined in REGISTRY_CATEGORIES",
+          "file": "src/content/registry.ts",
+          "evidence": {
+            "slug": "use-ai-summarize-government-tender-pdfs",
+            "category": "Automation"
+          }
+        }
+      ],
+      "executionTimeMs": 2
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "engineVersion": "1.0.0"
+}

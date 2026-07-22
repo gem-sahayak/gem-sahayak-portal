@@ -1,0 +1,6 @@
+{
+  "requireCategoryMatch": true,
+  "allowedAuthors": ["SahayakAI Team", "Compliance Desk", "Procurement Desk"],
+  "requireReadingTime": true,
+  "maxMissingFilesLimit": 0
+}
