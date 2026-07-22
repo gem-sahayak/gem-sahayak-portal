@@ -1,0 +1,7 @@
+{
+  "status": "HEALTHY",
+  "importGuardActive": true,
+  "pathGuardActive": true,
+  "observerOnlyEnforced": true,
+  "activeSubenginesCount": 7
+}

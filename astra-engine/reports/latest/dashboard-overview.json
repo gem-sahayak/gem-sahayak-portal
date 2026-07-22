@@ -1,0 +1,44 @@
+{
+  "overallHealth": "HEALTHY",
+  "scores": {
+    "seo": 85,
+    "review": 88,
+    "semantic": 71,
+    "optimization": 78,
+    "knowledge": 94
+  },
+  "cards": [
+    {
+      "title": "SEO Compliance",
+      "score": 85,
+      "badge": "PASS",
+      "status": "HEALTHY"
+    },
+    {
+      "title": "AI EEAT Review",
+      "score": 88,
+      "badge": "PASS",
+      "status": "HEALTHY"
+    },
+    {
+      "title": "Semantic Authority",
+      "score": 71,
+      "badge": "PASS",
+      "status": "NEEDS_ATTENTION"
+    },
+    {
+      "title": "Content Optimization",
+      "score": 78,
+      "badge": "PASS",
+      "status": "NEEDS_ATTENTION"
+    }
+  ],
+  "knowledgeIndexStatus": "OPERATIONAL",
+  "cacheHealth": "100% HIT RATIO",
+  "pluginHealth": "100% OPERATIONAL",
+  "buildStatus": "INTEGRITY VERIFIED",
+  "gitMetadata": {
+    "version": "1.7.1",
+    "tag": "astra-engine-v1.7.1-phase5B"
+  }
+}

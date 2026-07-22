@@ -6,25 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.7.0] — Phase 5A (ASTRA Studio Foundation) - 2026-07-22
+## [1.7.1] — Phase 5B (Enterprise Intelligence Dashboard) - 2026-07-22
 
 ### Added
-- **ASTRA Studio Visual AI Workspace (`studio/`):**
-  - Layout manager, workspace orchestrator, navigation manager.
-  - Project manager (`projectManager.js`), recent projects (`recentProjects.js`).
-  - Report explorer auto-discovery (`reportExplorer.js`).
-  - Command palette engine (`commandPalette.js`).
-  - Activity bar & status bar renderers (`activityBar.js`, `statusBar.js`).
-  - Notification center (`notificationCenter.js`).
-  - Theme manager (`themeManager.js`) & Settings manager (`settingsManager.js`).
-  - Shortcut manager (`shortcutManager.js`).
-- **Studio CLI Subcommand:** Added `node cli.js studio` (`--open`, `--workspace`, `--project`, `--reports`, `--settings`).
-- **Reports Export:** Generated `studio-report.json`, `workspace-report.json`, `navigation-report.json`, `settings-report.json`.
-- **Stress Benchmark:** 100 projects and 1,000 queries scale benchmark completed in **7 ms** (<500 ms target).
+- **Enterprise Intelligence Dashboard (`dashboard/`):**
+  - Overview, SEO, Review, Semantic, Optimizer, Knowledge, Health, Performance, Telemetry dashboards.
+  - Visualization charts (`dashboard/charts/`): `scoreCharts.js`, `trendCharts.js`, `entityCharts.js`, `topologyCharts.js`.
+  - Metric widgets (`dashboard/widgets/`): `scoreCards.js`, `issueCards.js`, `reportCards.js`, `activityFeed.js`, `projectSummary.js`, `benchmarkCards.js`.
+- **Dashboard CLI Subcommand:** Added `node cli.js dashboard` (`--overview`, `--seo`, `--review`, `--semantic`, `--optimizer`, `--knowledge`, `--performance`, `--telemetry`).
+- **Reports Export:** Generated 7 dashboard exports in `reports/latest/`.
+- **Stress Benchmark:** 100 projects, 100,000 report objects, 10,000 widgets scale benchmark completed in **76 ms** (<700 ms target).
 
 ---
 
-## [1.6.0] — Phase 4C.4 (Enterprise Knowledge Intelligence Platform) - 2026-07-22
+## [1.7.0] — Phase 5A (ASTRA Studio Foundation) - 2026-07-22
 
 ### Added
-- **Enterprise Knowledge Intelligence RAG Engine (`engines/knowledge/`):** Document indexer, chunk engine, embedding provider, vector store, retriever, reranker, context builder.
+- **ASTRA Studio Visual AI Workspace (`studio/`):** Layout manager, workspace orchestrator, navigation manager.

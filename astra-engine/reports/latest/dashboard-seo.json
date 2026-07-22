@@ -1,0 +1,33 @@
+{
+  "topKeywords": [
+    "GeM portal helper",
+    "Udyam error solve",
+    "EMD refund rules",
+    "L1 margin calculator"
+  ],
+  "categoryClustersCount": 5,
+  "entityDensityChart": {
+    "chartType": "BAR",
+    "categories": [
+      "Udyam Aadhaar",
+      "EMD Refund",
+      "GFR Rule 170",
+      "L1 Comparison",
+      "NSIC Registration"
+    ],
+    "series": [
+      {
+        "name": "Coverage Density",
+        "data": [
+          95,
+          88,
+          72,
+          90,
+          60
+        ]
+      }
+    ]
+  },
+  "internalLinksTotal": 103,
+  "missingTopicsCount": 12
+}
