@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "ent-udyam-aadhaar",
+      "type": "ENTITY",
+      "label": "Udyam Aadhaar",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "ent-emd-refund",
+      "type": "ENTITY",
+      "label": "EMD Refund",
+      "degree": 0,
+      "pageRank": 0.0006,
+      "metadata": {}
+    },
+    {
+      "id": "ent-gfr-rule-170",
+      "type": "ENTITY",
+      "label": "GFR Rule 170",
+      "degree": 0,
+      "pageRank": 0.0009,
+      "metadata": {}
+    },
+    {
+      "id": "ent-l1-margin-calculator",
+      "type": "ENTITY",
+      "label": "L1 Margin Calculator",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "ent-nsic-registration",
+      "type": "ENTITY",
+      "label": "NSIC Registration",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "ent-epbg-bank-guarantee",
+      "type": "ENTITY",
+      "label": "ePBG Bank Guarantee",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "ent-technical-bid-scrutiny",
+      "type": "ENTITY",
+      "label": "Technical Bid Scrutiny",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "ent-udyam-aadhaar->ent-emd-refund:ENTITY_RELATION",
+      "source": "ent-udyam-aadhaar",
+      "target": "ent-emd-refund",
+      "type": "ENTITY_RELATION",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "ent-emd-refund->ent-gfr-rule-170:ENTITY_RELATION",
+      "source": "ent-emd-refund",
+      "target": "ent-gfr-rule-170",
+      "type": "ENTITY_RELATION",
+      "weight": 1,
+      "metadata": {}
+    }
+  ]
+}

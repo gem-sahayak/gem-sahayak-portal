@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "mod-scanner",
+      "type": "MODULE",
+      "label": "Filesystem Scanner",
+      "degree": 0,
+      "pageRank": 0.0011,
+      "metadata": {}
+    },
+    {
+      "id": "mod-parser",
+      "type": "MODULE",
+      "label": "Parser Engine",
+      "degree": 0,
+      "pageRank": 0.0009,
+      "metadata": {}
+    },
+    {
+      "id": "mod-knowledge",
+      "type": "MODULE",
+      "label": "Knowledge Engine",
+      "degree": 0,
+      "pageRank": 0.0006,
+      "metadata": {}
+    },
+    {
+      "id": "mod-optimizer",
+      "type": "MODULE",
+      "label": "Optimizer Engine",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "mod-parser->mod-scanner:DEPENDENCY",
+      "source": "mod-parser",
+      "target": "mod-scanner",
+      "type": "DEPENDENCY",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "mod-knowledge->mod-parser:DEPENDENCY",
+      "source": "mod-knowledge",
+      "target": "mod-parser",
+      "type": "DEPENDENCY",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "mod-optimizer->mod-knowledge:DEPENDENCY",
+      "source": "mod-optimizer",
+      "target": "mod-knowledge",
+      "type": "DEPENDENCY",
+      "weight": 1,
+      "metadata": {}
+    }
+  ]
+}

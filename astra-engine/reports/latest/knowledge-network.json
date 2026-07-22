@@ -1,0 +1,4506 @@
+{
+  "nodes": [
+    {
+      "id": "ent-udyam-aadhaar",
+      "group": "ENTITY",
+      "label": "Udyam Aadhaar",
+      "rank": 0.0003
+    },
+    {
+      "id": "ent-emd-refund",
+      "group": "ENTITY",
+      "label": "EMD Refund",
+      "rank": 0.0006
+    },
+    {
+      "id": "ent-gfr-rule-170",
+      "group": "ENTITY",
+      "label": "GFR Rule 170",
+      "rank": 0.0009
+    },
+    {
+      "id": "ent-l1-margin-calculator",
+      "group": "ENTITY",
+      "label": "L1 Margin Calculator",
+      "rank": 0.0003
+    },
+    {
+      "id": "ent-nsic-registration",
+      "group": "ENTITY",
+      "label": "NSIC Registration",
+      "rank": 0.0003
+    },
+    {
+      "id": "ent-epbg-bank-guarantee",
+      "group": "ENTITY",
+      "label": "ePBG Bank Guarantee",
+      "rank": 0.0003
+    },
+    {
+      "id": "ent-technical-bid-scrutiny",
+      "group": "ENTITY",
+      "label": "Technical Bid Scrutiny",
+      "rank": 0.0003
+    },
+    {
+      "id": "kw-gem-portal-helper",
+      "group": "KEYWORD",
+      "label": "gem portal helper",
+      "rank": 0.0003
+    },
+    {
+      "id": "kw-udyam-error",
+      "group": "KEYWORD",
+      "label": "udyam error",
+      "rank": 0.0006
+    },
+    {
+      "id": "kw-emd-exemption",
+      "group": "KEYWORD",
+      "label": "emd exemption",
+      "rank": 0.0003
+    },
+    {
+      "id": "kw-l1-tender-bidder",
+      "group": "KEYWORD",
+      "label": "l1 tender bidder",
+      "rank": 0.0003
+    },
+    {
+      "id": "doc-udyam-error",
+      "group": "ARTICLE",
+      "label": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-udyam-error-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (udyam-error)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-udyam-error-1",
+      "group": "VECTOR",
+      "label": "Vector (udyam-error)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-partnership-docs",
+      "group": "ARTICLE",
+      "label": "GeM Registration Documents Required for Partnership Firms",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-partnership-docs-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (partnership-docs)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-partnership-docs-1",
+      "group": "VECTOR",
+      "label": "Vector (partnership-docs)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-portal-direct-purchase-limit-rules-2026",
+      "group": "ARTICLE",
+      "label": "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-portal-direct-purchase-limit-rules-2026-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-portal-direct-purchase-limit-rules-2026)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-portal-direct-purchase-limit-rules-2026-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-portal-direct-purchase-limit-rules-2026)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-bidding-mistakes-msme-tenders",
+      "group": "ARTICLE",
+      "label": "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-bidding-mistakes-msme-tenders-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-bidding-mistakes-msme-tenders)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-bidding-mistakes-msme-tenders-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-bidding-mistakes-msme-tenders)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-what-is-emd-in-gem",
+      "group": "ARTICLE",
+      "label": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-what-is-emd-in-gem-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (what-is-emd-in-gem)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-what-is-emd-in-gem-1",
+      "group": "VECTOR",
+      "label": "Vector (what-is-emd-in-gem)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-how-to-claim-emd-exemption-gem-portal-bids",
+      "group": "ARTICLE",
+      "label": "GeM Portal Bids Par EMD Exemption Kaise Claim Karein",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-how-to-claim-emd-exemption-gem-portal-bids-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (how-to-claim-emd-exemption-gem-portal-bids)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-how-to-claim-emd-exemption-gem-portal-bids-1",
+      "group": "VECTOR",
+      "label": "Vector (how-to-claim-emd-exemption-gem-portal-bids)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "group": "ARTICLE",
+      "label": "How to Automate GeM Bid Tracking & WhatsApp Alerts",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-how-to-automate-gem-bid-tracking-whatsapp-alerts-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (how-to-automate-gem-bid-tracking-whatsapp-alerts)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-how-to-automate-gem-bid-tracking-whatsapp-alerts-1",
+      "group": "VECTOR",
+      "label": "Vector (how-to-automate-gem-bid-tracking-whatsapp-alerts)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "group": "ARTICLE",
+      "label": "Get Real-Time GeM Portal Bid Alerts on WhatsApp",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-how-to-get-gem-portal-bid-alerts-on-whatsapp-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (how-to-get-gem-portal-bid-alerts-on-whatsapp)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-how-to-get-gem-portal-bid-alerts-on-whatsapp-1",
+      "group": "VECTOR",
+      "label": "Vector (how-to-get-gem-portal-bid-alerts-on-whatsapp)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-resolving-gem-portal-catalog-upload-errors",
+      "group": "ARTICLE",
+      "label": "Resolving Catalog Upload and Generic Brand Errors on GeM",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-resolving-gem-portal-catalog-upload-errors-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (resolving-gem-portal-catalog-upload-errors)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-resolving-gem-portal-catalog-upload-errors-1",
+      "group": "VECTOR",
+      "label": "Vector (resolving-gem-portal-catalog-upload-errors)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-ultimate-udyam-registration-gem-portal-exemptions",
+      "group": "ARTICLE",
+      "label": "Ultimate Udyam Registration & GeM Portal Exemptions Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-ultimate-udyam-registration-gem-portal-exemptions-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (ultimate-udyam-registration-gem-portal-exemptions)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-ultimate-udyam-registration-gem-portal-exemptions-1",
+      "group": "VECTOR",
+      "label": "Vector (ultimate-udyam-registration-gem-portal-exemptions)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-emd-exemption-rules",
+      "group": "ARTICLE",
+      "label": "EMD Exemption Rules on GeM Portal â€” Complete Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-emd-exemption-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (emd-exemption-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-emd-exemption-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (emd-exemption-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-emd-refund-process",
+      "group": "ARTICLE",
+      "label": "EMD Refund Process on GeM â€” Timelines & Tracking Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-emd-refund-process-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (emd-refund-process)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-emd-refund-process-1",
+      "group": "VECTOR",
+      "label": "Vector (emd-refund-process)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-emd-vs-security-deposit",
+      "group": "ARTICLE",
+      "label": "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-emd-vs-security-deposit-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (emd-vs-security-deposit)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-emd-vs-security-deposit-1",
+      "group": "VECTOR",
+      "label": "Vector (emd-vs-security-deposit)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-emd-forfeiture-rules",
+      "group": "ARTICLE",
+      "label": "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-emd-forfeiture-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (emd-forfeiture-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-emd-forfeiture-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (emd-forfeiture-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-what-is-l1-in-tender",
+      "group": "ARTICLE",
+      "label": "What is L1 in Tender? Bid Evaluation & Pricing Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-what-is-l1-in-tender-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (what-is-l1-in-tender)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-what-is-l1-in-tender-1",
+      "group": "VECTOR",
+      "label": "Vector (what-is-l1-in-tender)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-l1-vs-qcbs",
+      "group": "ARTICLE",
+      "label": "L1 vs QCBS: Understanding Tender Evaluation Methods",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-l1-vs-qcbs-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (l1-vs-qcbs)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-l1-vs-qcbs-1",
+      "group": "VECTOR",
+      "label": "Vector (l1-vs-qcbs)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-technical-evaluation-process",
+      "group": "ARTICLE",
+      "label": "Technical Evaluation Process & Bid Scrutiny on GeM Portal",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-technical-evaluation-process-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (technical-evaluation-process)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-technical-evaluation-process-1",
+      "group": "VECTOR",
+      "label": "Vector (technical-evaluation-process)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-financial-bid-evaluation",
+      "group": "ARTICLE",
+      "label": "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-financial-bid-evaluation-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (financial-bid-evaluation)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-financial-bid-evaluation-1",
+      "group": "VECTOR",
+      "label": "Vector (financial-bid-evaluation)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-reasons-for-bid-rejection",
+      "group": "ARTICLE",
+      "label": "10 Common Reasons for Bid Rejection on GeM Portal",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-reasons-for-bid-rejection-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (reasons-for-bid-rejection)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-reasons-for-bid-rejection-1",
+      "group": "VECTOR",
+      "label": "Vector (reasons-for-bid-rejection)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-bid-participation-rules",
+      "group": "ARTICLE",
+      "label": "GeM Bid Participation Eligibility Criteria (2026 Guide)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-bid-participation-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (bid-participation-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-bid-participation-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (bid-participation-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-bid-splitting-rules",
+      "group": "ARTICLE",
+      "label": "GeM Bid Splitting Rules & GFR Compliance Guidelines",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-bid-splitting-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (bid-splitting-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-bid-splitting-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (bid-splitting-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-common-errors",
+      "group": "ARTICLE",
+      "label": "Common GeM Registration Errors and Solutions: Fix Blockers Instantly",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-common-errors-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (common-errors)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-common-errors-1",
+      "group": "VECTOR",
+      "label": "Vector (common-errors)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-complete-gem-registration-guide",
+      "group": "ARTICLE",
+      "label": "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-complete-gem-registration-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (complete-gem-registration-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-complete-gem-registration-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (complete-gem-registration-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-cppp-portal-registration-tender-search",
+      "group": "ARTICLE",
+      "label": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-cppp-portal-registration-tender-search-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (cppp-portal-registration-tender-search)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-cppp-portal-registration-tender-search-1",
+      "group": "VECTOR",
+      "label": "Vector (cppp-portal-registration-tender-search)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-cpv-code-guide",
+      "group": "ARTICLE",
+      "label": "CPV Code Guide for GeM Sellers: Categorizing Tenders",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-cpv-code-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (cpv-code-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-cpv-code-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (cpv-code-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-daily-tender-monitoring",
+      "group": "ARTICLE",
+      "label": "Daily GeM Tender Monitoring Best Practices for MSMEs",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-daily-tender-monitoring-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (daily-tender-monitoring)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-daily-tender-monitoring-1",
+      "group": "VECTOR",
+      "label": "Vector (daily-tender-monitoring)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-documents-required",
+      "group": "ARTICLE",
+      "label": "Documents Required for GeM Registration (2026 Checklist)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-documents-required-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (documents-required)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-documents-required-1",
+      "group": "VECTOR",
+      "label": "Vector (documents-required)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-earnest-money-deposit",
+      "group": "ARTICLE",
+      "label": "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-earnest-money-deposit-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (earnest-money-deposit)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-earnest-money-deposit-1",
+      "group": "VECTOR",
+      "label": "Vector (earnest-money-deposit)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-faqs",
+      "group": "ARTICLE",
+      "label": "Frequently Asked Questions About GeM Registration (2026 Q&A)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-faqs-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (faqs)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-faqs-1",
+      "group": "VECTOR",
+      "label": "Vector (faqs)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-fees-explained",
+      "group": "ARTICLE",
+      "label": "GeM Registration Fees Explained: Caution Money and Charges",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-fees-explained-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (fees-explained)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-fees-explained-1",
+      "group": "VECTOR",
+      "label": "Vector (fees-explained)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-bank-account-change-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-bank-account-change-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-bank-account-change-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-bank-account-change-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-bank-account-change-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-bidding-fees",
+      "group": "ARTICLE",
+      "label": "GeM Bidding Fees: Transaction Charges & Seller Commissions",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-bidding-fees-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-bidding-fees)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-bidding-fees-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-bidding-fees)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-bidding-rules-handbook",
+      "group": "ARTICLE",
+      "label": "GeM Bidding Rules & Compliance Handbook (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-bidding-rules-handbook-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-bidding-rules-handbook)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-bidding-rules-handbook-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-bidding-rules-handbook)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-boq-excel-sheet-upload-errors",
+      "group": "ARTICLE",
+      "label": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-boq-excel-sheet-upload-errors-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-boq-excel-sheet-upload-errors)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-boq-excel-sheet-upload-errors-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-boq-excel-sheet-upload-errors)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-catalog-rejected-reasons",
+      "group": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-catalog-rejected-reasons-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-catalog-rejected-reasons)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-catalog-rejected-reasons-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-catalog-rejected-reasons)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-catalogue-upload-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-catalogue-upload-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-catalogue-upload-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-catalogue-upload-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-catalogue-upload-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-category-search",
+      "group": "ARTICLE",
+      "label": "How to Search GeM Tenders by Product Category",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-category-search-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-category-search)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-category-search-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-category-search)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-company-profile-edit-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-company-profile-edit-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-company-profile-edit-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-company-profile-edit-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-company-profile-edit-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-consignee-receipt-process",
+      "group": "ARTICLE",
+      "label": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-consignee-receipt-process-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-consignee-receipt-process)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-consignee-receipt-process-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-consignee-receipt-process)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-crac-kaise-generate-hota-hai",
+      "group": "ARTICLE",
+      "label": "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-crac-kaise-generate-hota-hai-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-crac-kaise-generate-hota-hai)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-crac-kaise-generate-hota-hai-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-crac-kaise-generate-hota-hai)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-custom-bid-specifications-rules",
+      "group": "ARTICLE",
+      "label": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-custom-bid-specifications-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-custom-bid-specifications-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-custom-bid-specifications-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-custom-bid-specifications-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-email-mobile-number-change",
+      "group": "ARTICLE",
+      "label": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-email-mobile-number-change-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-email-mobile-number-change)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-email-mobile-number-change-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-email-mobile-number-change)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-epbg-bank-guarantee-rules-refund",
+      "group": "ARTICLE",
+      "label": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-epbg-bank-guarantee-rules-refund-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-epbg-bank-guarantee-rules-refund)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-epbg-bank-guarantee-rules-refund-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-epbg-bank-guarantee-rules-refund)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-incident-management-show-cause-reply",
+      "group": "ARTICLE",
+      "label": "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-incident-management-show-cause-reply-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-incident-management-show-cause-reply)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-incident-management-show-cause-reply-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-incident-management-show-cause-reply)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-invoice-generate-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-invoice-generate-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-invoice-generate-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-invoice-generate-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-invoice-generate-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-joint-venture-consortium-bidding",
+      "group": "ARTICLE",
+      "label": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-joint-venture-consortium-bidding-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-joint-venture-consortium-bidding)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-joint-venture-consortium-bidding-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-joint-venture-consortium-bidding)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-l1-price-matching-counter-offer",
+      "group": "ARTICLE",
+      "label": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-l1-price-matching-counter-offer-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-l1-price-matching-counter-offer)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-l1-price-matching-counter-offer-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-l1-price-matching-counter-offer)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-login-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-login-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-login-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-login-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-login-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-order-accept-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-order-accept-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-order-accept-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-order-accept-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-order-accept-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-order-cancel-rules",
+      "group": "ARTICLE",
+      "label": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-order-cancel-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-order-cancel-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-order-cancel-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-order-cancel-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-order-delivery-update-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-order-delivery-update-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-order-delivery-update-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-order-delivery-update-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-order-delivery-update-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-payment-kab-milta-hai",
+      "group": "ARTICLE",
+      "label": "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-payment-kab-milta-hai-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-payment-kab-milta-hai)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-payment-kab-milta-hai-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-payment-kab-milta-hai)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-payment-status-kaise-check-kare",
+      "group": "ARTICLE",
+      "label": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-payment-status-kaise-check-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-payment-status-kaise-check-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-payment-status-kaise-check-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-payment-status-kaise-check-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-product-approval-time",
+      "group": "ARTICLE",
+      "label": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-product-approval-time-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-product-approval-time)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-product-approval-time-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-product-approval-time)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-profile-update-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-profile-update-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-profile-update-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-profile-update-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-profile-update-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-registration-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-registration-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-registration-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-registration-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-registration-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-return-replacement-rules",
+      "group": "ARTICLE",
+      "label": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-return-replacement-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-return-replacement-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-return-replacement-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-return-replacement-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-search-filters-explained",
+      "group": "ARTICLE",
+      "label": "GeM Search Filters Explained: Narrowing Active Tenders",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-search-filters-explained-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-search-filters-explained)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-search-filters-explained-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-search-filters-explained)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-seller-dashboard-kaise-use-kare",
+      "group": "ARTICLE",
+      "label": "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-seller-dashboard-kaise-use-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-seller-dashboard-kaise-use-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-seller-dashboard-kaise-use-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-seller-dashboard-kaise-use-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-seller-performance-dashboard",
+      "group": "ARTICLE",
+      "label": "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-seller-performance-dashboard-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-seller-performance-dashboard)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-seller-performance-dashboard-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-seller-performance-dashboard)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-seller-rating-improve-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-seller-rating-improve-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-seller-rating-improve-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-seller-rating-improve-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-seller-rating-improve-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-seller-registration-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-seller-registration-kaise-kare-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-seller-registration-kaise-kare)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-seller-registration-kaise-kare-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-seller-registration-kaise-kare)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-service-contract-bidding-rules",
+      "group": "ARTICLE",
+      "label": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-service-contract-bidding-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-service-contract-bidding-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-service-contract-bidding-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-service-contract-bidding-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-tender-search-guide",
+      "group": "ARTICLE",
+      "label": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-tender-search-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-tender-search-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-tender-search-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-tender-search-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-warranty-claim-process",
+      "group": "ARTICLE",
+      "label": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-warranty-claim-process-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-warranty-claim-process)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-warranty-claim-process-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-warranty-claim-process)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-how-to-search-gem-tenders",
+      "group": "ARTICLE",
+      "label": "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-how-to-search-gem-tenders-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (how-to-search-gem-tenders)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-how-to-search-gem-tenders-1",
+      "group": "VECTOR",
+      "label": "Vector (how-to-search-gem-tenders)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-ireps-railway-tender-bidding-guide",
+      "group": "ARTICLE",
+      "label": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-ireps-railway-tender-bidding-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (ireps-railway-tender-bidding-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-ireps-railway-tender-bidding-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (ireps-railway-tender-bidding-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-keyword-search-tips",
+      "group": "ARTICLE",
+      "label": "Best Keyword Search Tips for Finding GeM Tenders",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-keyword-search-tips-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (keyword-search-tips)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-keyword-search-tips-1",
+      "group": "VECTOR",
+      "label": "Vector (keyword-search-tips)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-manufacturers-registration",
+      "group": "ARTICLE",
+      "label": "GeM Registration for Manufacturers: Complete OEM Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-manufacturers-registration-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (manufacturers-registration)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-manufacturers-registration-1",
+      "group": "VECTOR",
+      "label": "Vector (manufacturers-registration)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-ministry-department-search",
+      "group": "ARTICLE",
+      "label": "How to Search GeM Tenders by Ministry and Department",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-ministry-department-search-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (ministry-department-search)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-ministry-department-search-1",
+      "group": "VECTOR",
+      "label": "Vector (ministry-department-search)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-msme-registration",
+      "group": "ARTICLE",
+      "label": "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-msme-registration-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (msme-registration)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-msme-registration-1",
+      "group": "VECTOR",
+      "label": "Vector (msme-registration)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-profile-completion",
+      "group": "ARTICLE",
+      "label": "How to Complete Your GeM Seller Profile (100% Checklist)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-profile-completion-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (profile-completion)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-profile-completion-1",
+      "group": "VECTOR",
+      "label": "Vector (profile-completion)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-representation-writing",
+      "group": "ARTICLE",
+      "label": "How to Write Technical Representations for Disqualified GeM Bids",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-representation-writing-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (representation-writing)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-representation-writing-1",
+      "group": "VECTOR",
+      "label": "Vector (representation-writing)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-restrictive-specifications",
+      "group": "ARTICLE",
+      "label": "Appealing Restrictive Tender Specifications on GeM",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-restrictive-specifications-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (restrictive-specifications)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-restrictive-specifications-1",
+      "group": "VECTOR",
+      "label": "Vector (restrictive-specifications)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-reverse-auction-rules",
+      "group": "ARTICLE",
+      "label": "GeM Reverse Auction (RA) Rules and Bidding Strategies",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-reverse-auction-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (reverse-auction-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-reverse-auction-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (reverse-auction-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-saved-search-and-alerts",
+      "group": "ARTICLE",
+      "label": "Using Saved Searches and Tender Alerts on GeM",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-saved-search-and-alerts-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (saved-search-and-alerts)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-saved-search-and-alerts-1",
+      "group": "VECTOR",
+      "label": "Vector (saved-search-and-alerts)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-single-bid-compliance",
+      "group": "ARTICLE",
+      "label": "GeM Single Bid Evaluation and GFR Compliance Rules",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-single-bid-compliance-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (single-bid-compliance)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-single-bid-compliance-1",
+      "group": "VECTOR",
+      "label": "Vector (single-bid-compliance)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-state-procurement-up-tenders-gem-comparison",
+      "group": "ARTICLE",
+      "label": "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-state-procurement-up-tenders-gem-comparison-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (state-procurement-up-tenders-gem-comparison)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-state-procurement-up-tenders-gem-comparison-1",
+      "group": "VECTOR",
+      "label": "Vector (state-procurement-up-tenders-gem-comparison)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-state-wise-tender-search",
+      "group": "ARTICLE",
+      "label": "How to Search State-wise Government Tenders on GeM",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-state-wise-tender-search-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (state-wise-tender-search)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-state-wise-tender-search-1",
+      "group": "VECTOR",
+      "label": "Vector (state-wise-tender-search)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-tender-evaluation-stages",
+      "group": "ARTICLE",
+      "label": "GeM Tender Evaluation Stages: Technical & Financial Opens",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-tender-evaluation-stages-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (tender-evaluation-stages)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-tender-evaluation-stages-1",
+      "group": "VECTOR",
+      "label": "Vector (tender-evaluation-stages)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-timeframe",
+      "group": "ARTICLE",
+      "label": "How Long Does GeM Registration Take: Step-by-Step Timelines",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-timeframe-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (timeframe)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-timeframe-1",
+      "group": "VECTOR",
+      "label": "Vector (timeframe)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-traders-registration",
+      "group": "ARTICLE",
+      "label": "GeM Registration for Traders: Resellers and Distributors",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-traders-registration-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (traders-registration)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-traders-registration-1",
+      "group": "VECTOR",
+      "label": "Vector (traders-registration)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-use-ai-summarize-government-tender-pdfs",
+      "group": "ARTICLE",
+      "label": "How to Use AI to Summarize Government Tender PDFs in 30 Seconds",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-use-ai-summarize-government-tender-pdfs-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (use-ai-summarize-government-tender-pdfs)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-use-ai-summarize-government-tender-pdfs-1",
+      "group": "VECTOR",
+      "label": "Vector (use-ai-summarize-government-tender-pdfs)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-oem-panel-registration-guide",
+      "group": "ARTICLE",
+      "label": "GeM OEM Panel Registration Complete Guide (2026)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-oem-panel-registration-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-oem-panel-registration-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-oem-panel-registration-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-oem-panel-registration-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-catalog-rejected-reasons-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons & How to Fix Them",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-catalog-rejected-reasons-complete-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-catalog-rejected-reasons-complete-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-catalog-rejected-reasons-complete-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-catalog-rejected-reasons-complete-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-oem-authorization-letter-format",
+      "group": "ARTICLE",
+      "label": "GeM OEM Authorization Letter Format & Approval Tips",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-oem-authorization-letter-format-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-oem-authorization-letter-format)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-oem-authorization-letter-format-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-oem-authorization-letter-format)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-custom-item-creation-rules-2026",
+      "group": "ARTICLE",
+      "label": "GeM Custom Item Creation Rules & BOQ Upload Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-custom-item-creation-rules-2026-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-custom-item-creation-rules-2026)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-custom-item-creation-rules-2026-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-custom-item-creation-rules-2026)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-generic-vs-brand-catalog-guide",
+      "group": "ARTICLE",
+      "label": "Generic Product vs Brand Product on GeM: What to Choose?",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-generic-vs-brand-catalog-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-generic-vs-brand-catalog-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-generic-vs-brand-catalog-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-generic-vs-brand-catalog-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-boq-excel-upload-errors-guide",
+      "group": "ARTICLE",
+      "label": "GeM BOQ Upload Errors & Excel Validation Fixes",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-boq-excel-upload-errors-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-boq-excel-upload-errors-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-boq-excel-upload-errors-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-boq-excel-upload-errors-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-hsn-code-gst-mapping-guide",
+      "group": "ARTICLE",
+      "label": "GeM HSN Code Mapping & GST Slab Approval Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-hsn-code-gst-mapping-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-hsn-code-gst-mapping-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-hsn-code-gst-mapping-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-hsn-code-gst-mapping-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-product-cloning-duplication-guide",
+      "group": "ARTICLE",
+      "label": "GeM Product Clone Guide: How to Duplicate Catalog Fast",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-product-cloning-duplication-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-product-cloning-duplication-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-product-cloning-duplication-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-product-cloning-duplication-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-vendor-assessment-rules-exemption-guide",
+      "group": "ARTICLE",
+      "label": "GeM Vendor Assessment Rules & QCI Exemption Criteria",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-vendor-assessment-rules-exemption-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-vendor-assessment-rules-exemption-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-vendor-assessment-rules-exemption-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-vendor-assessment-rules-exemption-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-category-approval-time-guide",
+      "group": "ARTICLE",
+      "label": "GeM Category Approval Time & Escalation Process",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-category-approval-time-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-category-approval-time-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-category-approval-time-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-category-approval-time-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-reverse-auction-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-reverse-auction-complete-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-reverse-auction-complete-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-reverse-auction-complete-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-reverse-auction-complete-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-bid-participation-fees-guide",
+      "group": "ARTICLE",
+      "label": "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-bid-participation-fees-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-bid-participation-fees-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-bid-participation-fees-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-bid-participation-fees-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-contract-performance-security-guide",
+      "group": "ARTICLE",
+      "label": "GeM Contract Performance Security (ePBG) Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-contract-performance-security-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-contract-performance-security-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-contract-performance-security-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-contract-performance-security-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-payment-cycle-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Payment Cycle Complete Guide: Timeline & Process",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-payment-cycle-complete-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-payment-cycle-complete-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-payment-cycle-complete-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-payment-cycle-complete-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-order-fulfillment-guide",
+      "group": "ARTICLE",
+      "label": "GeM Order Fulfillment Guide: Generation to Dispatch",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-order-fulfillment-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-order-fulfillment-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-order-fulfillment-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-order-fulfillment-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-inspection-acceptance-guide",
+      "group": "ARTICLE",
+      "label": "GeM Inspection & Acceptance Guide (CRAC Rules)",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-inspection-acceptance-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-inspection-acceptance-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-inspection-acceptance-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-inspection-acceptance-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-liquidated-damages-rules",
+      "group": "ARTICLE",
+      "label": "GeM Liquidated Damages (LD) Rules Explained",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-liquidated-damages-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-liquidated-damages-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-liquidated-damages-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-liquidated-damages-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-contract-termination-rules",
+      "group": "ARTICLE",
+      "label": "GeM Contract Termination & Cancellation Rules Explained",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-contract-termination-rules-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-contract-termination-rules)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-contract-termination-rules-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-contract-termination-rules)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-seller-rating-performance-guide",
+      "group": "ARTICLE",
+      "label": "GeM Seller Rating & Performance Score Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-seller-rating-performance-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-seller-rating-performance-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-seller-rating-performance-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-seller-rating-performance-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "doc-gem-buyer-seller-dispute-resolution-guide",
+      "group": "ARTICLE",
+      "label": "GeM Buyer Seller Dispute Resolution Guide",
+      "rank": 0.0003
+    },
+    {
+      "id": "chk-gem-buyer-seller-dispute-resolution-guide-1",
+      "group": "CHUNK",
+      "label": "Chunk 1 (gem-buyer-seller-dispute-resolution-guide)",
+      "rank": 0.0006
+    },
+    {
+      "id": "vec-gem-buyer-seller-dispute-resolution-guide-1",
+      "group": "VECTOR",
+      "label": "Vector (gem-buyer-seller-dispute-resolution-guide)",
+      "rank": 0.0009
+    },
+    {
+      "id": "hub-gem-registration",
+      "group": "HUB",
+      "label": "gem-registration Hub",
+      "rank": 0.0003
+    },
+    {
+      "id": "hub-gem-bidding",
+      "group": "HUB",
+      "label": "gem-bidding Hub",
+      "rank": 0.0003
+    },
+    {
+      "id": "hub-catalog-management",
+      "group": "HUB",
+      "label": "catalog-management Hub",
+      "rank": 0.0003
+    },
+    {
+      "id": "hub-compliance-policy",
+      "group": "HUB",
+      "label": "compliance-policy Hub",
+      "rank": 0.0003
+    },
+    {
+      "id": "hub-government-procurement",
+      "group": "HUB",
+      "label": "government-procurement Hub",
+      "rank": 0.0003
+    },
+    {
+      "id": "art-udyam-error",
+      "group": "ARTICLE",
+      "label": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-partnership-docs",
+      "group": "ARTICLE",
+      "label": "GeM Registration Documents Required for Partnership Firms",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-portal-direct-purchase-limit-rules-2026",
+      "group": "ARTICLE",
+      "label": "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-bidding-mistakes-msme-tenders",
+      "group": "ARTICLE",
+      "label": "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-what-is-emd-in-gem",
+      "group": "ARTICLE",
+      "label": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-how-to-claim-emd-exemption-gem-portal-bids",
+      "group": "ARTICLE",
+      "label": "GeM Portal Bids Par EMD Exemption Kaise Claim Karein",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "group": "ARTICLE",
+      "label": "How to Automate GeM Bid Tracking & WhatsApp Alerts",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "group": "ARTICLE",
+      "label": "Get Real-Time GeM Portal Bid Alerts on WhatsApp",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-resolving-gem-portal-catalog-upload-errors",
+      "group": "ARTICLE",
+      "label": "Resolving Catalog Upload and Generic Brand Errors on GeM",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-ultimate-udyam-registration-gem-portal-exemptions",
+      "group": "ARTICLE",
+      "label": "Ultimate Udyam Registration & GeM Portal Exemptions Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-emd-exemption-rules",
+      "group": "ARTICLE",
+      "label": "EMD Exemption Rules on GeM Portal â€” Complete Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-emd-refund-process",
+      "group": "ARTICLE",
+      "label": "EMD Refund Process on GeM â€” Timelines & Tracking Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-emd-vs-security-deposit",
+      "group": "ARTICLE",
+      "label": "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-emd-forfeiture-rules",
+      "group": "ARTICLE",
+      "label": "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-what-is-l1-in-tender",
+      "group": "ARTICLE",
+      "label": "What is L1 in Tender? Bid Evaluation & Pricing Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-l1-vs-qcbs",
+      "group": "ARTICLE",
+      "label": "L1 vs QCBS: Understanding Tender Evaluation Methods",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-technical-evaluation-process",
+      "group": "ARTICLE",
+      "label": "Technical Evaluation Process & Bid Scrutiny on GeM Portal",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-financial-bid-evaluation",
+      "group": "ARTICLE",
+      "label": "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-reasons-for-bid-rejection",
+      "group": "ARTICLE",
+      "label": "10 Common Reasons for Bid Rejection on GeM Portal",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-bid-participation-rules",
+      "group": "ARTICLE",
+      "label": "GeM Bid Participation Eligibility Criteria (2026 Guide)",
+      "rank": 0
+    },
+    {
+      "id": "art-bid-splitting-rules",
+      "group": "ARTICLE",
+      "label": "GeM Bid Splitting Rules & GFR Compliance Guidelines",
+      "rank": 0
+    },
+    {
+      "id": "art-common-errors",
+      "group": "ARTICLE",
+      "label": "Common GeM Registration Errors and Solutions: Fix Blockers Instantly",
+      "rank": 0
+    },
+    {
+      "id": "art-complete-gem-registration-guide",
+      "group": "ARTICLE",
+      "label": "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup",
+      "rank": 0
+    },
+    {
+      "id": "art-cppp-portal-registration-tender-search",
+      "group": "ARTICLE",
+      "label": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-cpv-code-guide",
+      "group": "ARTICLE",
+      "label": "CPV Code Guide for GeM Sellers: Categorizing Tenders",
+      "rank": 0
+    },
+    {
+      "id": "art-daily-tender-monitoring",
+      "group": "ARTICLE",
+      "label": "Daily GeM Tender Monitoring Best Practices for MSMEs",
+      "rank": 0
+    },
+    {
+      "id": "art-documents-required",
+      "group": "ARTICLE",
+      "label": "Documents Required for GeM Registration (2026 Checklist)",
+      "rank": 0
+    },
+    {
+      "id": "art-earnest-money-deposit",
+      "group": "ARTICLE",
+      "label": "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
+      "rank": 0
+    },
+    {
+      "id": "art-faqs",
+      "group": "ARTICLE",
+      "label": "Frequently Asked Questions About GeM Registration (2026 Q&A)",
+      "rank": 0
+    },
+    {
+      "id": "art-fees-explained",
+      "group": "ARTICLE",
+      "label": "GeM Registration Fees Explained: Caution Money and Charges",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-bank-account-change-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-bidding-fees",
+      "group": "ARTICLE",
+      "label": "GeM Bidding Fees: Transaction Charges & Seller Commissions",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-bidding-rules-handbook",
+      "group": "ARTICLE",
+      "label": "GeM Bidding Rules & Compliance Handbook (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-boq-excel-sheet-upload-errors",
+      "group": "ARTICLE",
+      "label": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-catalog-rejected-reasons",
+      "group": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-catalogue-upload-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-category-search",
+      "group": "ARTICLE",
+      "label": "How to Search GeM Tenders by Product Category",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-company-profile-edit-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-consignee-receipt-process",
+      "group": "ARTICLE",
+      "label": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-crac-kaise-generate-hota-hai",
+      "group": "ARTICLE",
+      "label": "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-custom-bid-specifications-rules",
+      "group": "ARTICLE",
+      "label": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-email-mobile-number-change",
+      "group": "ARTICLE",
+      "label": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-epbg-bank-guarantee-rules-refund",
+      "group": "ARTICLE",
+      "label": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-incident-management-show-cause-reply",
+      "group": "ARTICLE",
+      "label": "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-invoice-generate-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-joint-venture-consortium-bidding",
+      "group": "ARTICLE",
+      "label": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-l1-price-matching-counter-offer",
+      "group": "ARTICLE",
+      "label": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-login-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-order-accept-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-order-cancel-rules",
+      "group": "ARTICLE",
+      "label": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-order-delivery-update-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-payment-kab-milta-hai",
+      "group": "ARTICLE",
+      "label": "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-payment-status-kaise-check-kare",
+      "group": "ARTICLE",
+      "label": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-product-approval-time",
+      "group": "ARTICLE",
+      "label": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-profile-update-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-registration-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-return-replacement-rules",
+      "group": "ARTICLE",
+      "label": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-search-filters-explained",
+      "group": "ARTICLE",
+      "label": "GeM Search Filters Explained: Narrowing Active Tenders",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-seller-dashboard-kaise-use-kare",
+      "group": "ARTICLE",
+      "label": "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-seller-performance-dashboard",
+      "group": "ARTICLE",
+      "label": "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-seller-rating-improve-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-seller-registration-kaise-kare",
+      "group": "ARTICLE",
+      "label": "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-service-contract-bidding-rules",
+      "group": "ARTICLE",
+      "label": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-tender-search-guide",
+      "group": "ARTICLE",
+      "label": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-warranty-claim-process",
+      "group": "ARTICLE",
+      "label": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-how-to-search-gem-tenders",
+      "group": "ARTICLE",
+      "label": "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
+      "rank": 0
+    },
+    {
+      "id": "art-ireps-railway-tender-bidding-guide",
+      "group": "ARTICLE",
+      "label": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)",
+      "rank": 0
+    },
+    {
+      "id": "art-keyword-search-tips",
+      "group": "ARTICLE",
+      "label": "Best Keyword Search Tips for Finding GeM Tenders",
+      "rank": 0
+    },
+    {
+      "id": "art-manufacturers-registration",
+      "group": "ARTICLE",
+      "label": "GeM Registration for Manufacturers: Complete OEM Guide",
+      "rank": 0
+    },
+    {
+      "id": "art-ministry-department-search",
+      "group": "ARTICLE",
+      "label": "How to Search GeM Tenders by Ministry and Department",
+      "rank": 0
+    },
+    {
+      "id": "art-msme-registration",
+      "group": "ARTICLE",
+      "label": "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
+      "rank": 0
+    },
+    {
+      "id": "art-profile-completion",
+      "group": "ARTICLE",
+      "label": "How to Complete Your GeM Seller Profile (100% Checklist)",
+      "rank": 0
+    },
+    {
+      "id": "art-representation-writing",
+      "group": "ARTICLE",
+      "label": "How to Write Technical Representations for Disqualified GeM Bids",
+      "rank": 0
+    },
+    {
+      "id": "art-restrictive-specifications",
+      "group": "ARTICLE",
+      "label": "Appealing Restrictive Tender Specifications on GeM",
+      "rank": 0
+    },
+    {
+      "id": "art-reverse-auction-rules",
+      "group": "ARTICLE",
+      "label": "GeM Reverse Auction (RA) Rules and Bidding Strategies",
+      "rank": 0
+    },
+    {
+      "id": "art-saved-search-and-alerts",
+      "group": "ARTICLE",
+      "label": "Using Saved Searches and Tender Alerts on GeM",
+      "rank": 0
+    },
+    {
+      "id": "art-single-bid-compliance",
+      "group": "ARTICLE",
+      "label": "GeM Single Bid Evaluation and GFR Compliance Rules",
+      "rank": 0
+    },
+    {
+      "id": "art-state-procurement-up-tenders-gem-comparison",
+      "group": "ARTICLE",
+      "label": "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)",
+      "rank": 0.0006
+    },
+    {
+      "id": "art-state-wise-tender-search",
+      "group": "ARTICLE",
+      "label": "How to Search State-wise Government Tenders on GeM",
+      "rank": 0
+    },
+    {
+      "id": "art-tender-evaluation-stages",
+      "group": "ARTICLE",
+      "label": "GeM Tender Evaluation Stages: Technical & Financial Opens",
+      "rank": 0
+    },
+    {
+      "id": "art-timeframe",
+      "group": "ARTICLE",
+      "label": "How Long Does GeM Registration Take: Step-by-Step Timelines",
+      "rank": 0
+    },
+    {
+      "id": "art-traders-registration",
+      "group": "ARTICLE",
+      "label": "GeM Registration for Traders: Resellers and Distributors",
+      "rank": 0
+    },
+    {
+      "id": "art-use-ai-summarize-government-tender-pdfs",
+      "group": "ARTICLE",
+      "label": "How to Use AI to Summarize Government Tender PDFs in 30 Seconds",
+      "rank": 0
+    },
+    {
+      "id": "art-gem-oem-panel-registration-guide",
+      "group": "ARTICLE",
+      "label": "GeM OEM Panel Registration Complete Guide (2026)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-catalog-rejected-reasons-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons & How to Fix Them",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-oem-authorization-letter-format",
+      "group": "ARTICLE",
+      "label": "GeM OEM Authorization Letter Format & Approval Tips",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-custom-item-creation-rules-2026",
+      "group": "ARTICLE",
+      "label": "GeM Custom Item Creation Rules & BOQ Upload Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-generic-vs-brand-catalog-guide",
+      "group": "ARTICLE",
+      "label": "Generic Product vs Brand Product on GeM: What to Choose?",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-boq-excel-upload-errors-guide",
+      "group": "ARTICLE",
+      "label": "GeM BOQ Upload Errors & Excel Validation Fixes",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-hsn-code-gst-mapping-guide",
+      "group": "ARTICLE",
+      "label": "GeM HSN Code Mapping & GST Slab Approval Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-product-cloning-duplication-guide",
+      "group": "ARTICLE",
+      "label": "GeM Product Clone Guide: How to Duplicate Catalog Fast",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-vendor-assessment-rules-exemption-guide",
+      "group": "ARTICLE",
+      "label": "GeM Vendor Assessment Rules & QCI Exemption Criteria",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-category-approval-time-guide",
+      "group": "ARTICLE",
+      "label": "GeM Category Approval Time & Escalation Process",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-reverse-auction-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-bid-participation-fees-guide",
+      "group": "ARTICLE",
+      "label": "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-contract-performance-security-guide",
+      "group": "ARTICLE",
+      "label": "GeM Contract Performance Security (ePBG) Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-payment-cycle-complete-guide",
+      "group": "ARTICLE",
+      "label": "GeM Payment Cycle Complete Guide: Timeline & Process",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-order-fulfillment-guide",
+      "group": "ARTICLE",
+      "label": "GeM Order Fulfillment Guide: Generation to Dispatch",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-inspection-acceptance-guide",
+      "group": "ARTICLE",
+      "label": "GeM Inspection & Acceptance Guide (CRAC Rules)",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-liquidated-damages-rules",
+      "group": "ARTICLE",
+      "label": "GeM Liquidated Damages (LD) Rules Explained",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-contract-termination-rules",
+      "group": "ARTICLE",
+      "label": "GeM Contract Termination & Cancellation Rules Explained",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-seller-rating-performance-guide",
+      "group": "ARTICLE",
+      "label": "GeM Seller Rating & Performance Score Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "art-gem-buyer-seller-dispute-resolution-guide",
+      "group": "ARTICLE",
+      "label": "GeM Buyer Seller Dispute Resolution Guide",
+      "rank": 0.0004
+    },
+    {
+      "id": "plg-core-validator",
+      "group": "PLUGIN",
+      "label": "Core Validator Plugin",
+      "rank": 0.0006
+    },
+    {
+      "id": "plg-seo-enhancer",
+      "group": "PLUGIN",
+      "label": "SEO Enhancer Plugin",
+      "rank": 0.0003
+    },
+    {
+      "id": "mod-scanner",
+      "group": "MODULE",
+      "label": "Filesystem Scanner",
+      "rank": 0.0011
+    },
+    {
+      "id": "mod-parser",
+      "group": "MODULE",
+      "label": "Parser Engine",
+      "rank": 0.0009
+    },
+    {
+      "id": "mod-knowledge",
+      "group": "MODULE",
+      "label": "Knowledge Engine",
+      "rank": 0.0006
+    },
+    {
+      "id": "mod-optimizer",
+      "group": "MODULE",
+      "label": "Optimizer Engine",
+      "rank": 0.0003
+    }
+  ],
+  "links": [
+    {
+      "source": "ent-udyam-aadhaar",
+      "target": "ent-emd-refund",
+      "value": 1,
+      "type": "ENTITY_RELATION"
+    },
+    {
+      "source": "ent-emd-refund",
+      "target": "ent-gfr-rule-170",
+      "value": 1,
+      "type": "ENTITY_RELATION"
+    },
+    {
+      "source": "kw-gem-portal-helper",
+      "target": "kw-udyam-error",
+      "value": 1,
+      "type": "SEMANTIC_SIMILARITY"
+    },
+    {
+      "source": "doc-udyam-error",
+      "target": "chk-udyam-error-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-udyam-error-1",
+      "target": "vec-udyam-error-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-partnership-docs",
+      "target": "chk-partnership-docs-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-partnership-docs-1",
+      "target": "vec-partnership-docs-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-portal-direct-purchase-limit-rules-2026",
+      "target": "chk-gem-portal-direct-purchase-limit-rules-2026-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-portal-direct-purchase-limit-rules-2026-1",
+      "target": "vec-gem-portal-direct-purchase-limit-rules-2026-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-bidding-mistakes-msme-tenders",
+      "target": "chk-gem-bidding-mistakes-msme-tenders-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-bidding-mistakes-msme-tenders-1",
+      "target": "vec-gem-bidding-mistakes-msme-tenders-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-what-is-emd-in-gem",
+      "target": "chk-what-is-emd-in-gem-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-what-is-emd-in-gem-1",
+      "target": "vec-what-is-emd-in-gem-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-how-to-claim-emd-exemption-gem-portal-bids",
+      "target": "chk-how-to-claim-emd-exemption-gem-portal-bids-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-how-to-claim-emd-exemption-gem-portal-bids-1",
+      "target": "vec-how-to-claim-emd-exemption-gem-portal-bids-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "target": "chk-how-to-automate-gem-bid-tracking-whatsapp-alerts-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-how-to-automate-gem-bid-tracking-whatsapp-alerts-1",
+      "target": "vec-how-to-automate-gem-bid-tracking-whatsapp-alerts-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "target": "chk-how-to-get-gem-portal-bid-alerts-on-whatsapp-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-how-to-get-gem-portal-bid-alerts-on-whatsapp-1",
+      "target": "vec-how-to-get-gem-portal-bid-alerts-on-whatsapp-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-resolving-gem-portal-catalog-upload-errors",
+      "target": "chk-resolving-gem-portal-catalog-upload-errors-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-resolving-gem-portal-catalog-upload-errors-1",
+      "target": "vec-resolving-gem-portal-catalog-upload-errors-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-ultimate-udyam-registration-gem-portal-exemptions",
+      "target": "chk-ultimate-udyam-registration-gem-portal-exemptions-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-ultimate-udyam-registration-gem-portal-exemptions-1",
+      "target": "vec-ultimate-udyam-registration-gem-portal-exemptions-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-emd-exemption-rules",
+      "target": "chk-emd-exemption-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-emd-exemption-rules-1",
+      "target": "vec-emd-exemption-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-emd-refund-process",
+      "target": "chk-emd-refund-process-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-emd-refund-process-1",
+      "target": "vec-emd-refund-process-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-emd-vs-security-deposit",
+      "target": "chk-emd-vs-security-deposit-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-emd-vs-security-deposit-1",
+      "target": "vec-emd-vs-security-deposit-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-emd-forfeiture-rules",
+      "target": "chk-emd-forfeiture-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-emd-forfeiture-rules-1",
+      "target": "vec-emd-forfeiture-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-what-is-l1-in-tender",
+      "target": "chk-what-is-l1-in-tender-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-what-is-l1-in-tender-1",
+      "target": "vec-what-is-l1-in-tender-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-l1-vs-qcbs",
+      "target": "chk-l1-vs-qcbs-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-l1-vs-qcbs-1",
+      "target": "vec-l1-vs-qcbs-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-technical-evaluation-process",
+      "target": "chk-technical-evaluation-process-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-technical-evaluation-process-1",
+      "target": "vec-technical-evaluation-process-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-financial-bid-evaluation",
+      "target": "chk-financial-bid-evaluation-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-financial-bid-evaluation-1",
+      "target": "vec-financial-bid-evaluation-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-reasons-for-bid-rejection",
+      "target": "chk-reasons-for-bid-rejection-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-reasons-for-bid-rejection-1",
+      "target": "vec-reasons-for-bid-rejection-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-bid-participation-rules",
+      "target": "chk-bid-participation-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-bid-participation-rules-1",
+      "target": "vec-bid-participation-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-bid-splitting-rules",
+      "target": "chk-bid-splitting-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-bid-splitting-rules-1",
+      "target": "vec-bid-splitting-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-common-errors",
+      "target": "chk-common-errors-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-common-errors-1",
+      "target": "vec-common-errors-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-complete-gem-registration-guide",
+      "target": "chk-complete-gem-registration-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-complete-gem-registration-guide-1",
+      "target": "vec-complete-gem-registration-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-cppp-portal-registration-tender-search",
+      "target": "chk-cppp-portal-registration-tender-search-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-cppp-portal-registration-tender-search-1",
+      "target": "vec-cppp-portal-registration-tender-search-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-cpv-code-guide",
+      "target": "chk-cpv-code-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-cpv-code-guide-1",
+      "target": "vec-cpv-code-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-daily-tender-monitoring",
+      "target": "chk-daily-tender-monitoring-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-daily-tender-monitoring-1",
+      "target": "vec-daily-tender-monitoring-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-documents-required",
+      "target": "chk-documents-required-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-documents-required-1",
+      "target": "vec-documents-required-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-earnest-money-deposit",
+      "target": "chk-earnest-money-deposit-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-earnest-money-deposit-1",
+      "target": "vec-earnest-money-deposit-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-faqs",
+      "target": "chk-faqs-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-faqs-1",
+      "target": "vec-faqs-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-fees-explained",
+      "target": "chk-fees-explained-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-fees-explained-1",
+      "target": "vec-fees-explained-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-bank-account-change-kaise-kare",
+      "target": "chk-gem-bank-account-change-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-bank-account-change-kaise-kare-1",
+      "target": "vec-gem-bank-account-change-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-bidding-fees",
+      "target": "chk-gem-bidding-fees-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-bidding-fees-1",
+      "target": "vec-gem-bidding-fees-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-bidding-rules-handbook",
+      "target": "chk-gem-bidding-rules-handbook-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-bidding-rules-handbook-1",
+      "target": "vec-gem-bidding-rules-handbook-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-boq-excel-sheet-upload-errors",
+      "target": "chk-gem-boq-excel-sheet-upload-errors-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-boq-excel-sheet-upload-errors-1",
+      "target": "vec-gem-boq-excel-sheet-upload-errors-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-catalog-rejected-reasons",
+      "target": "chk-gem-catalog-rejected-reasons-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-catalog-rejected-reasons-1",
+      "target": "vec-gem-catalog-rejected-reasons-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-catalogue-upload-kaise-kare",
+      "target": "chk-gem-catalogue-upload-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-catalogue-upload-kaise-kare-1",
+      "target": "vec-gem-catalogue-upload-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-category-search",
+      "target": "chk-gem-category-search-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-category-search-1",
+      "target": "vec-gem-category-search-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-company-profile-edit-kaise-kare",
+      "target": "chk-gem-company-profile-edit-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-company-profile-edit-kaise-kare-1",
+      "target": "vec-gem-company-profile-edit-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-consignee-receipt-process",
+      "target": "chk-gem-consignee-receipt-process-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-consignee-receipt-process-1",
+      "target": "vec-gem-consignee-receipt-process-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-crac-kaise-generate-hota-hai",
+      "target": "chk-gem-crac-kaise-generate-hota-hai-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-crac-kaise-generate-hota-hai-1",
+      "target": "vec-gem-crac-kaise-generate-hota-hai-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-custom-bid-specifications-rules",
+      "target": "chk-gem-custom-bid-specifications-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-custom-bid-specifications-rules-1",
+      "target": "vec-gem-custom-bid-specifications-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-email-mobile-number-change",
+      "target": "chk-gem-email-mobile-number-change-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-email-mobile-number-change-1",
+      "target": "vec-gem-email-mobile-number-change-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-epbg-bank-guarantee-rules-refund",
+      "target": "chk-gem-epbg-bank-guarantee-rules-refund-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-epbg-bank-guarantee-rules-refund-1",
+      "target": "vec-gem-epbg-bank-guarantee-rules-refund-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-incident-management-show-cause-reply",
+      "target": "chk-gem-incident-management-show-cause-reply-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-incident-management-show-cause-reply-1",
+      "target": "vec-gem-incident-management-show-cause-reply-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-invoice-generate-kaise-kare",
+      "target": "chk-gem-invoice-generate-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-invoice-generate-kaise-kare-1",
+      "target": "vec-gem-invoice-generate-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-joint-venture-consortium-bidding",
+      "target": "chk-gem-joint-venture-consortium-bidding-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-joint-venture-consortium-bidding-1",
+      "target": "vec-gem-joint-venture-consortium-bidding-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-l1-price-matching-counter-offer",
+      "target": "chk-gem-l1-price-matching-counter-offer-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-l1-price-matching-counter-offer-1",
+      "target": "vec-gem-l1-price-matching-counter-offer-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-login-kaise-kare",
+      "target": "chk-gem-login-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-login-kaise-kare-1",
+      "target": "vec-gem-login-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-order-accept-kaise-kare",
+      "target": "chk-gem-order-accept-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-order-accept-kaise-kare-1",
+      "target": "vec-gem-order-accept-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-order-cancel-rules",
+      "target": "chk-gem-order-cancel-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-order-cancel-rules-1",
+      "target": "vec-gem-order-cancel-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-order-delivery-update-kaise-kare",
+      "target": "chk-gem-order-delivery-update-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-order-delivery-update-kaise-kare-1",
+      "target": "vec-gem-order-delivery-update-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-payment-kab-milta-hai",
+      "target": "chk-gem-payment-kab-milta-hai-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-payment-kab-milta-hai-1",
+      "target": "vec-gem-payment-kab-milta-hai-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-payment-status-kaise-check-kare",
+      "target": "chk-gem-payment-status-kaise-check-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-payment-status-kaise-check-kare-1",
+      "target": "vec-gem-payment-status-kaise-check-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-product-approval-time",
+      "target": "chk-gem-product-approval-time-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-product-approval-time-1",
+      "target": "vec-gem-product-approval-time-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-profile-update-kaise-kare",
+      "target": "chk-gem-profile-update-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-profile-update-kaise-kare-1",
+      "target": "vec-gem-profile-update-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-registration-kaise-kare",
+      "target": "chk-gem-registration-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-registration-kaise-kare-1",
+      "target": "vec-gem-registration-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-return-replacement-rules",
+      "target": "chk-gem-return-replacement-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-return-replacement-rules-1",
+      "target": "vec-gem-return-replacement-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-search-filters-explained",
+      "target": "chk-gem-search-filters-explained-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-search-filters-explained-1",
+      "target": "vec-gem-search-filters-explained-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-seller-dashboard-kaise-use-kare",
+      "target": "chk-gem-seller-dashboard-kaise-use-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-seller-dashboard-kaise-use-kare-1",
+      "target": "vec-gem-seller-dashboard-kaise-use-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-seller-performance-dashboard",
+      "target": "chk-gem-seller-performance-dashboard-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-seller-performance-dashboard-1",
+      "target": "vec-gem-seller-performance-dashboard-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-seller-rating-improve-kaise-kare",
+      "target": "chk-gem-seller-rating-improve-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-seller-rating-improve-kaise-kare-1",
+      "target": "vec-gem-seller-rating-improve-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-seller-registration-kaise-kare",
+      "target": "chk-gem-seller-registration-kaise-kare-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-seller-registration-kaise-kare-1",
+      "target": "vec-gem-seller-registration-kaise-kare-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-service-contract-bidding-rules",
+      "target": "chk-gem-service-contract-bidding-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-service-contract-bidding-rules-1",
+      "target": "vec-gem-service-contract-bidding-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-tender-search-guide",
+      "target": "chk-gem-tender-search-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-tender-search-guide-1",
+      "target": "vec-gem-tender-search-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-warranty-claim-process",
+      "target": "chk-gem-warranty-claim-process-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-warranty-claim-process-1",
+      "target": "vec-gem-warranty-claim-process-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-how-to-search-gem-tenders",
+      "target": "chk-how-to-search-gem-tenders-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-how-to-search-gem-tenders-1",
+      "target": "vec-how-to-search-gem-tenders-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-ireps-railway-tender-bidding-guide",
+      "target": "chk-ireps-railway-tender-bidding-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-ireps-railway-tender-bidding-guide-1",
+      "target": "vec-ireps-railway-tender-bidding-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-keyword-search-tips",
+      "target": "chk-keyword-search-tips-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-keyword-search-tips-1",
+      "target": "vec-keyword-search-tips-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-manufacturers-registration",
+      "target": "chk-manufacturers-registration-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-manufacturers-registration-1",
+      "target": "vec-manufacturers-registration-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-ministry-department-search",
+      "target": "chk-ministry-department-search-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-ministry-department-search-1",
+      "target": "vec-ministry-department-search-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-msme-registration",
+      "target": "chk-msme-registration-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-msme-registration-1",
+      "target": "vec-msme-registration-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-profile-completion",
+      "target": "chk-profile-completion-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-profile-completion-1",
+      "target": "vec-profile-completion-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-representation-writing",
+      "target": "chk-representation-writing-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-representation-writing-1",
+      "target": "vec-representation-writing-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-restrictive-specifications",
+      "target": "chk-restrictive-specifications-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-restrictive-specifications-1",
+      "target": "vec-restrictive-specifications-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-reverse-auction-rules",
+      "target": "chk-reverse-auction-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-reverse-auction-rules-1",
+      "target": "vec-reverse-auction-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-saved-search-and-alerts",
+      "target": "chk-saved-search-and-alerts-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-saved-search-and-alerts-1",
+      "target": "vec-saved-search-and-alerts-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-single-bid-compliance",
+      "target": "chk-single-bid-compliance-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-single-bid-compliance-1",
+      "target": "vec-single-bid-compliance-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-state-procurement-up-tenders-gem-comparison",
+      "target": "chk-state-procurement-up-tenders-gem-comparison-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-state-procurement-up-tenders-gem-comparison-1",
+      "target": "vec-state-procurement-up-tenders-gem-comparison-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-state-wise-tender-search",
+      "target": "chk-state-wise-tender-search-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-state-wise-tender-search-1",
+      "target": "vec-state-wise-tender-search-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-tender-evaluation-stages",
+      "target": "chk-tender-evaluation-stages-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-tender-evaluation-stages-1",
+      "target": "vec-tender-evaluation-stages-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-timeframe",
+      "target": "chk-timeframe-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-timeframe-1",
+      "target": "vec-timeframe-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-traders-registration",
+      "target": "chk-traders-registration-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-traders-registration-1",
+      "target": "vec-traders-registration-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-use-ai-summarize-government-tender-pdfs",
+      "target": "chk-use-ai-summarize-government-tender-pdfs-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-use-ai-summarize-government-tender-pdfs-1",
+      "target": "vec-use-ai-summarize-government-tender-pdfs-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-oem-panel-registration-guide",
+      "target": "chk-gem-oem-panel-registration-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-oem-panel-registration-guide-1",
+      "target": "vec-gem-oem-panel-registration-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-catalog-rejected-reasons-complete-guide",
+      "target": "chk-gem-catalog-rejected-reasons-complete-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-catalog-rejected-reasons-complete-guide-1",
+      "target": "vec-gem-catalog-rejected-reasons-complete-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-oem-authorization-letter-format",
+      "target": "chk-gem-oem-authorization-letter-format-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-oem-authorization-letter-format-1",
+      "target": "vec-gem-oem-authorization-letter-format-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-custom-item-creation-rules-2026",
+      "target": "chk-gem-custom-item-creation-rules-2026-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-custom-item-creation-rules-2026-1",
+      "target": "vec-gem-custom-item-creation-rules-2026-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-generic-vs-brand-catalog-guide",
+      "target": "chk-gem-generic-vs-brand-catalog-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-generic-vs-brand-catalog-guide-1",
+      "target": "vec-gem-generic-vs-brand-catalog-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-boq-excel-upload-errors-guide",
+      "target": "chk-gem-boq-excel-upload-errors-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-boq-excel-upload-errors-guide-1",
+      "target": "vec-gem-boq-excel-upload-errors-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-hsn-code-gst-mapping-guide",
+      "target": "chk-gem-hsn-code-gst-mapping-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-hsn-code-gst-mapping-guide-1",
+      "target": "vec-gem-hsn-code-gst-mapping-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-product-cloning-duplication-guide",
+      "target": "chk-gem-product-cloning-duplication-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-product-cloning-duplication-guide-1",
+      "target": "vec-gem-product-cloning-duplication-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-vendor-assessment-rules-exemption-guide",
+      "target": "chk-gem-vendor-assessment-rules-exemption-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-vendor-assessment-rules-exemption-guide-1",
+      "target": "vec-gem-vendor-assessment-rules-exemption-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-category-approval-time-guide",
+      "target": "chk-gem-category-approval-time-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-category-approval-time-guide-1",
+      "target": "vec-gem-category-approval-time-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-reverse-auction-complete-guide",
+      "target": "chk-gem-reverse-auction-complete-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-reverse-auction-complete-guide-1",
+      "target": "vec-gem-reverse-auction-complete-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-bid-participation-fees-guide",
+      "target": "chk-gem-bid-participation-fees-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-bid-participation-fees-guide-1",
+      "target": "vec-gem-bid-participation-fees-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-contract-performance-security-guide",
+      "target": "chk-gem-contract-performance-security-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-contract-performance-security-guide-1",
+      "target": "vec-gem-contract-performance-security-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-payment-cycle-complete-guide",
+      "target": "chk-gem-payment-cycle-complete-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-payment-cycle-complete-guide-1",
+      "target": "vec-gem-payment-cycle-complete-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-order-fulfillment-guide",
+      "target": "chk-gem-order-fulfillment-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-order-fulfillment-guide-1",
+      "target": "vec-gem-order-fulfillment-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-inspection-acceptance-guide",
+      "target": "chk-gem-inspection-acceptance-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-inspection-acceptance-guide-1",
+      "target": "vec-gem-inspection-acceptance-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-liquidated-damages-rules",
+      "target": "chk-gem-liquidated-damages-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-liquidated-damages-rules-1",
+      "target": "vec-gem-liquidated-damages-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-contract-termination-rules",
+      "target": "chk-gem-contract-termination-rules-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-contract-termination-rules-1",
+      "target": "vec-gem-contract-termination-rules-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-seller-rating-performance-guide",
+      "target": "chk-gem-seller-rating-performance-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-seller-rating-performance-guide-1",
+      "target": "vec-gem-seller-rating-performance-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "doc-gem-buyer-seller-dispute-resolution-guide",
+      "target": "chk-gem-buyer-seller-dispute-resolution-guide-1",
+      "value": 1,
+      "type": "DOCUMENT_CHUNK"
+    },
+    {
+      "source": "chk-gem-buyer-seller-dispute-resolution-guide-1",
+      "target": "vec-gem-buyer-seller-dispute-resolution-guide-1",
+      "value": 1,
+      "type": "CHUNK_VECTOR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-udyam-error",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-partnership-docs",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-portal-direct-purchase-limit-rules-2026",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-bidding-mistakes-msme-tenders",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-what-is-emd-in-gem",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-how-to-claim-emd-exemption-gem-portal-bids",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-resolving-gem-portal-catalog-upload-errors",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-ultimate-udyam-registration-gem-portal-exemptions",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-emd-exemption-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-emd-refund-process",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-emd-vs-security-deposit",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-emd-forfeiture-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-what-is-l1-in-tender",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-l1-vs-qcbs",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-technical-evaluation-process",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-financial-bid-evaluation",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-reasons-for-bid-rejection",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-bid-participation-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-bid-splitting-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-common-errors",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-complete-gem-registration-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-Government Procurement Hub",
+      "target": "art-cppp-portal-registration-tender-search",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-cpv-code-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-daily-tender-monitoring",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-documents-required",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-earnest-money-deposit",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-faqs",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-fees-explained",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-bank-account-change-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-bidding-fees",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-bidding-rules-handbook",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-boq-excel-sheet-upload-errors",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalog-rejected-reasons",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalogue-upload-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-category-search",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-gem-company-profile-edit-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-consignee-receipt-process",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-crac-kaise-generate-hota-hai",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-custom-bid-specifications-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-gem-email-mobile-number-change",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-epbg-bank-guarantee-rules-refund",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-incident-management-show-cause-reply",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-invoice-generate-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-joint-venture-consortium-bidding",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-l1-price-matching-counter-offer",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Account Management",
+      "target": "art-gem-login-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-accept-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-cancel-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-delivery-update-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-payment-kab-milta-hai",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-payment-status-kaise-check-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-product-approval-time",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-gem-profile-update-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Seller Onboarding",
+      "target": "art-gem-registration-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-return-replacement-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-search-filters-explained",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-registration",
+      "target": "art-gem-seller-dashboard-kaise-use-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-seller-performance-dashboard",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-seller-rating-improve-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Seller Onboarding",
+      "target": "art-gem-seller-registration-kaise-kare",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-service-contract-bidding-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-tender-search-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-warranty-claim-process",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-how-to-search-gem-tenders",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-Government Procurement Hub",
+      "target": "art-ireps-railway-tender-bidding-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-keyword-search-tips",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-manufacturers-registration",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-ministry-department-search",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-msme-registration",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-profile-completion",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-representation-writing",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-restrictive-specifications",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-reverse-auction-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-saved-search-and-alerts",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-single-bid-compliance",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-government-procurement",
+      "target": "art-state-procurement-up-tenders-gem-comparison",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-state-wise-tender-search",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Bidding",
+      "target": "art-tender-evaluation-stages",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-timeframe",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-GeM Registration",
+      "target": "art-traders-registration",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-Automation",
+      "target": "art-use-ai-summarize-government-tender-pdfs",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-oem-panel-registration-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalog-rejected-reasons-complete-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-oem-authorization-letter-format",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-custom-item-creation-rules-2026",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-generic-vs-brand-catalog-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-boq-excel-upload-errors-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-hsn-code-gst-mapping-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-product-cloning-duplication-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-vendor-assessment-rules-exemption-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-catalog-management",
+      "target": "art-gem-category-approval-time-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-reverse-auction-complete-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-bid-participation-fees-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-contract-performance-security-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-payment-cycle-complete-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-order-fulfillment-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-gem-bidding",
+      "target": "art-gem-inspection-acceptance-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-liquidated-damages-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-contract-termination-rules",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-seller-rating-performance-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "hub-compliance-policy",
+      "target": "art-gem-buyer-seller-dispute-resolution-guide",
+      "value": 1,
+      "type": "HUB_PILLAR"
+    },
+    {
+      "source": "plg-seo-enhancer",
+      "target": "plg-core-validator",
+      "value": 1,
+      "type": "PLUGIN_DEPENDENCY"
+    },
+    {
+      "source": "mod-parser",
+      "target": "mod-scanner",
+      "value": 1,
+      "type": "DEPENDENCY"
+    },
+    {
+      "source": "mod-knowledge",
+      "target": "mod-parser",
+      "value": 1,
+      "type": "DEPENDENCY"
+    },
+    {
+      "source": "mod-optimizer",
+      "target": "mod-knowledge",
+      "value": 1,
+      "type": "DEPENDENCY"
+    }
+  ]
+}

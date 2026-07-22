@@ -1,0 +1,1694 @@
+{
+  "nodes": [
+    {
+      "id": "hub-gem-registration",
+      "type": "HUB",
+      "label": "gem-registration Hub",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding",
+      "type": "HUB",
+      "label": "gem-bidding Hub",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management",
+      "type": "HUB",
+      "label": "catalog-management Hub",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy",
+      "type": "HUB",
+      "label": "compliance-policy Hub",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "hub-government-procurement",
+      "type": "HUB",
+      "label": "government-procurement Hub",
+      "degree": 0,
+      "pageRank": 0.0003,
+      "metadata": {}
+    },
+    {
+      "id": "art-udyam-error",
+      "type": "ARTICLE",
+      "label": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-partnership-docs",
+      "type": "ARTICLE",
+      "label": "GeM Registration Documents Required for Partnership Firms",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-portal-direct-purchase-limit-rules-2026",
+      "type": "ARTICLE",
+      "label": "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-bidding-mistakes-msme-tenders",
+      "type": "ARTICLE",
+      "label": "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-what-is-emd-in-gem",
+      "type": "ARTICLE",
+      "label": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-how-to-claim-emd-exemption-gem-portal-bids",
+      "type": "ARTICLE",
+      "label": "GeM Portal Bids Par EMD Exemption Kaise Claim Karein",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "type": "ARTICLE",
+      "label": "How to Automate GeM Bid Tracking & WhatsApp Alerts",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "type": "ARTICLE",
+      "label": "Get Real-Time GeM Portal Bid Alerts on WhatsApp",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-resolving-gem-portal-catalog-upload-errors",
+      "type": "ARTICLE",
+      "label": "Resolving Catalog Upload and Generic Brand Errors on GeM",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-ultimate-udyam-registration-gem-portal-exemptions",
+      "type": "ARTICLE",
+      "label": "Ultimate Udyam Registration & GeM Portal Exemptions Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-emd-exemption-rules",
+      "type": "ARTICLE",
+      "label": "EMD Exemption Rules on GeM Portal â€” Complete Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-emd-refund-process",
+      "type": "ARTICLE",
+      "label": "EMD Refund Process on GeM â€” Timelines & Tracking Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-emd-vs-security-deposit",
+      "type": "ARTICLE",
+      "label": "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-emd-forfeiture-rules",
+      "type": "ARTICLE",
+      "label": "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-what-is-l1-in-tender",
+      "type": "ARTICLE",
+      "label": "What is L1 in Tender? Bid Evaluation & Pricing Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-l1-vs-qcbs",
+      "type": "ARTICLE",
+      "label": "L1 vs QCBS: Understanding Tender Evaluation Methods",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-technical-evaluation-process",
+      "type": "ARTICLE",
+      "label": "Technical Evaluation Process & Bid Scrutiny on GeM Portal",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-financial-bid-evaluation",
+      "type": "ARTICLE",
+      "label": "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-reasons-for-bid-rejection",
+      "type": "ARTICLE",
+      "label": "10 Common Reasons for Bid Rejection on GeM Portal",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-bid-participation-rules",
+      "type": "ARTICLE",
+      "label": "GeM Bid Participation Eligibility Criteria (2026 Guide)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-bid-splitting-rules",
+      "type": "ARTICLE",
+      "label": "GeM Bid Splitting Rules & GFR Compliance Guidelines",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-common-errors",
+      "type": "ARTICLE",
+      "label": "Common GeM Registration Errors and Solutions: Fix Blockers Instantly",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-complete-gem-registration-guide",
+      "type": "ARTICLE",
+      "label": "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-cppp-portal-registration-tender-search",
+      "type": "ARTICLE",
+      "label": "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-cpv-code-guide",
+      "type": "ARTICLE",
+      "label": "CPV Code Guide for GeM Sellers: Categorizing Tenders",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-daily-tender-monitoring",
+      "type": "ARTICLE",
+      "label": "Daily GeM Tender Monitoring Best Practices for MSMEs",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-documents-required",
+      "type": "ARTICLE",
+      "label": "Documents Required for GeM Registration (2026 Checklist)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-earnest-money-deposit",
+      "type": "ARTICLE",
+      "label": "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-faqs",
+      "type": "ARTICLE",
+      "label": "Frequently Asked Questions About GeM Registration (2026 Q&A)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-fees-explained",
+      "type": "ARTICLE",
+      "label": "GeM Registration Fees Explained: Caution Money and Charges",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-bank-account-change-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-bidding-fees",
+      "type": "ARTICLE",
+      "label": "GeM Bidding Fees: Transaction Charges & Seller Commissions",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-bidding-rules-handbook",
+      "type": "ARTICLE",
+      "label": "GeM Bidding Rules & Compliance Handbook (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-boq-excel-sheet-upload-errors",
+      "type": "ARTICLE",
+      "label": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-catalog-rejected-reasons",
+      "type": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-catalogue-upload-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-category-search",
+      "type": "ARTICLE",
+      "label": "How to Search GeM Tenders by Product Category",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-company-profile-edit-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-consignee-receipt-process",
+      "type": "ARTICLE",
+      "label": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-crac-kaise-generate-hota-hai",
+      "type": "ARTICLE",
+      "label": "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-custom-bid-specifications-rules",
+      "type": "ARTICLE",
+      "label": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-email-mobile-number-change",
+      "type": "ARTICLE",
+      "label": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-epbg-bank-guarantee-rules-refund",
+      "type": "ARTICLE",
+      "label": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-incident-management-show-cause-reply",
+      "type": "ARTICLE",
+      "label": "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-invoice-generate-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-joint-venture-consortium-bidding",
+      "type": "ARTICLE",
+      "label": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-l1-price-matching-counter-offer",
+      "type": "ARTICLE",
+      "label": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-login-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-order-accept-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-order-cancel-rules",
+      "type": "ARTICLE",
+      "label": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-order-delivery-update-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-payment-kab-milta-hai",
+      "type": "ARTICLE",
+      "label": "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-payment-status-kaise-check-kare",
+      "type": "ARTICLE",
+      "label": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-product-approval-time",
+      "type": "ARTICLE",
+      "label": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-profile-update-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-registration-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-return-replacement-rules",
+      "type": "ARTICLE",
+      "label": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-search-filters-explained",
+      "type": "ARTICLE",
+      "label": "GeM Search Filters Explained: Narrowing Active Tenders",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-seller-dashboard-kaise-use-kare",
+      "type": "ARTICLE",
+      "label": "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-seller-performance-dashboard",
+      "type": "ARTICLE",
+      "label": "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-seller-rating-improve-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-seller-registration-kaise-kare",
+      "type": "ARTICLE",
+      "label": "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-service-contract-bidding-rules",
+      "type": "ARTICLE",
+      "label": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-tender-search-guide",
+      "type": "ARTICLE",
+      "label": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-warranty-claim-process",
+      "type": "ARTICLE",
+      "label": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-how-to-search-gem-tenders",
+      "type": "ARTICLE",
+      "label": "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-ireps-railway-tender-bidding-guide",
+      "type": "ARTICLE",
+      "label": "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-keyword-search-tips",
+      "type": "ARTICLE",
+      "label": "Best Keyword Search Tips for Finding GeM Tenders",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-manufacturers-registration",
+      "type": "ARTICLE",
+      "label": "GeM Registration for Manufacturers: Complete OEM Guide",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-ministry-department-search",
+      "type": "ARTICLE",
+      "label": "How to Search GeM Tenders by Ministry and Department",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-msme-registration",
+      "type": "ARTICLE",
+      "label": "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-profile-completion",
+      "type": "ARTICLE",
+      "label": "How to Complete Your GeM Seller Profile (100% Checklist)",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-representation-writing",
+      "type": "ARTICLE",
+      "label": "How to Write Technical Representations for Disqualified GeM Bids",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-restrictive-specifications",
+      "type": "ARTICLE",
+      "label": "Appealing Restrictive Tender Specifications on GeM",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-reverse-auction-rules",
+      "type": "ARTICLE",
+      "label": "GeM Reverse Auction (RA) Rules and Bidding Strategies",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-saved-search-and-alerts",
+      "type": "ARTICLE",
+      "label": "Using Saved Searches and Tender Alerts on GeM",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-single-bid-compliance",
+      "type": "ARTICLE",
+      "label": "GeM Single Bid Evaluation and GFR Compliance Rules",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-state-procurement-up-tenders-gem-comparison",
+      "type": "ARTICLE",
+      "label": "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)",
+      "degree": 0,
+      "pageRank": 0.0006,
+      "metadata": {}
+    },
+    {
+      "id": "art-state-wise-tender-search",
+      "type": "ARTICLE",
+      "label": "How to Search State-wise Government Tenders on GeM",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-tender-evaluation-stages",
+      "type": "ARTICLE",
+      "label": "GeM Tender Evaluation Stages: Technical & Financial Opens",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-timeframe",
+      "type": "ARTICLE",
+      "label": "How Long Does GeM Registration Take: Step-by-Step Timelines",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-traders-registration",
+      "type": "ARTICLE",
+      "label": "GeM Registration for Traders: Resellers and Distributors",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-use-ai-summarize-government-tender-pdfs",
+      "type": "ARTICLE",
+      "label": "How to Use AI to Summarize Government Tender PDFs in 30 Seconds",
+      "degree": 0,
+      "pageRank": 0,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-oem-panel-registration-guide",
+      "type": "ARTICLE",
+      "label": "GeM OEM Panel Registration Complete Guide (2026)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-catalog-rejected-reasons-complete-guide",
+      "type": "ARTICLE",
+      "label": "GeM Catalog Rejected Reasons & How to Fix Them",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-oem-authorization-letter-format",
+      "type": "ARTICLE",
+      "label": "GeM OEM Authorization Letter Format & Approval Tips",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-custom-item-creation-rules-2026",
+      "type": "ARTICLE",
+      "label": "GeM Custom Item Creation Rules & BOQ Upload Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-generic-vs-brand-catalog-guide",
+      "type": "ARTICLE",
+      "label": "Generic Product vs Brand Product on GeM: What to Choose?",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-boq-excel-upload-errors-guide",
+      "type": "ARTICLE",
+      "label": "GeM BOQ Upload Errors & Excel Validation Fixes",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-hsn-code-gst-mapping-guide",
+      "type": "ARTICLE",
+      "label": "GeM HSN Code Mapping & GST Slab Approval Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-product-cloning-duplication-guide",
+      "type": "ARTICLE",
+      "label": "GeM Product Clone Guide: How to Duplicate Catalog Fast",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-vendor-assessment-rules-exemption-guide",
+      "type": "ARTICLE",
+      "label": "GeM Vendor Assessment Rules & QCI Exemption Criteria",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-category-approval-time-guide",
+      "type": "ARTICLE",
+      "label": "GeM Category Approval Time & Escalation Process",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-reverse-auction-complete-guide",
+      "type": "ARTICLE",
+      "label": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-bid-participation-fees-guide",
+      "type": "ARTICLE",
+      "label": "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-contract-performance-security-guide",
+      "type": "ARTICLE",
+      "label": "GeM Contract Performance Security (ePBG) Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-payment-cycle-complete-guide",
+      "type": "ARTICLE",
+      "label": "GeM Payment Cycle Complete Guide: Timeline & Process",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-order-fulfillment-guide",
+      "type": "ARTICLE",
+      "label": "GeM Order Fulfillment Guide: Generation to Dispatch",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-inspection-acceptance-guide",
+      "type": "ARTICLE",
+      "label": "GeM Inspection & Acceptance Guide (CRAC Rules)",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-liquidated-damages-rules",
+      "type": "ARTICLE",
+      "label": "GeM Liquidated Damages (LD) Rules Explained",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-contract-termination-rules",
+      "type": "ARTICLE",
+      "label": "GeM Contract Termination & Cancellation Rules Explained",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-seller-rating-performance-guide",
+      "type": "ARTICLE",
+      "label": "GeM Seller Rating & Performance Score Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    },
+    {
+      "id": "art-gem-buyer-seller-dispute-resolution-guide",
+      "type": "ARTICLE",
+      "label": "GeM Buyer Seller Dispute Resolution Guide",
+      "degree": 0,
+      "pageRank": 0.0004,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "hub-gem-registration->art-udyam-error:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-udyam-error",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-partnership-docs:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-partnership-docs",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-portal-direct-purchase-limit-rules-2026:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-portal-direct-purchase-limit-rules-2026",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-bidding-mistakes-msme-tenders:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-bidding-mistakes-msme-tenders",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-what-is-emd-in-gem:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-what-is-emd-in-gem",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-how-to-claim-emd-exemption-gem-portal-bids:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-how-to-claim-emd-exemption-gem-portal-bids",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-how-to-automate-gem-bid-tracking-whatsapp-alerts:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-how-to-automate-gem-bid-tracking-whatsapp-alerts",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-how-to-get-gem-portal-bid-alerts-on-whatsapp:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-how-to-get-gem-portal-bid-alerts-on-whatsapp",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-resolving-gem-portal-catalog-upload-errors:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-resolving-gem-portal-catalog-upload-errors",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-ultimate-udyam-registration-gem-portal-exemptions:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-ultimate-udyam-registration-gem-portal-exemptions",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-emd-exemption-rules:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-emd-exemption-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-emd-refund-process:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-emd-refund-process",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-emd-vs-security-deposit:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-emd-vs-security-deposit",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-emd-forfeiture-rules:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-emd-forfeiture-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-what-is-l1-in-tender:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-what-is-l1-in-tender",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-l1-vs-qcbs:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-l1-vs-qcbs",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-technical-evaluation-process:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-technical-evaluation-process",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-financial-bid-evaluation:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-financial-bid-evaluation",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-reasons-for-bid-rejection:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-reasons-for-bid-rejection",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-bid-participation-rules:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-bid-participation-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-bid-splitting-rules:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-bid-splitting-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-common-errors:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-common-errors",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-complete-gem-registration-guide:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-complete-gem-registration-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-Government Procurement Hub->art-cppp-portal-registration-tender-search:HUB_PILLAR",
+      "source": "hub-Government Procurement Hub",
+      "target": "art-cppp-portal-registration-tender-search",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-cpv-code-guide:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-cpv-code-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-daily-tender-monitoring:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-daily-tender-monitoring",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-documents-required:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-documents-required",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-earnest-money-deposit:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-earnest-money-deposit",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-faqs:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-faqs",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-fees-explained:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-fees-explained",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-bank-account-change-kaise-kare:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-bank-account-change-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-gem-bidding-fees:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-bidding-fees",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-gem-bidding-rules-handbook:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-bidding-rules-handbook",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-boq-excel-sheet-upload-errors:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-boq-excel-sheet-upload-errors",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-catalog-rejected-reasons:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalog-rejected-reasons",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-catalogue-upload-kaise-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalogue-upload-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-gem-category-search:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-category-search",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-gem-company-profile-edit-kaise-kare:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-gem-company-profile-edit-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-consignee-receipt-process:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-consignee-receipt-process",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-crac-kaise-generate-hota-hai:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-crac-kaise-generate-hota-hai",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-custom-bid-specifications-rules:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-custom-bid-specifications-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-gem-email-mobile-number-change:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-gem-email-mobile-number-change",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-epbg-bank-guarantee-rules-refund:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-epbg-bank-guarantee-rules-refund",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-incident-management-show-cause-reply:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-incident-management-show-cause-reply",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-invoice-generate-kaise-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-invoice-generate-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-joint-venture-consortium-bidding:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-joint-venture-consortium-bidding",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-l1-price-matching-counter-offer:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-l1-price-matching-counter-offer",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Account Management->art-gem-login-kaise-kare:HUB_PILLAR",
+      "source": "hub-GeM Account Management",
+      "target": "art-gem-login-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-order-accept-kaise-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-accept-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-order-cancel-rules:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-cancel-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-order-delivery-update-kaise-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-order-delivery-update-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-payment-kab-milta-hai:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-payment-kab-milta-hai",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-payment-status-kaise-check-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-payment-status-kaise-check-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-product-approval-time:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-product-approval-time",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-gem-profile-update-kaise-kare:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-gem-profile-update-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Seller Onboarding->art-gem-registration-kaise-kare:HUB_PILLAR",
+      "source": "hub-GeM Seller Onboarding",
+      "target": "art-gem-registration-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-return-replacement-rules:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-return-replacement-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-gem-search-filters-explained:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-search-filters-explained",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-registration->art-gem-seller-dashboard-kaise-use-kare:HUB_PILLAR",
+      "source": "hub-gem-registration",
+      "target": "art-gem-seller-dashboard-kaise-use-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-seller-performance-dashboard:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-seller-performance-dashboard",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-seller-rating-improve-kaise-kare:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-seller-rating-improve-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Seller Onboarding->art-gem-seller-registration-kaise-kare:HUB_PILLAR",
+      "source": "hub-GeM Seller Onboarding",
+      "target": "art-gem-seller-registration-kaise-kare",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-service-contract-bidding-rules:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-service-contract-bidding-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-gem-tender-search-guide:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-gem-tender-search-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-warranty-claim-process:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-warranty-claim-process",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-how-to-search-gem-tenders:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-how-to-search-gem-tenders",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-Government Procurement Hub->art-ireps-railway-tender-bidding-guide:HUB_PILLAR",
+      "source": "hub-Government Procurement Hub",
+      "target": "art-ireps-railway-tender-bidding-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-keyword-search-tips:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-keyword-search-tips",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-manufacturers-registration:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-manufacturers-registration",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-ministry-department-search:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-ministry-department-search",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-msme-registration:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-msme-registration",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-profile-completion:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-profile-completion",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-representation-writing:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-representation-writing",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-restrictive-specifications:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-restrictive-specifications",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-reverse-auction-rules:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-reverse-auction-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-saved-search-and-alerts:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-saved-search-and-alerts",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-single-bid-compliance:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-single-bid-compliance",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-government-procurement->art-state-procurement-up-tenders-gem-comparison:HUB_PILLAR",
+      "source": "hub-government-procurement",
+      "target": "art-state-procurement-up-tenders-gem-comparison",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-state-wise-tender-search:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-state-wise-tender-search",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Bidding->art-tender-evaluation-stages:HUB_PILLAR",
+      "source": "hub-GeM Bidding",
+      "target": "art-tender-evaluation-stages",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-timeframe:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-timeframe",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-GeM Registration->art-traders-registration:HUB_PILLAR",
+      "source": "hub-GeM Registration",
+      "target": "art-traders-registration",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-Automation->art-use-ai-summarize-government-tender-pdfs:HUB_PILLAR",
+      "source": "hub-Automation",
+      "target": "art-use-ai-summarize-government-tender-pdfs",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-oem-panel-registration-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-oem-panel-registration-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-catalog-rejected-reasons-complete-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-catalog-rejected-reasons-complete-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-oem-authorization-letter-format:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-oem-authorization-letter-format",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-custom-item-creation-rules-2026:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-custom-item-creation-rules-2026",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-generic-vs-brand-catalog-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-generic-vs-brand-catalog-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-boq-excel-upload-errors-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-boq-excel-upload-errors-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-hsn-code-gst-mapping-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-hsn-code-gst-mapping-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-product-cloning-duplication-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-product-cloning-duplication-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-vendor-assessment-rules-exemption-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-vendor-assessment-rules-exemption-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-catalog-management->art-gem-category-approval-time-guide:HUB_PILLAR",
+      "source": "hub-catalog-management",
+      "target": "art-gem-category-approval-time-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-reverse-auction-complete-guide:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-reverse-auction-complete-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-bid-participation-fees-guide:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-bid-participation-fees-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-contract-performance-security-guide:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-contract-performance-security-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-payment-cycle-complete-guide:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-payment-cycle-complete-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-order-fulfillment-guide:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-order-fulfillment-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-gem-bidding->art-gem-inspection-acceptance-guide:HUB_PILLAR",
+      "source": "hub-gem-bidding",
+      "target": "art-gem-inspection-acceptance-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-liquidated-damages-rules:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-liquidated-damages-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-contract-termination-rules:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-contract-termination-rules",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-seller-rating-performance-guide:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-seller-rating-performance-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "hub-compliance-policy->art-gem-buyer-seller-dispute-resolution-guide:HUB_PILLAR",
+      "source": "hub-compliance-policy",
+      "target": "art-gem-buyer-seller-dispute-resolution-guide",
+      "type": "HUB_PILLAR",
+      "weight": 1,
+      "metadata": {}
+    }
+  ]
+}
