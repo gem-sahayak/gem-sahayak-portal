@@ -1,0 +1,185 @@
+{
+  "manifest": {
+    "name": "Enterprise Autonomous Reasoning & Planning Engine",
+    "version": "1.11.0",
+    "description": "Fact collection, constraint reasoning, evidence tracking, decision explanation & confidence scoring"
+  },
+  "verdict": "PASS",
+  "session": {
+    "facts": [
+      {
+        "id": "fact-1",
+        "key": "observerMode",
+        "value": true,
+        "source": "Constitution"
+      },
+      {
+        "id": "fact-2",
+        "key": "totalArticles",
+        "value": 103,
+        "source": "Registry"
+      },
+      {
+        "id": "fact-3",
+        "key": "importGuardActive",
+        "value": true,
+        "source": "ImportGuard"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "asm-1",
+        "statement": "Filesystem state remains immutable during dry run",
+        "valid": true
+      }
+    ],
+    "constraints": [
+      {
+        "id": "cst-1",
+        "name": "No Production Mutations",
+        "satisfied": true
+      },
+      {
+        "id": "cst-2",
+        "name": "Offline Execution Only",
+        "satisfied": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "evd-1",
+        "type": "FINGERPRINT_VERIFIED",
+        "confidence": 1
+      },
+      {
+        "id": "evd-2",
+        "type": "TEST_SUITES_PASSED",
+        "confidence": 1
+      }
+    ],
+    "confidenceScore": 0.9,
+    "graphData": {
+      "nodes": [
+        {
+          "id": "fact-1",
+          "type": "FACT",
+          "val": true
+        },
+        {
+          "id": "fact-2",
+          "type": "FACT",
+          "val": 103
+        },
+        {
+          "id": "fact-3",
+          "type": "FACT",
+          "val": true
+        },
+        {
+          "id": "cst-1",
+          "type": "CONSTRAINT",
+          "val": "No Production Mutations"
+        },
+        {
+          "id": "cst-2",
+          "type": "CONSTRAINT",
+          "val": "Offline Execution Only"
+        }
+      ],
+      "edges": []
+    }
+  },
+  "history": [
+    {
+      "sessionId": "rsn-luoycv",
+      "timestamp": "2026-07-22T14:49:24.677Z",
+      "session": {
+        "facts": [
+          {
+            "id": "fact-1",
+            "key": "observerMode",
+            "value": true,
+            "source": "Constitution"
+          },
+          {
+            "id": "fact-2",
+            "key": "totalArticles",
+            "value": 103,
+            "source": "Registry"
+          },
+          {
+            "id": "fact-3",
+            "key": "importGuardActive",
+            "value": true,
+            "source": "ImportGuard"
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "asm-1",
+            "statement": "Filesystem state remains immutable during dry run",
+            "valid": true
+          }
+        ],
+        "constraints": [
+          {
+            "id": "cst-1",
+            "name": "No Production Mutations",
+            "satisfied": true
+          },
+          {
+            "id": "cst-2",
+            "name": "Offline Execution Only",
+            "satisfied": true
+          }
+        ],
+        "evidence": [
+          {
+            "id": "evd-1",
+            "type": "FINGERPRINT_VERIFIED",
+            "confidence": 1
+          },
+          {
+            "id": "evd-2",
+            "type": "TEST_SUITES_PASSED",
+            "confidence": 1
+          }
+        ],
+        "confidenceScore": 0.9,
+        "graphData": {
+          "nodes": [
+            {
+              "id": "fact-1",
+              "type": "FACT",
+              "val": true
+            },
+            {
+              "id": "fact-2",
+              "type": "FACT",
+              "val": 103
+            },
+            {
+              "id": "fact-3",
+              "type": "FACT",
+              "val": true
+            },
+            {
+              "id": "cst-1",
+              "type": "CONSTRAINT",
+              "val": "No Production Mutations"
+            },
+            {
+              "id": "cst-2",
+              "type": "CONSTRAINT",
+              "val": "Offline Execution Only"
+            }
+          ],
+          "edges": []
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "sessionsCount": 1
+  }
+}

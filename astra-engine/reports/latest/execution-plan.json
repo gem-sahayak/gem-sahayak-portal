@@ -1,0 +1,14 @@
+{
+  "executionOrder": [
+    "scanner",
+    "registry",
+    "seo",
+    "graph",
+    "review",
+    "semantic",
+    "optimizer",
+    "knowledge",
+    "dashboard",
+    "explorer"
+  ]
+}

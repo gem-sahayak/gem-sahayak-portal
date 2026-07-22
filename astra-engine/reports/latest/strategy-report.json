@@ -1,0 +1,38 @@
+{
+  "primary": [
+    {
+      "id": "st-primary",
+      "name": "Primary Full-Scan Audit",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "st-fallback",
+      "name": "Fallback Incremental Delta Audit",
+      "type": "FALLBACK"
+    }
+  ],
+  "parallel": [
+    {
+      "id": "st-parallel",
+      "name": "Parallel Engine Execution",
+      "maxWorkers": 4
+    }
+  ],
+  "fallback": [
+    {
+      "id": "st-fallback-safe",
+      "name": "Safe Memory Snapshot Restore"
+    }
+  ],
+  "recovery": [
+    {
+      "id": "st-recovery",
+      "name": "Automatic Sandbox Reset"
+    }
+  ],
+  "recommended": {
+    "id": "st-primary",
+    "name": "Primary Full-Scan Audit",
+    "type": "PRIMARY"
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
-const strategyGenerator = require('../optimizerEngine/strategyGenerator');
+const { strategyEngine } = require('../strategy');
 
 async function runStrategyTests() {
-  console.log('=== RUNNING STRATEGY GENERATOR UNIT TESTS ===');
+  console.log('=== RUNNING STRATEGY ENGINE UNIT TESTS ===');
 
   let passed = 0;
   let failed = 0;
@@ -18,8 +18,9 @@ async function runStrategyTests() {
     }
   }
 
-  const list = strategyGenerator.generateStrategies();
-  assert(list.length === 3, 'Generates 3 optimization strategies');
+  const res = strategyEngine.evaluateStrategies();
+  assert(res.primary.length >= 1, 'Generates primary strategies list');
+  assert(res.recommended.name.length > 0, 'Recommends best strategy');
 
   console.log(`\nStrategy Unit Tests Summary: ${passed} passed, ${failed} failed.\n`);
   if (failed > 0) process.exit(1);

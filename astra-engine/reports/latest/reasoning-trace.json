@@ -1,0 +1,50 @@
+{
+  "recId": "rec-1",
+  "decision": {
+    "decisionId": "rec-1",
+    "stepChain": [
+      "RuleEvaluation",
+      "Scoring",
+      "Ranking",
+      "RecommendationGenerated"
+    ],
+    "status": "VERIFIED"
+  },
+  "reasoning": {
+    "chain": [
+      "Fact: Observer Mode Active",
+      "Constraint: No Production Mutations",
+      "Conclusion: High System Safety"
+    ]
+  },
+  "evidence": {
+    "evidenceCount": 2,
+    "sources": [
+      "Registry.ts",
+      "Astra.config.json"
+    ]
+  },
+  "dependency": {
+    "dependencyChain": [
+      "CoreGuards",
+      "Scanner",
+      "Registry",
+      "Engines"
+    ]
+  },
+  "timeline": {
+    "timelineSteps": [
+      "Init",
+      "Scan",
+      "Audit",
+      "Report"
+    ]
+  },
+  "audit": [
+    {
+      "action": "Explain recommendation rec-1",
+      "actor": "ASTRA Engine",
+      "timestamp": "2026-07-22T14:49:24.687Z"
+    }
+  ]
+}
