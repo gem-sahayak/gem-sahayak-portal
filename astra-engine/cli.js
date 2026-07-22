@@ -21,28 +21,20 @@ const { knowledgeEngine } = require('./engines/knowledge');
 const { studioWorkspace } = require('./studio');
 const { dashboardEngine } = require('./dashboard');
 const { explorerEngine } = require('./graphExplorer');
-const { workflowEngine, workflowRunner, workflowHistory, workflowMetrics, workflowScheduler } = require('./workflow');
-const { ruleEngine, ruleRegistry, ruleMetrics } = require('./rules');
-const { recommendationEngine, decisionMetrics } = require('./decision');
-const { eventBus, eventQueue, eventMetrics } = require('./events');
-const { schedulerEngine, schedulerMetrics } = require('./scheduler');
-const recommendationsModel = require('./recommendations');
+const { workflowEngine } = require('./workflow');
+
+const { simulationEngine, scenarioRunner, executionHistory, executionTimeline, executionReplay } = require('./simulation');
+const { twinRegistry } = require('./digitalTwin');
+const { riskAnalyzer } = require('./riskEngine');
+const { executionOptimizer } = require('./optimizerEngine');
+const { forecastEngine } = require('./forecast');
+const visualization = require('./visualization');
 const reporter = require('./core/reporter');
 
 const fingerprintManager = require('./core/fingerprint');
 const incrementalScanner = require('./core/incremental');
 const { cacheManager } = require('./core/cache');
 const { telemetry } = require('./core/telemetry');
-const {
-  pluginLoader,
-  pluginRegistry,
-  pluginManifestValidator,
-  pluginTrustManager,
-  signatureVerifier,
-  dependencyResolver,
-  versionManager,
-  pluginReporter
-} = require('./core/plugins');
 
 const releaseManager = require('./core/release/releaseManager');
 const buildValidator = require('./core/build/validator');
@@ -58,7 +50,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.9.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.10.0             ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -67,14 +59,15 @@ function printHelp() {
   console.log(`${colors.bright}Usage:${colors.reset} node cli.js <command> [options]\n`);
   console.log(`${colors.bright}Commands:${colors.reset}`);
   console.log(`  ${colors.green}doctor${colors.reset}          Verify system environment, configurations & workspace schemas`);
-  console.log(`  ${colors.green}workflow${colors.reset}        Run Autonomous Workflow Intelligence Engine (--run, --history, --rules, --recommend)`);
+  console.log(`  ${colors.green}simulate${colors.reset}        Run Simulation Intelligence Engine (--dry-run, --timeline, --replay)`);
+  console.log(`  ${colors.green}twin${colors.reset}            Generate immutable Digital Twin (--project, --workspace, --graph)`);
+  console.log(`  ${colors.green}risk${colors.reset}            Run Predictive Risk Analyzer Engine (--scan, --critical, --dependencies)`);
+  console.log(`  ${colors.green}optimize${colors.reset}        Run Execution Strategy Optimizer (--compare, --parallel, --latency)`);
+  console.log(`  ${colors.green}forecast${colors.reset}        Run Predictive Capacity & Growth Forecast (--runtime, --memory, --storage)`);
+  console.log(`  ${colors.green}workflow${colors.reset}        Run Autonomous Workflow Intelligence Engine`);
   console.log(`  ${colors.green}graph${colors.reset}           Run Enterprise Visual Knowledge Graph Explorer`);
   console.log(`  ${colors.green}dashboard${colors.reset}       Launch Enterprise Intelligence Dashboard`);
   console.log(`  ${colors.green}studio${colors.reset}          Launch ASTRA Studio Visual AI Workspace`);
-  console.log(`  ${colors.green}knowledge${colors.reset}       Run Enterprise Knowledge Intelligence RAG Engine`);
-  console.log(`  ${colors.green}optimize${colors.reset}        Run AI Content Optimization Platform`);
-  console.log(`  ${colors.green}semantic${colors.reset}        Run Semantic SEO Intelligence Engine`);
-  console.log(`  ${colors.green}review${colors.reset}          Run AI Review Engine semantic audit`);
   console.log(`  ${colors.green}version${colors.reset}         Display current engine SemVer version & git metadata`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
 }
@@ -104,24 +97,23 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.9.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.10.0)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
 
       const modules = {
         'Config Loader': configLoader,
-        'State Manager': stateManager,
         'Filesystem Scanner': require('./core/filesystem'),
-        'Workflow Intelligence Engine': workflowEngine,
-        'Rule Engine': ruleEngine,
-        'Decision Intelligence': recommendationEngine,
-        'Event Bus Engine': eventBus,
-        'Autonomous Scheduler': schedulerEngine,
-        'Recommendation Models': recommendationsModel,
-        'Visual Knowledge Graph Explorer': explorerEngine,
-        'Enterprise Intelligence Dashboard': dashboardEngine,
-        'ASTRA Studio Foundation': studioWorkspace,
+        'Simulation Engine': simulationEngine,
+        'Digital Twin Registry': twinRegistry,
+        'Risk Analyzer': riskAnalyzer,
+        'Execution Optimizer': executionOptimizer,
+        'Forecast Engine': forecastEngine,
+        'Visualization Models': visualization,
+        'Workflow Intelligence': workflowEngine,
+        'Visual Graph Explorer': explorerEngine,
+        'Dashboard Engine': dashboardEngine,
         'Import Guard': require('./core/guards/importGuard'),
       };
 
@@ -136,41 +128,97 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 6A modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 6C modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      break;
+    }
+
+    case 'simulate': {
+      console.log(`${colors.cyan}🎮 Running Simulation Intelligence Engine (v1.10.0)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      await simulationEngine.init({ config, state, logger: console });
+      const simRes = await simulationEngine.run(state);
+
+      console.log(`  - Dry Run Status  : ${colors.green}${simRes.dryRun.status}${colors.reset}`);
+      console.log(`  - Timeline Events : ${colors.green}${simRes.dryRun.timeline.length}${colors.reset}`);
+      console.log(`  - Steps Simulated : ${colors.green}${simRes.metrics.totalStepsSimulated}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(simRes, null, 2), path.join(reportsLatestDir, 'simulation-report.json'));
+      await reporter.write(JSON.stringify(executionHistory.getHistory(), null, 2), path.join(reportsLatestDir, 'simulation-history.json'));
+      await reporter.write(JSON.stringify(simRes.dryRun.timeline, null, 2), path.join(reportsLatestDir, 'simulation-timeline.json'));
+      await reporter.write(JSON.stringify(executionReplay.replayTimeline(simRes.dryRun.timeline), null, 2), path.join(reportsLatestDir, 'execution-replay.json'));
+      await reporter.write(JSON.stringify(visualization.timeline.renderTimeline(simRes.dryRun.timeline), null, 2), path.join(reportsLatestDir, 'timeline-report.json'));
+
+      console.log(`  - Simulation Report Exporter : ${colors.cyan}reports/latest/simulation-report.json${colors.reset}\n`);
+      break;
+    }
+
+    case 'twin': {
+      console.log(`${colors.cyan}♊ Generating Immutable Digital Twin (v1.10.0)...${colors.reset}`);
+      const state = await scanner.runScanner(rootDir, config);
+      const twinRes = twinRegistry.generateMasterTwin(state);
+
+      console.log(`  - Digital Twin Status : ${colors.green}SYNCHRONIZED${colors.reset}`);
+      console.log(`  - Mirrored Articles  : ${colors.green}${twinRes.project.totalArticles}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(twinRes, null, 2), path.join(reportsLatestDir, 'digital-twin.json'));
+      console.log(`  - Digital Twin Exporter : ${colors.cyan}reports/latest/digital-twin.json${colors.reset}\n`);
+      break;
+    }
+
+    case 'risk': {
+      console.log(`${colors.cyan}🛡️ Running Predictive Risk Analyzer Engine (v1.10.0)...${colors.reset}`);
+      const riskRes = riskAnalyzer.runAnalysis();
+
+      console.log(`  - Overall Risk Score  : ${colors.green}${riskRes.overallRiskScore} / 100${colors.reset}`);
+      console.log(`  - Classification      : ${colors.green}${riskRes.classification}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(riskRes, null, 2), path.join(reportsLatestDir, 'risk-analysis.json'));
+      console.log(`  - Risk Report Exporter : ${colors.cyan}reports/latest/risk-analysis.json${colors.reset}\n`);
+      break;
+    }
+
+    case 'optimize': {
+      console.log(`${colors.cyan}🚀 Running Execution Strategy Optimizer (v1.10.0)...${colors.reset}`);
+      const optRes = executionOptimizer.runOptimizer();
+
+      console.log(`  - Recommended Strategy : ${colors.green}${optRes.recommendedStrategy.name}${colors.reset}`);
+      console.log(`  - Estimated Runtime    : ${colors.green}${optRes.recommendedStrategy.estimatedRuntimeMs} ms${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(optRes, null, 2), path.join(reportsLatestDir, 'optimization-report.json'));
+      await reporter.write(JSON.stringify(optRes.strategies, null, 2), path.join(reportsLatestDir, 'strategy-comparison.json'));
+      console.log(`  - Optimization Exporter : ${colors.cyan}reports/latest/optimization-report.json${colors.reset}\n`);
+      break;
+    }
+
+    case 'forecast': {
+      console.log(`${colors.cyan}📈 Running Capacity & Growth Forecast Engine (v1.10.0)...${colors.reset}`);
+      const fcRes = forecastEngine.runForecast();
+
+      console.log(`  - Projected Execution : ${colors.green}${fcRes.runtime.projectedExecutionMs} ms${colors.reset}`);
+      console.log(`  - Scale Status        : ${colors.green}${fcRes.scaling.scaleLimitStatus}${colors.reset}\n`);
+
+      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
+      await reporter.write(JSON.stringify(fcRes, null, 2), path.join(reportsLatestDir, 'forecast-report.json'));
+      await reporter.write(JSON.stringify(fcRes.storage, null, 2), path.join(reportsLatestDir, 'resource-forecast.json'));
+      console.log(`  - Forecast Exporter : ${colors.cyan}reports/latest/forecast-report.json${colors.reset}\n`);
       break;
     }
 
     case 'workflow': {
-      console.log(`${colors.cyan}⚡ Running Enterprise Autonomous Workflow Intelligence Engine (v1.9.0)...${colors.reset}`);
+      console.log(`${colors.cyan}⚡ Running Autonomous Workflow Intelligence Engine (v1.10.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await workflowEngine.init({ config, state, logger: console });
       const wfRes = await workflowEngine.run(state);
-
-      const allRecs = recommendationsModel.getAllRecommendations(state);
-      const rankedRecs = recommendationEngine.processRecommendations(allRecs);
-      const ruleRes = ruleEngine.evaluateRules({ errorCount: 0 });
-
-      console.log(`  - Active Workflows       : ${colors.green}${wfRes.activeWorkflows.length}${colors.reset}`);
-      console.log(`  - Rules Evaluated        : ${colors.green}${ruleRes.evaluatedCount}${colors.reset}`);
-      console.log(`  - Recommendations Ranked : ${colors.green}${rankedRecs.length}${colors.reset}\n`);
-
-      const reportsLatestDir = path.join(__dirname, 'reports', 'latest');
-      await reporter.write(JSON.stringify(wfRes, null, 2), path.join(reportsLatestDir, 'workflow-report.json'));
-      await reporter.write(JSON.stringify(workflowHistory.getHistory(), null, 2), path.join(reportsLatestDir, 'workflow-history.json'));
-      await reporter.write(JSON.stringify(workflowMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'workflow-metrics.json'));
-      await reporter.write(JSON.stringify(ruleRes, null, 2), path.join(reportsLatestDir, 'rule-report.json'));
-      await reporter.write(JSON.stringify(rankedRecs, null, 2), path.join(reportsLatestDir, 'decision-report.json'));
-      await reporter.write(JSON.stringify(eventMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'event-report.json'));
-      await reporter.write(JSON.stringify(schedulerMetrics.getMetrics(), null, 2), path.join(reportsLatestDir, 'scheduler-report.json'));
-      await reporter.write(JSON.stringify(allRecs, null, 2), path.join(reportsLatestDir, 'recommendation-report.json'));
-
-      console.log(`  - Workflow Report Exporter : ${colors.cyan}reports/latest/workflow-report.json${colors.reset}`);
-      console.log(`  - Decision Report Exporter : ${colors.cyan}reports/latest/decision-report.json${colors.reset}\n`);
+      console.log(`  - Active Workflows : ${colors.green}${wfRes.activeWorkflows.length}${colors.reset}\n`);
       break;
     }
 
     case 'graph': {
-      console.log(`${colors.cyan}🕸️ Running Enterprise Visual Knowledge Graph Explorer (v1.9.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🕸️ Running Enterprise Visual Knowledge Graph Explorer (v1.10.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await explorerEngine.init({ config, state, logger: console });
       const graphRes = await explorerEngine.run(state);
@@ -179,7 +227,7 @@ async function runCli() {
     }
 
     case 'dashboard': {
-      console.log(`${colors.cyan}📊 Rendering Enterprise Intelligence Dashboard (v1.9.0)...${colors.reset}`);
+      console.log(`${colors.cyan}📊 Rendering Enterprise Intelligence Dashboard (v1.10.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       await dashboardEngine.init({ config, state, logger: console });
       const dashRes = await dashboardEngine.run(state);
@@ -188,7 +236,7 @@ async function runCli() {
     }
 
     case 'studio': {
-      console.log(`${colors.cyan}🎨 Launching ASTRA Studio Visual AI Workspace (v1.9.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🎨 Launching ASTRA Studio Visual AI Workspace (v1.10.0)...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       const reportsDir = path.join(__dirname, 'reports');
       const studioRes = await studioWorkspace.run(state, reportsDir);
@@ -196,18 +244,9 @@ async function runCli() {
       break;
     }
 
-    case 'knowledge': {
-      console.log(`${colors.cyan}🧠 Running Enterprise Knowledge Intelligence RAG Engine (v1.9.0)...${colors.reset}`);
-      const state = await scanner.runScanner(rootDir, config);
-      await knowledgeEngine.init({ config, state, logger: console });
-      const knwRes = await knowledgeEngine.run(state);
-      console.log(`  - Vector Store Size : ${colors.green}${knwRes.summary.vectorStoreSize} embeddings${colors.reset}\n`);
-      break;
-    }
-
     case 'version': {
       console.log(`${colors.cyan}ℹ️ ASTRA Engine Version Metadata:${colors.reset}`);
-      console.log(`  - SemVer Version : ${colors.green}1.9.0${colors.reset}\n`);
+      console.log(`  - SemVer Version : ${colors.green}1.10.0${colors.reset}\n`);
       break;
     }
 

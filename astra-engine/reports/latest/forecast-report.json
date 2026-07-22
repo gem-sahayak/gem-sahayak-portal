@@ -1,0 +1,26 @@
+{
+  "runtime": {
+    "projectedExecutionMs": 15,
+    "growthRatePer10kDocsPercent": 5
+  },
+  "memory": {
+    "projectedHeapMB": 65,
+    "peakUsageMB": 120
+  },
+  "storage": {
+    "projectedReportStorageMB": 12.5,
+    "annualGrowthMB": 50
+  },
+  "growth": {
+    "projectedGraphNodes": 1000,
+    "projectedVectorChunks": 500
+  },
+  "scaling": {
+    "maxSupportedArticles": 100000,
+    "scaleLimitStatus": "HEALTHY"
+  },
+  "cache": {
+    "cacheSizeMB": 5.2,
+    "expectedEvictionRatePercent": 0
+  }
+}

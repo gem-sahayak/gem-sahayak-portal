@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-07-22T14:39:11.734Z",
+  "project": {
+    "type": "PROJECT_TWIN",
+    "name": "Gem-Sahayak Portal Digital Twin",
+    "version": "1.10.0",
+    "totalArticles": 103,
+    "timestamp": "2026-07-22T14:39:11.737Z"
+  },
+  "workflow": {
+    "type": "WORKFLOW_TWIN",
+    "activePipelines": 2,
+    "scheduledJobs": 1,
+    "status": "SYNCHRONIZED"
+  },
+  "knowledge": {
+    "type": "KNOWLEDGE_TWIN",
+    "indexedChunks": 216,
+    "vectorEmbeddings": 216,
+    "graphNodes": 434
+  },
+  "entity": {
+    "type": "ENTITY_TWIN",
+    "entityDensity": 7,
+    "clusters": 5
+  },
+  "plugin": {
+    "type": "PLUGIN_TWIN",
+    "loadedPlugins": 2,
+    "trustedCount": 2
+  },
+  "system": {
+    "type": "SYSTEM_TWIN",
+    "os": "windows",
+    "engineVersion": "1.10.0",
+    "nodeVersion": "v24.15.0"
+  },
+  "workspace": {
+    "type": "WORKSPACE_TWIN",
+    "workspaceDir": "gem-sahayak-portal",
+    "importGuardActive": true,
+    "pathGuardActive": true
+  },
+  "dependency": {
+    "type": "DEPENDENCY_TWIN",
+    "internalModulesCount": 25,
+    "circularDependencies": 0
+  }
+}

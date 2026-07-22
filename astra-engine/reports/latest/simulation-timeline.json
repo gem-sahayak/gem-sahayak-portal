@@ -1,0 +1,32 @@
+[
+  {
+    "offsetMs": 10,
+    "name": "Executed scan",
+    "details": {
+      "stepId": "scan",
+      "status": "VIRTUAL_SUCCESS",
+      "simulatedLatencyMs": 5
+    },
+    "timestamp": "2026-07-22T14:39:07.219Z"
+  },
+  {
+    "offsetMs": 20,
+    "name": "Executed validate",
+    "details": {
+      "stepId": "validate",
+      "status": "VIRTUAL_SUCCESS",
+      "simulatedLatencyMs": 5
+    },
+    "timestamp": "2026-07-22T14:39:07.221Z"
+  },
+  {
+    "offsetMs": 30,
+    "name": "Executed audit",
+    "details": {
+      "stepId": "audit",
+      "status": "VIRTUAL_SUCCESS",
+      "simulatedLatencyMs": 5
+    },
+    "timestamp": "2026-07-22T14:39:07.221Z"
+  }
+]

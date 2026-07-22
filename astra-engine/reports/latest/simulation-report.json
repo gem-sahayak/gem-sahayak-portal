@@ -1,0 +1,76 @@
+{
+  "manifest": {
+    "name": "Enterprise Simulation Intelligence Engine",
+    "version": "1.10.0",
+    "description": "Predictive dry run sandbox simulation runtime, timeline builder & execution replay engine"
+  },
+  "verdict": "PASS",
+  "dryRun": {
+    "scenarioId": "default-dryrun",
+    "status": "DRY_RUN_SUCCESS",
+    "sandboxId": "sandbox-uh4bu8",
+    "results": [
+      {
+        "stepId": "scan",
+        "status": "VIRTUAL_SUCCESS",
+        "simulatedLatencyMs": 5
+      },
+      {
+        "stepId": "validate",
+        "status": "VIRTUAL_SUCCESS",
+        "simulatedLatencyMs": 5
+      },
+      {
+        "stepId": "audit",
+        "status": "VIRTUAL_SUCCESS",
+        "simulatedLatencyMs": 5
+      }
+    ],
+    "timeline": [
+      {
+        "offsetMs": 10,
+        "name": "Executed scan",
+        "details": {
+          "stepId": "scan",
+          "status": "VIRTUAL_SUCCESS",
+          "simulatedLatencyMs": 5
+        },
+        "timestamp": "2026-07-22T14:39:07.219Z"
+      },
+      {
+        "offsetMs": 20,
+        "name": "Executed validate",
+        "details": {
+          "stepId": "validate",
+          "status": "VIRTUAL_SUCCESS",
+          "simulatedLatencyMs": 5
+        },
+        "timestamp": "2026-07-22T14:39:07.221Z"
+      },
+      {
+        "offsetMs": 30,
+        "name": "Executed audit",
+        "details": {
+          "stepId": "audit",
+          "status": "VIRTUAL_SUCCESS",
+          "simulatedLatencyMs": 5
+        },
+        "timestamp": "2026-07-22T14:39:07.221Z"
+      }
+    ]
+  },
+  "history": [
+    {
+      "runId": "sim-run-bkuhpm",
+      "timestamp": "2026-07-22T14:39:07.221Z",
+      "summary": {
+        "scenarioId": "default-dryrun",
+        "stepCount": 3
+      }
+    }
+  ],
+  "metrics": {
+    "totalSimulations": 1,
+    "totalStepsSimulated": 3
+  }
+}
