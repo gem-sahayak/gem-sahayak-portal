@@ -1,0 +1,662 @@
+[
+  {
+    "articleSlug": "udyam-error",
+    "titleLength": 64,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "partnership-docs",
+    "titleLength": 57,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-portal-direct-purchase-limit-rules-2026",
+    "titleLength": 60,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-bidding-mistakes-msme-tenders",
+    "titleLength": 53,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "what-is-emd-in-gem",
+    "titleLength": 74,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+    "titleLength": 50,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+    "titleLength": 47,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+    "titleLength": 57,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "emd-exemption-rules",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "emd-refund-process",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "emd-vs-security-deposit",
+    "titleLength": 69,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "emd-forfeiture-rules",
+    "titleLength": 55,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "what-is-l1-in-tender",
+    "titleLength": 52,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "l1-vs-qcbs",
+    "titleLength": 51,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "technical-evaluation-process",
+    "titleLength": 57,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "financial-bid-evaluation",
+    "titleLength": 68,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "reasons-for-bid-rejection",
+    "titleLength": 49,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "bid-participation-rules",
+    "titleLength": 55,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "bid-splitting-rules",
+    "titleLength": 51,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "common-errors",
+    "titleLength": 68,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "complete-gem-registration-guide",
+    "titleLength": 67,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "cppp-portal-registration-tender-search",
+    "titleLength": 76,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "cpv-code-guide",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "daily-tender-monitoring",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "documents-required",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "earnest-money-deposit",
+    "titleLength": 54,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "faqs",
+    "titleLength": 60,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "fees-explained",
+    "titleLength": 58,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-bank-account-change-kaise-kare",
+    "titleLength": 66,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-bidding-fees",
+    "titleLength": 58,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-bidding-rules-handbook",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-boq-excel-sheet-upload-errors",
+    "titleLength": 84,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons",
+    "titleLength": 72,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-catalogue-upload-kaise-kare",
+    "titleLength": 94,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-category-search",
+    "titleLength": 45,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-company-profile-edit-kaise-kare",
+    "titleLength": 88,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-consignee-receipt-process",
+    "titleLength": 71,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-crac-kaise-generate-hota-hai",
+    "titleLength": 69,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-custom-bid-specifications-rules",
+    "titleLength": 87,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-email-mobile-number-change",
+    "titleLength": 85,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+    "titleLength": 73,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-incident-management-show-cause-reply",
+    "titleLength": 60,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-invoice-generate-kaise-kare",
+    "titleLength": 79,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-joint-venture-consortium-bidding",
+    "titleLength": 72,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-l1-price-matching-counter-offer",
+    "titleLength": 80,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-login-kaise-kare",
+    "titleLength": 69,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-order-accept-kaise-kare",
+    "titleLength": 66,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-order-cancel-rules",
+    "titleLength": 76,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-order-delivery-update-kaise-kare",
+    "titleLength": 70,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-payment-kab-milta-hai",
+    "titleLength": 67,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-payment-status-kaise-check-kare",
+    "titleLength": 74,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-product-approval-time",
+    "titleLength": 84,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-profile-update-kaise-kare",
+    "titleLength": 114,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-registration-kaise-kare",
+    "titleLength": 63,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-return-replacement-rules",
+    "titleLength": 75,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-search-filters-explained",
+    "titleLength": 54,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+    "titleLength": 66,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-seller-performance-dashboard",
+    "titleLength": 67,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-seller-rating-improve-kaise-kare",
+    "titleLength": 75,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-seller-registration-kaise-kare",
+    "titleLength": 61,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-service-contract-bidding-rules",
+    "titleLength": 87,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-tender-search-guide",
+    "titleLength": 80,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-warranty-claim-process",
+    "titleLength": 82,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "how-to-search-gem-tenders",
+    "titleLength": 58,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "ireps-railway-tender-bidding-guide",
+    "titleLength": 79,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "keyword-search-tips",
+    "titleLength": 48,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "manufacturers-registration",
+    "titleLength": 54,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "ministry-department-search",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "msme-registration",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "profile-completion",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "representation-writing",
+    "titleLength": 64,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "restrictive-specifications",
+    "titleLength": 50,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "reverse-auction-rules",
+    "titleLength": 53,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "saved-search-and-alerts",
+    "titleLength": 45,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "single-bid-compliance",
+    "titleLength": 50,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "state-procurement-up-tenders-gem-comparison",
+    "titleLength": 69,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "state-wise-tender-search",
+    "titleLength": 50,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "tender-evaluation-stages",
+    "titleLength": 57,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "timeframe",
+    "titleLength": 59,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "traders-registration",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "use-ai-summarize-government-tender-pdfs",
+    "titleLength": 63,
+    "headingScore": 80,
+    "issues": [
+      {
+        "type": "MISSING_BRAND_KEYWORD",
+        "message": "Title lacks \"GeM Portal\" primary keyword",
+        "recommendation": "Include \"GeM Portal\" in title for search intent alignment"
+      }
+    ]
+  },
+  {
+    "articleSlug": "gem-oem-panel-registration-guide",
+    "titleLength": 48,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-oem-authorization-letter-format",
+    "titleLength": 51,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-custom-item-creation-rules-2026",
+    "titleLength": 49,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-generic-vs-brand-catalog-guide",
+    "titleLength": 56,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-boq-excel-upload-errors-guide",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-hsn-code-gst-mapping-guide",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-product-cloning-duplication-guide",
+    "titleLength": 54,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-category-approval-time-guide",
+    "titleLength": 47,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-reverse-auction-complete-guide",
+    "titleLength": 77,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-bid-participation-fees-guide",
+    "titleLength": 59,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-contract-performance-security-guide",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-payment-cycle-complete-guide",
+    "titleLength": 52,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-order-fulfillment-guide",
+    "titleLength": 51,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-inspection-acceptance-guide",
+    "titleLength": 46,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-liquidated-damages-rules",
+    "titleLength": 43,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-contract-termination-rules",
+    "titleLength": 55,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-seller-rating-performance-guide",
+    "titleLength": 43,
+    "headingScore": 100,
+    "issues": []
+  },
+  {
+    "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+    "titleLength": 41,
+    "headingScore": 100,
+    "issues": []
+  }
+]

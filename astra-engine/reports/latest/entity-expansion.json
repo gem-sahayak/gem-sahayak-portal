@@ -1,0 +1,2120 @@
+[
+  {
+    "articleSlug": "udyam-error",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "partnership-docs",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-portal-direct-purchase-limit-rules-2026",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee"
+  },
+  {
+    "articleSlug": "gem-bidding-mistakes-msme-tenders",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "what-is-emd-in-gem",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "emd-exemption-rules",
+    "missingEntities": [
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "emd-refund-process",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "emd-vs-security-deposit",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "emd-forfeiture-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "what-is-l1-in-tender",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "l1-vs-qcbs",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "technical-evaluation-process",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "financial-bid-evaluation",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "reasons-for-bid-rejection",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "bid-participation-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "bid-splitting-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee"
+  },
+  {
+    "articleSlug": "common-errors",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "complete-gem-registration-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "cppp-portal-registration-tender-search",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "cpv-code-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "daily-tender-monitoring",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "documents-required",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "earnest-money-deposit",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "faqs",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "fees-explained",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-bank-account-change-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-bidding-fees",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-bidding-rules-handbook",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-boq-excel-sheet-upload-errors",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-catalogue-upload-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-category-search",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-company-profile-edit-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-consignee-receipt-process",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-crac-kaise-generate-hota-hai",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-custom-bid-specifications-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee"
+  },
+  {
+    "articleSlug": "gem-email-mobile-number-change",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-incident-management-show-cause-reply",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-invoice-generate-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-joint-venture-consortium-bidding",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-l1-price-matching-counter-offer",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-login-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-order-accept-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-order-cancel-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-order-delivery-update-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-payment-kab-milta-hai",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee"
+  },
+  {
+    "articleSlug": "gem-payment-status-kaise-check-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-product-approval-time",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-profile-update-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-registration-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-return-replacement-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-search-filters-explained",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-seller-performance-dashboard",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-seller-rating-improve-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-seller-registration-kaise-kare",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-service-contract-bidding-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-tender-search-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-warranty-claim-process",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "how-to-search-gem-tenders",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "ireps-railway-tender-bidding-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "keyword-search-tips",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "manufacturers-registration",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "ministry-department-search",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "msme-registration",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "profile-completion",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "representation-writing",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "restrictive-specifications",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "reverse-auction-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "saved-search-and-alerts",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "single-bid-compliance",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee"
+  },
+  {
+    "articleSlug": "state-procurement-up-tenders-gem-comparison",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "state-wise-tender-search",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "tender-evaluation-stages",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "timeframe",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "traders-registration",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "use-ai-summarize-government-tender-pdfs",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-oem-panel-registration-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-oem-authorization-letter-format",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-custom-item-creation-rules-2026",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-generic-vs-brand-catalog-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-boq-excel-upload-errors-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-hsn-code-gst-mapping-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-product-cloning-duplication-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+    "missingEntities": [
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-category-approval-time-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-reverse-auction-complete-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-bid-participation-fees-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-contract-performance-security-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-payment-cycle-complete-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-order-fulfillment-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-inspection-acceptance-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-liquidated-damages-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-contract-termination-rules",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-seller-rating-performance-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  },
+  {
+    "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+    "missingEntities": [
+      {
+        "name": "NSIC Registration",
+        "category": "Government Organization",
+        "priority": "HIGH"
+      },
+      {
+        "name": "ePBG Bank Guarantee",
+        "category": "Financial Instrument",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "GFR Rule 170",
+        "category": "Legal Regulation",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendation": "Include references to NSIC Registration, ePBG Bank Guarantee, GFR Rule 170"
+  }
+]

@@ -1,0 +1,620 @@
+[
+  {
+    "articleSlug": "udyam-error",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "partnership-docs",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-portal-direct-purchase-limit-rules-2026",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-bidding-mistakes-msme-tenders",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "what-is-emd-in-gem",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "emd-exemption-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "emd-refund-process",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "emd-vs-security-deposit",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "emd-forfeiture-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "what-is-l1-in-tender",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "l1-vs-qcbs",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "technical-evaluation-process",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "financial-bid-evaluation",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "reasons-for-bid-rejection",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "bid-participation-rules",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "bid-splitting-rules",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "common-errors",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "complete-gem-registration-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "cppp-portal-registration-tender-search",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "cpv-code-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "daily-tender-monitoring",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "documents-required",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "earnest-money-deposit",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "faqs",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "fees-explained",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-bank-account-change-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-bidding-fees",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-bidding-rules-handbook",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-boq-excel-sheet-upload-errors",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-catalogue-upload-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-category-search",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-company-profile-edit-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-consignee-receipt-process",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-crac-kaise-generate-hota-hai",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-custom-bid-specifications-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-email-mobile-number-change",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-incident-management-show-cause-reply",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-invoice-generate-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-joint-venture-consortium-bidding",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-l1-price-matching-counter-offer",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-login-kaise-kare",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-order-accept-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-order-cancel-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-order-delivery-update-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-payment-kab-milta-hai",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-payment-status-kaise-check-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-product-approval-time",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-profile-update-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-registration-kaise-kare",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-return-replacement-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-search-filters-explained",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-seller-performance-dashboard",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-seller-rating-improve-kaise-kare",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-seller-registration-kaise-kare",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-service-contract-bidding-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-tender-search-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-warranty-claim-process",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "how-to-search-gem-tenders",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "ireps-railway-tender-bidding-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "keyword-search-tips",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "manufacturers-registration",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "ministry-department-search",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "msme-registration",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "profile-completion",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "representation-writing",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "restrictive-specifications",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "reverse-auction-rules",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "saved-search-and-alerts",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "single-bid-compliance",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "state-procurement-up-tenders-gem-comparison",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "state-wise-tender-search",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "tender-evaluation-stages",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "timeframe",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "traders-registration",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "use-ai-summarize-government-tender-pdfs",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-oem-panel-registration-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-oem-authorization-letter-format",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-custom-item-creation-rules-2026",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-generic-vs-brand-catalog-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-boq-excel-upload-errors-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-hsn-code-gst-mapping-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-product-cloning-duplication-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-category-approval-time-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-reverse-auction-complete-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-bid-participation-fees-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-contract-performance-security-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-payment-cycle-complete-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-order-fulfillment-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-inspection-acceptance-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-liquidated-damages-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-contract-termination-rules",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  },
+  {
+    "articleSlug": "gem-seller-rating-performance-guide",
+    "coveragePercent": 70,
+    "gapPercent": 30,
+    "priority": "HIGH"
+  },
+  {
+    "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+    "coveragePercent": 90,
+    "gapPercent": 10,
+    "priority": "LOW"
+  }
+]

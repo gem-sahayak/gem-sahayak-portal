@@ -6,28 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.5.1] — Phase 4C.2 (Semantic SEO Intelligence Engine) - 2026-07-22
+## [1.5.2] — Phase 4C.3 (AI Content Optimization Platform) - 2026-07-22
 
 ### Added
-- **Semantic SEO Intelligence Engine (`engines/semantic/`):**
-  - Entity extraction & density analyzer (`entityAnalyzer.js`).
-  - Search intent, content type, & audience classifier (`intentAnalyzer.js`).
-  - High-speed Jaccard semantic similarity calculator (`similarity.js`).
-  - Keyword cannibalization detector (`cannibalization.js`).
-  - Topic coverage & knowledge completeness evaluator (`coverage.js`).
-  - Keyword & Entity graph generator (`keywordGraph.js`).
-  - Content cluster engine (`clusterEngine.js`).
-  - Topical authority calculator (`topicalAuthority.js`).
-  - Recommendation engine for top priority SEO improvements (`recommendation.js`).
-- **Contracts & Schemas:** Created `SemanticReport.ts`, `SemanticIssue.ts`, `SemanticScore.ts`, `SemanticCluster.ts`, `EntityCoverage.ts`, and `schemas/semantic.schema.json`.
-- **Semantic CLI Subcommand:** Added `node cli.js semantic` (`--json`, `--markdown`, `--clusters`, `--entities`, `--cannibalization`, `--authority`).
-- **Reports Export:** Generated `semantic-report.json`, `semantic-report.md`, `semantic-clusters.json`, `entity-coverage.json`, and `keyword-graph.json`.
-- **Stress Benchmark:** 1,000 synthetic articles scale benchmark completed in **465 ms** (<3,000 ms target).
+- **AI Content Optimization Platform (`engines/optimizer/`):**
+  - Content completeness & missing elements optimizer (`contentOptimizer.js`).
+  - Internal linking intelligence engine (`internalLinking.js`).
+  - Anchor text generator (`anchorGenerator.js`).
+  - Topic expansion engine (`topicExpansion.js`).
+  - Categorized FAQ generator (`faqGenerator.js`).
+  - Entity expansion engine (`entityExpansion.js`).
+  - Heading hierarchy & length optimizer (`headingOptimizer.js`).
+  - Content gap & coverage calculator (`contentGap.js`).
+  - Priority roadmap planner (`priorityPlanner.js`).
+  - Recommendation aggregator (`recommendation.js`).
+- **Contracts & Schemas:** Created `OptimizationReport.ts`, `OptimizationIssue.ts`, `OptimizationSuggestion.ts`, `InternalLink.ts`, `AnchorSuggestion.ts`, `TopicSuggestion.ts`, `FAQSuggestion.ts`, and `schemas/optimization.schema.json`.
+- **Optimizer CLI Subcommand:** Added `node cli.js optimize` (`--json`, `--markdown`, `--links`, `--anchors`, `--entities`, `--topics`, `--faq`, `--headings`, `--roadmap`).
+- **Reports Export:** Generated 10 optimization report JSON/Markdown files in `reports/latest/`.
+- **Stress Benchmark:** 5,000 synthetic articles scale benchmark completed in **77 ms** (<1,200 ms target).
 
 ---
 
-## [1.5.0] — Phase 4C.1 (AI Review Engine Architecture) - 2026-07-22
+## [1.5.1] — Phase 4C.2 (Semantic SEO Intelligence Engine) - 2026-07-22
 
 ### Added
-- **AI Review Engine (`engines/review/`):** Semantic audit engine evaluating search intent, EEAT, and content completeness.
-- **Provider Abstraction Adapters (`engines/review/adapters/`):** `baseAdapter.js` & `mockAdapter.js`.
+- **Semantic SEO Intelligence Engine (`engines/semantic/`):** Entity extraction, intent classification, similarity, cannibalization, clusters.

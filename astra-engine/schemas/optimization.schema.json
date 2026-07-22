@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstraOptimizationReportSchema",
+  "type": "object",
+  "properties": {
+    "engineVersion": { "type": "string" },
+    "evaluatedAt": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "overallOptimizationScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "totalArticlesAnalyzed": { "type": "integer" },
+        "totalSuggestionsGenerated": { "type": "integer" }
+      },
+      "required": ["overallOptimizationScore", "totalArticlesAnalyzed", "totalSuggestionsGenerated"]
+    }
+  },
+  "required": ["engineVersion", "evaluatedAt", "summary"]
+}

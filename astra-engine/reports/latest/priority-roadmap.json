@@ -1,0 +1,2285 @@
+{
+  "summary": {
+    "totalActions": 324,
+    "criticalCount": 0,
+    "highCount": 232,
+    "mediumCount": 92,
+    "lowCount": 0
+  },
+  "roadmap": {
+    "critical": [],
+    "high": [
+      {
+        "articleSlug": "udyam-error",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "udyam-error",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "partnership-docs",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "partnership-docs",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "partnership-docs",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-portal-direct-purchase-limit-rules-2026",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-mistakes-msme-tenders",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-mistakes-msme-tenders",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "what-is-emd-in-gem",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-exemption-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-refund-process",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-vs-security-deposit",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-vs-security-deposit",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-vs-security-deposit",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-forfeiture-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "emd-forfeiture-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "what-is-l1-in-tender",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "what-is-l1-in-tender",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "l1-vs-qcbs",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "l1-vs-qcbs",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "l1-vs-qcbs",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "technical-evaluation-process",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "technical-evaluation-process",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "technical-evaluation-process",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "financial-bid-evaluation",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "financial-bid-evaluation",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "financial-bid-evaluation",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "reasons-for-bid-rejection",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "reasons-for-bid-rejection",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "reasons-for-bid-rejection",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "bid-participation-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "bid-splitting-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "bid-splitting-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "common-errors",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "common-errors",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "common-errors",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "complete-gem-registration-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "cppp-portal-registration-tender-search",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "cpv-code-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "cpv-code-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "daily-tender-monitoring",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "daily-tender-monitoring",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "daily-tender-monitoring",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "documents-required",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "documents-required",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "earnest-money-deposit",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "earnest-money-deposit",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "faqs",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "faqs",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "fees-explained",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "fees-explained",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "fees-explained",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bank-account-change-kaise-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bank-account-change-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bank-account-change-kaise-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-fees",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-fees",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-fees",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bidding-rules-handbook",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-boq-excel-sheet-upload-errors",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalogue-upload-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalogue-upload-kaise-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-search",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-search",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-search",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-company-profile-edit-kaise-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-company-profile-edit-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-consignee-receipt-process",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-consignee-receipt-process",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-crac-kaise-generate-hota-hai",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-custom-bid-specifications-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-custom-bid-specifications-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-email-mobile-number-change",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-incident-management-show-cause-reply",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-incident-management-show-cause-reply",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-invoice-generate-kaise-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-invoice-generate-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-joint-venture-consortium-bidding",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-l1-price-matching-counter-offer",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-l1-price-matching-counter-offer",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-login-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-accept-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-cancel-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-cancel-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-delivery-update-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-kab-milta-hai",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-kab-milta-hai",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-status-kaise-check-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-status-kaise-check-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-status-kaise-check-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-product-approval-time",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-product-approval-time",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-product-approval-time",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-profile-update-kaise-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-profile-update-kaise-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-registration-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-return-replacement-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-return-replacement-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-search-filters-explained",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-search-filters-explained",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-search-filters-explained",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-performance-dashboard",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-performance-dashboard",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-performance-dashboard",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-improve-kaise-kare",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-improve-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-improve-kaise-kare",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-registration-kaise-kare",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-service-contract-bidding-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-tender-search-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-tender-search-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-warranty-claim-process",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-warranty-claim-process",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-search-gem-tenders",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-search-gem-tenders",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "how-to-search-gem-tenders",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "ireps-railway-tender-bidding-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "keyword-search-tips",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "keyword-search-tips",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "keyword-search-tips",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "manufacturers-registration",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "manufacturers-registration",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "ministry-department-search",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "ministry-department-search",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "ministry-department-search",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "msme-registration",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "msme-registration",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "msme-registration",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "profile-completion",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "profile-completion",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "profile-completion",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "representation-writing",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "representation-writing",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "representation-writing",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "restrictive-specifications",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "restrictive-specifications",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "restrictive-specifications",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "reverse-auction-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "reverse-auction-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "saved-search-and-alerts",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "saved-search-and-alerts",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "saved-search-and-alerts",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "single-bid-compliance",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "single-bid-compliance",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "state-procurement-up-tenders-gem-comparison",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "state-wise-tender-search",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "state-wise-tender-search",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "state-wise-tender-search",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "tender-evaluation-stages",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "tender-evaluation-stages",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "tender-evaluation-stages",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "timeframe",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "timeframe",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "timeframe",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "traders-registration",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "traders-registration",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "traders-registration",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "use-ai-summarize-government-tender-pdfs",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "use-ai-summarize-government-tender-pdfs",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-oem-panel-registration-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-oem-authorization-letter-format",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-oem-authorization-letter-format",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-oem-authorization-letter-format",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-custom-item-creation-rules-2026",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-custom-item-creation-rules-2026",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-generic-vs-brand-catalog-guide",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-generic-vs-brand-catalog-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-generic-vs-brand-catalog-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-boq-excel-upload-errors-guide",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-boq-excel-upload-errors-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-boq-excel-upload-errors-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-hsn-code-gst-mapping-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-hsn-code-gst-mapping-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-product-cloning-duplication-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-product-cloning-duplication-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-approval-time-guide",
+        "action": "Add missing element: Step-by-Step Workflow Checklist",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-approval-time-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-category-approval-time-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-reverse-auction-complete-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-reverse-auction-complete-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bid-participation-fees-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-performance-security-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-performance-security-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-cycle-complete-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-cycle-complete-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-fulfillment-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-fulfillment-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-inspection-acceptance-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-inspection-acceptance-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-liquidated-damages-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-liquidated-damages-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-termination-rules",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-termination-rules",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-performance-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-performance-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+        "action": "Add missing element: Key Document Checklist Table",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+        "action": "Add missing element: 2026 Compliance Statistics & Slab Limits",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-reverse-auction-complete-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-bid-participation-fees-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-performance-security-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-payment-cycle-complete-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-order-fulfillment-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-inspection-acceptance-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-liquidated-damages-rules",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-contract-termination-rules",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-seller-rating-performance-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      },
+      {
+        "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+        "action": "Add TOOL link to eligibility-checker using anchor \"Check GeM Tender Eligibility Online\"",
+        "estimatedSeoImpact": "HIGH",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 30
+      }
+    ],
+    "medium": [
+      {
+        "articleSlug": "udyam-error",
+        "action": "Add RELATED link to partnership-docs using anchor \"GeM Registration Documents Required for Partnership Firms\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "partnership-docs",
+        "action": "Add RELATED link to gem-portal-direct-purchase-limit-rules-2026 using anchor \"GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-portal-direct-purchase-limit-rules-2026",
+        "action": "Add RELATED link to gem-bidding-mistakes-msme-tenders using anchor \"Top Bidding Mistakes MSMEs Make on GeM Portal Tenders\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "how-to-claim-emd-exemption-gem-portal-bids",
+        "action": "Add RELATED link to how-to-automate-gem-bid-tracking-whatsapp-alerts using anchor \"How to Automate GeM Bid Tracking & WhatsApp Alerts\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+        "action": "Add RELATED link to how-to-get-gem-portal-bid-alerts-on-whatsapp using anchor \"Get Real-Time GeM Portal Bid Alerts on WhatsApp\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+        "action": "Add RELATED link to resolving-gem-portal-catalog-upload-errors using anchor \"Resolving Catalog Upload and Generic Brand Errors on GeM\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "resolving-gem-portal-catalog-upload-errors",
+        "action": "Add RELATED link to ultimate-udyam-registration-gem-portal-exemptions using anchor \"Ultimate Udyam Registration & GeM Portal Exemptions Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "ultimate-udyam-registration-gem-portal-exemptions",
+        "action": "Add RELATED link to emd-exemption-rules using anchor \"EMD Exemption Rules on GeM Portal â€” Complete Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "bid-participation-rules",
+        "action": "Add RELATED link to bid-splitting-rules using anchor \"GeM Bid Splitting Rules & GFR Compliance Guidelines\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "bid-splitting-rules",
+        "action": "Add RELATED link to common-errors using anchor \"Common GeM Registration Errors and Solutions: Fix Blockers Instantly\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "common-errors",
+        "action": "Add RELATED link to complete-gem-registration-guide using anchor \"Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "complete-gem-registration-guide",
+        "action": "Add RELATED link to cppp-portal-registration-tender-search using anchor \"CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "cppp-portal-registration-tender-search",
+        "action": "Add RELATED link to cpv-code-guide using anchor \"CPV Code Guide for GeM Sellers: Categorizing Tenders\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "cpv-code-guide",
+        "action": "Add RELATED link to daily-tender-monitoring using anchor \"Daily GeM Tender Monitoring Best Practices for MSMEs\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "daily-tender-monitoring",
+        "action": "Add RELATED link to documents-required using anchor \"Documents Required for GeM Registration (2026 Checklist)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "documents-required",
+        "action": "Add RELATED link to earnest-money-deposit using anchor \"GeM EMD Rules: Claiming Exemptions & Resolving Refunds\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "earnest-money-deposit",
+        "action": "Add RELATED link to faqs using anchor \"Frequently Asked Questions About GeM Registration (2026 Q&A)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "faqs",
+        "action": "Add RELATED link to fees-explained using anchor \"GeM Registration Fees Explained: Caution Money and Charges\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "fees-explained",
+        "action": "Add RELATED link to gem-bank-account-change-kaise-kare using anchor \"GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-bank-account-change-kaise-kare",
+        "action": "Add RELATED link to gem-bidding-fees using anchor \"GeM Bidding Fees: Transaction Charges & Seller Commissions\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-bidding-fees",
+        "action": "Add RELATED link to gem-bidding-rules-handbook using anchor \"GeM Bidding Rules & Compliance Handbook (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-bidding-rules-handbook",
+        "action": "Add RELATED link to gem-boq-excel-sheet-upload-errors using anchor \"GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-boq-excel-sheet-upload-errors",
+        "action": "Add RELATED link to gem-catalog-rejected-reasons using anchor \"GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons",
+        "action": "Add RELATED link to gem-catalogue-upload-kaise-kare using anchor \"GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-catalogue-upload-kaise-kare",
+        "action": "Add RELATED link to gem-category-search using anchor \"How to Search GeM Tenders by Product Category\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-category-search",
+        "action": "Add RELATED link to gem-company-profile-edit-kaise-kare using anchor \"GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-company-profile-edit-kaise-kare",
+        "action": "Add RELATED link to gem-consignee-receipt-process using anchor \"GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-consignee-receipt-process",
+        "action": "Add RELATED link to gem-crac-kaise-generate-hota-hai using anchor \"GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-crac-kaise-generate-hota-hai",
+        "action": "Add RELATED link to gem-custom-bid-specifications-rules using anchor \"GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-custom-bid-specifications-rules",
+        "action": "Add RELATED link to gem-email-mobile-number-change using anchor \"GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-email-mobile-number-change",
+        "action": "Add RELATED link to gem-epbg-bank-guarantee-rules-refund using anchor \"GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-epbg-bank-guarantee-rules-refund",
+        "action": "Add RELATED link to gem-incident-management-show-cause-reply using anchor \"GeM Show-Cause Notice Reply Format & Suspension Appeal Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-incident-management-show-cause-reply",
+        "action": "Add RELATED link to gem-invoice-generate-kaise-kare using anchor \"GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-invoice-generate-kaise-kare",
+        "action": "Add RELATED link to gem-joint-venture-consortium-bidding using anchor \"GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-joint-venture-consortium-bidding",
+        "action": "Add RELATED link to gem-l1-price-matching-counter-offer using anchor \"GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-l1-price-matching-counter-offer",
+        "action": "Add RELATED link to gem-login-kaise-kare using anchor \"GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-login-kaise-kare",
+        "action": "Add RELATED link to gem-order-accept-kaise-kare using anchor \"GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-order-accept-kaise-kare",
+        "action": "Add RELATED link to gem-order-cancel-rules using anchor \"GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-order-cancel-rules",
+        "action": "Add RELATED link to gem-order-delivery-update-kaise-kare using anchor \"GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-order-delivery-update-kaise-kare",
+        "action": "Add RELATED link to gem-payment-kab-milta-hai using anchor \"GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-payment-kab-milta-hai",
+        "action": "Add RELATED link to gem-payment-status-kaise-check-kare using anchor \"GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-payment-status-kaise-check-kare",
+        "action": "Add RELATED link to gem-product-approval-time using anchor \"GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-product-approval-time",
+        "action": "Add RELATED link to gem-profile-update-kaise-kare using anchor \"GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-profile-update-kaise-kare",
+        "action": "Add RELATED link to gem-registration-kaise-kare using anchor \"GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-registration-kaise-kare",
+        "action": "Add RELATED link to gem-return-replacement-rules using anchor \"GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-return-replacement-rules",
+        "action": "Add RELATED link to gem-search-filters-explained using anchor \"GeM Search Filters Explained: Narrowing Active Tenders\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-search-filters-explained",
+        "action": "Add RELATED link to gem-seller-dashboard-kaise-use-kare using anchor \"GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-seller-dashboard-kaise-use-kare",
+        "action": "Add RELATED link to gem-seller-performance-dashboard using anchor \"GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-seller-performance-dashboard",
+        "action": "Add RELATED link to gem-seller-rating-improve-kaise-kare using anchor \"GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-seller-rating-improve-kaise-kare",
+        "action": "Add RELATED link to gem-seller-registration-kaise-kare using anchor \"GeM Par Seller Registration Kaise Kare? Complete Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-seller-registration-kaise-kare",
+        "action": "Add RELATED link to gem-service-contract-bidding-rules using anchor \"GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-service-contract-bidding-rules",
+        "action": "Add RELATED link to gem-tender-search-guide using anchor \"Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-tender-search-guide",
+        "action": "Add RELATED link to gem-warranty-claim-process using anchor \"GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-warranty-claim-process",
+        "action": "Add RELATED link to how-to-search-gem-tenders using anchor \"GeM Portal Par Active Bids aur Tenders Kaise Search Karein\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "how-to-search-gem-tenders",
+        "action": "Add RELATED link to ireps-railway-tender-bidding-guide using anchor \"IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "ireps-railway-tender-bidding-guide",
+        "action": "Add RELATED link to keyword-search-tips using anchor \"Best Keyword Search Tips for Finding GeM Tenders\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "keyword-search-tips",
+        "action": "Add RELATED link to manufacturers-registration using anchor \"GeM Registration for Manufacturers: Complete OEM Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "manufacturers-registration",
+        "action": "Add RELATED link to ministry-department-search using anchor \"How to Search GeM Tenders by Ministry and Department\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "ministry-department-search",
+        "action": "Add RELATED link to msme-registration using anchor \"How MSMEs Can Register on GeM: Step-by-Step Tutorial\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "msme-registration",
+        "action": "Add RELATED link to profile-completion using anchor \"How to Complete Your GeM Seller Profile (100% Checklist)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "profile-completion",
+        "action": "Add RELATED link to representation-writing using anchor \"How to Write Technical Representations for Disqualified GeM Bids\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "representation-writing",
+        "action": "Add RELATED link to restrictive-specifications using anchor \"Appealing Restrictive Tender Specifications on GeM\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "restrictive-specifications",
+        "action": "Add RELATED link to reverse-auction-rules using anchor \"GeM Reverse Auction (RA) Rules and Bidding Strategies\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "reverse-auction-rules",
+        "action": "Add RELATED link to saved-search-and-alerts using anchor \"Using Saved Searches and Tender Alerts on GeM\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "saved-search-and-alerts",
+        "action": "Add RELATED link to single-bid-compliance using anchor \"GeM Single Bid Evaluation and GFR Compliance Rules\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "single-bid-compliance",
+        "action": "Add RELATED link to state-procurement-up-tenders-gem-comparison using anchor \"UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "state-procurement-up-tenders-gem-comparison",
+        "action": "Add RELATED link to state-wise-tender-search using anchor \"How to Search State-wise Government Tenders on GeM\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "state-wise-tender-search",
+        "action": "Add RELATED link to tender-evaluation-stages using anchor \"GeM Tender Evaluation Stages: Technical & Financial Opens\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "tender-evaluation-stages",
+        "action": "Add RELATED link to timeframe using anchor \"How Long Does GeM Registration Take: Step-by-Step Timelines\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "timeframe",
+        "action": "Add RELATED link to traders-registration using anchor \"GeM Registration for Traders: Resellers and Distributors\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "traders-registration",
+        "action": "Add RELATED link to use-ai-summarize-government-tender-pdfs using anchor \"How to Use AI to Summarize Government Tender PDFs in 30 Seconds\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "use-ai-summarize-government-tender-pdfs",
+        "action": "Add RELATED link to gem-oem-panel-registration-guide using anchor \"GeM OEM Panel Registration Complete Guide (2026)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-oem-panel-registration-guide",
+        "action": "Add RELATED link to gem-catalog-rejected-reasons-complete-guide using anchor \"GeM Catalog Rejected Reasons & How to Fix Them\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-catalog-rejected-reasons-complete-guide",
+        "action": "Add RELATED link to gem-oem-authorization-letter-format using anchor \"GeM OEM Authorization Letter Format & Approval Tips\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-oem-authorization-letter-format",
+        "action": "Add RELATED link to gem-custom-item-creation-rules-2026 using anchor \"GeM Custom Item Creation Rules & BOQ Upload Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-custom-item-creation-rules-2026",
+        "action": "Add RELATED link to gem-generic-vs-brand-catalog-guide using anchor \"Generic Product vs Brand Product on GeM: What to Choose?\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-generic-vs-brand-catalog-guide",
+        "action": "Add RELATED link to gem-boq-excel-upload-errors-guide using anchor \"GeM BOQ Upload Errors & Excel Validation Fixes\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-boq-excel-upload-errors-guide",
+        "action": "Add RELATED link to gem-hsn-code-gst-mapping-guide using anchor \"GeM HSN Code Mapping & GST Slab Approval Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-hsn-code-gst-mapping-guide",
+        "action": "Add RELATED link to gem-product-cloning-duplication-guide using anchor \"GeM Product Clone Guide: How to Duplicate Catalog Fast\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-product-cloning-duplication-guide",
+        "action": "Add RELATED link to gem-vendor-assessment-rules-exemption-guide using anchor \"GeM Vendor Assessment Rules & QCI Exemption Criteria\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-vendor-assessment-rules-exemption-guide",
+        "action": "Add RELATED link to gem-category-approval-time-guide using anchor \"GeM Category Approval Time & Escalation Process\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-category-approval-time-guide",
+        "action": "Add RELATED link to gem-reverse-auction-complete-guide using anchor \"GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-reverse-auction-complete-guide",
+        "action": "Add RELATED link to gem-bid-participation-fees-guide using anchor \"GeM Bid Participation Fees Guide: EMD & PBG Rules Explained\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-bid-participation-fees-guide",
+        "action": "Add RELATED link to gem-contract-performance-security-guide using anchor \"GeM Contract Performance Security (ePBG) Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-contract-performance-security-guide",
+        "action": "Add RELATED link to gem-payment-cycle-complete-guide using anchor \"GeM Payment Cycle Complete Guide: Timeline & Process\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-payment-cycle-complete-guide",
+        "action": "Add RELATED link to gem-order-fulfillment-guide using anchor \"GeM Order Fulfillment Guide: Generation to Dispatch\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-order-fulfillment-guide",
+        "action": "Add RELATED link to gem-inspection-acceptance-guide using anchor \"GeM Inspection & Acceptance Guide (CRAC Rules)\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-inspection-acceptance-guide",
+        "action": "Add RELATED link to gem-liquidated-damages-rules using anchor \"GeM Liquidated Damages (LD) Rules Explained\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-liquidated-damages-rules",
+        "action": "Add RELATED link to gem-contract-termination-rules using anchor \"GeM Contract Termination & Cancellation Rules Explained\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-contract-termination-rules",
+        "action": "Add RELATED link to gem-seller-rating-performance-guide using anchor \"GeM Seller Rating & Performance Score Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-seller-rating-performance-guide",
+        "action": "Add RELATED link to gem-buyer-seller-dispute-resolution-guide using anchor \"GeM Buyer Seller Dispute Resolution Guide\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      },
+      {
+        "articleSlug": "gem-buyer-seller-dispute-resolution-guide",
+        "action": "Add RELATED link to udyam-error using anchor \"GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein\"",
+        "estimatedSeoImpact": "MEDIUM",
+        "difficulty": "EASY",
+        "implementationTimeMinutes": 45
+      }
+    ],
+    "low": []
+  }
+}
