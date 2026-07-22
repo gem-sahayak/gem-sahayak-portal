@@ -1,0 +1,22 @@
+{
+  "engineVersion": "1.0.0",
+  "schemaVersion": "1.0.0",
+  "projectVersion": "2.1.0",
+  "name": "ASTRA ENGINE Core",
+  "options": {
+    "verbosity": "info",
+    "failOnError": true,
+    "enableEvents": true,
+    "saveReports": true,
+    "saveSnapshots": true
+  },
+  "exclusions": [
+    "node_modules",
+    ".next",
+    "out",
+    "build",
+    "dist",
+    "astra-engine",
+    ".git"
+  ]
+}
