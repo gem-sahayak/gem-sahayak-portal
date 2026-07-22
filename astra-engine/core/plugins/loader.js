@@ -5,23 +5,20 @@ const path = require('path');
 const manifestValidator = require('./manifest');
 const pluginRegistry = require('./registry');
 const sandbox = require('./sandbox');
-const { validateReportPath } = require('../guards/pathGuard');
+const { pluginTrustManager, TRUST_LEVELS } = require('./trust');
+const signatureVerifier = require('./signature');
+const dependencyResolver = require('./dependency');
+const versionManager = require('./version');
+const pluginTelemetry = require('./telemetry');
 
 const DEFAULT_PLUGINS_DIR = path.resolve(__dirname, '../../plugins');
+const DEFAULT_HOOK_TIMEOUT_MS = 5000;
 
-/**
- * Plugin Loader & Lifecycle Manager.
- * Discovers, validates, loads/unloads plugins, and executes hook pipelines.
- * Enforces strict read-only permissions and path/import security boundaries.
- */
 class PluginLoader {
   constructor(pluginsDir = DEFAULT_PLUGINS_DIR) {
     this.pluginsDir = pluginsDir;
   }
 
-  /**
-   * Discovers plugins in the plugins directory.
-   */
   discoverPlugins() {
     const discovered = [];
     if (!fs.existsSync(this.pluginsDir)) return discovered;
@@ -40,9 +37,6 @@ class PluginLoader {
     return discovered;
   }
 
-  /**
-   * Loads a plugin from folder.
-   */
   loadPluginFromDir(pluginDir) {
     const manifestPath = path.join(pluginDir, 'plugin.json');
     const valRes = manifestValidator.loadAndValidate(manifestPath);
@@ -53,57 +47,104 @@ class PluginLoader {
 
     const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
-    // Check entry point JS file
+    // 1. Version Compatibility Check
+    const versionRes = versionManager.validateEngineCompatibility(manifest, '1.3.1');
+    if (!versionRes.compatible) {
+      throw new Error(`Plugin "${manifest.id}" incompatible: ${versionRes.errors.join(', ')}`);
+    }
+
+    // 2. Signature Check
+    const sigRes = signatureVerifier.verifySignature(pluginDir);
+
+    // 3. Trust Level Check
+    const trustLevel = pluginTrustManager.getTrustLevel(manifest, sigRes.verified);
+    if (!pluginTrustManager.isExecutionAllowed(trustLevel)) {
+      throw new Error(`Plugin "${manifest.id}" is BLOCKED by trust policy`);
+    }
+
+    // 4. Entry Point Check
     const entryFile = path.join(pluginDir, 'index.js');
     if (!fs.existsSync(entryFile)) {
       throw new Error(`Plugin entry point "index.js" missing in ${pluginDir}`);
     }
 
-    // Require plugin module cleanly
     const pluginModule = require(entryFile);
     const instance = typeof pluginModule === 'function' ? new pluginModule() : pluginModule;
+
+    manifest.trustLevel = trustLevel;
+    manifest.signatureValid = sigRes.verified;
 
     const record = pluginRegistry.register(manifest, instance, pluginDir);
     return record;
   }
 
   /**
-   * Executes a lifecycle hook across all active plugins subscribing to that hook.
+   * Executes a hook across active plugins using deterministic topological dependency order,
+   * timeout protection (5000 ms), and crash isolation.
    */
-  async executeHook(hookName, rawContext = {}) {
+  async executeHook(hookName, rawContext = {}, timeoutMs = DEFAULT_HOOK_TIMEOUT_MS) {
     const results = [];
-    const activePlugins = pluginRegistry.list().filter(p => p.enabled && p.hooks.includes(hookName));
+    const pluginsMap = pluginRegistry.plugins;
 
-    for (const pMeta of activePlugins) {
-      const record = pluginRegistry.find(pMeta.id);
-      if (!record || !record.instance) continue;
+    // Resolve topological execution order
+    const depRes = dependencyResolver.resolveExecutionOrder(pluginsMap);
+    const orderedIds = depRes.order;
+
+    for (const pluginId of orderedIds) {
+      const record = pluginRegistry.find(pluginId);
+      if (!record || !record.enabled || !record.manifest.hooks.includes(hookName)) continue;
 
       const t0 = Date.now();
       const sandboxCtx = sandbox.createContext(record.manifest, rawContext);
 
       try {
-        let hookData = null;
-        if (typeof record.instance.executeHook === 'function') {
-          hookData = await record.instance.executeHook(hookName, sandboxCtx);
-        } else if (typeof record.instance[hookName] === 'function') {
-          hookData = await record.instance[hookName](sandboxCtx);
-        }
+        // Timeout protection wrapper
+        const hookPromise = Promise.resolve().then(async () => {
+          if (typeof record.instance.executeHook === 'function') {
+            return await record.instance.executeHook(hookName, sandboxCtx);
+          } else if (typeof record.instance[hookName] === 'function') {
+            return await record.instance[hookName](sandboxCtx);
+          }
+          return null;
+        });
 
+        let isTimedOut = false;
+        const timeoutPromise = new Promise((_, reject) => {
+          const timer = setTimeout(() => {
+            isTimedOut = true;
+            reject(new Error(`Plugin "${pluginId}" hook "${hookName}" timed out after ${timeoutMs}ms`));
+          }, timeoutMs);
+          if (timer.unref) timer.unref();
+        });
+
+        const hookData = await Promise.race([hookPromise, timeoutPromise]);
+        const elapsed = Date.now() - t0;
+
+        pluginTelemetry.recordHookExecution(pluginId, hookName, elapsed, 'SUCCESS');
         results.push({
-          pluginId: record.id,
+          pluginId,
           hookName,
           status: 'SUCCESS',
-          executionTimeMs: Date.now() - t0,
+          executionTimeMs: elapsed,
           data: hookData
         });
       } catch (err) {
+        const elapsed = Date.now() - t0;
+        const isTimeout = err.message.includes('timed out');
+        const status = isTimeout ? 'TIMEOUT' : 'ERROR';
+
+        pluginTelemetry.recordHookExecution(pluginId, hookName, elapsed, status, err.message);
+
         results.push({
-          pluginId: record.id,
+          pluginId,
           hookName,
-          status: 'ERROR',
-          executionTimeMs: Date.now() - t0,
+          status,
+          executionTimeMs: elapsed,
           error: err.message
         });
+
+        console.warn(`[Plugin Isolation Warning] ${err.message}`);
+        // Engine continues executing despite individual plugin crash or timeout
       }
     }
 

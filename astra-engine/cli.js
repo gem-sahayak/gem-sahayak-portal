@@ -21,7 +21,16 @@ const incrementalScanner = require('./core/incremental');
 const { cacheManager } = require('./core/cache');
 const { telemetry } = require('./core/telemetry');
 const { eventBus, EVENT_TYPES } = require('./core/events');
-const { pluginLoader, pluginRegistry, pluginManifestValidator } = require('./core/plugins');
+const {
+  pluginLoader,
+  pluginRegistry,
+  pluginManifestValidator,
+  pluginTrustManager,
+  signatureVerifier,
+  dependencyResolver,
+  versionManager,
+  pluginReporter
+} = require('./core/plugins');
 
 const colors = {
   reset: "\x1b[0m",
@@ -34,7 +43,7 @@ const colors = {
 
 function printBanner() {
   console.log(`\n${colors.cyan}${colors.bright}===========================================${colors.reset}`);
-  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.3.0              ${colors.reset}`);
+  console.log(`${colors.cyan}${colors.bright}          ASTRA ENGINE v1.3.1              ${colors.reset}`);
   console.log(`${colors.cyan}    Repository Guardian & Engineering OS     ${colors.reset}`);
   console.log(`${colors.cyan}${colors.bright}===========================================${colors.reset}\n`);
 }
@@ -54,12 +63,14 @@ function printHelp() {
   console.log(`  ${colors.green}telemetry${colors.reset}       Export system execution runtimes, throughput & memory telemetry`);
   console.log(`  ${colors.green}plugins${colors.reset}         Discover & inspect external read-only plugin packages`);
   console.log(`  ${colors.green}plugin:list${colors.reset}     List active registered plugins, granted permissions & hooks`);
-  console.log(`  ${colors.green}plugin:validate${colors.reset} Validate plugin.json manifest against JSON schema`);
-  console.log(`  ${colors.green}plugin:load${colors.reset}     Load a plugin from target directory path`);
+  console.log(`  ${colors.green}plugin:info${colors.reset}     Display detailed plugin manifest, trust level & permissions`);
+  console.log(`  ${colors.green}plugin:verify${colors.reset}   Verify plugin signature, public PEM key & SHA256 checksums`);
+  console.log(`  ${colors.green}plugin:doctor${colors.reset}   Run diagnostics on installed plugins & dependency graphs`);
+  console.log(`  ${colors.green}plugin:update${colors.reset}   Check SemVer engine compatibility & update status`);
+  console.log(`  ${colors.green}plugin:enable${colors.reset}   Enable a registered plugin by ID`);
   console.log(`  ${colors.green}plugin:disable${colors.reset}  Disable a registered plugin by ID`);
+  console.log(`  ${colors.green}plugin:remove${colors.reset}   Unregister a plugin package from runtime memory`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
-  console.log(`${colors.bright}Options:${colors.reset}`);
-  console.log(`  ${colors.green}-h, --help${colors.reset}      Show this help message\n`);
 }
 
 async function runCli() {
@@ -87,7 +98,7 @@ async function runCli() {
 
   switch (command) {
     case 'doctor': {
-      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.3.0)...${colors.reset}`);
+      console.log(`${colors.cyan}🩺 Bootstrapping Astra Doctor Diagnostics (v1.3.1)...${colors.reset}`);
       console.log(`  - Engine Config Version: ${colors.green}${config.engineVersion}${colors.reset}`);
       console.log(`  - Schema Version: ${colors.green}${config.schemaVersion}${colors.reset}`);
       console.log(`  - Import Guard Active: ${colors.green}${isGuardActive()}${colors.reset}`);
@@ -111,6 +122,10 @@ async function runCli() {
         'Plugin Registry': pluginRegistry,
         'Plugin Sandbox': require('./core/plugins/sandbox'),
         'Plugin Manifest Validator': pluginManifestValidator,
+        'Plugin Trust Manager': pluginTrustManager,
+        'Plugin Signature Verifier': signatureVerifier,
+        'Plugin Dependency Resolver': dependencyResolver,
+        'Plugin Version Manager': versionManager,
         'Path Guard': require('./core/guards/pathGuard'),
         'Import Guard': require('./core/guards/importGuard'),
       };
@@ -126,94 +141,121 @@ async function runCli() {
         }
       }
 
-      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4B.1 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
+      console.log(`\n${allModulesOk ? colors.green + '🟢 Astra OS Status: All Phase 4B.2 modules operational.' : colors.red + '🔴 Astra OS Status: Degraded'}${colors.reset}\n`);
       break;
     }
 
     case 'plugins':
     case 'plugin:list': {
-      console.log(`${colors.cyan}🔌 Discovering ASTRA Read-Only Plugins...${colors.reset}`);
+      console.log(`${colors.cyan}🔌 Discovering & Listing ASTRA Read-Only Plugins...${colors.reset}`);
       const discovered = pluginLoader.discoverPlugins();
-      console.log(`  - Plugins Discovered: ${colors.green}${discovered.length}${colors.reset}`);
-
-      // Auto-load discovered plugins for listing
       for (const disc of discovered) {
-        try {
-          pluginLoader.loadPluginFromDir(disc.folder);
-        } catch (e) {
-          // Ignore if already loaded
-        }
+        try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {}
       }
 
       const list = pluginRegistry.list();
-      if (list.length === 0) {
-        console.log(`  ${colors.yellow}No plugins currently registered.${colors.reset}\n`);
-      } else {
-        console.log(`\n  ${colors.bright}Registered Plugins:${colors.reset}`);
-        for (const p of list) {
-          console.log(`    - ${colors.green}${p.name}${colors.reset} [id: ${p.id}, v${p.version}]`);
-          console.log(`      Status: ${p.enabled ? colors.green + 'ENABLED' : colors.red + 'DISABLED'}${colors.reset}`);
-          console.log(`      Permissions: ${colors.cyan}${p.permissions.join(', ')}${colors.reset}`);
-          console.log(`      Hooks: ${colors.cyan}${p.hooks.join(', ')}${colors.reset}\n`);
-        }
+      console.log(`  - Registered Plugins: ${colors.green}${list.length}${colors.reset}\n`);
+
+      for (const p of list) {
+        const record = pluginRegistry.find(p.id);
+        const trust = record.manifest.trustLevel || 'UNSIGNED';
+        console.log(`    - ${colors.green}${p.name}${colors.reset} [id: ${p.id}, v${p.version}]`);
+        console.log(`      Trust Level: ${colors.cyan}${trust}${colors.reset}`);
+        console.log(`      Status: ${p.enabled ? colors.green + 'ENABLED' : colors.red + 'DISABLED'}${colors.reset}`);
+        console.log(`      Permissions: ${colors.yellow}${p.permissions.join(', ')}${colors.reset}`);
+        console.log(`      Hooks: ${colors.cyan}${p.hooks.join(', ')}${colors.reset}\n`);
       }
       break;
     }
 
-    case 'plugin:validate': {
-      const targetPath = args[1] || path.join(__dirname, 'plugins/sample-plugin/plugin.json');
-      console.log(`${colors.cyan}📋 Validating Plugin Manifest: ${targetPath}${colors.reset}`);
-      const valRes = pluginManifestValidator.loadAndValidate(targetPath);
+    case 'plugin:info': {
+      const pluginId = args[1] || 'sample-auditor';
+      const discovered = pluginLoader.discoverPlugins();
+      for (const disc of discovered) { try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {} }
 
-      if (valRes.valid) {
-        console.log(`  ${colors.green}✅ VALID: Plugin manifest complies with plugin.schema.json!${colors.reset}\n`);
-      } else {
-        console.log(`  ${colors.red}❌ INVALID:${colors.reset} ${valRes.errors.join(', ')}\n`);
+      const record = pluginRegistry.find(pluginId);
+      if (!record) {
+        console.log(`${colors.red}❌ Plugin "${pluginId}" not found.${colors.reset}\n`);
         process.exit(1);
       }
+
+      console.log(`${colors.cyan}ℹ️ Plugin Metadata Info: ${colors.green}${record.name}${colors.reset}`);
+      console.log(`  - ID                   : ${record.id}`);
+      console.log(`  - Version              : v${record.version}`);
+      console.log(`  - Trust Level          : ${record.manifest.trustLevel || 'UNSIGNED'}`);
+      console.log(`  - Signature Valid      : ${record.manifest.signatureValid ? colors.green + 'YES' : colors.yellow + 'UNSIGNED / NO'}${colors.reset}`);
+      console.log(`  - Granted Permissions  : ${record.manifest.permissions.join(', ')}`);
+      console.log(`  - Subscribed Hooks     : ${record.manifest.hooks.join(', ')}`);
+      console.log(`  - Folder Path          : ${record.path}\n`);
       break;
     }
 
-    case 'plugin:load': {
+    case 'plugin:verify': {
       const targetDir = args[1] || path.join(__dirname, 'plugins/sample-plugin');
-      console.log(`${colors.cyan}⚡ Loading Plugin from: ${targetDir}${colors.reset}`);
-      try {
-        const record = pluginLoader.loadPluginFromDir(targetDir);
-        console.log(`  ${colors.green}✅ SUCCESS: Plugin "${record.name}" [${record.id}] loaded successfully!${colors.reset}\n`);
-      } catch (e) {
-        console.error(`  ${colors.red}❌ FAILED to load plugin:${colors.reset}`, e.message);
+      console.log(`${colors.cyan}🔒 Verifying Plugin Signatures & Checksums: ${targetDir}${colors.reset}`);
+      const sigRes = signatureVerifier.verifySignature(targetDir);
+
+      if (sigRes.verified) {
+        console.log(`  ${colors.green}✅ VERIFIED: Plugin crypto signature is valid!${colors.reset}\n`);
+      } else {
+        console.log(`  ${colors.yellow}⚠️ UNSIGNED / UNVERIFIED: ${sigRes.reason}${colors.reset}\n`);
+      }
+      break;
+    }
+
+    case 'plugin:doctor': {
+      console.log(`${colors.cyan}🩺 Running Plugin Dependency & Health Diagnostics...${colors.reset}`);
+      const discovered = pluginLoader.discoverPlugins();
+      for (const disc of discovered) { try { pluginLoader.loadPluginFromDir(disc.folder); } catch (e) {} }
+
+      const depRes = dependencyResolver.resolveExecutionOrder(pluginRegistry.plugins);
+
+      console.log(`  - Active Plugins Analyzed   : ${colors.green}${pluginRegistry.list().length}${colors.reset}`);
+      console.log(`  - Execution Order Calculated: ${colors.cyan}${depRes.order.join(' -> ') || 'None'}${colors.reset}`);
+
+      if (depRes.valid) {
+        console.log(`  ${colors.green}✅ HEALTHY: Zero dependency conflicts or circular references detected!${colors.reset}\n`);
+      } else {
+        console.log(`  ${colors.red}❌ DEPENDENCY ERROR: ${depRes.errors.join(', ')}${colors.reset}\n`);
         process.exit(1);
+      }
+      break;
+    }
+
+    case 'plugin:enable': {
+      const pluginId = args[1] || 'sample-auditor';
+      try {
+        pluginRegistry.enable(pluginId);
+        console.log(`  ${colors.green}✅ Plugin "${pluginId}" enabled.${colors.reset}\n`);
+      } catch (e) {
+        console.error(`  ${colors.red}❌ FAILED to enable plugin:${colors.reset}`, e.message);
       }
       break;
     }
 
     case 'plugin:disable': {
       const pluginId = args[1] || 'sample-auditor';
-      console.log(`${colors.cyan}🚫 Disabling Plugin: ${pluginId}${colors.reset}`);
       try {
         pluginRegistry.disable(pluginId);
-        console.log(`  ${colors.green}✅ Plugin "${pluginId}" disabled successfully.${colors.reset}\n`);
+        console.log(`  ${colors.green}✅ Plugin "${pluginId}" disabled.${colors.reset}\n`);
       } catch (e) {
         console.error(`  ${colors.red}❌ FAILED to disable plugin:${colors.reset}`, e.message);
-        process.exit(1);
       }
+      break;
+    }
+
+    case 'plugin:remove': {
+      const pluginId = args[1] || 'sample-auditor';
+      pluginRegistry.unregister(pluginId);
+      console.log(`  ${colors.green}✅ Plugin "${pluginId}" removed from runtime memory.${colors.reset}\n`);
       break;
     }
 
     case 'fingerprint': {
       console.log(`${colors.cyan}🔑 Generating SHA256 Workspace Fingerprints...${colors.reset}`);
-      eventBus.publish(EVENT_TYPES.SCAN_STARTED, { command: 'fingerprint' });
-
       const state = await scanner.runScanner(rootDir, config);
-      for (const [relPath, fileObj] of state.filesystem.files.entries()) {
-        fingerprintManager.fingerprintFile(relPath, fileObj.absolutePath);
-      }
-
       const res = fingerprintManager.generateWorkspaceFingerprint(state);
-      eventBus.publish(EVENT_TYPES.CACHE_UPDATED, { type: 'fingerprint', composite: res.compositeFingerprint });
-
-      console.log(`  - Composite Fingerprint : ${colors.green}${res.compositeFingerprint}${colors.reset}`);
-      console.log(`  - Files Fingerprinted   : ${colors.green}${res.fileCount}${colors.reset}\n`);
+      console.log(`  - Composite Fingerprint : ${colors.green}${res.compositeFingerprint}${colors.reset}\n`);
       break;
     }
 
@@ -221,16 +263,14 @@ async function runCli() {
       console.log(`${colors.cyan}🔄 Running Incremental Delta Scan...${colors.reset}`);
       const state = await scanner.runScanner(rootDir, config);
       const incRes = incrementalScanner.scanIncremental(state);
-      const s = incRes.comparison.stats;
-      console.log(`  - Total Files          : ${colors.green}${s.totalFiles}${colors.reset}`);
-      console.log(`  - Fingerprint Hit Rate : ${colors.cyan}${s.fingerprintHitRatePct}%${colors.reset}\n`);
+      console.log(`  - Total Files          : ${colors.green}${incRes.comparison.stats.totalFiles}${colors.reset}\n`);
       break;
     }
 
     case 'cache': {
       console.log(`${colors.cyan}💾 Inspecting Cache Layer Efficiency...${colors.reset}`);
       const stats = cacheManager.getAllStats();
-      console.log(`  - State Snapshot Cache   : ${colors.green}${stats.state.size} entries (${stats.state.hitRatePct}% hit rate)${colors.reset}\n`);
+      console.log(`  - State Snapshot Cache   : ${colors.green}${stats.state.size} entries${colors.reset}\n`);
       break;
     }
 
@@ -259,15 +299,10 @@ async function runCli() {
       }
 
       const enginesToRun = [];
-      if (command === 'registry' || command === 'scan') {
-        enginesToRun.push(registryEngine);
-      } else if (command === 'seo') {
-        enginesToRun.push(seoEngine);
-      } else if (command === 'graph') {
-        enginesToRun.push(graphEngine);
-      } else if (command === 'validate') {
-        enginesToRun.push(registryEngine, seoEngine, graphEngine);
-      }
+      if (command === 'registry' || command === 'scan') enginesToRun.push(registryEngine);
+      else if (command === 'seo') enginesToRun.push(seoEngine);
+      else if (command === 'graph') enginesToRun.push(graphEngine);
+      else if (command === 'validate') enginesToRun.push(registryEngine, seoEngine, graphEngine);
 
       const results = [];
       for (const engine of enginesToRun) {
@@ -302,7 +337,7 @@ async function runCli() {
         },
         results,
         schemaVersion: config.schemaVersion,
-        engineVersion: '1.3.0'
+        engineVersion: '1.3.1'
       };
 
       const jsonReport = await reporter.build(reportData, 'json');
@@ -313,13 +348,16 @@ async function runCli() {
       await reporter.write(jsonReport, path.join(reportsLatestDir, 'report.json'));
       await reporter.write(mdReport, path.join(reportsLatestDir, 'report.md'));
 
+      // Export Plugin Reports as well
+      const plugJson = pluginReporter.buildJsonReport();
+      const plugMd = pluginReporter.buildMarkdownReport();
+      await reporter.write(JSON.stringify(plugJson, null, 2), path.join(reportsLatestDir, 'plugin-report.json'));
+      await reporter.write(plugMd, path.join(reportsLatestDir, 'plugin-report.md'));
+
       console.log(terminalReport);
 
-      if (overallVerdict === 'FAIL') {
-        process.exit(1);
-      } else {
-        process.exit(0);
-      }
+      if (overallVerdict === 'FAIL') process.exit(1);
+      else process.exit(0);
       break;
     }
 
