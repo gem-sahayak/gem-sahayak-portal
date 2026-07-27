@@ -50,7 +50,7 @@ export default function DisclaimerPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>5. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              If you have any questions or require legal clarification regarding this disclaimer, please contact us via email at <strong>support@sahayakai.co.in</strong>.
+              If you have any questions or require legal clarification regarding this disclaimer, please contact us via email at <strong>support@sahayakai.com</strong>.
             </p>
           </section>
         </div>

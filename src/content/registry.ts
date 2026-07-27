@@ -125,12 +125,12 @@ export const REGISTRY_TOOLS: Record<string, RegistryTool> = {
   "l1-margin-calculator": {
     slug: "l1-margin-calculator",
     name: "GeM L1 Margin Calculator",
-    headline: "Calculate profit margins and optimal bidding prices",
-    description: "Determine your target bid price after factoring in GeM transaction fees, seller commissions, logistics, and tax margins.",
+    headline: "Calculate profit margins and net quotation costs",
+    description: "Determine your net quotation cost after factoring in GeM transaction fees, seller commissions, logistics, and tax margins.",
     mockPlaceholder: "Enter base cost price, delivery location, and target profit margin...",
     useCases: [
       "Calculate transaction charges automatically",
-      "Simulate final bid price comparison against competitor baselines",
+      "Factor in freight, logistics, and tax margins for net quotation cost",
       "Ensure compliant margins with tax adjustments"
     ],
     faqs: [
@@ -317,6 +317,31 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     ],
     relatedTools: ["l1-margin-calculator", "bid-analyzer"],
     relatedArticles: ["gem-bidding-mistakes-msme-tenders"]
+  },
+  {
+    slug: "gem-incident-management-blacklisting-debarment-rules",
+    title: "GeM Portal Incident Management Policy: Complete Guide to Show Cause Notices, Watchlist & Debarment Rules (2026)",
+    summary: "Master guide on GeM Incident Management Policy. Learn how to handle Show Cause Notices, Watchlist flagging, account suspension, GFR 151 debarment, and account unfreezing.",
+    category: "compliance-policy",
+    date: "2026-07-24",
+    author: "SahayakAI Expert Legal Desk",
+    reviewer: "CTO & Procurement Legal Desk",
+    version: "3.0",
+    readingTime: "18 mins",
+    layout: "ClusterArticle",
+    cta: "Try Free AI Legal Rebuttal Tool",
+    keyTakeaways: [
+      "GeM Incident Policy classifies violations into Level 1 (Mild), Level 2 (Serious), and Level 3 (Severe).",
+      "Show Cause Notice (SCN) reply deadline is strictly 5 to 10 calendar days.",
+      "Watchlist restricts new bid participation for 10 to 60 days.",
+      "Debarment under GFR Rule 151 blocks seller PAN across all Indian public procurement for up to 3 years."
+    ],
+    faqs: [
+      { q: "What is GeM Incident Management Policy?", a: "GeM Incident Management Policy (IMP) is the official regulatory framework governing non-compliance, order delays, product deviations, and contractual breaches on GeM portal." },
+      { q: "How many days do I get to reply to a GeM Show Cause Notice?", a: "Sellers get 5 to 10 calendar days depending on severity. Failure to reply triggers automated Watchlist or account suspension." }
+    ],
+    relatedTools: ["rejection-reply-generator", "clarification-generator", "eligibility-checker"],
+    relatedArticles: ["gem-portal-direct-purchase-limit-rules-2026", "gem-bidding-mistakes-msme-tenders", "how-to-claim-emd-exemption-gem-portal-bids"]
   },
   {
     slug: "gem-bidding-mistakes-msme-tenders",
@@ -634,14 +659,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "cppp-portal-registration-tender-search",
-    title: "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026)",
-    summary: "CPPP (Central Public Procurement Portal) par online vendor enrollment aur bid submission process. Class 3 DSC setup aur daily tender search tips Hindi me.",
-    category: "Government Procurement Hub",
+    title: "CPPP Portal Registration & Tender Search Guide 2026",
+    summary: "Complete step-by-step guide to register as a seller on Central Public Procurement Portal (CPPP), search e-tenders, download tender documents, and submit bids online.",
+    category: "government-procurement",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -654,14 +679,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "cpv-code-guide",
     title: "CPV Code Guide for GeM Sellers: Categorizing Tenders",
     summary: "cpv-code-guide guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -674,14 +699,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "daily-tender-monitoring",
     title: "Daily GeM Tender Monitoring Best Practices for MSMEs",
     summary: "daily-tender-monitoring guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -694,14 +719,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "documents-required",
     title: "Documents Required for GeM Registration (2026 Checklist)",
     summary: "documents-required guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -714,14 +739,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "earnest-money-deposit",
     title: "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
     summary: "earnest-money-deposit guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -734,14 +759,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "faqs",
     title: "Frequently Asked Questions About GeM Registration (2026 Q&A)",
     summary: "faqs guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -754,14 +779,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "fees-explained",
     title: "GeM Registration Fees Explained: Caution Money and Charges",
     summary: "fees-explained guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -774,7 +799,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -794,14 +819,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-bidding-fees",
     title: "GeM Bidding Fees: Transaction Charges & Seller Commissions",
     summary: "gem-bidding-fees guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -814,14 +839,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-bidding-rules-handbook",
     title: "GeM Bidding Rules & Compliance Handbook (2026)",
     summary: "gem-bidding-rules-handbook guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -834,7 +859,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -854,7 +879,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -874,7 +899,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -894,14 +919,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-category-search",
     title: "How to Search GeM Tenders by Product Category",
     summary: "gem-category-search guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -914,7 +939,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -934,7 +959,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -954,7 +979,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -974,7 +999,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -994,7 +1019,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1014,7 +1039,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1034,7 +1059,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1054,7 +1079,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1074,7 +1099,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1094,7 +1119,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1114,14 +1139,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-login-kaise-kare",
-    title: "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026)",
-    summary: "GeM Sign-In & Access</h3>",
-    category: "GeM Account Management",
+    title: "GeM Portal Par Login Kaise Kare: Complete Step-by-Step Guide for Sellers",
+    summary: "GeM portal seller login, primary vs secondary user login, password reset, and mobile OTP verification issues ka complete solution.",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1134,7 +1159,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1154,7 +1179,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1174,7 +1199,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1194,7 +1219,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1214,7 +1239,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1234,7 +1259,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1254,7 +1279,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1274,14 +1299,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-registration-kaise-kare",
-    title: "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026)",
-    summary: "gem-registration-kaise-kare guide by SahayakAI",
-    category: "GeM Seller Onboarding",
+    title: "GeM Portal Par Registration Kaise Kare: Complete Step-by-Step Seller Guide 2026",
+    summary: "GeM portal par seller registration karne ka complete tarika in Hindi. Aadhaar, PAN, Udyam, aur ITR verification steps.",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1294,7 +1319,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1314,14 +1339,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-search-filters-explained",
     title: "GeM Search Filters Explained: Narrowing Active Tenders",
     summary: "gem-search-filters-explained guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1334,7 +1359,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1354,7 +1379,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1374,7 +1399,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1394,14 +1419,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-seller-registration-kaise-kare",
     title: "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
     summary: "GeM Seller Account Setup</h3>",
-    category: "GeM Seller Onboarding",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1414,7 +1439,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1434,14 +1459,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "gem-tender-search-guide",
     title: "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
     summary: "gem-tender-search-guide guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1454,7 +1479,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1474,14 +1499,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "how-to-search-gem-tenders",
     title: "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
     summary: "Step-by-step tutorial on navigating the GeM bid dashboard to find relevant tenders, download documents, and check bid numbers.",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1494,14 +1519,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "ireps-railway-tender-bidding-guide",
-    title: "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026)",
-    summary: "Indian Railways e-Procurement System (IREPS) portal par contractor registration aur online bidding process. Class 3 DSC, Java settings aur tender submission guide Hindi me.",
-    category: "Government Procurement Hub",
+    title: "IREPS Railway Tender Bidding Guide 2026: Indian Railways E-Procurement",
+    summary: "Complete guide to register on IREPS portal, search railway e-tenders, download tender documents, submit online bids, and manage digital signature certificate (DSC).",
+    category: "government-procurement",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1514,14 +1539,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "keyword-search-tips",
     title: "Best Keyword Search Tips for Finding GeM Tenders",
     summary: "keyword-search-tips guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1534,14 +1559,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "manufacturers-registration",
     title: "GeM Registration for Manufacturers: Complete OEM Guide",
     summary: "manufacturers-registration guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1554,14 +1579,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "ministry-department-search",
     title: "How to Search GeM Tenders by Ministry and Department",
     summary: "ministry-department-search guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1574,14 +1599,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "msme-registration",
     title: "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
     summary: "msme-registration guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1594,14 +1619,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "profile-completion",
     title: "How to Complete Your GeM Seller Profile (100% Checklist)",
     summary: "profile-completion guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1614,14 +1639,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "representation-writing",
     title: "How to Write Technical Representations for Disqualified GeM Bids",
     summary: "representation-writing guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1634,14 +1659,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "restrictive-specifications",
     title: "Appealing Restrictive Tender Specifications on GeM",
     summary: "restrictive-specifications guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1654,14 +1679,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "reverse-auction-rules",
     title: "GeM Reverse Auction (RA) Rules and Bidding Strategies",
     summary: "reverse-auction-rules guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1674,14 +1699,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "saved-search-and-alerts",
     title: "Using Saved Searches and Tender Alerts on GeM",
     summary: "saved-search-and-alerts guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1694,14 +1719,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "single-bid-compliance",
     title: "GeM Single Bid Evaluation and GFR Compliance Rules",
     summary: "single-bid-compliance guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1714,7 +1739,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
@@ -1734,14 +1759,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "state-wise-tender-search",
     title: "How to Search State-wise Government Tenders on GeM",
     summary: "state-wise-tender-search guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1754,14 +1779,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "tender-evaluation-stages",
     title: "GeM Tender Evaluation Stages: Technical & Financial Opens",
     summary: "tender-evaluation-stages guide by SahayakAI",
-    category: "GeM Bidding",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1774,14 +1799,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "timeframe",
     title: "How Long Does GeM Registration Take: Step-by-Step Timelines",
     summary: "timeframe guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1794,14 +1819,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "traders-registration",
     title: "GeM Registration for Traders: Resellers and Distributors",
     summary: "traders-registration guide by SahayakAI",
-    category: "GeM Registration",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
@@ -1814,14 +1839,14 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     faqs: [
       { q: "What is the main guideline for ", a: "Verify parameters matching instructions." }
     ],
-    relatedTools: ["bid-analyzer"],
+    relatedTools: ["bid-analyzer", "clarification-generator"],
     relatedArticles: []
   },
   {
     slug: "use-ai-summarize-government-tender-pdfs",
-    title: "How to Use AI to Summarize Government Tender PDFs in 30 Seconds",
-    summary: "Reading thick tender documents and bid PDFs manually takes hours. Discover how to extract compliance parameters and EMD details instantly.",
-    category: "Automation",
+    title: "How to Use AI to Summarize 100-Page Government Tender PDFs in 30 Seconds",
+    summary: "Learn how to use AI tools like SahayakAI Tender Summarizer to instantly extract L1 criteria, EMD exemption rules, experience eligibility, and critical deadlines from complex tender PDFs.",
+    category: "gem-bidding",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",

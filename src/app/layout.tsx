@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import BetaAnnouncement from "./components/BetaAnnouncement";
 
 export const metadata: Metadata = {
   title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper for MSMEs",
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper",
     description: "Automate active tenders and get real-time WhatsApp alerts on Gem Portal India. The ultimate helper tool for MSME government sellers.",
-    url: "https://sahayakai.co.in",
+    url: "https://sahayakai.com",
     siteName: "SahayakAI",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://sahayakai.co.in/og-image.png",
+        url: "https://sahayakai.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "SahayakAI — Gem Portal Bid Tracker & Helper for MSMEs",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper",
     description: "Automate active tenders and get real-time WhatsApp alerts on Gem Portal India.",
-    images: ["https://sahayakai.co.in/og-image.png"],
+    images: ["https://sahayakai.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -86,8 +87,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "SahayakAI",
-              "url": "https://sahayakai.co.in",
-              "logo": "https://sahayakai.co.in/logo_symbol.png",
+              "url": "https://sahayakai.com",
+              "logo": "https://sahayakai.com/logo_symbol.png",
               "sameAs": [
                 "https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf"
               ],
@@ -102,10 +103,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "SahayakAI",
-              "url": "https://sahayakai.co.in",
+              "url": "https://sahayakai.com",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://sahayakai.co.in/knowledge/search?q={search_term_string}",
+                "target": "https://sahayakai.com/knowledge/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
@@ -113,6 +114,9 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Global Persistent Beta Ribbon */}
+        <BetaAnnouncement />
+
         {/* Global Navigation Bar */}
         <Navbar />
 
@@ -166,13 +170,18 @@ export default function RootLayout({
               </p>
             </div>
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "24px", fontSize: "0.85rem", color: "#64748B" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "24px", fontSize: "0.85rem", color: "#64748B", flexWrap: "wrap", gap: "16px" }}>
               <p>© {new Date().getFullYear()} SahayakAI. Made with ❤️ for MSMEs in India.</p>
               <div style={{ display: "flex", gap: "24px" }}>
                 <a href="/terms" className="hover-white">Terms and Conditions</a>
                 <a href="/privacy" className="hover-white">Privacy Policy</a>
                 <a href="/disclaimer" className="hover-white">Disclaimer</a>
               </div>
+            </div>
+            
+            {/* Public Beta Footer Note */}
+            <div style={{ marginTop: "20px", textAlign: "center", padding: "10px 16px", background: "rgba(110,231,183,0.06)", border: "1px solid rgba(110,231,183,0.2)", borderRadius: "8px", color: "#6EE7B7", fontSize: "0.82rem", fontWeight: "700" }}>
+              🧪 Currently in Public Beta. SahayakAI is continuously evolving with feedback from Indian businesses.
             </div>
           </div>
         </footer>

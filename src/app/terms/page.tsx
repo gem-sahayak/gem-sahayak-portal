@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>1. Acceptance of Terms</h2>
             <p style={{ color: "#64748B" }}>
-              By installing the SahayakAI Chrome extension or using sahayakai.co.in, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not install or use our services.
+              By installing the SahayakAI Chrome extension or using sahayakai.com, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not install or use our services.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>8. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              For any questions regarding these terms, please contact us at <strong>support@sahayakai.co.in</strong>.
+              For any questions regarding these terms, please contact us at <strong>support@sahayakai.com</strong>.
             </p>
           </section>
         </div>

@@ -1,0 +1,23 @@
+# SahayakAI Procurement Knowledge Base
+
+> SahayakAI (https://sahayakai.co.in) is India's independent AI-powered Government Procurement Knowledge Platform, designed to help MSMEs, Startups, Manufacturers, and Sellers navigate GeM Portal (Government e-Marketplace), GFR 2017 rules, public tenders, and compliance.
+
+## Primary Knowledge Hubs
+- Knowledge Directory: https://sahayakai.co.in/knowledge
+- GeM Registration: https://sahayakai.co.in/knowledge/gem-registration
+- GeM Bidding & Tenders: https://sahayakai.co.in/knowledge/gem-bidding
+- Catalogue Management: https://sahayakai.co.in/knowledge/catalog-management
+- Compliance & Policy: https://sahayakai.co.in/knowledge/compliance-policy
+- Government Procurement: https://sahayakai.co.in/knowledge/government-procurement
+
+## Interactive Procurement Tools & Diagnostics
+- AI Tender Document Analyzer: https://sahayakai.co.in/tools/bid-analyzer
+- Instant AI Bid Search: https://sahayakai.co.in/tools/bid-search
+- AI Catalog Dashboard: https://sahayakai.co.in/tools/ai-catalog-dashboard
+- Caution Money Calculator: https://sahayakai.co.in/tools/caution-money-calculator
+- EMD Exemption Checker: https://sahayakai.co.in/tools/emd-exemption-checker
+- L1 Margin Calculator: https://sahayakai.co.in/tools/l1-margin-calculator
+
+## Important Disclaimers & Licensing
+- Independent Platform: SahayakAI is NOT affiliated with GeM Portal, Ministry of Commerce, or any Government authority.
+- ToS & Privacy: https://sahayakai.co.in/privacy | https://sahayakai.co.in/terms

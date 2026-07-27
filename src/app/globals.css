@@ -949,8 +949,20 @@ p {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
-  .left-sidebar-col, .right-sidebar-col {
-    display: none !important;
+}
+
+/* Knowledge Hub Layout V2 Responsive Grid */
+@media (max-width: 1024px) {
+  .workspace-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .left-sidebar-col {
+    position: static !important;
+    width: 100% !important;
+  }
+  .article-main-col {
+    max-width: 100% !important;
   }
 }
 

@@ -1,0 +1,1370 @@
+[
+  {
+    "title": "GeM Registration Category",
+    "summary": "Guides and troubleshooting for primary seller account registration on GeM.",
+    "slug": "gem-registration",
+    "path": "/knowledge/gem-registration",
+    "type": "category",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration",
+      "procurement guide",
+      "gem instruction"
+    ]
+  },
+  {
+    "title": "GeM Bidding Category",
+    "summary": "Advanced strategies to participate, compete, and win tenders on GeM.",
+    "slug": "gem-bidding",
+    "path": "/knowledge/gem-bidding",
+    "type": "category",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Bidding",
+      "procurement guide",
+      "gem instruction"
+    ]
+  },
+  {
+    "title": "Catalogue Management Category",
+    "summary": "Guidelines to upload products, OEM registrations, and manage listings.",
+    "slug": "catalog-management",
+    "path": "/knowledge/catalog-management",
+    "type": "category",
+    "category": "catalog-management",
+    "keywords": [
+      "Catalogue Management",
+      "procurement guide",
+      "gem instruction"
+    ]
+  },
+  {
+    "title": "Compliance & Government Policy Category",
+    "summary": "Public procurement rules, GFR 2017 policies, and purchase preferences.",
+    "slug": "compliance-policy",
+    "path": "/knowledge/compliance-policy",
+    "type": "category",
+    "category": "compliance-policy",
+    "keywords": [
+      "Compliance & Government Policy",
+      "procurement guide",
+      "gem instruction"
+    ]
+  },
+  {
+    "title": "Government Procurement Hub Category",
+    "summary": "General guidelines and principles of Indian public procurement.",
+    "slug": "government-procurement",
+    "path": "/knowledge/government-procurement",
+    "type": "category",
+    "category": "government-procurement",
+    "keywords": [
+      "Government Procurement Hub",
+      "procurement guide",
+      "gem instruction"
+    ]
+  },
+  {
+    "title": "AI Bid Analyzer",
+    "summary": "Compare bids and verify compliance parameters automatically. Analyze technical bid specifications, check for deviation, and compare competitor criteria using advanced AI mapping. Ideal for GeM custom bids.",
+    "slug": "bid-analyzer",
+    "path": "/tools/bid-analyzer",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Compare competitor pricing and specifications",
+      "Check technical evaluation criteria for exemptions",
+      "Identify hidden restrictive clauses in custom bids",
+      "AI Bid Analyzer"
+    ]
+  },
+  {
+    "title": "AI Tender Summarizer",
+    "summary": "Read 100-page tenders and extract key points in seconds. Extract L1 evaluation criteria, eligibility parameters, EMD exemptions, and critical deadlines instantly from any complex PDF tender.",
+    "slug": "tender-summarizer",
+    "path": "/tools/tender-summarizer",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Extract EMD details and fee exemption rules",
+      "List key dates, bid submission deadlines, and pre-bid meeting locations",
+      "Verify minimum turnover and work experience eligibility criteria",
+      "AI Tender Summarizer"
+    ]
+  },
+  {
+    "title": "GeM L1 Margin Calculator",
+    "summary": "Calculate profit margins and net quotation costs. Determine your net quotation cost after factoring in GeM transaction fees, seller commissions, logistics, and tax margins.",
+    "slug": "l1-margin-calculator",
+    "path": "/tools/l1-margin-calculator",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Calculate transaction charges automatically",
+      "Factor in freight, logistics, and tax margins for net quotation cost",
+      "Ensure compliant margins with tax adjustments",
+      "GeM L1 Margin Calculator"
+    ]
+  },
+  {
+    "title": "GeM Tender Eligibility Checker",
+    "summary": "Verify if your profile meets tender requirements instantly. Input your annual turnover, years of experience, and MSE status to check compliance against target tender rules.",
+    "slug": "eligibility-checker",
+    "path": "/tools/eligibility-checker",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Check MSE / Startup eligibility exemptions",
+      "Validate past experience criteria match",
+      "Get recommendations on missing parameters",
+      "GeM Tender Eligibility Checker"
+    ]
+  },
+  {
+    "title": "HSN Code Finder",
+    "summary": "Find correct HSN codes for catalog listing. Search HSN codes and GST rates for any product category to ensure smooth catalog upload on GeM.",
+    "slug": "hsn-code-finder",
+    "path": "/tools/hsn-code-finder",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Get instant HSN code matches for products",
+      "Check applicable GST percentage slabs",
+      "Map items to the correct GeM catalog categories",
+      "HSN Code Finder"
+    ]
+  },
+  {
+    "title": "GeM Product Keyword Generator",
+    "summary": "Optimize your product descriptions for better search rankings. Generate highly relevant keywords and bullet points that match government search queries on the marketplace.",
+    "slug": "gem-keyword-generator",
+    "path": "/tools/gem-keyword-generator",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Optimize title tags for GeM marketplace search algorithms",
+      "Generate compliance specifications keywords",
+      "Increase seller product visibility",
+      "GeM Product Keyword Generator"
+    ]
+  },
+  {
+    "title": "Tender Clarification Letter Writer",
+    "summary": "Draft formal clarification letters for pre-bid queries. Generate formal requests for clarification when tender specifications are restrictive or require exemptions.",
+    "slug": "clarification-generator",
+    "path": "/tools/clarification-generator",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Draft pre-bid clarification requests automatically",
+      "Format formal templates for government buyers",
+      "Explain restrictive clause issues clearly",
+      "Tender Clarification Letter Writer"
+    ]
+  },
+  {
+    "title": "Rejection Representation Writer",
+    "summary": "Appeal wrong technical disqualifications formally. Draft official representations to appeal incorrect technical evaluations or technical bid rejections on the portal.",
+    "slug": "rejection-reply-generator",
+    "path": "/tools/rejection-reply-generator",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Appeal technical disqualifications",
+      "Format formal representations referencing tender rules",
+      "Cite MSE/MII compliance proofs",
+      "Rejection Representation Writer"
+    ]
+  },
+  {
+    "title": "Is there any fee for GeM registration?",
+    "summary": "No. Registration for both buyers and sellers on the Government e-Marketplace (GeM) portal is completely free of cost. However, transaction fees or cautions money deposits may apply later depending on seller turnover and bidding values.",
+    "slug": "gem-registration-fees",
+    "path": "/faq/gem-registration-fees",
+    "type": "faq",
+    "category": "gem-registration",
+    "keywords": [
+      "Is there any fee for GeM registration?",
+      "faq",
+      "procurement question"
+    ]
+  },
+  {
+    "title": "How long does it take for Udyam updates to sync with GeM?",
+    "summary": "It generally takes between 24 to 48 hours for the Ministry of MSME national database to sync completely with the Government e-Marketplace (GeM) registration interface. Do not attempt verification repeatedly until this sync timeframe has elapsed.",
+    "slug": "udyam-mismatch-timeframe",
+    "path": "/faq/udyam-mismatch-timeframe",
+    "type": "faq",
+    "category": "gem-registration",
+    "keywords": [
+      "How long does it take for Udyam updates to sync with GeM?",
+      "faq",
+      "procurement question"
+    ]
+  },
+  {
+    "title": "Who is exempt from submitting EMD in GeM bidding?",
+    "summary": "Micro and Small Enterprises (MSEs) registered under Udyam Aadhaar, Startup India recognized startups, and registered vendor organizations with valid NSIC registrations are exempt from EMD submissions for bids matching their registered product categories.",
+    "slug": "emd-waiver-rules",
+    "path": "/faq/emd-waiver-rules",
+    "type": "faq",
+    "category": "gem-bidding",
+    "keywords": [
+      "Who is exempt from submitting EMD in GeM bidding?",
+      "faq",
+      "procurement question"
+    ]
+  },
+  {
+    "title": "GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein",
+    "summary": "Udyam verification errors block profile setup. Learn how to verify PAN/GST match, name discrepancies, and profile validation on the GeM portal.",
+    "slug": "udyam-error",
+    "path": "/knowledge/gem-registration/udyam-error",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "PAN card name must exactly match the Udyam Aadhaar certificate name.",
+      "Organization category type must align on both portal profiles.",
+      "Always wait 48 hours for national database syncs before verifying."
+    ]
+  },
+  {
+    "title": "GeM Registration Documents Required for Partnership Firms",
+    "summary": "Complete checklist of partnership deeds, PAN cards, authority letters, and partner KYC required to register partnership firms on GeM.",
+    "slug": "partnership-docs",
+    "path": "/knowledge/gem-registration/partnership-docs",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Partnership deed must be registered or notarized.",
+      "Signed authority letter on company letterhead is mandatory for secondary users."
+    ]
+  },
+  {
+    "title": "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
+    "summary": "Explore the latest Direct Purchase limit rules, GFR 2017 amendments, and L1 comparison criteria for Indian public procurement.",
+    "slug": "gem-portal-direct-purchase-limit-rules-2026",
+    "path": "/knowledge/compliance-policy/gem-portal-direct-purchase-limit-rules-2026",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "Direct purchase without price comparison is allowed up to â‚¹50,000.",
+      "L1 comparison of 3 sellers is mandatory from â‚¹50,000 to â‚¹10,00,000."
+    ]
+  },
+  {
+    "title": "GeM Portal Incident Management Policy: Complete Guide to Show Cause Notices, Watchlist & Debarment Rules (2026)",
+    "summary": "Master guide on GeM Incident Management Policy. Learn how to handle Show Cause Notices, Watchlist flagging, account suspension, GFR 151 debarment, and account unfreezing.",
+    "slug": "gem-incident-management-blacklisting-debarment-rules",
+    "path": "/knowledge/compliance-policy/gem-incident-management-blacklisting-debarment-rules",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Incident Policy classifies violations into Level 1 (Mild), Level 2 (Serious), and Level 3 (Severe).",
+      "Show Cause Notice (SCN) reply deadline is strictly 5 to 10 calendar days.",
+      "Watchlist restricts new bid participation for 10 to 60 days.",
+      "Debarment under GFR Rule 151 blocks seller PAN across all Indian public procurement for up to 3 years."
+    ]
+  },
+  {
+    "title": "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders",
+    "summary": "Avoid common bidding mistakes: incorrect EMD exemption claims, specs mismatch, and missing documents that lead to tender disqualification.",
+    "slug": "gem-bidding-mistakes-msme-tenders",
+    "path": "/knowledge/gem-bidding/gem-bidding-mistakes-msme-tenders",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Top Bidding Mistakes MSMEs Make on GeM Portal Tenders"
+    ]
+  },
+  {
+    "title": "What is EMD in GeM? Meaning, Rules, Exemption & Complete Guide in Hinglish",
+    "summary": "GeM portal bidding me EMD (Earnest Money Deposit) kya hota hai? EMD rules, refund process aur MSME/Startup ko exemption kaise milti hai, sab kuch simple hinglish me samjhein.",
+    "slug": "what-is-emd-in-gem",
+    "path": "/knowledge/compliance-policy/what-is-emd-in-gem",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "EMD stands for Earnest Money Deposit, which acts as bid security.",
+      "MSEs and Startups with valid Udyam certificates can claim 100% exemption."
+    ]
+  },
+  {
+    "title": "GeM Portal Bids Par EMD Exemption Kaise Claim Karein",
+    "summary": "Earnest Money Deposit (EMD) can block valuable working capital for MSMEs. Learn how to legally claim EMD exemption and bid on government tenders for free.",
+    "slug": "how-to-claim-emd-exemption-gem-portal-bids",
+    "path": "/knowledge/compliance-policy/how-to-claim-emd-exemption-gem-portal-bids",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "MSEs and Startups with valid Udyam are exempt from paying EMD."
+    ]
+  },
+  {
+    "title": "How to Automate GeM Bid Tracking & WhatsApp Alerts",
+    "summary": "Track tender dates, bid clarifications, and custom bids automatically. Set up custom WhatsApp integrations with SahayakAI.",
+    "slug": "how-to-automate-gem-bid-tracking-whatsapp-alerts",
+    "path": "/knowledge/gem-bidding/how-to-automate-gem-bid-tracking-whatsapp-alerts",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Automate GeM Bid Tracking & WhatsApp Alerts"
+    ]
+  },
+  {
+    "title": "Get Real-Time GeM Portal Bid Alerts on WhatsApp",
+    "summary": "Never miss a tender. Connect your GeM dashboard search terms and keywords to receive instant bid notifications directly on WhatsApp.",
+    "slug": "how-to-get-gem-portal-bid-alerts-on-whatsapp",
+    "path": "/knowledge/gem-bidding/how-to-get-gem-portal-bid-alerts-on-whatsapp",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Get Real-Time GeM Portal Bid Alerts on WhatsApp"
+    ]
+  },
+  {
+    "title": "Resolving Catalog Upload and Generic Brand Errors on GeM",
+    "summary": "Step-by-step fixes for brand registry rejections, generic upload blockers, duplicate HSN categories, and specification mismatch.",
+    "slug": "resolving-gem-portal-catalog-upload-errors",
+    "path": "/knowledge/catalog-management/resolving-gem-portal-catalog-upload-errors",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Resolving Catalog Upload and Generic Brand Errors on GeM"
+    ]
+  },
+  {
+    "title": "Ultimate Udyam Registration & GeM Portal Exemptions Guide",
+    "summary": "Learn how linking your Udyam certificate unlocks bid turnover exemptions, EMD waivers, and direct purchase preferences.",
+    "slug": "ultimate-udyam-registration-gem-portal-exemptions",
+    "path": "/knowledge/gem-registration/ultimate-udyam-registration-gem-portal-exemptions",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Ultimate Udyam Registration & GeM Portal Exemptions Guide"
+    ]
+  },
+  {
+    "title": "EMD Exemption Rules on GeM Portal â€” Complete Guide",
+    "summary": "MSME, Startups, and NSIC registered vendors get EMD exemption on GeM tenders. Learn the compliance criteria and required documents.",
+    "slug": "emd-exemption-rules",
+    "path": "/knowledge/compliance-policy/emd-exemption-rules",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "EMD Exemption Rules on GeM Portal â€” Complete Guide"
+    ]
+  },
+  {
+    "title": "EMD Refund Process on GeM â€” Timelines & Tracking Guide",
+    "summary": "Delayed EMD refunds can block capital. Know the exact online RTGS and Bank Guarantee refund process and refund timelines on GeM.",
+    "slug": "emd-refund-process",
+    "path": "/knowledge/compliance-policy/emd-refund-process",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "EMD Refund Process on GeM â€” Timelines & Tracking Guide"
+    ]
+  },
+  {
+    "title": "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs",
+    "summary": "Understand the key differences between Earnest Money Deposit (Bid Security) and Performance Security Deposits required in government tenders.",
+    "slug": "emd-vs-security-deposit",
+    "path": "/knowledge/compliance-policy/emd-vs-security-deposit",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "EMD vs Security Deposit vs Performance Security â€” Procurement Slabs"
+    ]
+  },
+  {
+    "title": "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal",
+    "summary": "Know the conditions under which a buyer can forfeit your Earnest Money Deposit and suspend your account on the GeM portal.",
+    "slug": "emd-forfeiture-rules",
+    "path": "/knowledge/compliance-policy/emd-forfeiture-rules",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "EMD Forfeiture Rules & Blacklisting Risks on GeM Portal"
+    ]
+  },
+  {
+    "title": "What is L1 in Tender? Bid Evaluation & Pricing Guide",
+    "summary": "L1 meaning in public procurement. Learn how the Lowest Bidder status is evaluated and how pricing comparison works in GeM bids.",
+    "slug": "what-is-l1-in-tender",
+    "path": "/knowledge/gem-bidding/what-is-l1-in-tender",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "What is L1 in Tender? Bid Evaluation & Pricing Guide"
+    ]
+  },
+  {
+    "title": "L1 vs QCBS: Understanding Tender Evaluation Methods",
+    "summary": "Compare L1 (Lowest Bidder) selection against Quality and Cost Based Selection (QCBS) methods in government procurement.",
+    "slug": "l1-vs-qcbs",
+    "path": "/knowledge/gem-bidding/l1-vs-qcbs",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "L1 vs QCBS: Understanding Tender Evaluation Methods"
+    ]
+  },
+  {
+    "title": "Technical Evaluation Process & Bid Scrutiny on GeM Portal",
+    "summary": "How government buyers conduct technical scrutiny of bids. A detailed look at checklists, compliance sheets, and evaluation parameters.",
+    "slug": "technical-evaluation-process",
+    "path": "/knowledge/gem-bidding/technical-evaluation-process",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Technical Evaluation Process & Bid Scrutiny on GeM Portal"
+    ]
+  },
+  {
+    "title": "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement",
+    "summary": "Learn how the price bid opening, commercial evaluation, and final contract value comparisons are processed on GeM.",
+    "slug": "financial-bid-evaluation",
+    "path": "/knowledge/gem-bidding/financial-bid-evaluation",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Financial Bid Evaluation: Pricing Scrutiny in Government Procurement"
+    ]
+  },
+  {
+    "title": "10 Common Reasons for Bid Rejection on GeM Portal",
+    "summary": "Avoid technical disqualification. Identify top reasons why sellers get rejected in bid evaluations and catalog uploads.",
+    "slug": "reasons-for-bid-rejection",
+    "path": "/knowledge/compliance-policy/reasons-for-bid-rejection",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "10 Common Reasons for Bid Rejection on GeM Portal"
+    ]
+  },
+  {
+    "title": "GeM Bid Participation Eligibility Criteria (2026 Guide)",
+    "summary": "bid-participation-rules guide by SahayakAI",
+    "slug": "bid-participation-rules",
+    "path": "/knowledge/gem-bidding/bid-participation-rules",
+    "type": "article",
+    "category": "GeM Bidding",
+    "keywords": [
+      "GeM Bid Participation Eligibility Criteria (2026 Guide) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Bid Splitting Rules & GFR Compliance Guidelines",
+    "summary": "bid-splitting-rules guide by SahayakAI",
+    "slug": "bid-splitting-rules",
+    "path": "/knowledge/gem-bidding/bid-splitting-rules",
+    "type": "article",
+    "category": "GeM Bidding",
+    "keywords": [
+      "GeM Bid Splitting Rules & GFR Compliance Guidelines details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Common GeM Registration Errors and Solutions: Fix Blockers Instantly",
+    "summary": "common-errors guide by SahayakAI",
+    "slug": "common-errors",
+    "path": "/knowledge/gem-registration/common-errors",
+    "type": "article",
+    "category": "GeM Registration",
+    "keywords": [
+      "Common GeM Registration Errors and Solutions: Fix Blockers Instantly details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup",
+    "summary": "complete-gem-registration-guide guide by SahayakAI",
+    "slug": "complete-gem-registration-guide",
+    "path": "/knowledge/gem-registration/complete-gem-registration-guide",
+    "type": "article",
+    "category": "GeM Registration",
+    "keywords": [
+      "Complete GeM Registration Guide (2026) - Step-by-Step Seller Signup details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "CPPP Portal Registration & Tender Search Guide 2026",
+    "summary": "Complete step-by-step guide to register as a seller on Central Public Procurement Portal (CPPP), search e-tenders, download tender documents, and submit bids online.",
+    "slug": "cppp-portal-registration-tender-search",
+    "path": "/knowledge/government-procurement/cppp-portal-registration-tender-search",
+    "type": "article",
+    "category": "government-procurement",
+    "keywords": [
+      "CPPP Portal Registration Kaise Kare? Step-by-Step Tender Search Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "CPV Code Guide for GeM Sellers: Categorizing Tenders",
+    "summary": "cpv-code-guide guide by SahayakAI",
+    "slug": "cpv-code-guide",
+    "path": "/knowledge/gem-bidding/cpv-code-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "CPV Code Guide for GeM Sellers: Categorizing Tenders details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Daily GeM Tender Monitoring Best Practices for MSMEs",
+    "summary": "daily-tender-monitoring guide by SahayakAI",
+    "slug": "daily-tender-monitoring",
+    "path": "/knowledge/gem-bidding/daily-tender-monitoring",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Daily GeM Tender Monitoring Best Practices for MSMEs details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Documents Required for GeM Registration (2026 Checklist)",
+    "summary": "documents-required guide by SahayakAI",
+    "slug": "documents-required",
+    "path": "/knowledge/gem-registration/documents-required",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Documents Required for GeM Registration (2026 Checklist) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM EMD Rules: Claiming Exemptions & Resolving Refunds",
+    "summary": "earnest-money-deposit guide by SahayakAI",
+    "slug": "earnest-money-deposit",
+    "path": "/knowledge/gem-bidding/earnest-money-deposit",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM EMD Rules: Claiming Exemptions & Resolving Refunds details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Frequently Asked Questions About GeM Registration (2026 Q&A)",
+    "summary": "faqs guide by SahayakAI",
+    "slug": "faqs",
+    "path": "/knowledge/gem-registration/faqs",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Frequently Asked Questions About GeM Registration (2026 Q&A) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Registration Fees Explained: Caution Money and Charges",
+    "summary": "fees-explained guide by SahayakAI",
+    "slug": "fees-explained",
+    "path": "/knowledge/gem-registration/fees-explained",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration Fees Explained: Caution Money and Charges details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
+    "summary": "GeM portal par bank account details aur IFSC code change karne ka step-by-step tarika. PFMS validation, cancelled cheque upload aur payment gateway integration ka details.",
+    "slug": "gem-bank-account-change-kaise-kare",
+    "path": "/knowledge/compliance-policy/gem-bank-account-change-kaise-kare",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Bidding Fees: Transaction Charges & Seller Commissions",
+    "summary": "gem-bidding-fees guide by SahayakAI",
+    "slug": "gem-bidding-fees",
+    "path": "/knowledge/gem-bidding/gem-bidding-fees",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Bidding Fees: Transaction Charges & Seller Commissions details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Bidding Rules & Compliance Handbook (2026)",
+    "summary": "gem-bidding-rules-handbook guide by SahayakAI",
+    "slug": "gem-bidding-rules-handbook",
+    "path": "/knowledge/gem-bidding/gem-bidding-rules-handbook",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Bidding Rules & Compliance Handbook (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026)",
+    "summary": "GeM portal par Bill of Quantities (BoQ) Excel templates upload karte waqt aane wale common validation errors, macro settings problems, format corruptions aur calculations mismatch ko thik karne ki comprehensive Hinglish guide.",
+    "slug": "gem-boq-excel-sheet-upload-errors",
+    "path": "/knowledge/gem-bidding/gem-boq-excel-sheet-upload-errors",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM BoQ Excel Sheet Upload Errors: Step-by-Step Validation & Formatting Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes",
+    "summary": "GeM portal par product catalog reject hone ke main reasons (Brand validation, incorrect specifications, poor image quality) aur unhe fix karne ke standard process par complete guide.",
+    "slug": "gem-catalog-rejected-reasons",
+    "path": "/knowledge/catalog-management/gem-catalog-rejected-reasons",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Catalog Rejected Reasons: Brand Validation, Parameters & Image Fixes details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide",
+    "summary": "GeM portal par products upload karne ka complete step-by-step guide. Single vs Bulk upload process, HSN code mapping, pricing criteria aur product specifications validation errors ko door karne ke simple methods Hinglish me seekhein.",
+    "slug": "gem-catalogue-upload-kaise-kare",
+    "path": "/knowledge/catalog-management/gem-catalogue-upload-kaise-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Catalogue Upload Kaise Kare? Single vs Bulk Upload, Price Mapping & Specs Validation Guide details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Search GeM Tenders by Product Category",
+    "summary": "gem-category-search guide by SahayakAI",
+    "slug": "gem-category-search",
+    "path": "/knowledge/gem-bidding/gem-category-search",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Search GeM Tenders by Product Category details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026)",
+    "summary": "GeM portal par business entity type (Proprietorship se Partnership ya Pvt Ltd) badalne, legal documents upload karne aur profile update process ko thik karne ki poori guide.",
+    "slug": "gem-company-profile-edit-kaise-kare",
+    "path": "/knowledge/gem-registration/gem-company-profile-edit-kaise-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Company Profile Edit Kaise Kare: Change Proprietorship to Partnership/Pvt Ltd (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026)",
+    "summary": "GeM portal par order delivery ke baad Consignee Receipt and Acceptance Certificate (CRAC) aur Provisional Receipt Certificate (PRC) generate karne ka step-by-step process. Timelines aur physical receipt guidelines ki poori jaankari.",
+    "slug": "gem-consignee-receipt-process",
+    "path": "/knowledge/catalog-management/gem-consignee-receipt-process",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Consignee Receipt Process: Physical Verification, PRC & CRAC (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026)",
+    "summary": "Consignee Receipt and Acceptance Certificate (CRAC) generate karne ke rules, 10-day auto-generation SLA timeline aur buyer verification guidelines ki poori Hinglish guide.",
+    "slug": "gem-crac-kaise-generate-hota-hai",
+    "path": "/knowledge/catalog-management/gem-crac-kaise-generate-hota-hai",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM CRAC Kaise Generate Hota Hai? Rules, Timelines & Auto-CRAC (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide",
+    "summary": "GeM Custom Bids me technical parameters ke rules kya hain? Agar buyer ne restrictive spec lagaya hai to use legally challenge kaise karein, representation drafting aur GFR/CVC guidelines ki poori jaankari Hinglish me.",
+    "slug": "gem-custom-bid-specifications-rules",
+    "path": "/knowledge/gem-bidding/gem-custom-bid-specifications-rules",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Custom Bid Specifications Rules: Challenging Restrictive Clauses & Submission Guide details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026)",
+    "summary": "GeM portal par primary user ka registered email address aur mobile number change karne ki complete step-by-step process. Aadhaar OTP verification, authorized signatory updates aur common errors ka 100% working solution.",
+    "slug": "gem-email-mobile-number-change",
+    "path": "/knowledge/gem-registration/gem-email-mobile-number-change",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Primary User Email Aur Mobile Number Kaise Change Kare? Step-by-Step Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process",
+    "summary": "Understand GeM ePBG (Electronic Performance Bank Guarantee) rules, online submission, SFMS verification, and the refund process for sellers.",
+    "slug": "gem-epbg-bank-guarantee-rules-refund",
+    "path": "/knowledge/compliance-policy/gem-epbg-bank-guarantee-rules-refund",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM ePBG Bank Guarantee Rules, Format, Online Submission & Refund Process details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide",
+    "summary": "GeM portal par incident management show-cause notice ka reply kaise draft karein aur suspension appeal file karne ka step-by-step process format templates ke saath.",
+    "slug": "gem-incident-management-show-cause-reply",
+    "path": "/knowledge/compliance-policy/gem-incident-management-show-cause-reply",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Show-Cause Notice Reply Format & Suspension Appeal Guide details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026)",
+    "summary": "GeM portal par Tax Invoice generate karne, digital signature/DSC upload karne aur shipping-billing address verify karne ka complete step-by-step guide.",
+    "slug": "gem-invoice-generate-kaise-kare",
+    "path": "/knowledge/catalog-management/gem-invoice-generate-kaise-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Invoice Generate Kaise Kare? Tax Invoice, DSC & Address Verification (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026",
+    "summary": "Understand the detailed rules, eligibility criteria, and step-by-step process for Joint Venture (JV) and Consortium bidding on the GeM portal.",
+    "slug": "gem-joint-venture-consortium-bidding",
+    "path": "/knowledge/gem-bidding/gem-joint-venture-consortium-bidding",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Portal Joint Venture & Consortium Bidding Rules: Complete Guide 2026 details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide",
+    "summary": "GeM portal bidding me L1 Price Matching aur counter-offer ke kya niyam hain? Janein L1+15% price band rule, divisible/indivisible splits, aur online response kaise submit karein.",
+    "slug": "gem-l1-price-matching-counter-offer",
+    "path": "/knowledge/compliance-policy/gem-l1-price-matching-counter-offer",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Portal L1 Price Matching & Counter-Offer Rules: Complete MSE & Startup Guide details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Portal Par Login Kaise Kare: Complete Step-by-Step Guide for Sellers",
+    "summary": "GeM portal seller login, primary vs secondary user login, password reset, and mobile OTP verification issues ka complete solution.",
+    "slug": "gem-login-kaise-kare",
+    "path": "/knowledge/gem-registration/gem-login-kaise-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Login Kaise Kare? Complete Troubleshooting & Sign-In Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026)",
+    "summary": "GeM portal par naye order notification aane ke baad 10-day acceptance SLA ke andar order ko accept kaise karein. Step-by-step process aur default contract printing rules ki poori jaankari.",
+    "slug": "gem-order-accept-kaise-kare",
+    "path": "/knowledge/catalog-management/gem-order-accept-kaise-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Order Accept Kaise Kare? SLA Timelines & Contract Rules (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines",
+    "summary": "GeM portal par order cancellation rules, delivery delay parameters, Liquidated Damages (LD) penalty rates, aur account blacklisting ke severe risk se bachne ki complete guide Hinglish mein.",
+    "slug": "gem-order-cancel-rules",
+    "path": "/knowledge/catalog-management/gem-order-cancel-rules",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Order Cancellation Rules: Delay Penalties & Blacklisting Risk Guidelines details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026)",
+    "summary": "GeM portal par order dispatch karne ke baad delivery status, tracking number aur transport details update karne ka step-by-step process Hinglish mein.",
+    "slug": "gem-order-delivery-update-kaise-kare",
+    "path": "/knowledge/catalog-management/gem-order-delivery-update-kaise-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Order Delivery Update Kaise Kare? Dispatch & Tracking Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping",
+    "summary": "GeM portal par delivery complete hone ke baad payment kab aur kaise credit hoti hai? GFR Rule 172, CRAC timeline, PFMS mapping aur payment delay hone par 1% monthly interest charges ki poori jaankari.",
+    "slug": "gem-payment-kab-milta-hai",
+    "path": "/knowledge/catalog-management/gem-payment-kab-milta-hai",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Payment Kab Milta Hai? Timelines, GFR 2017 Rules & PFMS Mapping details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps",
+    "summary": "GeM portal par apne supply bills, consignee receipts (CRAC) aur payments ko online track karne ka poora process. PFMS portal sync aur bank advisory check karne ka step-by-step method.",
+    "slug": "gem-payment-status-kaise-check-kare",
+    "path": "/knowledge/catalog-management/gem-payment-status-kaise-check-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Payment Status Kaise Check Kare? Online Tracking & Bank Advisory Steps details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals",
+    "summary": "GeM Portal par product approval timelines, Category Manager SLA rules, standard vs custom category approvals aur upload delays ko bypass karne ki complete step-by-step guide Hindi me.",
+    "slug": "gem-product-approval-time",
+    "path": "/knowledge/catalog-management/gem-product-approval-time",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Product Approval Time: Category Manager Timelines & Standard vs Custom Approvals details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution",
+    "summary": "GeM portal par seller credentials, GST, PAN details update karne aur Udyam re-verification errors ko solve karne ka step-by-step guide Hindi me.",
+    "slug": "gem-profile-update-kaise-kare",
+    "path": "/knowledge/gem-registration/gem-profile-update-kaise-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Profile Update Kaise Kare? Seller Credentials, GST, PAN, Aur Udyam Re-verification Errors Ka Complete Solution details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Portal Par Registration Kaise Kare: Complete Step-by-Step Seller Guide 2026",
+    "summary": "GeM portal par seller registration karne ka complete tarika in Hindi. Aadhaar, PAN, Udyam, aur ITR verification steps.",
+    "slug": "gem-registration-kaise-kare",
+    "path": "/knowledge/gem-registration/gem-registration-kaise-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration Kaise Kare? Step-by-Step Complete Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost",
+    "summary": "GeM portal par product return aur replacement ke GTC guidelines, 10-day inspection window, product mismatch rules aur return shipping logistics costs ki complete details.",
+    "slug": "gem-return-replacement-rules",
+    "path": "/knowledge/catalog-management/gem-return-replacement-rules",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Return & Replacement Rules: Timelines, Product Mismatch & Shipping Cost details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Search Filters Explained: Narrowing Active Tenders",
+    "summary": "gem-search-filters-explained guide by SahayakAI",
+    "slug": "gem-search-filters-explained",
+    "path": "/knowledge/gem-bidding/gem-search-filters-explained",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Search Filters Explained: Narrowing Active Tenders details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money",
+    "summary": "GeM Portal ke Seller Dashboard options, Bids tabs, Order status aur Caution Money status ko check aur manage karne ki complete walkthrough step-by-step in Hinglish.",
+    "slug": "gem-seller-dashboard-kaise-use-kare",
+    "path": "/knowledge/gem-registration/gem-seller-dashboard-kaise-use-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Seller Dashboard Kaise Use Kare? Options, Bids & Caution Money details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score",
+    "summary": "GeM Seller Performance Dashboard par rating statistics, dispatch performance percentages aur warning notices/incident alerts ko monitor aur manage karne ki complete guide.",
+    "slug": "gem-seller-performance-dashboard",
+    "path": "/knowledge/catalog-management/gem-seller-performance-dashboard",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Seller Performance Dashboard: Tracking Ratings & Dispatch Score details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer",
+    "summary": "GeM Portal par seller rating improve karne ka detailed Guide. Janiye performance score calculation formula, negative feedback cycle resolution aur rating scale optimization techniques.",
+    "slug": "gem-seller-rating-improve-kaise-kare",
+    "path": "/knowledge/catalog-management/gem-seller-rating-improve-kaise-kare",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Seller Rating Improve Kaise Kare: Performance Metrics & Score Optimizer details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Par Seller Registration Kaise Kare? Complete Guide (2026)",
+    "summary": "GeM Seller Account Setup</h3>",
+    "slug": "gem-seller-registration-kaise-kare",
+    "path": "/knowledge/gem-registration/gem-seller-registration-kaise-kare",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Par Seller Registration Kaise Kare? Complete Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026)",
+    "summary": "GeM portal par Service Contract bidding ke naye rules, SLA terms, Manpower outsourcing aur Security Services bidding guidelines ki poori jaankari Hinglish me.",
+    "slug": "gem-service-contract-bidding-rules",
+    "path": "/knowledge/gem-bidding/gem-service-contract-bidding-rules",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Service Contract Bidding Rules: SLA, Manpower & Security Services Guidelines (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM",
+    "summary": "gem-tender-search-guide guide by SahayakAI",
+    "slug": "gem-tender-search-guide",
+    "path": "/knowledge/gem-bidding/gem-tender-search-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Complete GeM Tender Search Guide: How to Find Relevant Government Tenders on GeM details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules",
+    "summary": "Understand the detailed GeM warranty claim process, support ticket creation rules, OEM/Seller SLA response timelines, and buyer refund or performance security forfeiture options.",
+    "slug": "gem-warranty-claim-process",
+    "path": "/knowledge/catalog-management/gem-warranty-claim-process",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Warranty Claim Process: Ticket Creation, OEM Response Timelines & Refund Rules details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Portal Par Active Bids aur Tenders Kaise Search Karein",
+    "summary": "Step-by-step tutorial on navigating the GeM bid dashboard to find relevant tenders, download documents, and check bid numbers.",
+    "slug": "how-to-search-gem-tenders",
+    "path": "/knowledge/gem-bidding/how-to-search-gem-tenders",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Portal Par Active Bids aur Tenders Kaise Search Karein details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "IREPS Railway Tender Bidding Guide 2026: Indian Railways E-Procurement",
+    "summary": "Complete guide to register on IREPS portal, search railway e-tenders, download tender documents, submit online bids, and manage digital signature certificate (DSC).",
+    "slug": "ireps-railway-tender-bidding-guide",
+    "path": "/knowledge/government-procurement/ireps-railway-tender-bidding-guide",
+    "type": "article",
+    "category": "government-procurement",
+    "keywords": [
+      "IREPS Railway Tender Bidding Guide: Step-by-Step Contractor Registration (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Best Keyword Search Tips for Finding GeM Tenders",
+    "summary": "keyword-search-tips guide by SahayakAI",
+    "slug": "keyword-search-tips",
+    "path": "/knowledge/gem-bidding/keyword-search-tips",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Best Keyword Search Tips for Finding GeM Tenders details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Registration for Manufacturers: Complete OEM Guide",
+    "summary": "manufacturers-registration guide by SahayakAI",
+    "slug": "manufacturers-registration",
+    "path": "/knowledge/gem-registration/manufacturers-registration",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration for Manufacturers: Complete OEM Guide details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Search GeM Tenders by Ministry and Department",
+    "summary": "ministry-department-search guide by SahayakAI",
+    "slug": "ministry-department-search",
+    "path": "/knowledge/gem-bidding/ministry-department-search",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Search GeM Tenders by Ministry and Department details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How MSMEs Can Register on GeM: Step-by-Step Tutorial",
+    "summary": "msme-registration guide by SahayakAI",
+    "slug": "msme-registration",
+    "path": "/knowledge/gem-registration/msme-registration",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "How MSMEs Can Register on GeM: Step-by-Step Tutorial details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Complete Your GeM Seller Profile (100% Checklist)",
+    "summary": "profile-completion guide by SahayakAI",
+    "slug": "profile-completion",
+    "path": "/knowledge/gem-registration/profile-completion",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "How to Complete Your GeM Seller Profile (100% Checklist) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Write Technical Representations for Disqualified GeM Bids",
+    "summary": "representation-writing guide by SahayakAI",
+    "slug": "representation-writing",
+    "path": "/knowledge/gem-bidding/representation-writing",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Write Technical Representations for Disqualified GeM Bids details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Appealing Restrictive Tender Specifications on GeM",
+    "summary": "restrictive-specifications guide by SahayakAI",
+    "slug": "restrictive-specifications",
+    "path": "/knowledge/gem-bidding/restrictive-specifications",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Appealing Restrictive Tender Specifications on GeM details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Reverse Auction (RA) Rules and Bidding Strategies",
+    "summary": "reverse-auction-rules guide by SahayakAI",
+    "slug": "reverse-auction-rules",
+    "path": "/knowledge/gem-bidding/reverse-auction-rules",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Reverse Auction (RA) Rules and Bidding Strategies details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "Using Saved Searches and Tender Alerts on GeM",
+    "summary": "saved-search-and-alerts guide by SahayakAI",
+    "slug": "saved-search-and-alerts",
+    "path": "/knowledge/gem-bidding/saved-search-and-alerts",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "Using Saved Searches and Tender Alerts on GeM details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Single Bid Evaluation and GFR Compliance Rules",
+    "summary": "single-bid-compliance guide by SahayakAI",
+    "slug": "single-bid-compliance",
+    "path": "/knowledge/gem-bidding/single-bid-compliance",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Single Bid Evaluation and GFR Compliance Rules details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026)",
+    "summary": "Uttar Pradesh state departments ke tenders me participate karne ke liye UP Tenders Portal (etender.up.nic.in) registration, bidding process aur GeM portal ke sath comparative analysis.",
+    "slug": "state-procurement-up-tenders-gem-comparison",
+    "path": "/knowledge/government-procurement/state-procurement-up-tenders-gem-comparison",
+    "type": "article",
+    "category": "government-procurement",
+    "keywords": [
+      "UP Tenders Portal Registration, Bidding & GeM Comparison Guide (2026) details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Search State-wise Government Tenders on GeM",
+    "summary": "state-wise-tender-search guide by SahayakAI",
+    "slug": "state-wise-tender-search",
+    "path": "/knowledge/gem-bidding/state-wise-tender-search",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Search State-wise Government Tenders on GeM details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Tender Evaluation Stages: Technical & Financial Opens",
+    "summary": "tender-evaluation-stages guide by SahayakAI",
+    "slug": "tender-evaluation-stages",
+    "path": "/knowledge/gem-bidding/tender-evaluation-stages",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Tender Evaluation Stages: Technical & Financial Opens details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How Long Does GeM Registration Take: Step-by-Step Timelines",
+    "summary": "timeframe guide by SahayakAI",
+    "slug": "timeframe",
+    "path": "/knowledge/gem-registration/timeframe",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "How Long Does GeM Registration Take: Step-by-Step Timelines details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM Registration for Traders: Resellers and Distributors",
+    "summary": "traders-registration guide by SahayakAI",
+    "slug": "traders-registration",
+    "path": "/knowledge/gem-registration/traders-registration",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration for Traders: Resellers and Distributors details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "How to Use AI to Summarize 100-Page Government Tender PDFs in 30 Seconds",
+    "summary": "Learn how to use AI tools like SahayakAI Tender Summarizer to instantly extract L1 criteria, EMD exemption rules, experience eligibility, and critical deadlines from complex tender PDFs.",
+    "slug": "use-ai-summarize-government-tender-pdfs",
+    "path": "/knowledge/gem-bidding/use-ai-summarize-government-tender-pdfs",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Use AI to Summarize Government Tender PDFs in 30 Seconds details validation criteria keys check."
+    ]
+  },
+  {
+    "title": "GeM OEM Panel Registration Complete Guide (2026)",
+    "summary": "GeM par OEM panel registration process, vendor assessment exemptions, and brand approval. Step-by-step Hinglish guide.",
+    "slug": "gem-oem-panel-registration-guide",
+    "path": "/knowledge/catalog-management/gem-oem-panel-registration-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM OEM Registration rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Catalog Rejected Reasons & How to Fix Them",
+    "summary": "Why your GeM catalog gets rejected and how to fix common errors like generic brand mismatch and MRP issues.",
+    "slug": "gem-catalog-rejected-reasons-complete-guide",
+    "path": "/knowledge/catalog-management/gem-catalog-rejected-reasons-complete-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM Catalog Rejected Reasons rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM OEM Authorization Letter Format & Approval Tips",
+    "summary": "Download exact GeM OEM authorization letter format. Learn how to draft and upload it correctly for fast reseller approval.",
+    "slug": "gem-oem-authorization-letter-format",
+    "path": "/knowledge/catalog-management/gem-oem-authorization-letter-format",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM OEM Authorization Letter Format rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Custom Item Creation Rules & BOQ Upload Guide",
+    "summary": "Master the rules for custom item creation on GeM. How to upload specifications, handle brand mapping, and avoid errors.",
+    "slug": "gem-custom-item-creation-rules-2026",
+    "path": "/knowledge/catalog-management/gem-custom-item-creation-rules-2026",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM Custom Item Creation Rules rules before starting the process."
+    ]
+  },
+  {
+    "title": "Generic Product vs Brand Product on GeM: What to Choose?",
+    "summary": "Difference between Generic and Brand products on GeM portal. Which one to choose for faster catalog approval and better sales?",
+    "slug": "gem-generic-vs-brand-catalog-guide",
+    "path": "/knowledge/catalog-management/gem-generic-vs-brand-catalog-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify Generic Product vs Brand Product on GeM rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM BOQ Upload Errors & Excel Validation Fixes",
+    "summary": "Fix GeM BOQ Excel upload errors instantly. Resolve row mismatch, HSN validation, and unit mapping issues.",
+    "slug": "gem-boq-excel-upload-errors-guide",
+    "path": "/knowledge/catalog-management/gem-boq-excel-upload-errors-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM BOQ Upload Errors rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM HSN Code Mapping & GST Slab Approval Guide",
+    "summary": "Learn how to map correct HSN codes with GST slabs on GeM catalog to avoid tax mismatch errors and catalog rejection.",
+    "slug": "gem-hsn-code-gst-mapping-guide",
+    "path": "/knowledge/catalog-management/gem-hsn-code-gst-mapping-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM HSN Code Mapping rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Product Clone Guide: How to Duplicate Catalog Fast",
+    "summary": "Use the GeM product cloning feature to copy existing approved products. Save time with catalog duplication rules.",
+    "slug": "gem-product-cloning-duplication-guide",
+    "path": "/knowledge/catalog-management/gem-product-cloning-duplication-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM Product Clone Guide rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Vendor Assessment Rules & QCI Exemption Criteria",
+    "summary": "Complete guide on GeM Vendor Assessment by QCI. Who needs it, how much it costs, and NSIC/MSME exemption rules.",
+    "slug": "gem-vendor-assessment-rules-exemption-guide",
+    "path": "/knowledge/catalog-management/gem-vendor-assessment-rules-exemption-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM Vendor Assessment Rules rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Category Approval Time & Escalation Process",
+    "summary": "How long does GeM category approval take? Learn the standard timeline and escalation process for stuck catalogs.",
+    "slug": "gem-category-approval-time-guide",
+    "path": "/knowledge/catalog-management/gem-category-approval-time-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Always verify GeM Category Approval Time rules before starting the process."
+    ]
+  },
+  {
+    "title": "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein",
+    "summary": "Detailed Hinglish guide on GeM Reverse Auction (RA) - rules, timeline, decrements, and winning strategies for sellers.",
+    "slug": "gem-reverse-auction-complete-guide",
+    "path": "/knowledge/gem-bidding/gem-reverse-auction-complete-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Reverse Auction Complete Guide 2024: Kaise Participate Karein aur Jeetein"
+    ]
+  },
+  {
+    "title": "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained",
+    "summary": "Complete breakdown of Earnest Money Deposit (EMD) and Performance Bank Guarantee (PBG) requirements on GeM.",
+    "slug": "gem-bid-participation-fees-guide",
+    "path": "/knowledge/compliance-policy/gem-bid-participation-fees-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Bid Participation Fees Guide: EMD & PBG Rules Explained"
+    ]
+  },
+  {
+    "title": "GeM Contract Performance Security (ePBG) Guide",
+    "summary": "Learn all about ePBG rules, calculation, and submission for successful GeM contracts.",
+    "slug": "gem-contract-performance-security-guide",
+    "path": "/knowledge/compliance-policy/gem-contract-performance-security-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Contract Performance Security (ePBG) Guide"
+    ]
+  },
+  {
+    "title": "GeM Payment Cycle Complete Guide: Timeline & Process",
+    "summary": "Understand the CRAC process, payment timelines, and how to track your GeM payments.",
+    "slug": "gem-payment-cycle-complete-guide",
+    "path": "/knowledge/gem-bidding/gem-payment-cycle-complete-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Payment Cycle Complete Guide: Timeline & Process"
+    ]
+  },
+  {
+    "title": "GeM Order Fulfillment Guide: Generation to Dispatch",
+    "summary": "A step-by-step procedure on how to process, pack, invoice, and dispatch orders on GeM.",
+    "slug": "gem-order-fulfillment-guide",
+    "path": "/knowledge/gem-bidding/gem-order-fulfillment-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Order Fulfillment Guide: Generation to Dispatch"
+    ]
+  },
+  {
+    "title": "GeM Inspection & Acceptance Guide (CRAC Rules)",
+    "summary": "Understand the consignee inspection process, rejection rules, and CRAC generation on GeM.",
+    "slug": "gem-inspection-acceptance-guide",
+    "path": "/knowledge/gem-bidding/gem-inspection-acceptance-guide",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Inspection & Acceptance Guide (CRAC Rules)"
+    ]
+  },
+  {
+    "title": "GeM Liquidated Damages (LD) Rules Explained",
+    "summary": "Comprehensive guide on what Liquidated Damages are, how they are calculated, and how to avoid them on GeM.",
+    "slug": "gem-liquidated-damages-rules",
+    "path": "/knowledge/compliance-policy/gem-liquidated-damages-rules",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Liquidated Damages (LD) Rules Explained"
+    ]
+  },
+  {
+    "title": "GeM Contract Termination & Cancellation Rules Explained",
+    "summary": "Learn about the grounds for contract cancellation on GeM, severe incident creation, and seller debarment risks.",
+    "slug": "gem-contract-termination-rules",
+    "path": "/knowledge/compliance-policy/gem-contract-termination-rules",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Contract Termination & Cancellation Rules Explained"
+    ]
+  },
+  {
+    "title": "GeM Seller Rating & Performance Score Guide",
+    "summary": "Understand how the GeM Seller Rating system works, what affects it, and how to improve your score.",
+    "slug": "gem-seller-rating-performance-guide",
+    "path": "/knowledge/compliance-policy/gem-seller-rating-performance-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Seller Rating & Performance Score Guide"
+    ]
+  },
+  {
+    "title": "GeM Buyer Seller Dispute Resolution Guide",
+    "summary": "How to navigate disputes, handle the Incident Management System (IMS), and protect your seller rights.",
+    "slug": "gem-buyer-seller-dispute-resolution-guide",
+    "path": "/knowledge/compliance-policy/gem-buyer-seller-dispute-resolution-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Buyer Seller Dispute Resolution Guide"
+    ]
+  }
+]
