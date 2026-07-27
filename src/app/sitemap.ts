@@ -90,23 +90,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Map dynamic article routes (/knowledge/[category]/[slug] and /guides/[slug])
-  const articleRoutes = REGISTRY_ARTICLES.flatMap((post) => {
+  // Map dynamic article routes (/knowledge/[category]/[slug])
+  const articleRoutes = REGISTRY_ARTICLES.map((post) => {
     const categorySlug = post.category.toLowerCase().replace(/\s+/g, '-');
-    return [
-      {
-        url: `${baseUrl}/knowledge/${categorySlug}/${post.slug}`,
-        lastModified: new Date(post.date),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-      },
-      {
-        url: `${baseUrl}/guides/${post.slug}`,
-        lastModified: new Date(post.date),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-      }
-    ];
+    return {
+      url: `${baseUrl}/knowledge/${categorySlug}/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    };
   });
 
   return [...routes, ...categoryRoutes, ...toolRoutes, ...faqRoutes, ...articleRoutes];

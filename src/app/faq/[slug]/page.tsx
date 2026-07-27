@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadFAQ } from '@/lib/content/contentLoader';
-import { REGISTRY_FAQS } from '@/content/registry';
+import { REGISTRY_FAQS, REGISTRY_ARTICLES } from '@/content/registry';
 import { generateSeoMetadata } from '@/lib/seo/metadata';
 import { buildFAQSchema, buildBreadcrumbSchema } from '@/lib/seo/jsonLd';
 
@@ -98,11 +98,15 @@ export default async function FAQArticlePage({ params }: Props) {
                 Related Compliance Guides
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {faq.relatedArticles.map(artSlug => (
-                  <a key={artSlug} href={`/guides/${artSlug}`} style={{ textDecoration: 'none', color: '#0E8A8A', fontWeight: '600', fontSize: '0.95rem' }}>
-                    📖 Read: How to resolve issues under {artSlug.replace(/-/g, ' ')} →
-                  </a>
-                ))}
+                {faq.relatedArticles.map(artSlug => {
+                  const foundArt = REGISTRY_ARTICLES.find(a => a.slug === artSlug);
+                  const catSlug = foundArt ? foundArt.category.toLowerCase().replace(/\s+/g, '-') : 'gem-registration';
+                  return (
+                    <a key={artSlug} href={`/knowledge/${catSlug}/${artSlug}`} style={{ textDecoration: 'none', color: '#0E8A8A', fontWeight: '600', fontSize: '0.95rem' }}>
+                      📖 Read: How to resolve issues under {artSlug.replace(/-/g, ' ')} →
+                    </a>
+                  );
+                })}
               </div>
             </div>
           )}

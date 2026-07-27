@@ -104,7 +104,7 @@ export default async function CategoryGuidesPage({ params }: Props) {
         {category.articles && category.articles.length > 0 ? (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {category.articles.map((art) => (
-              <a key={art.slug} href={`/guides/${art.slug}`} style={{ textDecoration: 'none' }}>
+              <a key={art.slug} href={`/knowledge/${slug}/${art.slug}`} style={{ textDecoration: 'none' }}>
                 <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '24px', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }} className="hover-card">
                   <h3 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#0C2E4A', marginBottom: '8px' }}>
                     {art.title}

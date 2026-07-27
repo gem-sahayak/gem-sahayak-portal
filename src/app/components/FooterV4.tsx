@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 
 const CHROME_URL = "https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf";
@@ -15,7 +15,7 @@ const FOOTER_LINKS = {
     { label: "GeM Registration", href: "/knowledge/gem-registration" },
     { label: "GeM Bidding", href: "/knowledge/gem-bidding" },
     { label: "Catalogue Mgmt", href: "/knowledge/catalog-management" },
-    { label: "Guides", href: "/guides/gem-portal-direct-purchase-limit-rules-2026" },
+    { label: "Guides", href: "/knowledge/gem-bidding/gem-portal-direct-purchase-limit-rules-2026" },
   ],
   "Company": [
     { label: "About Us", href: "/about" },
