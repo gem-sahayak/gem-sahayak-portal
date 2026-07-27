@@ -83,7 +83,7 @@ export default function CatalogDemo() {
         headers["x-bypass-limit"] = "true";
       }
 
-      const response = await fetch("https://api.sahayakai.com/api/demo/catalog", {
+      const response = await fetch("https://api.sahayakai.co.in/api/demo/catalog", {
         method: "POST",
         headers,
         body: JSON.stringify({ productName: name }),

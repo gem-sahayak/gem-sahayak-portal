@@ -5,7 +5,7 @@
 
 export const SITE_CONFIG = {
   name: "SahayakAI",
-  url: "https://sahayakai.com",
+  url: "https://sahayakai.co.in",
   chromeStoreUrl: "https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf",
   whatsappUrl: "https://wa.me/919183712004?text=Hi%20SahayakAI%20Team%2C%20I%20need%20help%20with%20the%20extension.",
 

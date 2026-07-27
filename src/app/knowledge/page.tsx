@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Knowledge Hub & Bidding Guides — SahayakAI",
   description: "Explore our comprehensive public procurement Knowledge Hub. Get step-by-step guides on GeM Portal registration, bidding compliance, and HSN searches.",
   alternates: {
-    canonical: "https://sahayakai.com/knowledge"
+    canonical: "https://sahayakai.co.in/knowledge"
   }
 };
 

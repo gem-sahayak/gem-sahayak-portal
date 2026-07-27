@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     console.warn(`[SEO Warning] Found ${report.issues.length} issues in registry.`);
   }
 
-  const baseUrl = 'https://sahayakai.com';
+  const baseUrl = 'https://sahayakai.co.in';
 
   // Base pages and tools
   const staticRoutes = [

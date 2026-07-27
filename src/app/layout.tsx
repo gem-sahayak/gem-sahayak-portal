@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper",
     description: "Automate active tenders and get real-time WhatsApp alerts on Gem Portal India. The ultimate helper tool for MSME government sellers.",
-    url: "https://sahayakai.com",
+    url: "https://sahayakai.co.in",
     siteName: "SahayakAI",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://sahayakai.com/og-image.png",
+        url: "https://sahayakai.co.in/og-image.png",
         width: 1200,
         height: 630,
         alt: "SahayakAI — Gem Portal Bid Tracker & Helper for MSMEs",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper",
     description: "Automate active tenders and get real-time WhatsApp alerts on Gem Portal India.",
-    images: ["https://sahayakai.com/og-image.png"],
+    images: ["https://sahayakai.co.in/og-image.png"],
   },
   robots: {
     index: true,
@@ -87,8 +87,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "SahayakAI",
-              "url": "https://sahayakai.com",
-              "logo": "https://sahayakai.com/logo_symbol.png",
+              "url": "https://sahayakai.co.in",
+              "logo": "https://sahayakai.co.in/logo_symbol.png",
               "sameAs": [
                 "https://chromewebstore.google.com/detail/gem-sahayak/baffilhpagolnhhfhaeaniaiagjgibcf"
               ],
@@ -103,10 +103,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "SahayakAI",
-              "url": "https://sahayakai.com",
+              "url": "https://sahayakai.co.in",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://sahayakai.com/knowledge/search?q={search_term_string}",
+                "target": "https://sahayakai.co.in/knowledge/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })

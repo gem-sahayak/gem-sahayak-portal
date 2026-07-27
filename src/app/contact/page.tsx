@@ -75,7 +75,7 @@ export default function ContactUs() {
               <div>
                 <h3 style={{ fontSize: "1rem", color: "var(--primary-dark)", marginBottom: "2px", fontWeight: "700" }}>Email Us</h3>
                 <p style={{ color: "var(--text-muted)", margin: 0 }}>
-                  <a href="mailto:support@sahayakai.com" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "700" }}>support@sahayakai.com</a>
+                  <a href="mailto:support@sahayakai.co.in" style={{ color: "var(--primary-green)", textDecoration: "none", fontWeight: "700" }}>support@sahayakai.co.in</a>
                 </p>
               </div>
             </div>

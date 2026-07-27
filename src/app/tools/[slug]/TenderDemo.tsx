@@ -76,7 +76,7 @@ export default function TenderDemo() {
           headers["x-bypass-limit"] = "true";
         }
 
-        const response = await fetch("https://api.sahayakai.com/api/demo/analyze-pdf", {
+        const response = await fetch("https://api.sahayakai.co.in/api/demo/analyze-pdf", {
           method: "POST",
           headers,
           body: JSON.stringify({ pdfData: base64String }),

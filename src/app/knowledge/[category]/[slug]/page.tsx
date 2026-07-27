@@ -123,10 +123,10 @@ export default async function KnowledgeArticle({ params }: PageProps) {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sahayakai.com" },
-        { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://sahayakai.com/knowledge" },
-        { "@type": "ListItem", "position": 3, "name": post.category, "item": `https://sahayakai.com/knowledge/${category}` },
-        { "@type": "ListItem", "position": 4, "name": post.title, "item": `https://sahayakai.com/knowledge/${category}/${slug}` }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sahayakai.co.in" },
+        { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://sahayakai.co.in/knowledge" },
+        { "@type": "ListItem", "position": 3, "name": post.category, "item": `https://sahayakai.co.in/knowledge/${category}` },
+        { "@type": "ListItem", "position": 4, "name": post.title, "item": `https://sahayakai.co.in/knowledge/${category}/${slug}` }
       ]
     },
     {
@@ -136,11 +136,11 @@ export default async function KnowledgeArticle({ params }: PageProps) {
       "description": post.summary,
       "datePublished": post.date,
       "dateModified": post.updatedDate || post.date,
-      "author": { "@type": "Organization", "name": post.author, "url": "https://sahayakai.com" },
+      "author": { "@type": "Organization", "name": post.author, "url": "https://sahayakai.co.in" },
       "publisher": {
         "@type": "Organization",
         "name": "SahayakAI",
-        "logo": { "@type": "ImageObject", "url": "https://sahayakai.com/logo_symbol.png" }
+        "logo": { "@type": "ImageObject", "url": "https://sahayakai.co.in/logo_symbol.png" }
       }
     }
   ];

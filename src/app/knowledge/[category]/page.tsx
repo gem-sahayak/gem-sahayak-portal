@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${data.name} Guides & Tutorials — SahayakAI`,
     description: `${data.description} Learn how to succeed on GeM with our independent tutorials.`,
     alternates: {
-      canonical: `https://sahayakai.com/knowledge/${category}`
+      canonical: `https://sahayakai.co.in/knowledge/${category}`
     }
   };
 }

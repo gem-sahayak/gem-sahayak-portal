@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "AI Procurement Tools Directory | SahayakAI",
   description: "Explore SahayakAI's collection of free AI-powered tools for the GeM portal. Try our live demos for AI Bid Search, AI Catalog Dashboard, and AI Tender Analyzer.",
   alternates: {
-    canonical: "https://sahayakai.com/tools"
+    canonical: "https://sahayakai.co.in/tools"
   }
 };
 

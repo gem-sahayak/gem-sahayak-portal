@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${data.name} Bidding Guide & Helper — SahayakAI`,
     description: `${data.description} Learn how to succeed on ${data.fullname} using our independent tutorials.`,
     alternates: {
-      canonical: `https://sahayakai.com/astra-hub/${portal}`
+      canonical: `https://sahayakai.co.in/astra-hub/${portal}`
     }
   };
 }

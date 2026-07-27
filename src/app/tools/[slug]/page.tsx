@@ -177,7 +177,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${tool.name} — Free AI Procurement Tool | SahayakAI`,
     description: `${tool.headline}. ${tool.description} Use our independent third-party tool to optimize bidding on GeM and public procurement portals.`,
     alternates: {
-      canonical: `https://sahayakai.com/tools/${slug}`
+      canonical: `https://sahayakai.co.in/tools/${slug}`
     }
   };
 }

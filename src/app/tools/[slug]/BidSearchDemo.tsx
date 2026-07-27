@@ -240,7 +240,7 @@ export default function BidSearchDemo() {
 
       if (isConversational) {
         // Route to Gemini chat proxy
-        const response = await fetch("https://api.sahayakai.com/api/chat", {
+        const response = await fetch("https://api.sahayakai.co.in/api/chat", {
           method: "POST",
           headers,
           body: JSON.stringify({
@@ -265,7 +265,7 @@ export default function BidSearchDemo() {
         setMessages(prev => [...prev, { role: "assistant", content: reply, timestamp: new Date() }]);
       } else {
         // Route to bid search demo proxy
-        const response = await fetch("https://api.sahayakai.com/api/demo/search-bids", {
+        const response = await fetch("https://api.sahayakai.co.in/api/demo/search-bids", {
           method: "POST",
           headers,
           body: JSON.stringify({
@@ -398,7 +398,7 @@ export default function BidSearchDemo() {
                        {trimmedSec.match(/^(\d+\.)/)?.[1] || ""} {bidNumber}
                      </span>
                      <a 
-                       href={`https://api.sahayakai.com/bid-document/${bidNumber}`} 
+                       href={`https://api.sahayakai.co.in/bid-document/${bidNumber}`} 
                        target="_blank" 
                        rel="noopener noreferrer"
                        style={{ fontSize: "0.72rem", background: "rgba(14, 138, 138, 0.1)", color: "#0E8A8A", padding: "4px 10px", borderRadius: "6px", fontWeight: "700", textDecoration: "none" }}

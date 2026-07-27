@@ -4,7 +4,7 @@
  * Description: Programmatic builders for generating standardized Schema.org JSON-LD blocks.
  */
 
-export const BASE_URL = 'https://sahayakai.com';
+export const BASE_URL = 'https://sahayakai.co.in';
 
 export const ORGANISATION_SCHEMA = {
   "@context": "https://schema.org",

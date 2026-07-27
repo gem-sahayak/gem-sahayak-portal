@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>1. Introduction</h2>
             <p style={{ color: "#64748B" }}>
-              SahayakAI ("we", "our", or "us") operates the SahayakAI Chrome extension and the website sahayakai.com. We are committed to protecting your privacy. This Privacy Policy explains how we handle data within our browser extension and associated services.
+              SahayakAI ("we", "our", or "us") operates the SahayakAI Chrome extension and the website sahayakai.co.in. We are committed to protecting your privacy. This Privacy Policy explains how we handle data within our browser extension and associated services.
             </p>
           </section>
 
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
               To perform searches and deliver alerts, the extension securely transmits data to the following endpoints:
             </p>
             <ul style={{ listStyle: "disc", marginLeft: "20px", marginTop: "8px", color: "#64748B" }}>
-              <li><strong>Backend API Server (api.sahayakai.com)</strong>: Search parameters (state, city, keyword) are sent to execute automated query selectors on the Gem portal and retrieve active tenders.</li>
+              <li><strong>Backend API Server (api.sahayakai.co.in)</strong>: Search parameters (state, city, keyword) are sent to execute automated query selectors on the Gem portal and retrieve active tenders.</li>
               <li><strong>WhatsApp Gateway API (Green API / UltraMsg)</strong>: When you click "Send WA" or "WA Digest", the bid text is transmitted to your configured instance to deliver a message to your phone.</li>
               <li><strong>Google Gemini API</strong>: The text of bids or search queries is sent to Gemini only to translate search intent or summarize PDF documents.</li>
             </ul>
@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 style={{ fontSize: "1.3rem", color: "#0C3E5E", marginBottom: "10px" }}>8. Contact Us</h2>
             <p style={{ color: "#64748B" }}>
-              If you have any questions or feedback regarding this privacy policy, please contact us via email at <strong>support@sahayakai.com</strong>.
+              If you have any questions or feedback regarding this privacy policy, please contact us via email at <strong>support@sahayakai.co.in</strong>.
             </p>
           </section>
         </div>

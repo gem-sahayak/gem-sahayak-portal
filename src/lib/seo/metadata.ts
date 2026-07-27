@@ -29,7 +29,7 @@ const DEFAULT_KEYWORDS = [
  * Programmatically compiles Next.js Metadata objects to ensure strict canonical consistency and search compliance.
  */
 export function generateSeoMetadata(props: SeoMetadataProps): Metadata {
-  const baseUrl = 'https://sahayakai.com';
+  const baseUrl = 'https://sahayakai.co.in';
   
   // Normalize canonical paths by trimming query params and trailing slashes
   const cleanPath = props.path.split('?')[0].replace(/\/+$/, '');
