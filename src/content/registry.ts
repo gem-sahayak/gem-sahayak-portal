@@ -2250,6 +2250,141 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     readingTime: '11 min',
     author: 'SahayakAI Team',
     date: '2026-07-28'
+  },
+  {
+    slug: 'gem-bid-rejected-reasons-and-how-to-fix',
+    title: 'GeM Bid Rejected? Top Reasons & Exact Fixes (2026)',
+    summary: 'Master guide analyzing technical and financial bid rejection reasons on GeM, representation drafting, and exact fixes.',
+    category: 'gem-bidding',
+    readingTime: '18 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'documents-required-for-gem-bid-participation',
+    title: 'Complete Documents Required for GeM Bid Participation (2026)',
+    summary: 'Exhaustive checklist of technical, financial, EMD, and OEM authorization documents required to participate in GeM tenders.',
+    category: 'gem-bidding',
+    readingTime: '16 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'how-to-participate-in-gem-bid',
+    title: 'How to Participate in GeM Bid (Complete Step-by-Step Guide)',
+    summary: 'Step-by-step walkthrough on finding tenders, downloading bid documents, uploading technical offers, and submitting bids on GeM.',
+    category: 'gem-bidding',
+    readingTime: '17 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'difference-between-l1-and-reverse-auction-on-gem',
+    title: 'L1 vs Reverse Auction on GeM Explained',
+    summary: 'Detailed comparison of L1 lowest price evaluation vs Reverse Auction (RA) bidding mechanics, price match rules, and strategies.',
+    category: 'gem-bidding',
+    readingTime: '15 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-reverse-auction-rules-and-strategy',
+    title: 'GeM Reverse Auction Rules & Winning Strategy (2026)',
+    summary: 'Comprehensive guide to GeM Reverse Auction rules, minimum decrement thresholds, auto extension rules, and winning strategies.',
+    category: 'gem-bidding',
+    readingTime: '18 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-boq-bid-how-to-participate',
+    title: 'How to Participate in GeM BOQ Bid',
+    summary: 'Learn how Bill of Quantities (BOQ) custom bidding works on GeM, Excel template preparation, and CSV upload error resolution.',
+    category: 'gem-bidding',
+    readingTime: '15 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-custom-bid-participation-process',
+    title: 'Complete Guide to GeM Custom Bid Participation',
+    summary: 'Comprehensive tutorial on non-catalog custom bids on GeM - technical specification compliance, drawing uploads, and BOQ pricing.',
+    category: 'gem-bidding',
+    readingTime: '16 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'emd-exemption-on-gem-for-msme',
+    title: 'EMD Exemption on GeM for MSME & Startup',
+    summary: 'Detailed breakdown of Earnest Money Deposit (EMD) exemptions for MSEs and Startups under GFR 2017 Rule 170 on GeM.',
+    category: 'compliance-policy',
+    readingTime: '15 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-bid-securing-declaration-format',
+    title: 'Bid Securing Declaration Format for GeM',
+    summary: 'Official format, drafting rules, and legal requirements for submitting a Bid Securing Declaration in lieu of EMD on GeM.',
+    category: 'compliance-policy',
+    readingTime: '14 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'how-to-claim-mse-purchase-preference-on-gem',
+    title: 'How to Claim MSE Purchase Preference on GeM',
+    summary: 'How MSE sellers can claim L1+15% price matching preference, 25% order reservation, and EMD waivers under PPP-MSE policy.',
+    category: 'compliance-policy',
+    readingTime: '16 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-make-in-india-preference-rules',
+    title: 'Make in India Preference Rules on GeM',
+    summary: 'Comprehensive guide to Public Procurement (Preference to Make in India) Order - Class-I local supplier, 50% local content, and margins.',
+    category: 'compliance-policy',
+    readingTime: '17 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-performance-security-epbg-process',
+    title: 'GeM Performance Security (EPBG) Guide',
+    summary: 'Everything about Electronic Performance Bank Guarantee (ePBG), calculation rules (3-5%), submission SLAs, and SFMS verification on GeM.',
+    category: 'compliance-policy',
+    readingTime: '15 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-order-acceptance-sla-and-process',
+    title: 'GeM Order Acceptance SLA Explained',
+    summary: 'Official SLAs for accepting or rejecting contracts on GeM, 15-day auto-acceptance rule, and contract cancellation consequences.',
+    category: 'gem-bidding',
+    readingTime: '14 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-consignee-receipt-and-acceptance-certificate',
+    title: 'CRAC Explained on GeM (2026)',
+    summary: 'Consignee Receipt and Acceptance Certificate (CRAC) rules, 10-day auto-CRAC SLA, inspection reports, and payment triggers on GeM.',
+    category: 'gem-bidding',
+    readingTime: '16 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-payment-process-for-sellers',
+    title: 'GeM Payment Process for Sellers (Invoice to Bank Credit)',
+    summary: 'Step-by-step payment tracking guide - CRAC generation, PFMS online bill processing, 10-day payment SLA, and handling delayed payments.',
+    category: 'gem-bidding',
+    readingTime: '18 min',
+    author: 'SahayakAI Editorial Board',
+    date: '2026-07-28'
   }
 ];
 
