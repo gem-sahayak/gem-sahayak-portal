@@ -87,6 +87,21 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <div>
+      {/* Top Fixed Reading Progress Bar (Runs continuously across top of viewport) */}
+      <div 
+        style={{ 
+          position: "fixed", 
+          top: 0, 
+          left: 0, 
+          width: `${scrollPercent}%`, 
+          height: "4px", 
+          background: "linear-gradient(90deg, #0E8A8A 0%, #25D366 100%)", 
+          zIndex: 99999,
+          boxShadow: "0 0 10px rgba(14, 138, 138, 0.5)",
+          transition: "width 0.1s linear" 
+        }} 
+      />
+
       {/* Mobile Collapsible TOC */}
       <div className="mobile-only-toc" style={{ display: "none", marginBottom: "24px" }}>
         <button

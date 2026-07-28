@@ -9,7 +9,7 @@ primaryKeyword: 'Order Acceptance SLA'
 
 # GeM Order Acceptance SLA Explained
 
-> ðŸ“Œ **Important:** This guide covers the complete end-to-end framework for Order Acceptance SLA on the Government e Marketplace (GeM).
+> 📌 **Important:** This guide covers the complete end-to-end framework for Order Acceptance SLA on the Government e Marketplace (GeM).
 
 ## 1. AI Quick Answer
 For immediate clarity on Order Acceptance SLA, GeM requires strict adherence to designated timelines and official guidelines. The process is mandated by Ministry of Finance directives. Ensure all documents are uploaded correctly within the SLA.

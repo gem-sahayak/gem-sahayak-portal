@@ -35,19 +35,19 @@ Before diving into the specifics of Documents required for GeM bid participation
 ## Step-by-Step Process Guide
 Navigating Documents required for GeM bid participation involves a structured approach. Follow this vertical timeline:
 
-> ðŸ“Œ **Step 1: Preparation and Analysis**
+> 📌 **Step 1: Preparation and Analysis**
 > Analyze the bid document thoroughly. Identify specific requirements related to Documents required for GeM bid participation and highlight any discrepancies or unique ATCs requested by the buyer.
 
-> ðŸ“Œ **Step 2: Document Gathering**
+> 📌 **Step 2: Document Gathering**
 > Compile all required documents. Ensure they are legible, properly named, and in the correct PDF format.
 
-> ðŸ“Œ **Step 3: GeM Portal Navigation**
+> 📌 **Step 3: GeM Portal Navigation**
 > Log into your GeM dashboard, navigate to the relevant bid section, and begin the technical submission process.
 
-> ðŸ“Œ **Step 4: Data Entry and Verification**
+> 📌 **Step 4: Data Entry and Verification**
 > Enter all necessary data related to Documents required for GeM bid participation. Cross-verify figures, dates, and authorization numbers against your original documents.
 
-> ðŸ“Œ **Step 5: Final Submission and E-Sign**
+> 📌 **Step 5: Final Submission and E-Sign**
 > Complete the submission by using Aadhaar e-Sign or DSC. Download the acknowledgment receipt for your records.
 
 ## Mandatory Documents Checklist

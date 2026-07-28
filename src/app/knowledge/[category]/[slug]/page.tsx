@@ -482,29 +482,33 @@ export default async function KnowledgeArticle({ params }: PageProps) {
 
       {/* Floating WhatsApp Widget */}
       <a 
-        href="https://wa.me/919999999999" 
+        href="https://api.whatsapp.com/send?phone=919893059543&text=Hello%20SahayakAI%20Team%2C%20I%20have%20a%20question%20about%20GeM%20portal." 
         target="_blank" 
         rel="noopener noreferrer" 
         style={{
           position: "fixed",
           bottom: "32px",
           right: "32px",
-          background: "#25d366",
+          background: "#25D366",
           color: "white",
-          width: "56px",
-          height: "56px",
+          width: "60px",
+          height: "60px",
           borderRadius: "50%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          boxShadow: "0 4px 10px rgba(37, 211, 102, 0.3)",
-          fontSize: "1.8rem",
+          boxShadow: "0 6px 20px rgba(37, 211, 102, 0.45)",
           zIndex: 9999,
-          textDecoration: "none"
+          textDecoration: "none",
+          transition: "transform 0.25s ease, box-shadow 0.25s ease"
         }}
         aria-label="Contact us on WhatsApp"
+        className="whatsapp-btn-hover"
       >
-        💬
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z" fill="white"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 2.14.672 4.12 1.82 5.75L2 22l4.38-1.77A9.956 9.956 20 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 01-4.067-1.116l-.292-.174-2.597 1.05.815-2.531-.19-.302A7.957 7.957 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" fill="white"/>
+        </svg>
       </a>
     </div>
   );

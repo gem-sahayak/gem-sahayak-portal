@@ -9,7 +9,7 @@ primaryKeyword: 'Make in India Preference Rules'
 
 # Make in India Preference Rules on GeM
 
-> ðŸ“Œ **Important:** This guide covers the complete end-to-end framework for Make in India Preference Rules on the Government e Marketplace (GeM).
+> 📌 **Important:** This guide covers the complete end-to-end framework for Make in India Preference Rules on the Government e Marketplace (GeM).
 
 ## 1. AI Quick Answer
 For immediate clarity on Make in India Preference Rules, GeM requires strict adherence to designated timelines and official guidelines. The process is mandated by Ministry of Finance directives. Ensure all documents are uploaded correctly within the SLA.

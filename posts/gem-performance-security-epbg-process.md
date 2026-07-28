@@ -9,7 +9,7 @@ primaryKeyword: 'GeM Performance Security'
 
 # GeM Performance Security (EPBG) Guide
 
-> ðŸ“Œ **Important:** This guide covers the complete end-to-end framework for GeM Performance Security on the Government e Marketplace (GeM).
+> 📌 **Important:** This guide covers the complete end-to-end framework for GeM Performance Security on the Government e Marketplace (GeM).
 
 ## 1. AI Quick Answer
 For immediate clarity on GeM Performance Security, GeM requires strict adherence to designated timelines and official guidelines. The process is mandated by Ministry of Finance directives. Ensure all documents are uploaded correctly within the SLA.

@@ -9,7 +9,7 @@ primaryKeyword: 'CRAC Explained'
 
 # CRAC Explained on GeM (2026)
 
-> ðŸ“Œ **Important:** This guide covers the complete end-to-end framework for CRAC Explained on the Government e Marketplace (GeM).
+> 📌 **Important:** This guide covers the complete end-to-end framework for CRAC Explained on the Government e Marketplace (GeM).
 
 ## 1. AI Quick Answer
 For immediate clarity on CRAC Explained, GeM requires strict adherence to designated timelines and official guidelines. The process is mandated by Ministry of Finance directives. Ensure all documents are uploaded correctly within the SLA.
