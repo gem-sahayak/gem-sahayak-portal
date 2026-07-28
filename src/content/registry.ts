@@ -2151,6 +2151,105 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     readingTime: '11 min',
     author: 'SahayakAI Team',
     date: '2026-07-21'
+  },
+  {
+    slug: 'gem-seller-eligibility-criteria',
+    title: 'GeM Seller Eligibility Criteria Explained (2026 Guidelines)',
+    summary: 'Comprehensive breakdown of seller eligibility requirements on GeM Portal - turnover, business constitution, GST, and MSME rules.',
+    category: 'gem-registration',
+    readingTime: '10 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-registration-checklist',
+    title: 'GeM Registration Checklist Before You Start',
+    summary: 'Essential pre-registration checklist for GeM sellers - documents, bank details, PAN/GST verification, and mobile link requirements.',
+    category: 'gem-registration',
+    readingTime: '9 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'pan-gst-aadhaar-bank-requirements-gem-registration',
+    title: 'PAN, GST, Aadhaar & Bank Requirements for GeM Registration',
+    summary: 'Detailed guide on linking PAN, GSTIN, Aadhaar, and Bank Account during primary seller registration on GeM.',
+    category: 'gem-registration',
+    readingTime: '11 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'udyam-registration-benefits-for-gem',
+    title: 'Udyam Registration Benefits for GeM Sellers',
+    summary: 'Explore how Udyam MSME Registration unlocks EMD exemptions, turnover relaxations, and purchase preferences on GeM.',
+    category: 'compliance-policy',
+    readingTime: '10 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'how-to-complete-100-gem-seller-profile',
+    title: 'How to Complete 100% GeM Seller Profile',
+    summary: 'Step-by-step instructions to achieve 100% completed seller profile status on GeM, including ITR verification and Caution Money deposit.',
+    category: 'gem-registration',
+    readingTime: '12 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-seller-dashboard-complete-guide',
+    title: 'GeM Seller Dashboard Complete Guide',
+    summary: 'Navigate the GeM seller portal dashboard - orders, bids, catalog management, caution money, and incident status.',
+    category: 'gem-registration',
+    readingTime: '11 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-secondary-user-registration-role-management',
+    title: 'GeM Secondary User Registration & Role Management',
+    summary: 'Learn how to create and manage secondary user accounts (bid manager, order manager, catalog manager) on GeM.',
+    category: 'gem-registration',
+    readingTime: '10 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'gem-vendor-assessment-process-explained',
+    title: 'GeM Vendor Assessment Process Explained',
+    summary: 'Complete overview of the QCI Vendor Assessment process for OEMs on GeM - desktop assessment, physical assessment, and exemptions.',
+    category: 'gem-registration',
+    readingTime: '14 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'vendor-assessment-documents-required-gem',
+    title: 'Vendor Assessment Documents Required for GeM',
+    summary: 'Comprehensive document checklist for QCI Vendor Assessment on GeM - factory photos, machinery list, ITR, and quality certificates.',
+    category: 'gem-registration',
+    readingTime: '12 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'oem-authorization-documents-on-gem',
+    title: 'OEM Authorization Documents on GeM',
+    summary: 'Guide to drafting and uploading valid OEM Authorization Certificates (MAF) on GeM to pair products and participate in brand bids.',
+    category: 'catalog-management',
+    readingTime: '10 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'brand-approval-process-on-gem',
+    title: 'Brand Approval Process on GeM',
+    summary: 'How to apply for new brand approval, trademark verification, and OEM panel activation on the GeM portal.',
+    category: 'catalog-management',
+    readingTime: '11 min',
+    author: 'SahayakAI Team',
+    date: '2026-07-28'
   }
 ];
 

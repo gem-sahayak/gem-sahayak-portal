@@ -1366,5 +1366,126 @@
     "keywords": [
       "GeM Buyer Seller Dispute Resolution Guide"
     ]
+  },
+  {
+    "title": "GeM Seller Eligibility Criteria Explained (2026 Guidelines)",
+    "summary": "Comprehensive breakdown of seller eligibility requirements on GeM Portal - turnover, business constitution, GST, and MSME rules.",
+    "slug": "gem-seller-eligibility-criteria",
+    "path": "/knowledge/gem-registration/gem-seller-eligibility-criteria",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Seller Eligibility Criteria Explained (2026 Guidelines)"
+    ]
+  },
+  {
+    "title": "GeM Registration Checklist Before You Start",
+    "summary": "Essential pre-registration checklist for GeM sellers - documents, bank details, PAN/GST verification, and mobile link requirements.",
+    "slug": "gem-registration-checklist",
+    "path": "/knowledge/gem-registration/gem-registration-checklist",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Registration Checklist Before You Start"
+    ]
+  },
+  {
+    "title": "PAN, GST, Aadhaar & Bank Requirements for GeM Registration",
+    "summary": "Detailed guide on linking PAN, GSTIN, Aadhaar, and Bank Account during primary seller registration on GeM.",
+    "slug": "pan-gst-aadhaar-bank-requirements-gem-registration",
+    "path": "/knowledge/gem-registration/pan-gst-aadhaar-bank-requirements-gem-registration",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "PAN, GST, Aadhaar & Bank Requirements for GeM Registration"
+    ]
+  },
+  {
+    "title": "Udyam Registration Benefits for GeM Sellers",
+    "summary": "Explore how Udyam MSME Registration unlocks EMD exemptions, turnover relaxations, and purchase preferences on GeM.",
+    "slug": "udyam-registration-benefits-for-gem",
+    "path": "/knowledge/compliance-policy/udyam-registration-benefits-for-gem",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "Udyam Registration Benefits for GeM Sellers"
+    ]
+  },
+  {
+    "title": "How to Complete 100% GeM Seller Profile",
+    "summary": "Step-by-step instructions to achieve 100% completed seller profile status on GeM, including ITR verification and Caution Money deposit.",
+    "slug": "how-to-complete-100-gem-seller-profile",
+    "path": "/knowledge/gem-registration/how-to-complete-100-gem-seller-profile",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "How to Complete 100% GeM Seller Profile"
+    ]
+  },
+  {
+    "title": "GeM Seller Dashboard Complete Guide",
+    "summary": "Navigate the GeM seller portal dashboard - orders, bids, catalog management, caution money, and incident status.",
+    "slug": "gem-seller-dashboard-complete-guide",
+    "path": "/knowledge/gem-registration/gem-seller-dashboard-complete-guide",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Seller Dashboard Complete Guide"
+    ]
+  },
+  {
+    "title": "GeM Secondary User Registration & Role Management",
+    "summary": "Learn how to create and manage secondary user accounts (bid manager, order manager, catalog manager) on GeM.",
+    "slug": "gem-secondary-user-registration-role-management",
+    "path": "/knowledge/gem-registration/gem-secondary-user-registration-role-management",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Secondary User Registration & Role Management"
+    ]
+  },
+  {
+    "title": "GeM Vendor Assessment Process Explained",
+    "summary": "Complete overview of the QCI Vendor Assessment process for OEMs on GeM - desktop assessment, physical assessment, and exemptions.",
+    "slug": "gem-vendor-assessment-process-explained",
+    "path": "/knowledge/gem-registration/gem-vendor-assessment-process-explained",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Vendor Assessment Process Explained"
+    ]
+  },
+  {
+    "title": "Vendor Assessment Documents Required for GeM",
+    "summary": "Comprehensive document checklist for QCI Vendor Assessment on GeM - factory photos, machinery list, ITR, and quality certificates.",
+    "slug": "vendor-assessment-documents-required-gem",
+    "path": "/knowledge/gem-registration/vendor-assessment-documents-required-gem",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Vendor Assessment Documents Required for GeM"
+    ]
+  },
+  {
+    "title": "OEM Authorization Documents on GeM",
+    "summary": "Guide to drafting and uploading valid OEM Authorization Certificates (MAF) on GeM to pair products and participate in brand bids.",
+    "slug": "oem-authorization-documents-on-gem",
+    "path": "/knowledge/catalog-management/oem-authorization-documents-on-gem",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "OEM Authorization Documents on GeM"
+    ]
+  },
+  {
+    "title": "Brand Approval Process on GeM",
+    "summary": "How to apply for new brand approval, trademark verification, and OEM panel activation on the GeM portal.",
+    "slug": "brand-approval-process-on-gem",
+    "path": "/knowledge/catalog-management/brand-approval-process-on-gem",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "Brand Approval Process on GeM"
+    ]
   }
 ]
