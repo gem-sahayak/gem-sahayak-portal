@@ -2385,6 +2385,51 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     readingTime: '18 min',
     author: 'SahayakAI Editorial Board',
     date: '2026-07-28'
+  },
+  {
+    slug: 'cppp-eprocure-vendor-registration-class-3-dsc-mapping',
+    title: 'CPPP Vendor Registration & Class 3 DSC Mapping Guide 2026',
+    summary: 'Step-by-step guide for vendors to complete Online Bidder Enrollment on CPPP (eprocure.gov.in) and map Class 3 Signing & Encryption DSC.',
+    category: 'gem-registration',
+    readingTime: '8 min',
+    author: 'SahayakAI Procurement Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'ireps-vendor-registration-pki-component-websigner-error-fix',
+    title: 'IREPS Vendor Registration & PKI Component WebSigner Error Fix',
+    summary: 'Comprehensive guide to Indian Railways E-Procurement System (IREPS) vendor onboarding, CrisSigner installation, and resolving PKI errors.',
+    category: 'gem-registration',
+    readingTime: '9 min',
+    author: 'SahayakAI Procurement Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'eprocure-portal-java-exception-error-login-solution',
+    title: 'CPPP eProcure Java Exception Error & Missing Login Button Solution',
+    summary: 'Detailed technical guide to resolve Java security exception errors, missing login buttons, and browser compatibility issues on eprocure.gov.in.',
+    category: 'gem-registration',
+    readingTime: '7 min',
+    author: 'SahayakAI Technical Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'how-to-apply-emd-waiver-cppp-tenders-msme',
+    title: 'How to Claim EMD Waiver in CPPP Tenders for MSME Sellers',
+    summary: 'Complete guide for MSME and Udyam registered sellers to claim Earnest Money Deposit (EMD) and tender fee exemptions on CPPP (eprocure.gov.in).',
+    category: 'gem-bidding',
+    readingTime: '8 min',
+    author: 'SahayakAI Policy Team',
+    date: '2026-07-28'
+  },
+  {
+    slug: 'ireps-railway-tenders-bid-freezing-boq-upload-error',
+    title: 'IREPS Railway Tenders Bid Freezing & BOQ Upload Error Fix',
+    summary: 'Step-by-step guide to submitting financial BOQ Excel files, fixing macro upload errors, and performing bid freezing on Indian Railways IREPS portal.',
+    category: 'gem-bidding',
+    readingTime: '8 min',
+    author: 'SahayakAI Technical Team',
+    date: '2026-07-28'
   }
 ];
 
