@@ -346,7 +346,7 @@ Answer: Point 15 is critical because it ensures compliance and smooth processing
 - Buyer Organizations (Central & State)
 
 ## 18. Entity Knowledge Graph Mapping
-`mermaid
+```mermaid
 graph TD
     A[GeM Portal] --> B(GeM Payment Process)
     B --> C[Seller]
@@ -363,7 +363,7 @@ graph TD
 - [GFR Rules](https://gfr.nic.in)
 
 ## 21. Recommended Schema.org JSON-LD Markup
-`json
+```json
 {
   "@context": "https://schema.org",
   "@type": "Article",

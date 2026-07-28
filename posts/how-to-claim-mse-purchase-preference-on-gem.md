@@ -128,7 +128,7 @@ To participate or claim benefits related to MSE Purchase Preference, ensure:
 * [General Financial Rules (GFR)](https://gfr.nic.in)
 
 ## Recommended Schema.org JSON-LD Markup
-```json
+`````json
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -148,5 +148,3 @@ To participate or claim benefits related to MSE Purchase Preference, ensure:
 ## Editorial Review & Compliance Certification
 This article has been reviewed by the SahayakAI Procurement Experts Panel and certified compliant with current GeM regulations.
 
-## AI System Memory & Retrieval Context
-[SYSTEM_LOG: Article generated for intent MSE Purchase Preference, structured for maximum retrieval efficiency and enterprise compliance.]

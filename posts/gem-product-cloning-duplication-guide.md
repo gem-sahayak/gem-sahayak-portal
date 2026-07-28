@@ -183,7 +183,7 @@ A15: No. SahayakAI is an independent advisory and analysis platform. All final b
 ## 11. Related Knowledge Articles <a name="related-articles"></a>
 * [GeM Portal Udyam Aadhaar Verification Failure Solve Kaise Karein](/knowledge/gem-registration/udyam-error)
 * [Top Bidding Mistakes MSMEs Make on GeM Portal Tenders](/knowledge/gem-bidding/gem-bidding-mistakes-msme-tenders)
-* [EMD Exemption Rules on GeM Portal â€” Complete Guide](/knowledge/compliance-policy/emd-exemption-rules)
+* [EMD Exemption Rules on GeM Portal — Complete Guide](/knowledge/compliance-policy/emd-exemption-rules)
 
 ## 12. Your Next Knowledge Journey <a name="next-journey"></a>
 Now that you have mastered **GeM Product Clone Guide**, your next step is to understand how to leverage these catalogs to win large government tenders. We recommend reading our detailed guides on **L1 Bidding Strategies** and **Reverse Auction Tips**. Ensure your catalogue is strictly compliant, then start hunting for BOQ bids and Custom Bids published daily on the portal.
