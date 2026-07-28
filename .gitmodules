@@ -1,0 +1,3 @@
+[submodule "seo-engine"]
+	path = seo-engine
+	url = git@github.com:gem-sahayak/seo-engine.git

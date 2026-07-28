@@ -19,7 +19,9 @@ import {
   RegistryFAQ
 } from '@/content/registry';
 
-const postsDirectory = path.join(process.cwd(), 'posts');
+const primaryPostsDir = path.join(process.cwd(), 'seo-engine', 'posts');
+const fallbackPostsDir = path.join(process.cwd(), 'posts');
+const postsDirectory = fs.existsSync(primaryPostsDir) ? primaryPostsDir : fallbackPostsDir;
 
 export interface FullArticle extends RegistryArticle {
   contentHtml: string;
