@@ -8,6 +8,36 @@ const nextConfig: NextConfig = {
         destination: "/knowledge",
         permanent: true,
       },
+      {
+        source: "/tools/profile-readiness-checker",
+        destination: "/tools",
+        permanent: true,
+      },
+      {
+        source: "/tools/gst-pan-validator",
+        destination: "/tools",
+        permanent: true,
+      },
+      {
+        source: "/posts/gem-catalog-rejected-reasons",
+        destination: "/knowledge/catalog-management/gem-catalog-rejected-reasons",
+        permanent: true,
+      },
+      {
+        source: "/posts/fees-explained",
+        destination: "/knowledge/gem-registration/fees-explained",
+        permanent: true,
+      },
+      {
+        source: "/posts/:slug*",
+        destination: "/knowledge",
+        permanent: true,
+      },
+      {
+        source: "/knowledge/gem-account-management",
+        destination: "/knowledge/gem-registration",
+        permanent: true,
+      },
     ];
   },
   async headers() {
