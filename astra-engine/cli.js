@@ -59,6 +59,7 @@ function printHelp() {
   console.log(`  ${colors.green}procurement${colors.reset}     Procurement Intelligence (--summary, --metrics, --categories)`);
   console.log(`  ${colors.green}bid${colors.reset}             Bid Intelligence (--analyze, --timeline, --complexity)`);
   console.log(`  ${colors.green}compliance${colors.reset}      Compliance Engine (--eligibility, --documents, --risk)`);
+  console.log(`  ${colors.green}validate${colors.reset}        Run Full Engine Validation Gatekeeper`);
   console.log(`  ${colors.green}pricing${colors.reset}         Pricing Intelligence (--variance, --benchmark, --competition)`);
   console.log(`  ${colors.green}version${colors.reset}         Display engine version`);
   console.log(`  ${colors.green}help${colors.reset}            Show this help message\n`);
@@ -215,6 +216,7 @@ async function runCli() {
       break;
     }
 
+    case 'validate':
     case 'compliance': {
       console.log(`${colors.cyan}🛡️ Running Compliance Intelligence Engine (v1.14.0)...${colors.reset}`);
       const compRes = eligibilityEngine.evaluateEligibility({ supplierId: 'GEM-SUP-001', category: 'IT_SERVICES' });

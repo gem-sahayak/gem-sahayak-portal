@@ -44,8 +44,10 @@ jobs:
           node astra-engine/tests/package.test.js
           node astra-engine/tests/sdk.test.js
 
-      - name: Run Next.js Portal Build & Typecheck Gatekeeper
-        run: npx tsc --noEmit && npm run build
+      - name: Run Full Engine Validation Gatekeeper
+        run: |
+          node astra-engine/cli.js validate
+          npx tsc --noEmit
 
       - name: Upload Audit Reports
         if: always()
