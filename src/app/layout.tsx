@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import BetaAnnouncement from "./components/BetaAnnouncement";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sahayakai.co.in"),
   title: "SahayakAI — Free WhatsApp Gem Portal Bid Tracker & Helper for MSMEs",
   description: "Automate bid search, active tenders tracking, and real-time WhatsApp alerts on government e-marketplace (Gem India). Boost your MSME sales with the premium SahayakAI extension.",
   keywords: "Gem portal, government e-marketplace, Gem portal bids search, Gem portal L1 evaluation, Gem portal WhatsApp alerts, Gem portal tender tracker, MSME bids, Indian government tenders, catalog helper",

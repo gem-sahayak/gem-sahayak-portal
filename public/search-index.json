@@ -1652,5 +1652,60 @@
     "keywords": [
       "GeM Payment Process for Sellers (Invoice to Bank Credit)"
     ]
+  },
+  {
+    "title": "CPPP Vendor Registration & Class 3 DSC Mapping Guide 2026",
+    "summary": "Step-by-step guide for vendors to complete Online Bidder Enrollment on CPPP (eprocure.gov.in) and map Class 3 Signing & Encryption DSC.",
+    "slug": "cppp-eprocure-vendor-registration-class-3-dsc-mapping",
+    "path": "/knowledge/gem-registration/cppp-eprocure-vendor-registration-class-3-dsc-mapping",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "CPPP Vendor Registration & Class 3 DSC Mapping Guide 2026"
+    ]
+  },
+  {
+    "title": "IREPS Vendor Registration & PKI Component WebSigner Error Fix",
+    "summary": "Comprehensive guide to Indian Railways E-Procurement System (IREPS) vendor onboarding, CrisSigner installation, and resolving PKI errors.",
+    "slug": "ireps-vendor-registration-pki-component-websigner-error-fix",
+    "path": "/knowledge/gem-registration/ireps-vendor-registration-pki-component-websigner-error-fix",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "IREPS Vendor Registration & PKI Component WebSigner Error Fix"
+    ]
+  },
+  {
+    "title": "CPPP eProcure Java Exception Error & Missing Login Button Solution",
+    "summary": "Detailed technical guide to resolve Java security exception errors, missing login buttons, and browser compatibility issues on eprocure.gov.in.",
+    "slug": "eprocure-portal-java-exception-error-login-solution",
+    "path": "/knowledge/gem-registration/eprocure-portal-java-exception-error-login-solution",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "CPPP eProcure Java Exception Error & Missing Login Button Solution"
+    ]
+  },
+  {
+    "title": "How to Claim EMD Waiver in CPPP Tenders for MSME Sellers",
+    "summary": "Complete guide for MSME and Udyam registered sellers to claim Earnest Money Deposit (EMD) and tender fee exemptions on CPPP (eprocure.gov.in).",
+    "slug": "how-to-apply-emd-waiver-cppp-tenders-msme",
+    "path": "/knowledge/gem-bidding/how-to-apply-emd-waiver-cppp-tenders-msme",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "How to Claim EMD Waiver in CPPP Tenders for MSME Sellers"
+    ]
+  },
+  {
+    "title": "IREPS Railway Tenders Bid Freezing & BOQ Upload Error Fix",
+    "summary": "Step-by-step guide to submitting financial BOQ Excel files, fixing macro upload errors, and performing bid freezing on Indian Railways IREPS portal.",
+    "slug": "ireps-railway-tenders-bid-freezing-boq-upload-error",
+    "path": "/knowledge/gem-bidding/ireps-railway-tenders-bid-freezing-boq-upload-error",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "IREPS Railway Tenders Bid Freezing & BOQ Upload Error Fix"
+    ]
   }
 ]

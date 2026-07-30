@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   async redirects() {
-    return [
+    const baseRedirects = [
       {
         source: "/blog",
         destination: "/knowledge",
@@ -39,6 +41,28 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
+
+    if (isProduction) {
+      baseRedirects.push(
+        {
+          source: "/astra-studio",
+          destination: "/",
+          permanent: false,
+        },
+        {
+          source: "/astra-hub/:path*",
+          destination: "/",
+          permanent: false,
+        },
+        {
+          source: "/api/astra/:path*",
+          destination: "/",
+          permanent: false,
+        }
+      );
+    }
+
+    return baseRedirects;
   },
   async headers() {
     return [

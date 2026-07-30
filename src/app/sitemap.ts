@@ -52,22 +52,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Map category hub routes (/knowledge/[category] and /categories/[category])
-  const categoryRoutes = Object.values(REGISTRY_CATEGORIES).flatMap((cat) => {
-    return [
-      {
-        url: `${baseUrl}/knowledge/${cat.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'daily' as const,
-        priority: 0.8,
-      },
-      {
-        url: `${baseUrl}/categories/${cat.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      }
-    ];
+  // Map category hub routes (/knowledge/[category])
+  const categoryRoutes = Object.values(REGISTRY_CATEGORIES).map((cat) => {
+    return {
+      url: `${baseUrl}/knowledge/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.8,
+    };
   });
 
   // Map tool routes (/tools/[slug])

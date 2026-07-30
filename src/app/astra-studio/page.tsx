@@ -1,8 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { notFound } from 'next/navigation';
 
 export default function AstraStudioPage() {
+  if (process.env.NODE_ENV === 'production') {
+    notFound();
+  }
+
   // Navigation State
   const [activeTab, setActiveTab] = useState<string>('overview');
   const [cmdOpen, setCmdOpen] = useState<boolean>(false);
