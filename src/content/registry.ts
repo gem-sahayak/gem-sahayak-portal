@@ -2431,5 +2431,96 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     author: 'SahayakAI Technical Team',
     date: '2026-07-28'
   }
+,
+  {
+    slug: 'gem-primary-user-vs-secondary-user-transfer',
+    title: 'Primary User vs Secondary User Transfer on GeM: Account Roles & Change Guide',
+    summary: 'GeM portal par Primary User aur Secondary User roles me kya antar hai? Account ownership, role permissions, employee exit transfer, aur security best practices ka complete Hinglish guide.',
+    category: 'gem-registration',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-custom-bid-boq-participation-rules',
+    title: 'GeM Custom Bid & BOQ Participation Rules: Technical Compliance Guide',
+    summary: 'GeM portal par Custom Bid aur BOQ tenders me participate karne ke rules kya hain? Technical compliance, BOQ Excel schedule filling, aur bid rejection se bachne ka Hinglish guide.',
+    category: 'gem-bidding',
+    readingTime: '8 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-l1-price-negotiation-guidelines',
+    title: 'GeM L1 Price Negotiation Guidelines: Rules, Counter-Offers & Seller Rights',
+    summary: 'GeM portal par L1 declare hone ke baad price negotiation ke kya rules hain? CVC directives, GFR provisions, counter-offers, aur MSE purchase preference ka complete Hinglish guide.',
+    category: 'gem-bidding',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-vs-cppp-dual-portal-procurement-comparison',
+    title: 'GeM vs CPPP Dual Portal Procurement Comparison: Contractor Strategy Guide',
+    summary: 'GeM portal aur CPPP (eProcure) ke beech kya antar hai? Public procurement ecosystems, tender discovery, registration, aur dual-portal strategy ka complete Hinglish guide.',
+    category: 'government-procurement',
+    readingTime: '8 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-helpdesk-support-ticket-resolution',
+    title: 'GeM Helpdesk Support & Ticket Resolution: Seller Complaint Guide',
+    summary: 'GeM portal par technical issues, catalog holds, aur login problems ke liye helpdesk support ticket kaise raise karein? Resolution tracking aur support guidelines ka complete Hinglish guide.',
+    category: 'gem-registration',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-availability-report-procurement-guide',
+    title: 'GeM Availability Report Procurement Guide: Rules & Direct Purchase Context',
+    summary: 'GeM Availability Report kya hai? GFR Rule 149 ke under catalog availability search, Non-Availability Certificate (NOC) context, aur procurement rules ka complete Hinglish guide.',
+    category: 'compliance-policy',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-womaniya-startup-runway-guide',
+    title: 'GeM Womaniya & Startup Runway: Benefits & Seller Registration Guide',
+    summary: 'GeM Womaniya aur Startup Runway special initiatives me kya antar hai? Women MSE 3% quota, DPIIT startup exemptions, eligibility, aur registration ka complete Hinglish guide.',
+    category: 'gem-registration',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-login-forgot-password-user-id-recovery',
+    title: 'GeM Login Forgot Password & User ID Recovery: Step-by-Step Guide',
+    summary: 'GeM seller account me password reset ya User ID recovery kaise karein? OTP issues, account lockout, aur troubleshooting ka complete Hinglish guide.',
+    category: 'gem-registration',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-furniture-tender-guide',
+    title: 'GeM Furniture Tenders: Specification Matching, Pre-Bid Checklist & Bidding Guide',
+    summary: 'GeM portal par Office aur School Furniture tenders me bid kaise karein? Technical parameters, BIFMA/ISO certification guidelines, aur pre-bid checklist ka complete Hinglish guide.',
+    category: 'catalog-management',
+    readingTime: '7 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  },
+  {
+    slug: 'gem-medical-equipment-tender-guide',
+    title: 'GeM Medical Equipment Tenders: Regulatory Compliance, Certifications & Bidding Guide',
+    summary: 'GeM portal par hospital aur diagnostic medical equipment tenders me bid kaise karein? CDSCO regulations, MDR 2017 risk classes, AMC/CMC terms, aur compliance ka complete Hinglish guide.',
+    category: 'compliance-policy',
+    readingTime: '8 min',
+    author: 'SahayakAI Team',
+    date: '2026-08-08'
+  }
 ];
 
