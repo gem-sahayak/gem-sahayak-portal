@@ -87,6 +87,40 @@ export const REGISTRY_CATEGORIES: Record<string, RegistryCategory> = {
 };
 
 export const REGISTRY_TOOLS: Record<string, RegistryTool> = {
+  "udyam-nic-code-finder": {
+    slug: "udyam-nic-code-finder",
+    name: "Udyam NIC Code & GeM Category Matcher",
+    headline: "Find 5-digit NIC codes and matching GeM catalog categories",
+    description: "Search product and service names to find exact 5-digit NIC 2008 codes, HSN codes, and step-by-step Udyam portal amendment guides to prevent bid rejection.",
+    mockPlaceholder: "Enter product or service name (e.g. Office Furniture, Manpower, CCTV)...",
+    useCases: [
+      "Find 5-Digit NIC Codes for Udyam Certificate",
+      "Map items to exact GeM catalog taxonomy paths",
+      "Avoid technical rejection due to missing NIC codes"
+    ],
+    faqs: [
+      { q: "Why is 5-digit NIC code important on GeM?", a: "GeM system verifies your Udyam certificate NIC code during bid submission to grant EMD exemptions and MSE price matching preferences." }
+    ],
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Windows, macOS, Linux"
+  },
+  "registration-readiness-checker": {
+    slug: "registration-readiness-checker",
+    name: "GeM Registration Readiness Assessor",
+    headline: "Interactive 7-step wizard replicating official GeM Primary Seller registration",
+    description: "Audit your business profile readiness, calculate caution money deposit tier, check EMD exemption eligibility, and identify top profile rejection risks.",
+    mockPlaceholder: "Select your business constitution and enter company details...",
+    useCases: [
+      "Audit 7-Step Primary Seller Registration readiness",
+      "Calculate exact Caution Money Deposit required",
+      "Identify profile rejection risks before submitting on GeM"
+    ],
+    faqs: [
+      { q: "Is this readiness checker official?", a: "No, it is an independent SahayakAI helper tool designed to replicate the official GeM Primary Seller Profile Registration wizard layout for pre-submission verification." }
+    ],
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Windows, macOS, Linux"
+  },
   "bid-analyzer": {
     slug: "bid-analyzer",
     name: "AI Bid Analyzer",

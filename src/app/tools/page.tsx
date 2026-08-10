@@ -119,6 +119,20 @@ function ToolCard({ icon, name, description, features, slug, isUpcoming = false 
 export default function ToolsPage() {
   const liveTools = [
     {
+      icon: "📋",
+      name: "GeM Registration Readiness Assessor",
+      description: "Interactive 7-step wizard replicating official GeM Primary Seller registration layout to audit documents and caution money.",
+      features: ["7-Step Wizard replica", "Caution money deposit tier", "Document checklist & risk score"],
+      slug: "registration-readiness-checker"
+    },
+    {
+      icon: "🏷️",
+      name: "Udyam NIC Code & GeM Category Matcher",
+      description: "Find 5-digit NIC 2008 codes, HSN codes, and Udyam amendment steps to ensure 100% GeM bid compliance.",
+      features: ["5-Digit NIC code search", "GeM category taxonomy path", "Udyam portal amendment steps"],
+      slug: "udyam-nic-code-finder"
+    },
+    {
       icon: "🔍",
       name: "AI Bid Search",
       description: "Filter and locate active GeM portal bids instantly using simple, natural language query commands.",

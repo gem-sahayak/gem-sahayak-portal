@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import CatalogDemo from "./CatalogDemo";
 import TenderDemo from "./TenderDemo";
 import BidSearchDemo from "./BidSearchDemo";
+import RegistrationReadinessDemo from "./RegistrationReadinessDemo";
+import UdyamNicDemo from "./UdyamNicDemo";
 
 interface ToolInfo {
   name: string;
@@ -15,6 +17,34 @@ interface ToolInfo {
 }
 
 const TOOLS_DATA: Record<string, ToolInfo> = {
+  "registration-readiness-checker": {
+    name: "GeM Registration Readiness Assessor",
+    headline: "Interactive 7-step wizard replicating official GeM Primary Seller registration",
+    description: "Audit your business profile readiness, calculate caution money deposit tier, check EMD exemption eligibility, and identify top profile rejection risks.",
+    mockPlaceholder: "Select your business constitution and enter company details...",
+    useCases: [
+      "Audit 7-Step Primary Seller Registration readiness",
+      "Calculate exact Caution Money Deposit required",
+      "Identify profile rejection risks before submitting on GeM"
+    ],
+    faqs: [
+      { q: "Is this readiness checker official?", a: "No, it is an independent SahayakAI helper tool designed to replicate the official GeM Primary Seller Profile Registration wizard layout for pre-submission verification." }
+    ]
+  },
+  "udyam-nic-code-finder": {
+    name: "Udyam NIC Code & GeM Category Matcher",
+    headline: "Find 5-digit NIC codes and matching GeM catalog categories",
+    description: "Search product and service names to find exact 5-digit NIC 2008 codes, HSN codes, and step-by-step Udyam portal amendment guides to prevent bid rejection.",
+    mockPlaceholder: "Enter product or service name (e.g. Office Furniture, Manpower, CCTV)...",
+    useCases: [
+      "Find 5-Digit NIC Codes for Udyam Certificate",
+      "Map items to exact GeM catalog taxonomy paths",
+      "Avoid technical rejection due to missing NIC codes"
+    ],
+    faqs: [
+      { q: "Why is 5-digit NIC code important on GeM?", a: "GeM system verifies your Udyam certificate NIC code during bid submission to grant EMD exemptions and MSE price matching preferences." }
+    ]
+  },
   "ai-catalog-dashboard": {
     name: "AI Catalog Dashboard",
     headline: "Find correct GeM category paths and technical specification rules",
@@ -236,8 +266,11 @@ export default async function ToolPage({ params }: Props) {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "28px" }}>
           
-          {/* Main Action Card / Interactive Demo */}
-          {slug === "ai-catalog-dashboard" ? (
+          {slug === "registration-readiness-checker" ? (
+            <RegistrationReadinessDemo />
+          ) : slug === "udyam-nic-code-finder" ? (
+            <UdyamNicDemo />
+          ) : slug === "ai-catalog-dashboard" ? (
             <CatalogDemo />
           ) : (slug === "tender-summarizer" || slug === "bid-analyzer") ? (
             <TenderDemo />
