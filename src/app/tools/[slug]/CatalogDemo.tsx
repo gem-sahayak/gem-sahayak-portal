@@ -83,11 +83,23 @@ export default function CatalogDemo() {
         headers["x-bypass-limit"] = "true";
       }
 
-      const response = await fetch("https://api.sahayakai.co.in/api/demo/catalog", {
+      const response = await fetch("https://api.sahayakai.co.in/api/chat", {
         method: "POST",
         headers,
-        body: JSON.stringify({ productName: name }),
+        body: JSON.stringify({
+          contents: [{
+            role: "user",
+            parts: [{
+              text: `Provide official GeM catalog category taxonomy path, golden codes, mandatory specifications, and pricing guidance for product: "${name}". Formatted as clean markdown.`
+            }]
+          }]
+        }),
       });
+
+      const contentType = response.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        throw new Error("Catalog server returned an invalid response. Please try again.");
+      }
 
       const data = await response.json();
 
@@ -106,7 +118,8 @@ export default function CatalogDemo() {
         throw new Error(data.error || "Something went wrong. Please try again later.");
       }
 
-      setResult(data.response || "No response received.");
+      const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || data.response || "No response received.";
+      setResult(aiText);
       
       // Save demo state to block subsequent tries
       if (!isBypassMode) {

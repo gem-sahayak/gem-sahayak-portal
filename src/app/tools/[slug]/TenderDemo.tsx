@@ -82,6 +82,11 @@ export default function TenderDemo() {
           body: JSON.stringify({ pdfData: base64String }),
         });
 
+        const contentType = response.headers.get("content-type") || "";
+        if (!contentType.includes("application/json")) {
+          throw new Error("Server returned non-JSON response. Please try again later.");
+        }
+
         const data = await response.json();
 
         if (response.status === 403 || data.error === "LIMIT_EXHAUSTED") {

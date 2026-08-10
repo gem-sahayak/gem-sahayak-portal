@@ -265,7 +265,7 @@ export default function BidSearchDemo() {
         setMessages(prev => [...prev, { role: "assistant", content: reply, timestamp: new Date() }]);
       } else {
         // Route to bid search demo proxy
-        const response = await fetch("https://api.sahayakai.co.in/api/demo/search-bids", {
+        const response = await fetch("https://api.sahayakai.co.in/search-bids", {
           method: "POST",
           headers,
           body: JSON.stringify({
@@ -276,6 +276,11 @@ export default function BidSearchDemo() {
             page: pageNum
           })
         });
+
+        const contentType = response.headers.get("content-type") || "";
+        if (!contentType.includes("application/json")) {
+          throw new Error("Bids server returned an invalid response. Kripya punah prayas karein.");
+        }
 
         const data = await response.json();
 
