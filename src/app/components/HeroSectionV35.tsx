@@ -2,6 +2,7 @@
 
 import React from "react";
 import LiveAIDashboard from "./LiveAIDashboard";
+import { SITE_CONFIG } from "../lib/siteConfig";
 
 const TRUST_BADGES = [
   "🧪 Free During Beta",
@@ -11,7 +12,7 @@ const TRUST_BADGES = [
 ];
 
 const STATS = [
-  { value: "100+", label: "Procurement Guides" },
+  { value: SITE_CONFIG.stats.knowledgeGuides, label: "Procurement Guides" },
   { value: "10K+", label: "Bids Tracked" },
   { value: "500+", label: "PDF Analyses" },
 ];

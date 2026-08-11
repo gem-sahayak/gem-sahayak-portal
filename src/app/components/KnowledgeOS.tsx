@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { SITE_CONFIG } from "../lib/siteConfig";
 
 const CATEGORIES = [
   { icon: "📖", title: "Latest Guides", count: "74 guides", href: "/knowledge", color: "#10B981" },
@@ -57,7 +58,7 @@ export default function KnowledgeOS() {
             }}>Knowledge Hub</span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "#94A3B8", lineHeight: 1.7 }}>
-            100+ procurement guides, compliance articles aur tender resources — sab ek jagah. Hinglish aur English mein.
+            {SITE_CONFIG.stats.knowledgeGuides} procurement guides, compliance articles aur tender resources — sab ek jagah. Hinglish aur English mein.
           </p>
         </div>
 

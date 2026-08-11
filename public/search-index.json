@@ -65,6 +65,34 @@
     ]
   },
   {
+    "title": "Udyam NIC Code & GeM Category Matcher",
+    "summary": "Find 5-digit NIC codes and matching GeM catalog categories. Search product and service names to find exact 5-digit NIC 2008 codes, HSN codes, and step-by-step Udyam portal amendment guides to prevent bid rejection.",
+    "slug": "udyam-nic-code-finder",
+    "path": "/tools/udyam-nic-code-finder",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Find 5-Digit NIC Codes for Udyam Certificate",
+      "Map items to exact GeM catalog taxonomy paths",
+      "Avoid technical rejection due to missing NIC codes",
+      "Udyam NIC Code & GeM Category Matcher"
+    ]
+  },
+  {
+    "title": "GeM Registration Readiness Assessor",
+    "summary": "Interactive 7-step wizard replicating official GeM Primary Seller registration. Audit your business profile readiness, calculate caution money deposit tier, check EMD exemption eligibility, and identify top profile rejection risks.",
+    "slug": "registration-readiness-checker",
+    "path": "/tools/registration-readiness-checker",
+    "type": "tool",
+    "category": "tools",
+    "keywords": [
+      "Audit 7-Step Primary Seller Registration readiness",
+      "Calculate exact Caution Money Deposit required",
+      "Identify profile rejection risks before submitting on GeM",
+      "GeM Registration Readiness Assessor"
+    ]
+  },
+  {
     "title": "AI Bid Analyzer",
     "summary": "Compare bids and verify compliance parameters automatically. Analyze technical bid specifications, check for deviation, and compare competitor criteria using advanced AI mapping. Ideal for GeM custom bids.",
     "slug": "bid-analyzer",
@@ -1706,6 +1734,116 @@
     "category": "gem-bidding",
     "keywords": [
       "IREPS Railway Tenders Bid Freezing & BOQ Upload Error Fix"
+    ]
+  },
+  {
+    "title": "Primary User vs Secondary User Transfer on GeM: Account Roles & Change Guide",
+    "summary": "GeM portal par Primary User aur Secondary User roles me kya antar hai? Account ownership, role permissions, employee exit transfer, aur security best practices ka complete Hinglish guide.",
+    "slug": "gem-primary-user-vs-secondary-user-transfer",
+    "path": "/knowledge/gem-registration/gem-primary-user-vs-secondary-user-transfer",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "Primary User vs Secondary User Transfer on GeM: Account Roles & Change Guide"
+    ]
+  },
+  {
+    "title": "GeM Custom Bid & BOQ Participation Rules: Technical Compliance Guide",
+    "summary": "GeM portal par Custom Bid aur BOQ tenders me participate karne ke rules kya hain? Technical compliance, BOQ Excel schedule filling, aur bid rejection se bachne ka Hinglish guide.",
+    "slug": "gem-custom-bid-boq-participation-rules",
+    "path": "/knowledge/gem-bidding/gem-custom-bid-boq-participation-rules",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM Custom Bid & BOQ Participation Rules: Technical Compliance Guide"
+    ]
+  },
+  {
+    "title": "GeM L1 Price Negotiation Guidelines: Rules, Counter-Offers & Seller Rights",
+    "summary": "GeM portal par L1 declare hone ke baad price negotiation ke kya rules hain? CVC directives, GFR provisions, counter-offers, aur MSE purchase preference ka complete Hinglish guide.",
+    "slug": "gem-l1-price-negotiation-guidelines",
+    "path": "/knowledge/gem-bidding/gem-l1-price-negotiation-guidelines",
+    "type": "article",
+    "category": "gem-bidding",
+    "keywords": [
+      "GeM L1 Price Negotiation Guidelines: Rules, Counter-Offers & Seller Rights"
+    ]
+  },
+  {
+    "title": "GeM vs CPPP Dual Portal Procurement Comparison: Contractor Strategy Guide",
+    "summary": "GeM portal aur CPPP (eProcure) ke beech kya antar hai? Public procurement ecosystems, tender discovery, registration, aur dual-portal strategy ka complete Hinglish guide.",
+    "slug": "gem-vs-cppp-dual-portal-procurement-comparison",
+    "path": "/knowledge/government-procurement/gem-vs-cppp-dual-portal-procurement-comparison",
+    "type": "article",
+    "category": "government-procurement",
+    "keywords": [
+      "GeM vs CPPP Dual Portal Procurement Comparison: Contractor Strategy Guide"
+    ]
+  },
+  {
+    "title": "GeM Helpdesk Support & Ticket Resolution: Seller Complaint Guide",
+    "summary": "GeM portal par technical issues, catalog holds, aur login problems ke liye helpdesk support ticket kaise raise karein? Resolution tracking aur support guidelines ka complete Hinglish guide.",
+    "slug": "gem-helpdesk-support-ticket-resolution",
+    "path": "/knowledge/gem-registration/gem-helpdesk-support-ticket-resolution",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Helpdesk Support & Ticket Resolution: Seller Complaint Guide"
+    ]
+  },
+  {
+    "title": "GeM Availability Report Procurement Guide: Rules & Direct Purchase Context",
+    "summary": "GeM Availability Report kya hai? GFR Rule 149 ke under catalog availability search, Non-Availability Certificate (NOC) context, aur procurement rules ka complete Hinglish guide.",
+    "slug": "gem-availability-report-procurement-guide",
+    "path": "/knowledge/compliance-policy/gem-availability-report-procurement-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Availability Report Procurement Guide: Rules & Direct Purchase Context"
+    ]
+  },
+  {
+    "title": "GeM Womaniya & Startup Runway: Benefits & Seller Registration Guide",
+    "summary": "GeM Womaniya aur Startup Runway special initiatives me kya antar hai? Women MSE 3% quota, DPIIT startup exemptions, eligibility, aur registration ka complete Hinglish guide.",
+    "slug": "gem-womaniya-startup-runway-guide",
+    "path": "/knowledge/gem-registration/gem-womaniya-startup-runway-guide",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Womaniya & Startup Runway: Benefits & Seller Registration Guide"
+    ]
+  },
+  {
+    "title": "GeM Login Forgot Password & User ID Recovery: Step-by-Step Guide",
+    "summary": "GeM seller account me password reset ya User ID recovery kaise karein? OTP issues, account lockout, aur troubleshooting ka complete Hinglish guide.",
+    "slug": "gem-login-forgot-password-user-id-recovery",
+    "path": "/knowledge/gem-registration/gem-login-forgot-password-user-id-recovery",
+    "type": "article",
+    "category": "gem-registration",
+    "keywords": [
+      "GeM Login Forgot Password & User ID Recovery: Step-by-Step Guide"
+    ]
+  },
+  {
+    "title": "GeM Furniture Tenders: Specification Matching, Pre-Bid Checklist & Bidding Guide",
+    "summary": "GeM portal par Office aur School Furniture tenders me bid kaise karein? Technical parameters, BIFMA/ISO certification guidelines, aur pre-bid checklist ka complete Hinglish guide.",
+    "slug": "gem-furniture-tender-guide",
+    "path": "/knowledge/catalog-management/gem-furniture-tender-guide",
+    "type": "article",
+    "category": "catalog-management",
+    "keywords": [
+      "GeM Furniture Tenders: Specification Matching, Pre-Bid Checklist & Bidding Guide"
+    ]
+  },
+  {
+    "title": "GeM Medical Equipment Tenders: Regulatory Compliance, Certifications & Bidding Guide",
+    "summary": "GeM portal par hospital aur diagnostic medical equipment tenders me bid kaise karein? CDSCO regulations, MDR 2017 risk classes, AMC/CMC terms, aur compliance ka complete Hinglish guide.",
+    "slug": "gem-medical-equipment-tender-guide",
+    "path": "/knowledge/compliance-policy/gem-medical-equipment-tender-guide",
+    "type": "article",
+    "category": "compliance-policy",
+    "keywords": [
+      "GeM Medical Equipment Tenders: Regulatory Compliance, Certifications & Bidding Guide"
     ]
   }
 ]

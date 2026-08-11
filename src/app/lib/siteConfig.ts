@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
     knowledgeGuides: "116+",
     faqs: "200+",
     aiTools: "5+",
-    businessesSupported: "10,00+",
+    businessesSupported: "1,000+",
     dailyAlerts: "500+",
     procurementEntities: "1,000+",
     procurementCategories: "Many",

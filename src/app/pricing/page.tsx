@@ -262,12 +262,35 @@ export default function PricingPage() {
                   </p>
 
                   {/* Pricing Display */}
-                  <div style={{ display: "flex", alignItems: "baseline", marginBottom: "24px" }}>
-                    <span style={{ fontSize: "2.5rem", fontWeight: "800", color: "#0C3E5E" }}>
-                      ₹{billingPeriod === "monthly" ? plan.priceMonthly.toLocaleString("en-IN") : plan.priceAnnual.toLocaleString("en-IN")}
-                    </span>
-                    <span style={{ color: "#64748B", marginLeft: "4px", fontSize: "0.95rem" }}>
-                      /{billingPeriod === "monthly" ? "month" : "year"}
+                  <div style={{ position: "relative", display: "inline-flex", alignItems: "center", marginBottom: "24px" }}>
+                    <div style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                      filter: "blur(6px)",
+                      WebkitFilter: "blur(6px)",
+                      userSelect: "none",
+                      pointerEvents: "none"
+                    }}>
+                      <span style={{ fontSize: "2.5rem", fontWeight: "800", color: "#0C3E5E" }}>
+                        ₹{billingPeriod === "monthly" ? plan.priceMonthly.toLocaleString("en-IN") : plan.priceAnnual.toLocaleString("en-IN")}
+                      </span>
+                      <span style={{ color: "#64748B", marginLeft: "4px", fontSize: "0.95rem" }}>
+                        /{billingPeriod === "monthly" ? "month" : "year"}
+                      </span>
+                    </div>
+                    <span style={{
+                      position: "absolute",
+                      left: "0",
+                      fontSize: "0.78rem",
+                      fontWeight: 800,
+                      color: "#0E8A8A",
+                      background: "rgba(14, 138, 138, 0.12)",
+                      padding: "4px 12px",
+                      borderRadius: "9999px",
+                      border: "1px solid rgba(14, 138, 138, 0.25)",
+                      whiteSpace: "nowrap"
+                    }}>
+                      Revealed after Beta
                     </span>
                   </div>
 
@@ -326,9 +349,9 @@ export default function PricingPage() {
               <thead>
                 <tr style={{ borderBottom: "2px solid #E2E8F0" }}>
                   <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Core Features & Limits</th>
-                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Starter (₹999/mo)</th>
-                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Professional (₹1,999/mo)</th>
-                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Enterprise (₹4,999/mo)</th>
+                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Starter <span style={{ filter: "blur(6px)", WebkitFilter: "blur(6px)", userSelect: "none" }}>(₹999/mo)</span></th>
+                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Professional <span style={{ filter: "blur(6px)", WebkitFilter: "blur(6px)", userSelect: "none" }}>(₹1,999/mo)</span></th>
+                  <th style={{ padding: "16px 24px", color: "#0C3E5E", fontWeight: "700" }}>Enterprise <span style={{ filter: "blur(6px)", WebkitFilter: "blur(6px)", userSelect: "none" }}>(₹4,999/mo)</span></th>
                 </tr>
               </thead>
               <tbody>
