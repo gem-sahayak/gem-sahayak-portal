@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { REGISTRY_ARTICLES } from "@/content/registry";
+import KnowledgeExplorer from "../components/KnowledgeExplorer";
 
 export const metadata: Metadata = {
   title: "Knowledge Hub & Bidding Guides — SahayakAI",
@@ -58,6 +59,9 @@ export default function KnowledgeHubHome() {
             AI-Powered &bull; Compliance-First &bull; Independent Technology Platform
           </span>
         </div>
+
+        {/* Interactive Search & Filter Directory across all articles */}
+        <KnowledgeExplorer articles={posts} />
 
         {/* Categories Grid */}
         <h2 style={{ fontSize: "1.5rem", fontWeight: "800", color: "#0C2E4A", marginBottom: "20px" }}>
@@ -142,3 +146,4 @@ export default function KnowledgeHubHome() {
     </div>
   );
 }
+

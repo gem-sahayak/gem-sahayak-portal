@@ -331,6 +331,94 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     relatedArticles: ["udyam-error"]
   },
   {
+    slug: 'gem-portal-login-forgot-password-recovery-guide',
+    title: 'GeM Portal Login & Password Recovery Guide 2026: Reset User ID & Password',
+    summary: 'Comprehensive guide to resolving GeM portal login errors, resetting forgotten passwords, recovering Primary Seller User IDs, and bypassing OTP delays.',
+    category: 'gem-registration',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '6 min read',
+    relatedTools: ['registration-readiness-checker', 'bid-search'],
+    relatedArticles: ['complete-gem-registration-guide', 'gem-primary-user-vs-secondary-user-roles-transfer']
+  },
+  {
+    slug: 'gem-seller-registration-process-documents-checklist-2026',
+    title: 'GeM Seller Registration Process 2026: Documents Required & Step-by-Step Guide',
+    summary: 'Complete 2026 checklist of mandatory documents, PAN validation, Udyam matching, and step-by-step primary seller onboarding on GeM.',
+    category: 'gem-registration',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '7 min read',
+    relatedTools: ['registration-readiness-checker', 'ai-catalog-dashboard'],
+    relatedArticles: ['complete-gem-registration-guide', 'gem-caution-money-deposit-slabs-refund-rules']
+  },
+  {
+    slug: 'how-to-search-bids-on-gem-advanced-filter-guide',
+    title: 'How to Search Bids on GeM Portal: Advanced Filters & Tender Search Guide 2026',
+    summary: 'Master GeM BidPlus search filters by city, state, ministry, category, and BOQ schedules to discover active tenders before competitors.',
+    category: 'gem-bidding',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '5 min read',
+    relatedTools: ['bid-search', 'tender-summarizer'],
+    relatedArticles: ['bid-participation-rules', 'gem-emd-exemption-rules-for-msme-startups-2026']
+  },
+  {
+    slug: 'gem-emd-exemption-rules-for-msme-startups-2026',
+    title: 'GeM EMD Exemption Rules for MSMEs & Startups (2026): GFR Rule 170 Waiver Guide',
+    summary: 'Official GFR Rule 170 guidelines for claiming 100% EMD waiver on GeM bids using Udyam Aadhaar and DPIIT Startup Certificates.',
+    category: 'compliance-policy',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '6 min read',
+    relatedTools: ['udyam-nic-code-finder', 'tender-summarizer'],
+    relatedArticles: ['how-to-claim-emd-exemption-gem-portal-bids', 'gem-seller-registration-process-documents-checklist-2026']
+  },
+  {
+    slug: 'gem-payment-timeline-crac-receipt-rules-vendor-guide',
+    title: 'GeM Payment Process & CRAC Rules 2026: Payment Timelines & Delay Resolution',
+    summary: 'Complete vendor guide to GeM Consignee Receipt and Acceptance Certificate (CRAC) 10-day auto-generation, invoice submission, and delayed payment interest rules.',
+    category: 'compliance-policy',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '6 min read',
+    relatedTools: ['registration-readiness-checker'],
+    relatedArticles: ['gem-caution-money-deposit-slabs-refund-rules', 'gem-emd-exemption-rules-for-msme-startups-2026']
+  },
+  {
+    slug: 'gem-caution-money-deposit-slabs-refund-rules',
+    title: 'GeM Caution Money Deposit Slabs & Refund Rules (2026): ₹5k, ₹10k & ₹25k Tiers',
+    summary: 'Official breakdown of mandatory caution money deposit slabs by turnover, PFMS account linking, forfeiture penalties, and refund procedures.',
+    category: 'gem-registration',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '5 min read',
+    relatedTools: ['registration-readiness-checker', 'ai-catalog-dashboard'],
+    relatedArticles: ['gem-seller-registration-process-documents-checklist-2026', 'gem-primary-user-vs-secondary-user-roles-transfer']
+  },
+  {
+    slug: 'gem-primary-user-vs-secondary-user-roles-transfer',
+    title: 'GeM Primary User vs Secondary User: Roles, Permissions & User Transfer Guide',
+    summary: 'Understand the difference between Primary and Secondary Users on GeM, role assignments (Buyer/Consignee/PAO), and step-by-step primary user transfer.',
+    category: 'gem-registration',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '5 min read',
+    relatedTools: ['registration-readiness-checker', 'bid-search'],
+    relatedArticles: ['gem-portal-login-forgot-password-recovery-guide', 'complete-gem-registration-guide']
+  },
+  {
+    slug: 'gem-catalogue-upload-process-approval-guide',
+    title: 'GeM Catalogue Upload Process 2026: Golden Code Pairing & Rejection Fixes',
+    summary: 'Step-by-step tutorial on listing products and services on GeM, pairing golden parameters, brand authorization upload, and fixing rejection reasons.',
+    category: 'catalog-management',
+    date: '2026-08-13',
+    author: 'SahayakAI Procurement Team',
+    readingTime: '6 min read',
+    relatedTools: ['ai-catalog-dashboard', 'registration-readiness-checker'],
+    relatedArticles: ['brand-approval-process-on-gem', 'gem-seller-registration-process-documents-checklist-2026']
+  },
+  {
     slug: "gem-portal-direct-purchase-limit-rules-2026",
     title: "GeM Portal Direct Purchase Limit Rules & GFR Guidelines 2026",
     summary: "Explore the latest Direct Purchase limit rules, GFR 2017 amendments, and L1 comparison criteria for Indian public procurement.",
