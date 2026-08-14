@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { loadArticle } from "@/lib/content/contentLoader";
 import { REGISTRY_ARTICLES } from "@/content/registry";
 import { generateSeoMetadata } from "@/lib/seo/metadata";
@@ -31,12 +31,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!post) return {};
 
   const expectedCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-');
-  if (expectedCategorySlug !== category) return {};
-
   return generateSeoMetadata({
     title: `${post.title} — SahayakAI`,
     description: post.summary,
-    path: `/knowledge/${category}/${slug}`,
+    path: `/knowledge/${expectedCategorySlug}/${slug}`,
     keywords: [post.title, post.category, 'gem tutorials', 'procurement guide'],
     ogType: 'article'
   });
@@ -52,7 +50,7 @@ export default async function KnowledgeArticle({ params }: PageProps) {
 
   const expectedCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-');
   if (expectedCategorySlug !== category) {
-    notFound();
+    redirect(`/knowledge/${expectedCategorySlug}/${slug}`);
   }
 
   // Related guides & nodes

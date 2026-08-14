@@ -928,7 +928,7 @@ export const REGISTRY_ARTICLES: RegistryArticle[] = [
     slug: "gem-bank-account-change-kaise-kare",
     title: "GeM Bank Account Change Kaise Kare? IFSC & PFMS Verification Steps",
     summary: "GeM portal par bank account details aur IFSC code change karne ka step-by-step tarika. PFMS validation, cancelled cheque upload aur payment gateway integration ka details.",
-    category: "compliance-policy",
+    category: "gem-registration",
     date: "2026-07-20",
     author: "SahayakAI Team",
     reviewer: "Procurement Advisor",
