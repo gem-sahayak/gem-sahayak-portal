@@ -42,6 +42,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function KnowledgeArticle({ params }: PageProps) {
   const { category, slug } = await params;
+
+  if (slug === 'gem-primary-user-vs-secondary-user-roles-transfer') {
+    redirect('/knowledge/gem-registration/gem-primary-user-vs-secondary-user-transfer');
+  }
+
   const post = await loadArticle(slug);
 
   if (!post) {
