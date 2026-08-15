@@ -62,62 +62,31 @@ export default async function KnowledgeArticle({ params }: PageProps) {
   const relatedArticles = getRelatedArticles(post.slug, 3);
   const trendingArticles = REGISTRY_ARTICLES.slice(0, 4);
 
-  // Dynamic Summary calculations (Procurement OS v8.1 Spec)
-  let problem = "GeM portal validation and synchronization delays.";
-  let shortAnswer = "Verify details match corporate registrar databases, check API sync times, and re-trigger manual verification on the portal.";
-  let cause = "Database mismatch or missing compliance declarations.";
-  let fixTime = "24-48 Hours";
-  let officialRule = "GFR 2017 Rule 149 compliant";
+  // Dynamic Summary calculations — derived from post data instead of hardcoded defaults
+  const takeaways = post.keyTakeaways || [];
+  const problem = takeaways[0] || `Learn how to handle ${post.title.split(':')[0].trim()} on GeM portal.`;
+  const shortAnswer = takeaways[1] || post.summary;
+  const cause = takeaways[2] || `Follow the step-by-step guide below for complete resolution.`;
+  const benefit = takeaways[3] || `Save time and avoid common mistakes on GeM portal.`;
+  const fixTime = post.readingTime ? `${post.readingTime} read` : "5-10 Min Guide";
+  const officialRule = takeaways.length > 4 ? takeaways[4] : "GeM Portal Guidelines 2026";
+  const difficulty = "Easy";
+  const applicableUsers = "MSME, Startup, OEM, Manufacturer, Trader";
+  const exemptionTarget = takeaways.length > 5 ? takeaways[5] : `All registered sellers on GeM portal`;
+
+  // Smart tool recommendation based on category
   let recommendedToolName = "AI Bid Search";
   let recommendedToolLink = "/tools/bid-search";
-  let difficulty = "Easy";
-  let applicableUsers = "MSME, Startup, OEM, Manufacturer, Trader";
-  let exemptionTarget = "Registered MSMEs on GeM with valid UDYAM Certificate";
-
-  if (slug === "udyam-error") {
-    problem = "Udyam registration validation mismatch on GeM portal.";
-    shortAnswer = "Update spelling in Udyam Aadhaar and verify after database sync. Re-trigger validation on GeM profile page.";
-    cause = "Organization name spelling mismatches or PAN database verification delay.";
-    fixTime = "24-48 Hours";
-    officialRule = "GeM Registration Directive 2026";
+  const catLower = post.category.toLowerCase();
+  if (catLower.includes("registration")) {
+    recommendedToolName = "Registration Readiness Checker";
+    recommendedToolLink = "/tools/registration-readiness-checker";
+  } else if (catLower.includes("catalog")) {
+    recommendedToolName = "AI Catalog Dashboard";
+    recommendedToolLink = "/tools/ai-catalog-dashboard";
+  } else if (catLower.includes("compliance") || catLower.includes("policy")) {
     recommendedToolName = "Tender Eligibility Checker";
-    recommendedToolLink = "/tools/bid-analyzer";
-    difficulty = "Easy";
-    applicableUsers = "MSME, Startup, Trader";
-    exemptionTarget = "Registered MSMEs on GeM with valid UDYAM Certificate";
-  } else if (slug === "gem-portal-direct-purchase-limit-rules-2026") {
-    problem = "Compliance issues with direct purchases on the portal.";
-    shortAnswer = "Direct purchases are allowed up to ₹50,000. For ₹50,000 to ₹10,000,000, L1 comparison of 3 sellers is mandatory.";
-    cause = "L1 comparison mandates not met or price comparison criteria violated.";
-    fixTime = "5 Mins Check";
-    officialRule = "GFR 2017 Rule 149 (i) Slabs";
-    recommendedToolName = "L1 Margin Calculator";
-    recommendedToolLink = "/tools/bid-analyzer";
-    difficulty = "Medium";
-    applicableUsers = "OEM, Manufacturer, Trader";
-    exemptionTarget = "All government buyers and sellers transacting on GeM";
-  } else if (slug === "how-to-claim-emd-exemption-gem-portal-bids") {
-    problem = "Rejection of EMD exemption claims in bids.";
-    shortAnswer = "Provide valid Udyam registration, verify your NIC codes match bid criteria, and select EMD waiver option in bid upload.";
-    cause = "Incorrect NIC code matching in Udyam Certificate uploads.";
-    fixTime = "10 Mins Check";
-    officialRule = "DoE Mandate on MSE Procurement Preference";
-    recommendedToolName = "AI Tender Analyzer";
-    recommendedToolLink = "/tools/bid-analyzer";
-    difficulty = "Easy";
-    applicableUsers = "MSME, Startup, Manufacturer";
-    exemptionTarget = "Registered MSMEs on GeM with valid UDYAM Certificate";
-  } else if (slug === "how-to-search-gem-tenders") {
-    problem = "Missing relevant bids due to poor search parameters.";
-    shortAnswer = "Use exact Bid Number format on BidPlus portal or use SahayakAI's AI Bid Search for fuzzy keyword matches.";
-    cause = "Limitations in standard keyword filters on the official search tool.";
-    fixTime = "3 Mins Check";
-    officialRule = "BidPlus Search Guidelines";
-    recommendedToolName = "AI Bid Search";
-    recommendedToolLink = "/tools/bid-search";
-    difficulty = "Easy";
-    applicableUsers = "MSME, OEM, Trader";
-    exemptionTarget = "Sellers searching for active bids on the portal";
+    recommendedToolLink = "/tools/eligibility-checker";
   }
 
   // Schema generation
@@ -203,7 +172,7 @@ export default async function KnowledgeArticle({ params }: PageProps) {
                   ⏱️ {post.readingTime || "6 mins"} read
                 </span>
                 <span className="glow-badge" style={{ background: "#f0fdf4", color: "#16a34a", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.78rem", fontWeight: "700" }}>
-                  📅 Updated: July 2026
+                  📅 Updated: {new Date(post.updatedDate || post.date).toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })}
                 </span>
               </div>
 
@@ -261,19 +230,19 @@ export default async function KnowledgeArticle({ params }: PageProps) {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "16px" }}>
                 <div style={{ background: "#ffffff", border: "1px solid #bbf7d0", borderRadius: "12px", padding: "16px" }}>
                   <span style={{ fontSize: "0.75rem", color: "#64748b", fontWeight: "800", display: "block", marginBottom: "6px" }}>🚨 PROBLEM</span>
-                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>EMD blocks your working capital.</span>
+                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>{problem}</span>
                 </div>
                 <div style={{ background: "#ffffff", border: "1px solid #bbf7d0", borderRadius: "12px", padding: "16px" }}>
                   <span style={{ fontSize: "0.75rem", color: "#64748b", fontWeight: "800", display: "block", marginBottom: "6px" }}>✅ SOLUTION</span>
-                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>Eligible MSMEs can claim EMD exemption.</span>
+                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>{shortAnswer}</span>
                 </div>
                 <div style={{ background: "#ffffff", border: "1px solid #bbf7d0", borderRadius: "12px", padding: "16px" }}>
                   <span style={{ fontSize: "0.75rem", color: "#64748b", fontWeight: "800", display: "block", marginBottom: "6px" }}>📜 RULE</span>
-                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>DoE MSE Procurement Preference.</span>
+                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>{cause}</span>
                 </div>
                 <div style={{ background: "#ffffff", border: "1px solid #bbf7d0", borderRadius: "12px", padding: "16px" }}>
                   <span style={{ fontSize: "0.75rem", color: "#64748b", fontWeight: "800", display: "block", marginBottom: "6px" }}>🎁 BENEFIT</span>
-                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>Bid on tenders without EMD.</span>
+                  <span style={{ fontSize: "0.88rem", color: "#0C2E4A", fontWeight: "700", lineHeight: "1.4" }}>{benefit}</span>
                 </div>
               </div>
 

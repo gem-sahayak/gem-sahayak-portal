@@ -20,8 +20,14 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
-        // Block AI training scrapers (these scrape data, don't send traffic)
-        userAgent: ['GPTBot', 'ClaudeBot', 'CCBot', 'anthropic-ai', 'Bytespider'],
+        // Allow AI crawlers that power search products (Perplexity uses CCBot, ChatGPT uses GPTBot)
+        userAgent: ['GPTBot', 'ClaudeBot', 'CCBot', 'anthropic-ai'],
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/settings', '/workspace'],
+      },
+      {
+        // Block pure training scrapers (no search product, no traffic back)
+        userAgent: ['Bytespider'],
         disallow: ['/'],
       },
     ],
